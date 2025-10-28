@@ -46,7 +46,7 @@ Typical applications include:
   _This file. Overview, documentation, and usage instructions._
 - HDL sources for VestaRV core and MCU peripherals
 - Scripts and Makefiles for simulation and synthesis
-- Testbenches and example firmware
+- Testbenches 
 
 **Directory Highlights:**
 - `hdl/` — VestaRV core and MCU HDL sources
@@ -108,11 +108,11 @@ Toolchains (gcc, binutils, etc.) can be obtained via the [RISC-V Website](https:
 ## Author and Support
 
 **Author:**  
-_Maxx Seminario_  
-PhD Student, Integrated Circuit Design
-Analog, Mixed-Signal, and System-on-Chip Design
-University of Nebraska-Lincoln  
-Email: mseminario2@huskers.unl.edu
+_Maxx Seminario_    
+PhD Student, Integrated Circuit Design  
+Analog, Mixed-Signal, and System-on-Chip Design  
+University of Nebraska-Lincoln    
+Email: mseminario2@huskers.unl.edu  
 
 If you need access, support, or have questions about VestaRV or its MCU subsystem, please reach out directly to the author via email. 
 
