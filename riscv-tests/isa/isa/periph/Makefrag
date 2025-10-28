@@ -1,0 +1,8 @@
+#=======================================================================
+# Makefrag for periph tests
+#-----------------------------------------------------------------------
+
+periph_sc_tests = \
+    gpio \
+
+periph_p_tests = $(addprefix periph-p-, $(periph_sc_tests))

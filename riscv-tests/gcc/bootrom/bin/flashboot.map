@@ -1,0 +1,891 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                              /tmp/ccQubXCS.ltrans0.ltrans.o (__mulsi3)
+/opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                              /tmp/ccQubXCS.ltrans0.ltrans.o (__divsi3)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00004000         xr
+PERIPHERAL       0x00004000         0x00002000         rw
+vectors          0x00008000         0x00000080
+VECT0            0x00008000         0x00000004
+VECT1            0x00008004         0x00000004
+VECT2            0x00008008         0x00000004
+VECT3            0x0000800c         0x00000004
+VECT4            0x00008010         0x00000004
+VECT5            0x00008014         0x00000004
+VECT6            0x00008018         0x00000004
+VECT7            0x0000801c         0x00000004
+VECT8            0x00008020         0x00000004
+VECT9            0x00008024         0x00000004
+VECT10           0x00008028         0x00000004
+VECT11           0x0000802c         0x00000004
+VECT12           0x00008030         0x00000004
+VECT13           0x00008034         0x00000004
+VECT14           0x00008038         0x00000004
+VECT15           0x0000803c         0x00000004
+VECT16           0x00008040         0x00000004
+VECT17           0x00008044         0x00000004
+VECT18           0x00008048         0x00000004
+VECT19           0x0000804c         0x00000004
+VECT20           0x00008050         0x00000004
+VECT21           0x00008054         0x00000004
+VECT22           0x00008058         0x00000004
+VECT23           0x0000805c         0x00000004
+VECT24           0x00008060         0x00000004
+VECT25           0x00008064         0x00000004
+VECT26           0x00008068         0x00000004
+VECT27           0x0000806c         0x00000004
+VECT28           0x00008070         0x00000004
+VECT29           0x00008074         0x00000004
+VECT30           0x00008078         0x00000004
+VECT31           0x0000807c         0x00000004
+RAM              0x00008080         0x00034780         xrw
+RAM_NOT_MUXED    0x00008080         0x00023f80         xrw
+SRAM02           0x00008080         0x00003f80         xrw
+SRAM03           0x0000c000         0x00004000         xrw
+SRAM04           0x00010000         0x00004000         xrw
+SRAM05           0x00014000         0x00004000         xrw
+SRAM06           0x00018000         0x00004000         xrw
+SRAM07           0x0001c000         0x00004000         xrw
+SRAM08           0x00020000         0x00004000         xrw
+SRAM09           0x00024000         0x00004000         xrw
+SRAM10           0x00028000         0x00004000         xrw
+SRAM11           0x0002c000         0x00004000         xrw
+SRAM12           0x00030000         0x00004000         xrw
+SRAM13           0x00034000         0x00004000         xrw
+SRAM14           0x00038000         0x00004000         xrw
+SRAM15           0x0003c000         0x00000800         xrw
+NPU0_RAM         0x0002c000         0x00004000         xrw
+AFE0_HISTOGRAM_RAM 0x00030000         0x00001000         xrw
+AFE1_HISTOGRAM_RAM 0x00032000         0x00001000         xrw
+AFE2_HISTOGRAM_RAM 0x00034000         0x00001000         xrw
+AFE3_HISTOGRAM_RAM 0x00036000         0x00001000         xrw
+AFE4_HISTOGRAM_RAM 0x00038000         0x00001000         xrw
+AFE5_HISTOGRAM_RAM 0x0003a000         0x00001000         xrw
+DAC_PING_RAM     0x0003c000         0x00000400         xrw
+DAC_PONG_RAM     0x0003c400         0x00000400         xrw
+UNUSED           0xffff0000         0x00010000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a
+                0x00000000                        __RomStartAddress = 0x0
+                0x00004000                        __RomSize = 0x4000
+                0x00008000                        __RamStartAddress = 0x8000
+                0x00034800                        __RamSize = 0x34800
+                0x00008080                        __RamProgramStartAddress = 0x8080
+                0x00008090                        __InterruptHandlerAddress = 0x8090
+                0x00000000                        __ProgramCounterInit = 0x0
+                0x0002c000                        __StackPointerInit = 0x2c000
+                0x00004000                        __SYSCLKCR = 0x4000
+                0x00004004                        __CLKDIVCR = 0x4004
+                0x00004008                        __MEMPWRCR = 0x4008
+                0x0000400c                        __CRCDATA = 0x400c
+                0x00004010                        __CRCSTATE = 0x4010
+                0x00004014                        __IRQEN = 0x4014
+                0x00004018                        __IRQPRI = 0x4018
+                0x0000401c                        __WDTPASS = 0x401c
+                0x00004020                        __WDTCR = 0x4020
+                0x00004024                        __WDTSR = 0x4024
+                0x00004028                        __WDTVAL = 0x4028
+                0x0000402c                        __DCO0FREQ = 0x402c
+                0x00004030                        __DCO1FREQ = 0x4030
+                0x00004034                        __TPMR = 0x4034
+                0x00004038                        __BIASCR = 0x4038
+                0x0000403c                        __BIASDBP = 0x403c
+                0x00004040                        __BIASDBPC = 0x4040
+                0x00004044                        __BIASDBNC = 0x4044
+                0x00004048                        __BIASDBN = 0x4048
+                0x00004100                        __P1IN = 0x4100
+                0x00004104                        __P1OUT = 0x4104
+                0x00004108                        __P1OUTS = 0x4108
+                0x0000410c                        __P1OUTC = 0x410c
+                0x00004110                        __P1OUTT = 0x4110
+                0x00004114                        __P1DIR = 0x4114
+                0x00004118                        __P1IFG = 0x4118
+                0x0000411c                        __P1IES = 0x411c
+                0x00004120                        __P1IE = 0x4120
+                0x00004124                        __P1SEL = 0x4124
+                0x00004128                        __P1REN = 0x4128
+                0x00004200                        __SPI0CR = 0x4200
+                0x00004204                        __SPI0SR = 0x4204
+                0x00004208                        __SPI0TX = 0x4208
+                0x0000420c                        __SPI0RX = 0x420c
+                0x00004210                        __SPI0FOS = 0x4210
+                0x00004300                        __SPI1CR = 0x4300
+                0x00004304                        __SPI1SR = 0x4304
+                0x00004308                        __SPI1TX = 0x4308
+                0x0000430c                        __SPI1RX = 0x430c
+                0x00004310                        __SPI1FOS = 0x4310
+                0x00004400                        __UART0CR = 0x4400
+                0x00004404                        __UART0SR = 0x4404
+                0x00004408                        __UART0BR = 0x4408
+                0x0000440c                        __UART0RX = 0x440c
+                0x00004410                        __UART0TX = 0x4410
+                0x00004500                        __TIM0CR = 0x4500
+                0x00004504                        __TIM0SR = 0x4504
+                0x00004508                        __TIM0VAL = 0x4508
+                0x0000450c                        __TIM0CMP0 = 0x450c
+                0x00004510                        __TIM0CMP1 = 0x4510
+                0x00004514                        __TIM0CMP2 = 0x4514
+                0x00004518                        __TIM0CAP0 = 0x4518
+                0x0000451c                        __TIM0CAP1 = 0x451c
+                0x00004600                        __TIM1CR = 0x4600
+                0x00004604                        __TIM1SR = 0x4604
+                0x00004608                        __TIM1VAL = 0x4608
+                0x0000460c                        __TIM1CMP0 = 0x460c
+                0x00004610                        __TIM1CMP1 = 0x4610
+                0x00004614                        __TIM1CMP2 = 0x4614
+                0x00004618                        __TIM1CAP0 = 0x4618
+                0x0000461c                        __TIM1CAP1 = 0x461c
+                0x00004700                        __P2IN = 0x4700
+                0x00004704                        __P2OUT = 0x4704
+                0x00004708                        __P2OUTS = 0x4708
+                0x0000470c                        __P2OUTC = 0x470c
+                0x00004710                        __P2OUTT = 0x4710
+                0x00004714                        __P2DIR = 0x4714
+                0x00004718                        __P2IFG = 0x4718
+                0x0000471c                        __P2IES = 0x471c
+                0x00004720                        __P2IE = 0x4720
+                0x00004724                        __P2SEL = 0x4724
+                0x00004728                        __P2REN = 0x4728
+                0x00004800                        __P3IN = 0x4800
+                0x00004804                        __P3OUT = 0x4804
+                0x00004808                        __P3OUTS = 0x4808
+                0x0000480c                        __P3OUTC = 0x480c
+                0x00004810                        __P3OUTT = 0x4810
+                0x00004814                        __P3DIR = 0x4814
+                0x00004818                        __P3IFG = 0x4818
+                0x0000481c                        __P3IES = 0x481c
+                0x00004820                        __P3IE = 0x4820
+                0x00004824                        __P3SEL = 0x4824
+                0x00004828                        __P3REN = 0x4828
+                0x00004900                        __P4IN = 0x4900
+                0x00004904                        __P4OUT = 0x4904
+                0x00004908                        __P4OUTS = 0x4908
+                0x0000490c                        __P4OUTC = 0x490c
+                0x00004910                        __P4OUTT = 0x4910
+                0x00004914                        __P4DIR = 0x4914
+                0x00004918                        __P4IFG = 0x4918
+                0x0000491c                        __P4IES = 0x491c
+                0x00004920                        __P4IE = 0x4920
+                0x00004924                        __P4SEL = 0x4924
+                0x00004928                        __P4REN = 0x4928
+                0x00004a00                        __P5IN = 0x4a00
+                0x00004a04                        __P5OUT = 0x4a04
+                0x00004a08                        __P5OUTS = 0x4a08
+                0x00004a0c                        __P5OUTC = 0x4a0c
+                0x00004a10                        __P5OUTT = 0x4a10
+                0x00004a14                        __P5DIR = 0x4a14
+                0x00004a18                        __P5IFG = 0x4a18
+                0x00004a1c                        __P5IES = 0x4a1c
+                0x00004a20                        __P5IE = 0x4a20
+                0x00004a24                        __P5SEL = 0x4a24
+                0x00004a28                        __P5REN = 0x4a28
+                0x00004b00                        __I2C0CR = 0x4b00
+                0x00004b04                        __I2C0FCR = 0x4b04
+                0x00004b08                        __I2C0SR = 0x4b08
+                0x00004b0c                        __I2C0MTX = 0x4b0c
+                0x00004b10                        __I2C0MRX = 0x4b10
+                0x00004b14                        __I2C0STX = 0x4b14
+                0x00004b18                        __I2C0SRX = 0x4b18
+                0x00004b1c                        __I2C0AR = 0x4b1c
+                0x00004b20                        __I2C0AMR = 0x4b20
+                0x00004c00                        __SPI2CR = 0x4c00
+                0x00004c04                        __SPI2SR = 0x4c04
+                0x00004c08                        __SPI2TX = 0x4c08
+                0x00004c0c                        __SPI2RX = 0x4c0c
+                0x00004c10                        __SPI2FOS = 0x4c10
+                0x00004d00                        __UART1CR = 0x4d00
+                0x00004d04                        __UART1SR = 0x4d04
+                0x00004d08                        __UART1BR = 0x4d08
+                0x00004d0c                        __UART1RX = 0x4d0c
+                0x00004d10                        __UART1TX = 0x4d10
+                0x00004e00                        __TIM2CR = 0x4e00
+                0x00004e04                        __TIM2SR = 0x4e04
+                0x00004e08                        __TIM2VAL = 0x4e08
+                0x00004e0c                        __TIM2CMP0 = 0x4e0c
+                0x00004e10                        __TIM2CMP1 = 0x4e10
+                0x00004e14                        __TIM2CMP2 = 0x4e14
+                0x00004e18                        __TIM2CAP0 = 0x4e18
+                0x00004e1c                        __TIM2CAP1 = 0x4e1c
+                0x00004f00                        __TIM3CR = 0x4f00
+                0x00004f04                        __TIM3SR = 0x4f04
+                0x00004f08                        __TIM3VAL = 0x4f08
+                0x00004f0c                        __TIM3CMP0 = 0x4f0c
+                0x00004f10                        __TIM3CMP1 = 0x4f10
+                0x00004f14                        __TIM3CMP2 = 0x4f14
+                0x00004f18                        __TIM3CAP0 = 0x4f18
+                0x00004f1c                        __TIM3CAP1 = 0x4f1c
+                0x00005000                        __NN0CR = 0x5000
+                0x00005004                        __NN0IVA = 0x5004
+                0x00005008                        __NN0OVA = 0x5008
+                0x0000500c                        __NN0WMA = 0x500c
+                0x00005010                        __NN0LSI = 0x5010
+                0x00005014                        __NN0LSO = 0x5014
+                0x00005100                        __AFE0CR0 = 0x5100
+                0x00005104                        __AFE0CR1 = 0x5104
+                0x00005108                        __AFE0CFB = 0x5108
+                0x0000510c                        __AFE0RFB = 0x510c
+                0x00005110                        __AFE0THR = 0x5110
+                0x00005114                        __AFE0TPR = 0x5114
+                0x00005118                        __AFE0SPT = 0x5118
+                0x0000511c                        __AFE0PIT = 0x511c
+                0x00005120                        __AFE0EIT = 0x5120
+                0x00005124                        __AFE0LIT = 0x5124
+                0x00005128                        __AFE0RJT = 0x5128
+                0x0000512c                        __AFE0RST = 0x512c
+                0x00005130                        __AFE0AOFST = 0x5130
+                0x00005134                        __AFE0BLLT = 0x5134
+                0x00005138                        __AFE0CSAREF = 0x5138
+                0x0000513c                        __AFE0CSABP = 0x513c
+                0x00005140                        __AFE0CSABPC = 0x5140
+                0x00005144                        __AFE0CSABNC = 0x5144
+                0x00005148                        __AFE0CSABN = 0x5148
+                0x0000514c                        __AFE0CMSHR = 0x514c
+                0x00005150                        __AFE0CLPF = 0x5150
+                0x00005154                        __AFE0SR = 0x5154
+                0x00005158                        __AFE0ADCVAL = 0x5158
+                0x0000515c                        __AFE0VPC = 0x515c
+                0x00005160                        __AFE0TPC = 0x5160
+                0x00005200                        __AFE1CR0 = 0x5200
+                0x00005204                        __AFE1CR1 = 0x5204
+                0x00005208                        __AFE1CFB = 0x5208
+                0x0000520c                        __AFE1RFB = 0x520c
+                0x00005210                        __AFE1THR = 0x5210
+                0x00005214                        __AFE1TPR = 0x5214
+                0x00005218                        __AFE1SPT = 0x5218
+                0x0000521c                        __AFE1PIT = 0x521c
+                0x00005220                        __AFE1EIT = 0x5220
+                0x00005224                        __AFE1LIT = 0x5224
+                0x00005228                        __AFE1RJT = 0x5228
+                0x0000522c                        __AFE1RST = 0x522c
+                0x00005230                        __AFE1AOFST = 0x5230
+                0x00005234                        __AFE1BLLT = 0x5234
+                0x00005238                        __AFE1CSAREF = 0x5238
+                0x0000523c                        __AFE1CSABP = 0x523c
+                0x00005240                        __AFE1CSABPC = 0x5240
+                0x00005244                        __AFE1CSABNC = 0x5244
+                0x00005248                        __AFE1CSABN = 0x5248
+                0x0000524c                        __AFE1CMSHR = 0x524c
+                0x00005250                        __AFE1CLPF = 0x5250
+                0x00005254                        __AFE1SR = 0x5254
+                0x00005258                        __AFE1ADCVAL = 0x5258
+                0x0000525c                        __AFE1VPC = 0x525c
+                0x00005260                        __AFE1TPC = 0x5260
+                0x00005300                        __AFE2CR0 = 0x5300
+                0x00005304                        __AFE2CR1 = 0x5304
+                0x00005308                        __AFE2CFB = 0x5308
+                0x0000530c                        __AFE2RFB = 0x530c
+                0x00005310                        __AFE2THR = 0x5310
+                0x00005314                        __AFE2TPR = 0x5314
+                0x00005318                        __AFE2SPT = 0x5318
+                0x0000531c                        __AFE2PIT = 0x531c
+                0x00005320                        __AFE2EIT = 0x5320
+                0x00005324                        __AFE2LIT = 0x5324
+                0x00005328                        __AFE2RJT = 0x5328
+                0x0000532c                        __AFE2RST = 0x532c
+                0x00005330                        __AFE2AOFST = 0x5330
+                0x00005334                        __AFE2BLLT = 0x5334
+                0x00005338                        __AFE2CSAREF = 0x5338
+                0x0000533c                        __AFE2CSABP = 0x533c
+                0x00005340                        __AFE2CSABPC = 0x5340
+                0x00005344                        __AFE2CSABNC = 0x5344
+                0x00005348                        __AFE2CSABN = 0x5348
+                0x0000534c                        __AFE2CMSHR = 0x534c
+                0x00005350                        __AFE2CLPF = 0x5350
+                0x00005354                        __AFE2SR = 0x5354
+                0x00005358                        __AFE2ADCVAL = 0x5358
+                0x0000535c                        __AFE2VPC = 0x535c
+                0x00005360                        __AFE2TPC = 0x5360
+                0x00005400                        __AFE3CR0 = 0x5400
+                0x00005404                        __AFE3CR1 = 0x5404
+                0x00005408                        __AFE3CFB = 0x5408
+                0x0000540c                        __AFE3RFB = 0x540c
+                0x00005410                        __AFE3THR = 0x5410
+                0x00005414                        __AFE3TPR = 0x5414
+                0x00005418                        __AFE3SPT = 0x5418
+                0x0000541c                        __AFE3PIT = 0x541c
+                0x00005420                        __AFE3EIT = 0x5420
+                0x00005424                        __AFE3LIT = 0x5424
+                0x00005428                        __AFE3RJT = 0x5428
+                0x0000542c                        __AFE3RST = 0x542c
+                0x00005430                        __AFE3AOFST = 0x5430
+                0x00005434                        __AFE3BLLT = 0x5434
+                0x00005438                        __AFE3CSAREF = 0x5438
+                0x0000543c                        __AFE3CSABP = 0x543c
+                0x00005440                        __AFE3CSABPC = 0x5440
+                0x00005444                        __AFE3CSABNC = 0x5444
+                0x00005448                        __AFE3CSABN = 0x5448
+                0x0000544c                        __AFE3CMSHR = 0x544c
+                0x00005450                        __AFE3CLPF = 0x5450
+                0x00005454                        __AFE3SR = 0x5454
+                0x00005458                        __AFE3ADCVAL = 0x5458
+                0x0000545c                        __AFE3VPC = 0x545c
+                0x00005460                        __AFE3TPC = 0x5460
+                0x00005500                        __AFE4CR0 = 0x5500
+                0x00005504                        __AFE4CR1 = 0x5504
+                0x00005508                        __AFE4CFB = 0x5508
+                0x0000550c                        __AFE4RFB = 0x550c
+                0x00005510                        __AFE4THR = 0x5510
+                0x00005514                        __AFE4TPR = 0x5514
+                0x00005518                        __AFE4SPT = 0x5518
+                0x0000551c                        __AFE4PIT = 0x551c
+                0x00005520                        __AFE4EIT = 0x5520
+                0x00005524                        __AFE4LIT = 0x5524
+                0x00005528                        __AFE4RJT = 0x5528
+                0x0000552c                        __AFE4RST = 0x552c
+                0x00005530                        __AFE4AOFST = 0x5530
+                0x00005534                        __AFE4BLLT = 0x5534
+                0x00005538                        __AFE4CSAREF = 0x5538
+                0x0000553c                        __AFE4CSABP = 0x553c
+                0x00005540                        __AFE4CSABPC = 0x5540
+                0x00005544                        __AFE4CSABNC = 0x5544
+                0x00005548                        __AFE4CSABN = 0x5548
+                0x0000554c                        __AFE4CMSHR = 0x554c
+                0x00005550                        __AFE4CLPF = 0x5550
+                0x00005554                        __AFE4SR = 0x5554
+                0x00005558                        __AFE4ADCVAL = 0x5558
+                0x0000555c                        __AFE4VPC = 0x555c
+                0x00005560                        __AFE4TPC = 0x5560
+                0x00005600                        __AFE5CR0 = 0x5600
+                0x00005604                        __AFE5CR1 = 0x5604
+                0x00005608                        __AFE5CFB = 0x5608
+                0x0000560c                        __AFE5RFB = 0x560c
+                0x00005610                        __AFE5THR = 0x5610
+                0x00005614                        __AFE5TPR = 0x5614
+                0x00005618                        __AFE5SPT = 0x5618
+                0x0000561c                        __AFE5PIT = 0x561c
+                0x00005620                        __AFE5EIT = 0x5620
+                0x00005624                        __AFE5LIT = 0x5624
+                0x00005628                        __AFE5RJT = 0x5628
+                0x0000562c                        __AFE5RST = 0x562c
+                0x00005630                        __AFE5AOFST = 0x5630
+                0x00005634                        __AFE5BLLT = 0x5634
+                0x00005638                        __AFE5CSAREF = 0x5638
+                0x0000563c                        __AFE5CSABP = 0x563c
+                0x00005640                        __AFE5CSABPC = 0x5640
+                0x00005644                        __AFE5CSABNC = 0x5644
+                0x00005648                        __AFE5CSABN = 0x5648
+                0x0000564c                        __AFE5CMSHR = 0x564c
+                0x00005650                        __AFE5CLPF = 0x5650
+                0x00005654                        __AFE5SR = 0x5654
+                0x00005658                        __AFE5ADCVAL = 0x5658
+                0x0000565c                        __AFE5VPC = 0x565c
+                0x00005660                        __AFE5TPC = 0x5660
+                0x00005700                        __PCTCR = 0x5700
+                0x00005704                        __PCTCNT0 = 0x5704
+                0x00005708                        __PCTCNT1 = 0x5708
+                0x0000570c                        __PCTCNT2 = 0x570c
+                0x00005710                        __PCTCNT3 = 0x5710
+                0x00005800                        __P6IN = 0x5800
+                0x00005804                        __P6OUT = 0x5804
+                0x00005808                        __P6OUTS = 0x5808
+                0x0000580c                        __P6OUTC = 0x580c
+                0x00005810                        __P6OUTT = 0x5810
+                0x00005814                        __P6DIR = 0x5814
+                0x00005818                        __P6IFG = 0x5818
+                0x0000581c                        __P6IES = 0x581c
+                0x00005820                        __P6IE = 0x5820
+                0x00005824                        __P6SEL = 0x5824
+                0x00005828                        __P6REN = 0x5828
+                0x00005900                        __P7IN = 0x5900
+                0x00005904                        __P7OUT = 0x5904
+                0x00005908                        __P7OUTS = 0x5908
+                0x0000590c                        __P7OUTC = 0x590c
+                0x00005910                        __P7OUTT = 0x5910
+                0x00005914                        __P7DIR = 0x5914
+                0x00005918                        __P7IFG = 0x5918
+                0x0000591c                        __P7IES = 0x591c
+                0x00005920                        __P7IE = 0x5920
+                0x00005924                        __P7SEL = 0x5924
+                0x00005928                        __P7REN = 0x5928
+                0x00005a00                        __P8IN = 0x5a00
+                0x00005a04                        __P8OUT = 0x5a04
+                0x00005a08                        __P8OUTS = 0x5a08
+                0x00005a0c                        __P8OUTC = 0x5a0c
+                0x00005a10                        __P8OUTT = 0x5a10
+                0x00005a14                        __P8DIR = 0x5a14
+                0x00005a18                        __P8IFG = 0x5a18
+                0x00005a1c                        __P8IES = 0x5a1c
+                0x00005a20                        __P8IE = 0x5a20
+                0x00005a24                        __P8SEL = 0x5a24
+                0x00005a28                        __P8REN = 0x5a28
+                0x00005b00                        __OPACR = 0x5b00
+                0x00005b04                        __OPASR = 0x5b04
+                0x00005c00                        __DACCR = 0x5c00
+                0x00005c04                        __DACSR = 0x5c04
+                0x00005c08                        __DAC0VAL = 0x5c08
+                0x00005c0c                        __DAC1VAL = 0x5c0c
+                0x00005c10                        __DACFS = 0x5c10
+                0x00005c14                        __DACHBS = 0x5c14
+                0x00005d00                        __I2C1CR = 0x5d00
+                0x00005d04                        __I2C1FCR = 0x5d04
+                0x00005d08                        __I2C1SR = 0x5d08
+                0x00005d0c                        __I2C1MTX = 0x5d0c
+                0x00005d10                        __I2C1MRX = 0x5d10
+                0x00005d14                        __I2C1STX = 0x5d14
+                0x00005d18                        __I2C1SRX = 0x5d18
+                0x00005d1c                        __I2C1AR = 0x5d1c
+                0x00005d20                        __I2C1AMR = 0x5d20
+                0x00005e00                        __UART2CR = 0x5e00
+                0x00005e04                        __UART2SR = 0x5e04
+                0x00005e08                        __UART2BR = 0x5e08
+                0x00005e0c                        __UART2RX = 0x5e0c
+                0x00005e10                        __UART2TX = 0x5e10
+
+__interrupt_vector_1
+ *(__interrupt_vector_1)
+
+__interrupt_vector_2
+ *(__interrupt_vector_2)
+
+__interrupt_vector_3
+ *(__interrupt_vector_3)
+
+__interrupt_vector_4
+ *(__interrupt_vector_4)
+
+__interrupt_vector_5
+ *(__interrupt_vector_5)
+
+__interrupt_vector_6
+ *(__interrupt_vector_6)
+
+__interrupt_vector_7
+ *(__interrupt_vector_7)
+
+__interrupt_vector_8
+ *(__interrupt_vector_8)
+
+__interrupt_vector_9
+ *(__interrupt_vector_9)
+
+__interrupt_vector_10
+ *(__interrupt_vector_10)
+
+__interrupt_vector_11
+ *(__interrupt_vector_11)
+
+__interrupt_vector_12
+ *(__interrupt_vector_12)
+
+__interrupt_vector_13
+ *(__interrupt_vector_13)
+
+__interrupt_vector_14
+ *(__interrupt_vector_14)
+
+__interrupt_vector_15
+ *(__interrupt_vector_15)
+
+__interrupt_vector_16
+ *(__interrupt_vector_16)
+
+__interrupt_vector_17
+ *(__interrupt_vector_17)
+
+__interrupt_vector_18
+ *(__interrupt_vector_18)
+
+__interrupt_vector_19
+ *(__interrupt_vector_19)
+
+__interrupt_vector_20
+ *(__interrupt_vector_20)
+
+__interrupt_vector_21
+ *(__interrupt_vector_21)
+
+__interrupt_vector_22
+ *(__interrupt_vector_22)
+
+__interrupt_vector_23
+ *(__interrupt_vector_23)
+
+__interrupt_vector_24
+ *(__interrupt_vector_24)
+
+__interrupt_vector_25
+ *(__interrupt_vector_25)
+
+__interrupt_vector_26
+ *(__interrupt_vector_26)
+
+__interrupt_vector_27
+ *(__interrupt_vector_27)
+
+__interrupt_vector_28
+ *(__interrupt_vector_28)
+
+__interrupt_vector_29
+ *(__interrupt_vector_29)
+
+__interrupt_vector_30
+ *(__interrupt_vector_30)
+
+__interrupt_vector_31
+ *(__interrupt_vector_31)
+
+.text           0x00000000     0x2218
+                0x00000000                        PROVIDE (_start = .)
+                0x00000000                        . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000000      0x1b0 ./obj/start.S.src.o
+ .text          0x000001b0     0x19e4 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .text          0x00001b94       0x24 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                0x00001b94                __mulsi3
+ .text          0x00001bb8       0xb4 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                0x00001bb8                __divsi3
+                0x00001bc0                __hidden___udivsi3
+                0x00001bc0                __udivsi3
+                0x00001c08                __umodsi3
+                0x00001c3c                __modsi3
+ *(.text*)
+ .text.startup  0x00001c6c      0x150 /tmp/ccQubXCS.ltrans0.ltrans.o
+                0x00001c6c                main
+ *(.rodata)
+ .rodata        0x00001dbc      0x436 /tmp/ccQubXCS.ltrans0.ltrans.o
+ *(.rodata*)
+ *fill*         0x000021f2        0x2 
+ .rodata.str1.4
+                0x000021f4       0x13 /tmp/ccQubXCS.ltrans0.ltrans.o
+ *(.srodata)
+ *fill*         0x00002207        0x1 
+ .srodata       0x00002208        0xe /tmp/ccQubXCS.ltrans0.ltrans.o
+ *(.srodata*)
+                0x00002218                        . = ALIGN (0x4)
+ *fill*         0x00002216        0x2 
+                0x00002218                        _etext = .
+                0x00002218                        _sidata = _etext
+
+.data           0x00008080        0x0 load address 0x00002218
+                0x00008080                        . = ALIGN (0x4)
+                0x00008080                        _sdata = .
+                0x00008080                        _ram_start = .
+                0x00008080                        . = ALIGN (0x4)
+ *(.data)
+ .data          0x00008080        0x0 ./obj/start.S.src.o
+ .data          0x00008080        0x0 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .data          0x00008080        0x0 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .data          0x00008080        0x0 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ *(.data*)
+ *(.sdata)
+ *(.sdata*)
+                0x00008080                        . = ALIGN (0x4)
+                0x00008080                        _edata = .
+
+.bss            0x00008080        0x0 load address 0x00002218
+                0x00008080                        . = ALIGN (0x4)
+                0x00008080                        _sbss = .
+ *(.bss)
+ .bss           0x00008080        0x0 ./obj/start.S.src.o
+ .bss           0x00008080        0x0 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .bss           0x00008080        0x0 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .bss           0x00008080        0x0 /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+ *(.bss*)
+ *(.sbss)
+ *(.sbss*)
+ *(COMMON)
+                0x00008080                        . = ALIGN (0x4)
+                0x00008080                        _ebss = .
+
+.noinit         0x00008080     0x5d70 load address 0x00002218
+ .noinit        0x00008080     0x5d70 /tmp/ccQubXCS.ltrans0.ltrans.o
+
+.heap           0x0000ddf0        0x0
+                0x0000ddf0                        . = ALIGN (0x4)
+                0x0000ddf0                        _heap_start = .
+LOAD ./obj/start.S.src.o
+LOAD ./obj/main.c.src.o
+LOAD /tmp/ccQubXCS.ltrans0.ltrans.o
+LOAD /tmp/ccoqgKgU.debug.temp.o
+LOAD /tmp/ccGnqZZS.debug.temp.o
+LOAD /tmp/cclVkLjk.debug.temp.o
+LOAD /tmp/ccRrBEg0.debug.temp.o
+LOAD /tmp/cccp85pj.debug.temp.o
+LOAD ./obj/rv4th.c.src.o
+LOAD ./obj/uart.c.src.o
+LOAD ./obj/spi.c.src.o
+LOAD ./obj/flash_memory.c.src.o
+LOAD /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a
+START GROUP
+LOAD /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32i/ilp32/libc.a
+LOAD /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/../../../../riscv-none-elf/lib/rv32i/ilp32/libgloss.a
+END GROUP
+LOAD /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a
+OUTPUT(bin/flashboot.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1a ./obj/start.S.src.o
+ .riscv.attributes
+                0x0000001a       0x1c /tmp/ccQubXCS.ltrans0.ltrans.o
+ .riscv.attributes
+                0x00000036       0x1a /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .riscv.attributes
+                0x00000050       0x1a /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+
+.comment        0x00000000       0x33
+ .comment       0x00000000       0x33 /tmp/ccQubXCS.ltrans0.ltrans.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033       0x34 /tmp/ccoqgKgU.debug.temp.o
+ .comment       0x00000033       0x34 /tmp/ccGnqZZS.debug.temp.o
+ .comment       0x00000033       0x34 /tmp/cclVkLjk.debug.temp.o
+ .comment       0x00000033       0x34 /tmp/ccRrBEg0.debug.temp.o
+ .comment       0x00000033       0x34 /tmp/cccp85pj.debug.temp.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccoqgKgU.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccGnqZZS.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/cclVkLjk.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/ccRrBEg0.debug.temp.o
+ .note.GNU-stack
+                0x00000000        0x0 /tmp/cccp85pj.debug.temp.o
+
+.debug_line     0x00000000     0x36a5
+ .debug_line    0x00000000      0x284 ./obj/start.S.src.o
+ .debug_line    0x00000284     0x3269 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .debug_line    0x000034ed       0x5a /tmp/ccoqgKgU.debug.temp.o
+ .debug_line    0x00003547       0x5f /tmp/ccGnqZZS.debug.temp.o
+ .debug_line    0x000035a6       0x5e /tmp/cclVkLjk.debug.temp.o
+ .debug_line    0x00003604       0x4c /tmp/ccRrBEg0.debug.temp.o
+ .debug_line    0x00003650       0x55 /tmp/cccp85pj.debug.temp.o
+
+.debug_line_str
+                0x00000000      0x1a1
+ .debug_line_str
+                0x00000000      0x1a1 ./obj/start.S.src.o
+                                 0x2e (size before relaxing)
+ .debug_line_str
+                0x000001a1       0x8d /tmp/ccQubXCS.ltrans0.ltrans.o
+ .debug_line_str
+                0x000001a1       0xf2 /tmp/ccoqgKgU.debug.temp.o
+ .debug_line_str
+                0x000001a1      0x101 /tmp/ccGnqZZS.debug.temp.o
+ .debug_line_str
+                0x000001a1      0x13b /tmp/cclVkLjk.debug.temp.o
+ .debug_line_str
+                0x000001a1       0xd9 /tmp/ccRrBEg0.debug.temp.o
+ .debug_line_str
+                0x000001a1       0xf9 /tmp/cccp85pj.debug.temp.o
+
+.debug_info     0x00000000     0x31b2
+ .debug_info    0x00000000       0x25 ./obj/start.S.src.o
+ .debug_info    0x00000025     0x1754 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .debug_info    0x00001779      0x138 /tmp/ccoqgKgU.debug.temp.o
+                0x00001779                main.c.047c3d52
+ .debug_info    0x000018b1      0x953 /tmp/ccGnqZZS.debug.temp.o
+                0x000018b1                rv4th.c.4bdef3ab
+ .debug_info    0x00002204      0xd42 /tmp/cclVkLjk.debug.temp.o
+                0x00002204                uart.c.d59239fe
+ .debug_info    0x00002f46       0xe8 /tmp/ccRrBEg0.debug.temp.o
+                0x00002f46                spi.c.fc9628cb
+ .debug_info    0x0000302e      0x184 /tmp/cccp85pj.debug.temp.o
+                0x0000302e                flash_memory.c.1c39a590
+
+.debug_abbrev   0x00000000      0x7db
+ .debug_abbrev  0x00000000       0x14 ./obj/start.S.src.o
+ .debug_abbrev  0x00000014      0x19f /tmp/ccQubXCS.ltrans0.ltrans.o
+ .debug_abbrev  0x000001b3       0xd8 /tmp/ccoqgKgU.debug.temp.o
+ .debug_abbrev  0x0000028b      0x1b4 /tmp/ccGnqZZS.debug.temp.o
+ .debug_abbrev  0x0000043f      0x22d /tmp/cclVkLjk.debug.temp.o
+ .debug_abbrev  0x0000066c       0x7e /tmp/ccRrBEg0.debug.temp.o
+ .debug_abbrev  0x000006ea       0xf1 /tmp/cccp85pj.debug.temp.o
+
+.debug_aranges  0x00000000       0x48
+ .debug_aranges
+                0x00000000       0x20 ./obj/start.S.src.o
+ .debug_aranges
+                0x00000020       0x28 /tmp/ccQubXCS.ltrans0.ltrans.o
+
+.debug_str      0x00000000      0xb75
+ .debug_str     0x00000000      0xb75 ./obj/start.S.src.o
+                                 0x3c (size before relaxing)
+ .debug_str     0x00000b75      0x115 /tmp/ccQubXCS.ltrans0.ltrans.o
+ .debug_str     0x00000b75      0x152 /tmp/ccoqgKgU.debug.temp.o
+ .debug_str     0x00000b75      0x5ff /tmp/ccGnqZZS.debug.temp.o
+ .debug_str     0x00000b75      0x63a /tmp/cclVkLjk.debug.temp.o
+ .debug_str     0x00000b75      0x135 /tmp/ccRrBEg0.debug.temp.o
+ .debug_str     0x00000b75      0x1f4 /tmp/cccp85pj.debug.temp.o
+
+.debug_loclists
+                0x00000000      0xc7e
+ .debug_loclists
+                0x00000000      0xc7e /tmp/ccQubXCS.ltrans0.ltrans.o
+
+.debug_rnglists
+                0x00000000      0x1c2
+ .debug_rnglists
+                0x00000000      0x1c2 /tmp/ccQubXCS.ltrans0.ltrans.o
+
+.debug_frame    0x00000000      0x424
+ .debug_frame   0x00000000      0x424 /tmp/ccQubXCS.ltrans0.ltrans.o
+
+Cross Reference Table
+
+Symbol                                            File
+__divsi3                                          /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+__hidden___udivsi3                                /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+__modsi3                                          /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+__mulsi3                                          /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+__udivsi3                                         /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+__umodsi3                                         /opt/xpack-riscv-none-elf-gcc-14.2.0-2/bin/../lib/gcc/riscv-none-elf/14.2.0/rv32i/ilp32/libgcc.a(div.o)
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+_start                                            ./obj/start.S.src.o
+addrStackArray                                    ./obj/rv4th.c.src.o (symbol from plugin)
+addrStackPtr                                      ./obj/rv4th.c.src.o (symbol from plugin)
+addrStackStart                                    ./obj/rv4th.c.src.o (symbol from plugin)
+assert_CS_FLASH                                   ./obj/flash_memory.c.src.o (symbol from plugin)
+chip_id                                           ./obj/main.c.src.o (symbol from plugin)
+cmdList                                           ./obj/rv4th.c.src.o (symbol from plugin)
+cmdList2N                                         ./obj/rv4th.c.src.o (symbol from plugin)
+cmdListArray                                      ./obj/rv4th.c.src.o (symbol from plugin)
+cmdListBi                                         ./obj/rv4th.c.src.o (symbol from plugin)
+cmdListBi2                                        ./obj/rv4th.c.src.o (symbol from plugin)
+cmdListIdx                                        ./obj/rv4th.c.src.o (symbol from plugin)
+deassert_CS_FLASH                                 ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+double_to_str                                     ./obj/uart.c.src.o (symbol from plugin)
+double_to_str_exp                                 ./obj/uart.c.src.o (symbol from plugin)
+echo                                              ./obj/rv4th.c.src.o (symbol from plugin)
+flash_is_initialized                              ./obj/rv4th.c.src.o (symbol from plugin)
+flash_memory.c.1c39a590                           /tmp/cccp85pj.debug.temp.o
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+flash_memory_beginRead                            ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+flash_memory_busy                                 ./obj/flash_memory.c.src.o (symbol from plugin)
+flash_memory_erasePage                            ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+flash_memory_init                                 ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+flash_memory_writePage                            ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+hex4_to_uint                                      ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+lineBuffer                                        ./obj/rv4th.c.src.o (symbol from plugin)
+lineBufferArray                                   ./obj/rv4th.c.src.o (symbol from plugin)
+lineBufferIdx                                     ./obj/rv4th.c.src.o (symbol from plugin)
+main                                              /tmp/ccQubXCS.ltrans0.ltrans.o
+                                                  ./obj/main.c.src.o (symbol from plugin)
+                                                  ./obj/start.S.src.o
+main.c.047c3d52                                   /tmp/ccoqgKgU.debug.temp.o
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+mathStackArray                                    ./obj/rv4th.c.src.o (symbol from plugin)
+mathStackPtr                                      ./obj/rv4th.c.src.o (symbol from plugin)
+mathStackStart                                    ./obj/rv4th.c.src.o (symbol from plugin)
+printNumberInt32                                  ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+printNumberUInt32                                 ./obj/uart.c.src.o (symbol from plugin)
+prog                                              ./obj/rv4th.c.src.o (symbol from plugin)
+progArray                                         ./obj/rv4th.c.src.o (symbol from plugin)
+progBi                                            ./obj/rv4th.c.src.o (symbol from plugin)
+progCounter                                       ./obj/rv4th.c.src.o (symbol from plugin)
+progIdx                                           ./obj/rv4th.c.src.o (symbol from plugin)
+progOpcodes                                       ./obj/rv4th.c.src.o (symbol from plugin)
+progOpcodesArray                                  ./obj/rv4th.c.src.o (symbol from plugin)
+rv4th.c.4bdef3ab                                  /tmp/ccGnqZZS.debug.temp.o
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+rv4th_init                                        ./obj/rv4th.c.src.o (symbol from plugin)
+                                                  ./obj/main.c.src.o (symbol from plugin)
+rv4th_processLoop                                 ./obj/rv4th.c.src.o (symbol from plugin)
+                                                  ./obj/main.c.src.o (symbol from plugin)
+spi.c.fc9628cb                                    /tmp/ccRrBEg0.debug.temp.o
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+spi_init                                          ./obj/spi.c.src.o (symbol from plugin)
+                                                  ./obj/flash_memory.c.src.o (symbol from plugin)
+spi_setDataLength                                 ./obj/spi.c.src.o (symbol from plugin)
+                                                  ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+spi_transfer                                      ./obj/spi.c.src.o (symbol from plugin)
+                                                  ./obj/flash_memory.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart.c.d59239fe                                   /tmp/cclVkLjk.debug.temp.o
+                                                  /tmp/ccQubXCS.ltrans0.ltrans.o
+uart_available                                    ./obj/uart.c.src.o (symbol from plugin)
+uart_getb                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_getb_immediate                               ./obj/uart.c.src.o (symbol from plugin)
+uart_getbytes                                     ./obj/uart.c.src.o (symbol from plugin)
+uart_getbytes_until                               ./obj/uart.c.src.o (symbol from plugin)
+uart_getc                                         ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart_getc_immediate                               ./obj/uart.c.src.o (symbol from plugin)
+uart_gets_until                                   ./obj/uart.c.src.o (symbol from plugin)
+uart_getsln                                       ./obj/uart.c.src.o (symbol from plugin)
+uart_init_8N1                                     ./obj/uart.c.src.o (symbol from plugin)
+uart_init_default                                 ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/main.c.src.o (symbol from plugin)
+uart_putb                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_putc                                         ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart_pute                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_putf                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_puth16                                       ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart_puth32                                       ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart_puth4                                        ./obj/uart.c.src.o (symbol from plugin)
+uart_puth8                                        ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+uart_puti                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_putln                                        ./obj/uart.c.src.o (symbol from plugin)
+uart_puts                                         ./obj/uart.c.src.o (symbol from plugin)
+uart_putsln                                       ./obj/uart.c.src.o (symbol from plugin)
+                                                  ./obj/rv4th.c.src.o (symbol from plugin)
+                                                  ./obj/main.c.src.o (symbol from plugin)
+uart_putui                                        ./obj/uart.c.src.o (symbol from plugin)
+uart_putuib16                                     ./obj/uart.c.src.o (symbol from plugin)
+uart_putuib32                                     ./obj/uart.c.src.o (symbol from plugin)
+uart_putuib8                                      ./obj/uart.c.src.o (symbol from plugin)
+uart_transmitting                                 ./obj/uart.c.src.o (symbol from plugin)
+uartx_available                                   ./obj/uart.c.src.o (symbol from plugin)
+uartx_getb                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_getb_immediate                              ./obj/uart.c.src.o (symbol from plugin)
+uartx_getbytes                                    ./obj/uart.c.src.o (symbol from plugin)
+uartx_getbytes_until                              ./obj/uart.c.src.o (symbol from plugin)
+uartx_getc                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_getc_immediate                              ./obj/uart.c.src.o (symbol from plugin)
+uartx_gets_until                                  ./obj/uart.c.src.o (symbol from plugin)
+uartx_getsln                                      ./obj/uart.c.src.o (symbol from plugin)
+uartx_init_8N1                                    ./obj/uart.c.src.o (symbol from plugin)
+uartx_init_default                                ./obj/uart.c.src.o (symbol from plugin)
+uartx_putb                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_putc                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_pute                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_putf                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_puth16                                      ./obj/uart.c.src.o (symbol from plugin)
+uartx_puth32                                      ./obj/uart.c.src.o (symbol from plugin)
+uartx_puth4                                       ./obj/uart.c.src.o (symbol from plugin)
+uartx_puth8                                       ./obj/uart.c.src.o (symbol from plugin)
+uartx_puti                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_putln                                       ./obj/uart.c.src.o (symbol from plugin)
+uartx_puts                                        ./obj/uart.c.src.o (symbol from plugin)
+uartx_putsln                                      ./obj/uart.c.src.o (symbol from plugin)
+uartx_putui                                       ./obj/uart.c.src.o (symbol from plugin)
+uartx_putuib16                                    ./obj/uart.c.src.o (symbol from plugin)
+uartx_putuib32                                    ./obj/uart.c.src.o (symbol from plugin)
+uartx_putuib8                                     ./obj/uart.c.src.o (symbol from plugin)
+uartx_transmitting                                ./obj/uart.c.src.o (symbol from plugin)
+uint32_to_str                                     ./obj/uart.c.src.o (symbol from plugin)
+wordBuffer                                        ./obj/rv4th.c.src.o (symbol from plugin)
+wordBufferArray                                   ./obj/rv4th.c.src.o (symbol from plugin)
+xit                                               ./obj/rv4th.c.src.o (symbol from plugin)

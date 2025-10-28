@@ -1,0 +1,8 @@
+setvar mergedTimingModel = TRUE
+ilmModelUnknown  
+xtwf	MCU	hold_analysis_view	MCU_SI_hold_analysis_view.xtwf.gz
+sdc	MCU	hold_analysis_view	MCU_SI_hold_analysis_view.core.sdc.gz
+xtwf	MCU	setup_analysis_view	MCU_SI_setup_analysis_view.xtwf.gz
+sdc	MCU	setup_analysis_view	MCU_SI_setup_analysis_view.core.sdc.gz
+spef	MCU	worst_rc_corner	MCU_SI_worst_rc_corner.spef.gz
+spef	MCU	best_rc_corner	MCU_SI_best_rc_corner.spef.gz

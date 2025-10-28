@@ -1,0 +1,116 @@
+
+periph-p-gpio:     file format elf32-littleriscv
+
+
+Disassembly of section .text.init:
+
+00008000 <_start>:
+    8000:	0040006f          	j	8004 <reset_vector>
+
+00008004 <reset_vector>:
+    8004:	00000093          	li	ra,0
+    8008:	00000113          	li	sp,0
+    800c:	00000193          	li	gp,0
+    8010:	00000213          	li	tp,0
+    8014:	00000293          	li	t0,0
+    8018:	00000313          	li	t1,0
+    801c:	00000393          	li	t2,0
+    8020:	00000413          	li	s0,0
+    8024:	00000493          	li	s1,0
+    8028:	00000513          	li	a0,0
+    802c:	00000593          	li	a1,0
+    8030:	00000613          	li	a2,0
+    8034:	00000693          	li	a3,0
+    8038:	00000713          	li	a4,0
+    803c:	00000793          	li	a5,0
+    8040:	00000813          	li	a6,0
+    8044:	00000893          	li	a7,0
+    8048:	00000913          	li	s2,0
+    804c:	00000993          	li	s3,0
+    8050:	00000a13          	li	s4,0
+    8054:	00000a93          	li	s5,0
+    8058:	00000b13          	li	s6,0
+    805c:	00000b93          	li	s7,0
+    8060:	00000c13          	li	s8,0
+    8064:	00000c93          	li	s9,0
+    8068:	00000d13          	li	s10,0
+    806c:	00000d93          	li	s11,0
+    8070:	00000e13          	li	t3,0
+    8074:	00000e93          	li	t4,0
+    8078:	00000f13          	li	t5,0
+    807c:	00000f93          	li	t6,0
+    8080:	00000193          	li	gp,0
+    8084:	00000297          	auipc	t0,0x0
+    8088:	00c28293          	addi	t0,t0,12 # 8090 <test_1>
+    808c:	00028067          	jr	t0
+
+00008090 <test_1>:
+    8090:	00100193          	li	gp,1
+    8094:	000040b7          	lui	ra,0x4
+    8098:	00100113          	li	sp,1
+    809c:	0020aa23          	sw	sp,20(ra) # 4014 <_start-0x3fec>
+    80a0:	00100193          	li	gp,1
+    80a4:	0030a223          	sw	gp,4(ra)
+    80a8:	0040a203          	lw	tp,4(ra)
+    80ac:	fff00713          	li	a4,-1
+    80b0:	00419463          	bne	gp,tp,80b8 <test_1+0x28>
+    80b4:	0080006f          	j	80bc <test_1+0x2c>
+    80b8:	00000713          	li	a4,0
+    80bc:	00000013          	nop
+    80c0:	fff00393          	li	t2,-1
+    80c4:	04771063          	bne	a4,t2,8104 <fail>
+
+000080c8 <test_2>:
+    80c8:	00200193          	li	gp,2
+    80cc:	000040b7          	lui	ra,0x4
+    80d0:	00100113          	li	sp,1
+    80d4:	0020aa23          	sw	sp,20(ra) # 4014 <_start-0x3fec>
+    80d8:	00000193          	li	gp,0
+    80dc:	0030a223          	sw	gp,4(ra)
+    80e0:	0040a203          	lw	tp,4(ra)
+    80e4:	fff00713          	li	a4,-1
+    80e8:	00419463          	bne	gp,tp,80f0 <test_2+0x28>
+    80ec:	0080006f          	j	80f4 <test_2+0x2c>
+    80f0:	00000713          	li	a4,0
+    80f4:	00000013          	nop
+    80f8:	fff00393          	li	t2,-1
+    80fc:	00771463          	bne	a4,t2,8104 <fail>
+    8100:	00301a63          	bne	zero,gp,8114 <pass>
+
+00008104 <fail>:
+    8104:	deadc537          	lui	a0,0xdeadc
+    8108:	eef50513          	addi	a0,a0,-273 # deadbeef <_end+0xdead1edf>
+    810c:	0040006f          	j	8110 <_fail_label>
+
+00008110 <_fail_label>:
+    8110:	0000006f          	j	8110 <_fail_label>
+
+00008114 <pass>:
+    8114:	cafec537          	lui	a0,0xcafec
+    8118:	abe50513          	addi	a0,a0,-1346 # cafebabe <_end+0xcafe1aae>
+    811c:	0040006f          	j	8120 <_pass_label>
+
+00008120 <_pass_label>:
+    8120:	0000006f          	j	8120 <_pass_label>
+    8124:	c0001073          	unimp
+
+Disassembly of section .data:
+
+0000a000 <begin_signature>:
+    a000:	    	.insn	10, 0x0ff000ff
+    a008:	 
+
+0000a001 <tdat2>:
+    a001:	                	.insn	2, 0xf000
+
+0000a002 <tdat3>:
+    a002:	                	.insn	2, 0x0ff0
+
+0000a003 <tdat4>:
+    a003:	0000000f          	fence	unknown,unknown
+    a007:	0000                	.insn	2, 0x
+    a009:	0000                	.insn	2, 0x
+    a00b:	0000                	.insn	2, 0x
+    a00d:	0000                	.insn	2, 0x
+    a00f:	Address 0xa00f is out of bounds.
+

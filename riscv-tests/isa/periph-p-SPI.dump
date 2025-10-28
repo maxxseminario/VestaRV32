@@ -1,0 +1,707 @@
+
+periph-p-SPI:     file format elf32-littleriscv
+
+
+Disassembly of section .ivt:
+
+00008000 <.ivt>:
+    8000:	a01fd06f          	j	5a00 <_start-0x2800>
+    8004:	bfdfd06f          	j	5c00 <_start-0x2600>
+    8008:	df9fd06f          	j	5e00 <_start-0x2400>
+    800c:	ff5fd06f          	j	6000 <_start-0x2200>
+    8010:	9f0fe06f          	j	6200 <_start-0x2000>
+    8014:	becfe06f          	j	6400 <_start-0x1e00>
+    8018:	de8fe06f          	j	6600 <_start-0x1c00>
+    801c:	fe4fe06f          	j	6800 <_start-0x1a00>
+    8020:	9e1fe06f          	j	6a00 <_start-0x1800>
+    8024:	3dd0706f          	j	fc00 <isr_spi0_tc>
+    8028:	5d90706f          	j	fe00 <isr_spi0_te>
+    802c:	fd5fe06f          	j	7000 <_start-0x1200>
+    8030:	9d0ff06f          	j	7200 <_start-0x1000>
+    8034:	3cc0706f          	j	f400 <end_signature+0x6ca0>
+    8038:	5c80706f          	j	f600 <end_signature+0x6ea0>
+    803c:	7c40706f          	j	f800 <end_signature+0x70a0>
+    8040:	9c1ff06f          	j	7a00 <_start-0x800>
+    8044:	bbdff06f          	j	7c00 <_start-0x600>
+    8048:	db9ff06f          	j	7e00 <_start-0x400>
+    804c:	fb5ff06f          	j	8000 <_start-0x200>
+    8050:	1b00006f          	j	8200 <_start>
+    8054:	3ac0006f          	j	8400 <l_SPIDL_loop>
+    8058:	5a80006f          	j	8600 <set_scr+0x8>
+    805c:	7a40006f          	j	8800 <end_signature+0xa0>
+    8060:	1a10006f          	j	8a00 <end_signature+0x2a0>
+    8064:	39d0006f          	j	8c00 <end_signature+0x4a0>
+    8068:	5990006f          	j	8e00 <end_signature+0x6a0>
+    806c:	7950006f          	j	9000 <end_signature+0x8a0>
+    8070:	1900106f          	j	9200 <end_signature+0xaa0>
+    8074:	38c0106f          	j	9400 <end_signature+0xca0>
+    8078:	5880106f          	j	9600 <end_signature+0xea0>
+    807c:	7840106f          	j	9800 <end_signature+0x10a0>
+    8080:	1810106f          	j	9a00 <end_signature+0x12a0>
+    8084:	37d0106f          	j	9c00 <end_signature+0x14a0>
+    8088:	5790106f          	j	9e00 <end_signature+0x16a0>
+    808c:	7750106f          	j	a000 <end_signature+0x18a0>
+    8090:	1700206f          	j	a200 <end_signature+0x1aa0>
+    8094:	36c0206f          	j	a400 <end_signature+0x1ca0>
+    8098:	5680206f          	j	a600 <end_signature+0x1ea0>
+    809c:	7640206f          	j	a800 <end_signature+0x20a0>
+    80a0:	1610206f          	j	aa00 <end_signature+0x22a0>
+    80a4:	35d0206f          	j	ac00 <end_signature+0x24a0>
+    80a8:	5590206f          	j	ae00 <end_signature+0x26a0>
+    80ac:	7550206f          	j	b000 <end_signature+0x28a0>
+    80b0:	1500306f          	j	b200 <end_signature+0x2aa0>
+    80b4:	34c0306f          	j	b400 <end_signature+0x2ca0>
+    80b8:	5480306f          	j	b600 <end_signature+0x2ea0>
+    80bc:	7440306f          	j	b800 <end_signature+0x30a0>
+    80c0:	1410306f          	j	ba00 <end_signature+0x32a0>
+    80c4:	33d0306f          	j	bc00 <end_signature+0x34a0>
+    80c8:	5390306f          	j	be00 <end_signature+0x36a0>
+    80cc:	7350306f          	j	c000 <end_signature+0x38a0>
+    80d0:	4310606f          	j	ed00 <end_signature+0x65a0>
+    80d4:	72d0606f          	j	f000 <end_signature+0x68a0>
+    80d8:	1280706f          	j	f200 <end_signature+0x6aa0>
+    80dc:	7240406f          	j	c800 <end_signature+0x40a0>
+    80e0:	1210406f          	j	ca00 <end_signature+0x42a0>
+    80e4:	31d0406f          	j	cc00 <end_signature+0x44a0>
+    80e8:	5190406f          	j	ce00 <end_signature+0x46a0>
+    80ec:	7150406f          	j	d000 <end_signature+0x48a0>
+    80f0:	1100506f          	j	d200 <end_signature+0x4aa0>
+    80f4:	30c0506f          	j	d400 <end_signature+0x4ca0>
+    80f8:	5080506f          	j	d600 <end_signature+0x4ea0>
+    80fc:	7040506f          	j	d800 <end_signature+0x50a0>
+    8100:	1010506f          	j	da00 <end_signature+0x52a0>
+    8104:	2fd0506f          	j	dc00 <end_signature+0x54a0>
+    8108:	4f90506f          	j	de00 <end_signature+0x56a0>
+    810c:	6f50506f          	j	e000 <end_signature+0x58a0>
+    8110:	0f00606f          	j	e200 <end_signature+0x5aa0>
+    8114:	2ec0606f          	j	e400 <end_signature+0x5ca0>
+    8118:	4e80606f          	j	e600 <end_signature+0x5ea0>
+    811c:	6e40606f          	j	e800 <end_signature+0x60a0>
+    8120:	0e10606f          	j	ea00 <end_signature+0x62a0>
+    8124:	2dd0606f          	j	ec00 <end_signature+0x64a0>
+    8128:	4d90606f          	j	ee00 <end_signature+0x66a0>
+    812c:	6d50606f          	j	f000 <end_signature+0x68a0>
+    8130:	0d00706f          	j	f200 <end_signature+0x6aa0>
+    8134:	2cc0706f          	j	f400 <end_signature+0x6ca0>
+    8138:	4c80706f          	j	f600 <end_signature+0x6ea0>
+    813c:	6c40706f          	j	f800 <end_signature+0x70a0>
+    8140:	0c10706f          	j	fa00 <end_signature+0x72a0>
+    8144:	2bd0706f          	j	fc00 <isr_spi0_tc>
+    8148:	4b90706f          	j	fe00 <isr_spi0_te>
+
+Disassembly of section .text.init:
+
+00008200 <_start>:
+    8200:	0040006f          	j	8204 <reset_vector>
+
+00008204 <reset_vector>:
+    8204:	00000093          	li	ra,0
+    8208:	00000113          	li	sp,0
+    820c:	00000193          	li	gp,0
+    8210:	00000213          	li	tp,0
+    8214:	00000293          	li	t0,0
+    8218:	00000313          	li	t1,0
+    821c:	00000393          	li	t2,0
+    8220:	00000413          	li	s0,0
+    8224:	00000493          	li	s1,0
+    8228:	00000513          	li	a0,0
+    822c:	00000593          	li	a1,0
+    8230:	00000613          	li	a2,0
+    8234:	00000693          	li	a3,0
+    8238:	00000713          	li	a4,0
+    823c:	00000793          	li	a5,0
+    8240:	00000813          	li	a6,0
+    8244:	00000893          	li	a7,0
+    8248:	00000913          	li	s2,0
+    824c:	00000993          	li	s3,0
+    8250:	00000a13          	li	s4,0
+    8254:	00000a93          	li	s5,0
+    8258:	00000b13          	li	s6,0
+    825c:	00000b93          	li	s7,0
+    8260:	00000c13          	li	s8,0
+    8264:	00000c93          	li	s9,0
+    8268:	00000d13          	li	s10,0
+    826c:	00000d93          	li	s11,0
+    8270:	00000e13          	li	t3,0
+    8274:	00000e93          	li	t4,0
+    8278:	00000f13          	li	t5,0
+    827c:	00000f93          	li	t6,0
+    8280:	00000193          	li	gp,0
+    8284:	00000297          	auipc	t0,0x0
+    8288:	00c28293          	addi	t0,t0,12 # 8290 <test_entry>
+    828c:	00028067          	jr	t0
+
+00008290 <test_entry>:
+    8290:	00000093          	li	ra,0
+    8294:	00000113          	li	sp,0
+    8298:	00000193          	li	gp,0
+    829c:	00000213          	li	tp,0
+    82a0:	00000293          	li	t0,0
+    82a4:	00000313          	li	t1,0
+    82a8:	00000393          	li	t2,0
+    82ac:	00000413          	li	s0,0
+    82b0:	00000493          	li	s1,0
+    82b4:	00000513          	li	a0,0
+    82b8:	00000593          	li	a1,0
+    82bc:	00000613          	li	a2,0
+    82c0:	00000693          	li	a3,0
+    82c4:	00000713          	li	a4,0
+    82c8:	00000793          	li	a5,0
+    82cc:	00000813          	li	a6,0
+    82d0:	00000893          	li	a7,0
+    82d4:	00000913          	li	s2,0
+    82d8:	00000993          	li	s3,0
+    82dc:	00000a13          	li	s4,0
+    82e0:	00000a93          	li	s5,0
+    82e4:	00000b13          	li	s6,0
+    82e8:	00000b93          	li	s7,0
+    82ec:	00000c13          	li	s8,0
+    82f0:	00000c93          	li	s9,0
+    82f4:	00000d13          	li	s10,0
+    82f8:	00000d93          	li	s11,0
+    82fc:	00000e13          	li	t3,0
+    8300:	00000e93          	li	t4,0
+    8304:	00000f13          	li	t5,0
+    8308:	00000f93          	li	t6,0
+    830c:	00005537          	lui	a0,0x5
+    8310:	90050513          	addi	a0,a0,-1792 # 4900 <_start-0x3900>
+    8314:	00000593          	li	a1,0
+    8318:	00b52023          	sw	a1,0(a0)
+    831c:	00000513          	li	a0,0
+    8320:	00000593          	li	a1,0
+
+00008324 <spi_test>:
+    8324:	04028863          	beqz	t0,8374 <spi0_m_addr_set>
+
+00008328 <spi1_m_addr_set>:
+    8328:	00005537          	lui	a0,0x5
+    832c:	90050513          	addi	a0,a0,-1792 # 4900 <_start-0x3900>
+    8330:	000025b7          	lui	a1,0x2
+    8334:	80058593          	addi	a1,a1,-2048 # 1800 <_start-0x6a00>
+    8338:	00b52a23          	sw	a1,20(a0)
+    833c:	00100593          	li	a1,1
+    8340:	02b50623          	sb	a1,44(a0)
+    8344:	00000513          	li	a0,0
+    8348:	00000593          	li	a1,0
+    834c:	00004537          	lui	a0,0x4
+    8350:	30050513          	addi	a0,a0,768 # 4300 <_start-0x3f00>
+    8354:	000045b7          	lui	a1,0x4
+    8358:	10058593          	addi	a1,a1,256 # 4100 <_start-0x4100>
+    835c:	00004637          	lui	a2,0x4
+    8360:	20060613          	addi	a2,a2,512 # 4200 <_start-0x4000>
+    8364:	000046b7          	lui	a3,0x4
+    8368:	194000ef          	jal	84fc <INIT_GPIO_MSPI>
+    836c:	1b0000ef          	jal	851c <INIT_GPIO_SSPI>
+    8370:	0480006f          	j	83b8 <begin_test_loops>
+
+00008374 <spi0_m_addr_set>:
+    8374:	00005537          	lui	a0,0x5
+    8378:	90050513          	addi	a0,a0,-1792 # 4900 <_start-0x3900>
+    837c:	60000593          	li	a1,1536
+    8380:	00b52a23          	sw	a1,20(a0)
+    8384:	00100593          	li	a1,1
+    8388:	02b50623          	sb	a1,44(a0)
+    838c:	00004537          	lui	a0,0x4
+    8390:	20050513          	addi	a0,a0,512 # 4200 <_start-0x4000>
+    8394:	000045b7          	lui	a1,0x4
+    8398:	00004637          	lui	a2,0x4
+    839c:	30060613          	addi	a2,a2,768 # 4300 <_start-0x3f00>
+    83a0:	000046b7          	lui	a3,0x4
+    83a4:	10068693          	addi	a3,a3,256 # 4100 <_start-0x4100>
+    83a8:	154000ef          	jal	84fc <INIT_GPIO_MSPI>
+    83ac:	170000ef          	jal	851c <INIT_GPIO_SSPI>
+    83b0:	00000413          	li	s0,0
+    83b4:	00000193          	li	gp,0
+
+000083b8 <begin_test_loops>:
+    83b8:	00010137          	lui	sp,0x10
+    83bc:	9ff10113          	addi	sp,sp,-1537 # f9ff <end_signature+0x729f>
+    83c0:	00000313          	li	t1,0
+
+000083c4 <l_SPITXSB_loop>:
+    83c4:	00200d93          	li	s11,2
+    83c8:	0db37263          	bgeu	t1,s11,848c <l_SPITXSB_end>
+    83cc:	00000393          	li	t2,0
+
+000083d0 <l_SPIRXSB_loop>:
+    83d0:	00200d93          	li	s11,2
+    83d4:	0bb3f863          	bgeu	t2,s11,8484 <l_SPIRXSB_end>
+    83d8:	00000e13          	li	t3,0
+
+000083dc <l_SPICPOL_loop>:
+    83dc:	00200d93          	li	s11,2
+    83e0:	09be7e63          	bgeu	t3,s11,847c <l_SPICPOL_end>
+    83e4:	00000e93          	li	t4,0
+
+000083e8 <l_SPICPHA_loop>:
+    83e8:	00200d93          	li	s11,2
+    83ec:	09bef463          	bgeu	t4,s11,8474 <l_SPICPHA_end>
+    83f0:	00000f13          	li	t5,0
+
+000083f4 <l_SPIMSB_loop>:
+    83f4:	00200d93          	li	s11,2
+    83f8:	07bf7a63          	bgeu	t5,s11,846c <l_SPIMSB_end>
+    83fc:	00000f93          	li	t6,0
+
+00008400 <l_SPIDL_loop>:
+    8400:	00300d93          	li	s11,3
+    8404:	07bff063          	bgeu	t6,s11,8464 <l_SPIDL_end>
+
+00008408 <spi_test_individual>:
+    8408:	190000ef          	jal	8598 <set_mcr>
+    840c:	1ec000ef          	jal	85f8 <set_scr>
+    8410:	0c018063          	beqz	gp,84d0 <dummy_tx>
+    8414:	00018893          	mv	a7,gp
+    8418:	220000ef          	jal	8638 <spi_srx_comp>
+    841c:	138000ef          	jal	8554 <assert_cs_spi>
+    8420:	2a8000ef          	jal	86c8 <spi_transmission>
+    8424:	00118193          	addi	gp,gp,1
+    8428:	00018193          	mv	gp,gp
+    842c:	00c62703          	lw	a4,12(a2)
+    8430:	01062223          	sw	a6,4(a2)
+    8434:	07a71863          	bne	a4,s10,84a4 <fail>
+    8438:	00118193          	addi	gp,gp,1
+    843c:	fff8c893          	not	a7,a7
+    8440:	1f8000ef          	jal	8638 <spi_srx_comp>
+    8444:	00118193          	addi	gp,gp,1
+    8448:	00018193          	mv	gp,gp
+    844c:	00c52703          	lw	a4,12(a0)
+    8450:	05a71a63          	bne	a4,s10,84a4 <fail>
+    8454:	10c000ef          	jal	8560 <deassert_cs_spi>
+    8458:	00118193          	addi	gp,gp,1
+    845c:	001f8f93          	addi	t6,t6,1
+    8460:	fa1ff06f          	j	8400 <l_SPIDL_loop>
+
+00008464 <l_SPIDL_end>:
+    8464:	001f0f13          	addi	t5,t5,1
+    8468:	f8dff06f          	j	83f4 <l_SPIMSB_loop>
+
+0000846c <l_SPIMSB_end>:
+    846c:	001e8e93          	addi	t4,t4,1
+    8470:	f79ff06f          	j	83e8 <l_SPICPHA_loop>
+
+00008474 <l_SPICPHA_end>:
+    8474:	001e0e13          	addi	t3,t3,1
+    8478:	f65ff06f          	j	83dc <l_SPICPOL_loop>
+
+0000847c <l_SPICPOL_end>:
+    847c:	00138393          	addi	t2,t2,1
+    8480:	f51ff06f          	j	83d0 <l_SPIRXSB_loop>
+
+00008484 <l_SPIRXSB_end>:
+    8484:	00130313          	addi	t1,t1,1
+    8488:	f3dff06f          	j	83c4 <l_SPITXSB_loop>
+
+0000848c <l_SPITXSB_end>:
+    848c:	00005537          	lui	a0,0x5
+    8490:	90050513          	addi	a0,a0,-1792 # 4900 <_start-0x3900>
+    8494:	00052a23          	sw	zero,20(a0)
+    8498:	00128293          	addi	t0,t0,1
+    849c:	04028c63          	beqz	t0,84f4 <spi_test_master_switch>
+    84a0:	00301a63          	bne	zero,gp,84b4 <pass>
+
+000084a4 <fail>:
+    84a4:	deadc537          	lui	a0,0xdeadc
+    84a8:	eef50513          	addi	a0,a0,-273 # deadbeef <_end+0xdeacbfe7>
+    84ac:	0040006f          	j	84b0 <_fail_label>
+
+000084b0 <_fail_label>:
+    84b0:	0000006f          	j	84b0 <_fail_label>
+
+000084b4 <pass>:
+    84b4:	cafec537          	lui	a0,0xcafec
+    84b8:	abe50513          	addi	a0,a0,-1346 # cafebabe <_end+0xcafdbbb6>
+    84bc:	0040006f          	j	84c0 <_pass_label>
+
+000084c0 <_pass_label>:
+    84c0:	0000006f          	j	84c0 <_pass_label>
+
+000084c4 <clr_spisr>:
+    84c4:	fff04813          	not	a6,zero
+    84c8:	010ca223          	sw	a6,4(s9)
+    84cc:	00008067          	ret
+
+000084d0 <dummy_tx>:
+    84d0:	084000ef          	jal	8554 <assert_cs_spi>
+    84d4:	fff04813          	not	a6,zero
+    84d8:	01052223          	sw	a6,4(a0)
+    84dc:	01062223          	sw	a6,4(a2)
+    84e0:	00052423          	sw	zero,8(a0)
+    84e4:	0000100b          	.insn	4, 0x100b
+    84e8:	01052223          	sw	a6,4(a0)
+    84ec:	00100193          	li	gp,1
+    84f0:	f19ff06f          	j	8408 <spi_test_individual>
+
+000084f4 <spi_test_master_switch>:
+    84f4:	00100293          	li	t0,1
+    84f8:	e2dff06f          	j	8324 <spi_test>
+
+000084fc <INIT_GPIO_MSPI>:
+    84fc:	00e00313          	li	t1,14
+    8500:	00000393          	li	t2,0
+    8504:	00d00e13          	li	t3,13
+    8508:	0265a223          	sw	t1,36(a1) # 4024 <_start-0x41dc>
+    850c:	0075a223          	sw	t2,4(a1)
+    8510:	01c5aa23          	sw	t3,20(a1)
+    8514:	0275a423          	sw	t2,40(a1)
+    8518:	00008067          	ret
+
+0000851c <INIT_GPIO_SSPI>:
+    851c:	00e00313          	li	t1,14
+    8520:	00000393          	li	t2,0
+    8524:	00200e13          	li	t3,2
+    8528:	0266a223          	sw	t1,36(a3)
+    852c:	0076a223          	sw	t2,4(a3)
+    8530:	01c6aa23          	sw	t3,20(a3)
+    8534:	0276a423          	sw	t2,40(a3)
+    8538:	00008067          	ret
+
+0000853c <clr_mspi_sr>:
+    853c:	fff04813          	not	a6,zero
+    8540:	01052223          	sw	a6,4(a0)
+    8544:	00008067          	ret
+
+00008548 <clr_sspi_sr>:
+    8548:	fff04813          	not	a6,zero
+    854c:	01062223          	sw	a6,4(a2)
+    8550:	00008067          	ret
+
+00008554 <assert_cs_spi>:
+    8554:	00100913          	li	s2,1
+    8558:	0125a623          	sw	s2,12(a1)
+    855c:	00008067          	ret
+
+00008560 <deassert_cs_spi>:
+    8560:	00100913          	li	s2,1
+    8564:	0125a423          	sw	s2,8(a1)
+    8568:	00008067          	ret
+
+0000856c <spi_dl_mask>:
+    856c:	000f8863          	beqz	t6,857c <dl00_mask>
+    8570:	00100c93          	li	s9,1
+    8574:	019f8a63          	beq	t6,s9,8588 <dl01_mask>
+    8578:	01c0006f          	j	8594 <dl_mask_done>
+
+0000857c <dl00_mask>:
+    857c:	0ff00c93          	li	s9,255
+    8580:	019d7d33          	and	s10,s10,s9
+    8584:	0100006f          	j	8594 <dl_mask_done>
+
+00008588 <dl01_mask>:
+    8588:	00010cb7          	lui	s9,0x10
+    858c:	fffc8c93          	addi	s9,s9,-1 # ffff <_end+0xf7>
+    8590:	019d7d33          	and	s10,s10,s9
+
+00008594 <dl_mask_done>:
+    8594:	00008067          	ret
+
+00008598 <set_mcr>:
+    8598:	01241493          	slli	s1,s0,0x12
+    859c:	01131913          	slli	s2,t1,0x11
+    85a0:	0124e4b3          	or	s1,s1,s2
+    85a4:	01039913          	slli	s2,t2,0x10
+    85a8:	0124e4b3          	or	s1,s1,s2
+    85ac:	00100913          	li	s2,1
+    85b0:	00791913          	slli	s2,s2,0x7
+    85b4:	0124e4b3          	or	s1,s1,s2
+    85b8:	006f1913          	slli	s2,t5,0x6
+    85bc:	0124e4b3          	or	s1,s1,s2
+    85c0:	00100913          	li	s2,1
+    85c4:	00591913          	slli	s2,s2,0x5
+    85c8:	0124e4b3          	or	s1,s1,s2
+    85cc:	00100913          	li	s2,1
+    85d0:	00491913          	slli	s2,s2,0x4
+    85d4:	0124e4b3          	or	s1,s1,s2
+    85d8:	003ff913          	andi	s2,t6,3
+    85dc:	00291913          	slli	s2,s2,0x2
+    85e0:	0124e4b3          	or	s1,s1,s2
+    85e4:	001e1913          	slli	s2,t3,0x1
+    85e8:	0124e4b3          	or	s1,s1,s2
+    85ec:	01d4e4b3          	or	s1,s1,t4
+    85f0:	00952023          	sw	s1,0(a0)
+    85f4:	f49ff06f          	j	853c <clr_mspi_sr>
+
+000085f8 <set_scr>:
+    85f8:	00000913          	li	s2,0
+    85fc:	00000993          	li	s3,0
+    8600:	00000a13          	li	s4,0
+
+00008604 <compute_scpol>:
+    8604:	0014f993          	andi	s3,s1,1
+    8608:	0024fa13          	andi	s4,s1,2
+    860c:	401a5a13          	srai	s4,s4,0x1
+    8610:	013a4a33          	xor	s4,s4,s3
+    8614:	001a4a13          	xori	s4,s4,1
+    8618:	001a1a13          	slli	s4,s4,0x1
+    861c:	ffd00a93          	li	s5,-3
+    8620:	0154f4b3          	and	s1,s1,s5
+    8624:	0144e4b3          	or	s1,s1,s4
+
+00008628 <compute_sspien>:
+    8628:	00040937          	lui	s2,0x40
+    862c:	0124e4b3          	or	s1,s1,s2
+    8630:	00962023          	sw	s1,0(a2)
+    8634:	f15ff06f          	j	8548 <clr_sspi_sr>
+
+00008638 <spi_srx_comp>:
+    8638:	00000a93          	li	s5,0
+    863c:	003ffc93          	andi	s9,t6,3
+    8640:	060c8e63          	beqz	s9,86bc <spi_srx_comp_dl00>
+    8644:	00100a93          	li	s5,1
+    8648:	055c8663          	beq	s9,s5,8694 <spi_srx_comp_dl01>
+    864c:	00734a33          	xor	s4,t1,t2
+    8650:	020a0e63          	beqz	s4,868c <spi_srx_comp_dl_others_no_swap>
+    8654:	0ff8fb13          	zext.b	s6,a7
+    8658:	0088db93          	srli	s7,a7,0x8
+    865c:	0ffbfb93          	zext.b	s7,s7
+    8660:	0108dc13          	srli	s8,a7,0x10
+    8664:	0ffc7c13          	zext.b	s8,s8
+    8668:	0188da93          	srli	s5,a7,0x18
+    866c:	0ffafa93          	zext.b	s5,s5
+    8670:	018b1b13          	slli	s6,s6,0x18
+    8674:	010b9b93          	slli	s7,s7,0x10
+    8678:	008c1c13          	slli	s8,s8,0x8
+    867c:	017b6b33          	or	s6,s6,s7
+    8680:	018b6b33          	or	s6,s6,s8
+    8684:	015b6d33          	or	s10,s6,s5
+    8688:	03c0006f          	j	86c4 <spi_srx_comp_done>
+
+0000868c <spi_srx_comp_dl_others_no_swap>:
+    868c:	00088d13          	mv	s10,a7
+    8690:	0340006f          	j	86c4 <spi_srx_comp_done>
+
+00008694 <spi_srx_comp_dl01>:
+    8694:	00734a33          	xor	s4,t1,t2
+    8698:	000a0e63          	beqz	s4,86b4 <spi_srx_comp_dl01_no_swap>
+    869c:	0ff8fb13          	zext.b	s6,a7
+    86a0:	0088db93          	srli	s7,a7,0x8
+    86a4:	0ffbfb93          	zext.b	s7,s7
+    86a8:	008b1b13          	slli	s6,s6,0x8
+    86ac:	017b6d33          	or	s10,s6,s7
+    86b0:	0140006f          	j	86c4 <spi_srx_comp_done>
+
+000086b4 <spi_srx_comp_dl01_no_swap>:
+    86b4:	00088d13          	mv	s10,a7
+    86b8:	00c0006f          	j	86c4 <spi_srx_comp_done>
+
+000086bc <spi_srx_comp_dl00>:
+    86bc:	00088d13          	mv	s10,a7
+    86c0:	0040006f          	j	86c4 <spi_srx_comp_done>
+
+000086c4 <spi_srx_comp_done>:
+    86c4:	ea9ff06f          	j	856c <spi_dl_mask>
+
+000086c8 <spi_transmission>:
+    86c8:	fff04813          	not	a6,zero
+    86cc:	01052223          	sw	a6,4(a0)
+    86d0:	01062223          	sw	a6,4(a2)
+    86d4:	fff8c793          	not	a5,a7
+    86d8:	00f62423          	sw	a5,8(a2)
+    86dc:	01152423          	sw	a7,8(a0)
+    86e0:	0000100b          	.insn	4, 0x100b
+    86e4:	00008067          	ret
+    86e8:	c0001073          	unimp
+
+Disassembly of section .tohost:
+
+00008700 <tohost>:
+    8700:	0000                	.insn	2, 0x
+    8702:	0000                	.insn	2, 0x
+    8704:	0000                	.insn	2, 0x
+    8706:	0000                	.insn	2, 0x
+    8708:	0000                	.insn	2, 0x
+    870a:	0000                	.insn	2, 0x
+    870c:	0000                	.insn	2, 0x
+    870e:	0000                	.insn	2, 0x
+    8710:	0000                	.insn	2, 0x
+    8712:	0000                	.insn	2, 0x
+    8714:	0000                	.insn	2, 0x
+    8716:	0000                	.insn	2, 0x
+    8718:	0000                	.insn	2, 0x
+    871a:	0000                	.insn	2, 0x
+    871c:	0000                	.insn	2, 0x
+    871e:	0000                	.insn	2, 0x
+    8720:	0000                	.insn	2, 0x
+    8722:	0000                	.insn	2, 0x
+    8724:	0000                	.insn	2, 0x
+    8726:	0000                	.insn	2, 0x
+    8728:	0000                	.insn	2, 0x
+    872a:	0000                	.insn	2, 0x
+    872c:	0000                	.insn	2, 0x
+    872e:	0000                	.insn	2, 0x
+    8730:	0000                	.insn	2, 0x
+    8732:	0000                	.insn	2, 0x
+    8734:	0000                	.insn	2, 0x
+    8736:	0000                	.insn	2, 0x
+    8738:	0000                	.insn	2, 0x
+    873a:	0000                	.insn	2, 0x
+    873c:	0000                	.insn	2, 0x
+    873e:	0000                	.insn	2, 0x
+
+00008740 <fromhost>:
+    8740:	0000                	.insn	2, 0x
+    8742:	0000                	.insn	2, 0x
+    8744:	0000                	.insn	2, 0x
+    8746:	0000                	.insn	2, 0x
+
+Disassembly of section .data:
+
+00008750 <begin_signature>:
+    8750:	    	.insn	10, 0x0ff000ff
+    8758:	 
+
+00008751 <tdat2>:
+    8751:	                	.insn	2, 0xf000
+
+00008752 <tdat3>:
+    8752:	                	.insn	2, 0x0ff0
+
+00008753 <tdat4>:
+    8753:	0000000f          	fence	unknown,unknown
+    8757:	0000                	.insn	2, 0x
+    8759:	0000                	.insn	2, 0x
+    875b:	0000                	.insn	2, 0x
+    875d:	0000                	.insn	2, 0x
+    875f:	Address 0x875f is out of bounds.
+
+
+Disassembly of section .isr_spi0_tc:
+
+0000fc00 <isr_spi0_tc>:
+    fc00:	f8810113          	addi	sp,sp,-120
+    fc04:	00112023          	sw	ra,0(sp)
+    fc08:	00312223          	sw	gp,4(sp)
+    fc0c:	00412423          	sw	tp,8(sp)
+    fc10:	00512623          	sw	t0,12(sp)
+    fc14:	00612823          	sw	t1,16(sp)
+    fc18:	00712a23          	sw	t2,20(sp)
+    fc1c:	00812c23          	sw	s0,24(sp)
+    fc20:	00912e23          	sw	s1,28(sp)
+    fc24:	02a12023          	sw	a0,32(sp)
+    fc28:	02b12223          	sw	a1,36(sp)
+    fc2c:	02c12423          	sw	a2,40(sp)
+    fc30:	02d12623          	sw	a3,44(sp)
+    fc34:	02e12823          	sw	a4,48(sp)
+    fc38:	02f12a23          	sw	a5,52(sp)
+    fc3c:	03012c23          	sw	a6,56(sp)
+    fc40:	03112e23          	sw	a7,60(sp)
+    fc44:	05212023          	sw	s2,64(sp)
+    fc48:	05312223          	sw	s3,68(sp)
+    fc4c:	05412423          	sw	s4,72(sp)
+    fc50:	05512623          	sw	s5,76(sp)
+    fc54:	05612823          	sw	s6,80(sp)
+    fc58:	05712a23          	sw	s7,84(sp)
+    fc5c:	05812c23          	sw	s8,88(sp)
+    fc60:	05912e23          	sw	s9,92(sp)
+    fc64:	07a12023          	sw	s10,96(sp)
+    fc68:	07b12223          	sw	s11,100(sp)
+    fc6c:	07c12423          	sw	t3,104(sp)
+    fc70:	07d12623          	sw	t4,108(sp)
+    fc74:	07e12823          	sw	t5,112(sp)
+    fc78:	07f12a23          	sw	t6,116(sp)
+    fc7c:	0200100b          	.insn	4, 0x0200100b
+    fc80:	00200993          	li	s3,2
+    fc84:	000044b7          	lui	s1,0x4
+    fc88:	20048493          	addi	s1,s1,512 # 4200 <_start-0x4000>
+    fc8c:	0134a223          	sw	s3,4(s1)
+    fc90:	00012083          	lw	ra,0(sp)
+    fc94:	00412183          	lw	gp,4(sp)
+    fc98:	00812203          	lw	tp,8(sp)
+    fc9c:	00c12283          	lw	t0,12(sp)
+    fca0:	01012303          	lw	t1,16(sp)
+    fca4:	01812403          	lw	s0,24(sp)
+    fca8:	01c12483          	lw	s1,28(sp)
+    fcac:	02012503          	lw	a0,32(sp)
+    fcb0:	02412583          	lw	a1,36(sp)
+    fcb4:	02812603          	lw	a2,40(sp)
+    fcb8:	02c12683          	lw	a3,44(sp)
+    fcbc:	03012703          	lw	a4,48(sp)
+    fcc0:	03412783          	lw	a5,52(sp)
+    fcc4:	03812803          	lw	a6,56(sp)
+    fcc8:	03c12883          	lw	a7,60(sp)
+    fccc:	04012903          	lw	s2,64(sp)
+    fcd0:	04412983          	lw	s3,68(sp)
+    fcd4:	04812a03          	lw	s4,72(sp)
+    fcd8:	04c12a83          	lw	s5,76(sp)
+    fcdc:	05012b03          	lw	s6,80(sp)
+    fce0:	05412b83          	lw	s7,84(sp)
+    fce4:	05812c03          	lw	s8,88(sp)
+    fce8:	05c12c83          	lw	s9,92(sp)
+    fcec:	06012d03          	lw	s10,96(sp)
+    fcf0:	06412d83          	lw	s11,100(sp)
+    fcf4:	06812e03          	lw	t3,104(sp)
+    fcf8:	06c12e83          	lw	t4,108(sp)
+    fcfc:	07012f03          	lw	t5,112(sp)
+    fd00:	07412f83          	lw	t6,116(sp)
+    fd04:	07810113          	addi	sp,sp,120
+    fd08:	0000000b          	.insn	4, 0x000b
+
+Disassembly of section .isr_spi0_te:
+
+0000fe00 <isr_spi0_te>:
+    fe00:	f8810113          	addi	sp,sp,-120
+    fe04:	00112023          	sw	ra,0(sp)
+    fe08:	00312223          	sw	gp,4(sp)
+    fe0c:	00412423          	sw	tp,8(sp)
+    fe10:	00512623          	sw	t0,12(sp)
+    fe14:	00612823          	sw	t1,16(sp)
+    fe18:	00712a23          	sw	t2,20(sp)
+    fe1c:	00812c23          	sw	s0,24(sp)
+    fe20:	00912e23          	sw	s1,28(sp)
+    fe24:	02a12023          	sw	a0,32(sp)
+    fe28:	02b12223          	sw	a1,36(sp)
+    fe2c:	02c12423          	sw	a2,40(sp)
+    fe30:	02d12623          	sw	a3,44(sp)
+    fe34:	02e12823          	sw	a4,48(sp)
+    fe38:	02f12a23          	sw	a5,52(sp)
+    fe3c:	03012c23          	sw	a6,56(sp)
+    fe40:	03112e23          	sw	a7,60(sp)
+    fe44:	05212023          	sw	s2,64(sp)
+    fe48:	05312223          	sw	s3,68(sp)
+    fe4c:	05412423          	sw	s4,72(sp)
+    fe50:	05512623          	sw	s5,76(sp)
+    fe54:	05612823          	sw	s6,80(sp)
+    fe58:	05712a23          	sw	s7,84(sp)
+    fe5c:	05812c23          	sw	s8,88(sp)
+    fe60:	05912e23          	sw	s9,92(sp)
+    fe64:	07a12023          	sw	s10,96(sp)
+    fe68:	07b12223          	sw	s11,100(sp)
+    fe6c:	07c12423          	sw	t3,104(sp)
+    fe70:	07d12623          	sw	t4,108(sp)
+    fe74:	07e12823          	sw	t5,112(sp)
+    fe78:	07f12a23          	sw	t6,116(sp)
+    fe7c:	00100913          	li	s2,1
+    fe80:	000044b7          	lui	s1,0x4
+    fe84:	20048493          	addi	s1,s1,512 # 4200 <_start-0x4000>
+    fe88:	0124a223          	sw	s2,4(s1)
+    fe8c:	00012083          	lw	ra,0(sp)
+    fe90:	00412183          	lw	gp,4(sp)
+    fe94:	00812203          	lw	tp,8(sp)
+    fe98:	00c12283          	lw	t0,12(sp)
+    fe9c:	01012303          	lw	t1,16(sp)
+    fea0:	01812403          	lw	s0,24(sp)
+    fea4:	01c12483          	lw	s1,28(sp)
+    fea8:	02012503          	lw	a0,32(sp)
+    feac:	02412583          	lw	a1,36(sp)
+    feb0:	02812603          	lw	a2,40(sp)
+    feb4:	02c12683          	lw	a3,44(sp)
+    feb8:	03012703          	lw	a4,48(sp)
+    febc:	03412783          	lw	a5,52(sp)
+    fec0:	03812803          	lw	a6,56(sp)
+    fec4:	03c12883          	lw	a7,60(sp)
+    fec8:	04012903          	lw	s2,64(sp)
+    fecc:	04412983          	lw	s3,68(sp)
+    fed0:	04812a03          	lw	s4,72(sp)
+    fed4:	04c12a83          	lw	s5,76(sp)
+    fed8:	05012b03          	lw	s6,80(sp)
+    fedc:	05412b83          	lw	s7,84(sp)
+    fee0:	05812c03          	lw	s8,88(sp)
+    fee4:	05c12c83          	lw	s9,92(sp)
+    fee8:	06012d03          	lw	s10,96(sp)
+    feec:	06412d83          	lw	s11,100(sp)
+    fef0:	06812e03          	lw	t3,104(sp)
+    fef4:	06c12e83          	lw	t4,108(sp)
+    fef8:	07012f03          	lw	t5,112(sp)
+    fefc:	07412f83          	lw	t6,116(sp)
+    ff00:	07810113          	addi	sp,sp,120
+    ff04:	0000000b          	.insn	4, 0x000b
