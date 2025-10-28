@@ -15,7 +15,6 @@ VestaRV is named after **Vesta**, the Roman goddess of hearth, home, and the ete
 - [Memory Architecture](#memory-architecture)
 - [Interrupt Handling](#interrupt-handling)
 - [Building and Toolchain](#building-and-toolchain)
-- [Evaluation and Synthesis Results](#evaluation-and-synthesis-results)
 - [Author and Support](#author-and-support)
 
 ---
