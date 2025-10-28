@@ -48,9 +48,10 @@ Typical applications include:
 
 **Directory Highlights:**
 - `hdl/` — VestaRV core and MCU HDL sources
-- `firmware/` — Example programs and test routines
-- `tests/` — Instruction-level and peripheral validation tests
-- `scripts/` — Synthesis and build scripts
+- `genus/` — Logic Synthesis
+- `innovus/` — Physical Implementation
+- `riscv-tests/` — Instruction-level, peripheral, and boot validation tests
+
 
 ---
 
@@ -71,13 +72,14 @@ Typical applications include:
   - Watchdog Timer (WDT)
   - CRC engine
   - ROM/RAM power gating
+- **Compute**
+    1 × HW-NN 
 - **I/O**
   - 4 × GPIO
   - 1 × SPI
-  - 1 × SPI Flash Extended Memory (Slave mode, see note below)
+  - 1 × SPI Flash Extended Memory 
   - 2 × UART
   - 2 × Timer
-  - 1 × HW-NN (multiplexed with 16KiB SRAM)
 
 ---
 
