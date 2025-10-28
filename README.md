@@ -72,7 +72,7 @@ Typical applications include:
   - Watchdog Timer (WDT)
   - CRC engine
   - ROM/RAM power gating
-- **Compute**
+- **Compute**  
     1 × HW-NN 
 - **I/O**
   - 4 × GPIO
