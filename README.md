@@ -29,13 +29,12 @@ VestaRV is named after **Vesta**, the Roman goddess of hearth, home, and the ete
   - 'A' Extension (Atomic Memory Operations)
   - 'ZBA', 'ZBB', 'ZBC', 'ZBS' (Advanced Bit Manipulation)
   - 'ZICNTR' (Partial, e.g., RDCYCLE and RDINSTRET)
-- **Stack-based interrupt handling** (supports recursive interrupts)
+- **Stack-based interrupt handling** 
 - **Post Innovus verification**
-- **Full MCU subsystem** with rich peripherals (see below)
-- Designed for easy integration into ASICs and FPGAs
+- **Full MCU subsystem** 
+- Designed for easy integration into ASICs
 
 Typical applications include:
-- SoC design prototyping
 - Custom embedded MCU development
 - Mixed signal and sensor interfacing
 
@@ -61,9 +60,9 @@ Typical applications include:
 ## Core Specifications
 
 - **ISA:** RV32I Base + M, C, A, ZBA, ZBB, ZBC, ZBS, ZICNTR (partial)
-- **Interrupts:** Stack-based, recursive, with risk of stack overflow
+- **Interrupts:** Stack-based - recursive
 - **Verification:** Post-physical verified
-- **Extensions:** Bit manipulation, atomic ops, compressed and multiply/divide instructions
+- **Extensions:** Bit manipulation, atomic ops, compressed, and multiply/divide instructions
 
 ---
 
