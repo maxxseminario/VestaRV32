@@ -73,7 +73,7 @@ Typical applications include:
   - CRC engine
   - ROM/RAM power gating
 - **Compute**  
-    1 × HW-NN 
+  - 1 × HW-NN 
 - **I/O**
   - 4 × GPIO
   - 1 × SPI
