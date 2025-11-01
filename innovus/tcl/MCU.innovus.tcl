@@ -238,8 +238,6 @@ addHaloToBlock \
 cutRow
 
 
-
-
 # Place POR Circuit 
 
 set POR_WIDTH		026.650
@@ -379,14 +377,11 @@ addStripe \
 		[list [expr $DCO0_X] [expr {$DCO0_Y + $DCO_NOBLOCK_HEIGHT}] [expr {$DCO0_X + $DCO_WIDTH}] [expr {$DCO0_Y + $DCO_HEIGHT}]] \
 		[list [expr $DCO1_X] [expr {$DCO1_Y + $DCO_NOBLOCK_HEIGHT}] [expr {$DCO1_X + $DCO_WIDTH}] [expr {$DCO1_Y + $DCO_HEIGHT}]] \
 		]
-		#[list 0 0 [expr {$CORE_SPACING + $SRAM_HEIGHT}] [expr {$CORE_SPACING + ($SRAM_WIDTH * 2) + ($STD_CELL_HEIGHT * 2)}]] \
 
 # Fix the antenna violations created by creating blockages in the power stripes
 editTrim -all
 
 setCheckMode -globalNet true -io true -route true -tapeOut true
-
-
 
 
 
@@ -413,13 +408,13 @@ fixVia -minCut
 fixVia -minStep
 
 fit; redraw; update
-suspend
+# suspend
 
 # This is a good place to #suspend and check for violations.
 # Violations from power rails terminating ("open" violations) seem to be benign
 # Other geometry violations need to be resolved. Options: modify the placement of the ROM, RAM, and other instances; change the spacing of the power stripes
-printStatus "Routed power rings. Please check that VDD and VSS connections are good on the ROM and the RAMs"
-##suspend
+printStatus "Routed power rings. Please check that VDD and VSS connections are good on ROMs, RAMs, and other abstract instances."
+suspend
 
 ################################################################################
 # Routing blockages
@@ -495,6 +490,8 @@ fit; redraw; update
 timeDesign -postCTS -expandedViews -outDir $REPORT_DIR/$DESIGN_NAME.timeDesign.postcts
 report_ccopt_clock_trees -file $REPORT_DIR/$DESIGN_NAME.report_ccopt_clock_trees.postcts
 report_ccopt_skew_groups -file $REPORT_DIR/$DESIGN_NAME.report_ccopt_skew_groups.postcts
+
+suspend
 
 
 

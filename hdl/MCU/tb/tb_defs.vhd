@@ -103,9 +103,9 @@ package tb_defs is
         -- "../rcf/xxxrv32uzbs-p-bext.rcf",
         -- "../rcf/xxxrv32uzbs-p-binv.rcf",
         -- "../rcf/xxxrv32uzbs-p-bset.rcf",
-        -- "../rcf/xrv32uzbs-p-clmulh.rcf", -- Bit Manipulation - Carryless Mult Instructions
-        -- "../rcf/xrv32uzbs-p-clmulr.rcf",
-        -- "../rcf/xxrv32uzbs-p-clmul.rcf",
+        -- "../rcf/xrv32uzbc-p-clmulh.rcf", -- Bit Manipulation - Carryless Mult Instructions
+        -- "../rcf/xrv32uzbc-p-clmulr.rcf",
+        -- "../rcf/xxrv32uzbc-p-clmul.rcf",
         -- -- "../rcf/xxxrv32ziscr-p-csr.rcf", -- CSR Instructions (Custom)
         -- "../rcf/xxxxxxperiph-p-NPU.rcf", -- Peripheral Tests
         -- "../rcf/xxxxperiph-p-SPIFM.rcf",
