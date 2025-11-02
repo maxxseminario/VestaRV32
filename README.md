@@ -6,6 +6,13 @@ VestaRV is a custom RISC-V processor core designed entirely in-house, built from
 VestaRV is named after **Vesta**, the Roman goddess of hearth, home, and the eternal flame. As Vesta’s fire symbolized the heart of the household, VestaRV is designed to be the heart of your embedded system—providing reliability and a strong foundation for your MCU and SoC projects.
 
 
+## MCU Block Diagram
+
+Below is the MCU-level block diagram showing VestaRV instantiated within the MCU and the major peripherals highlighted:
+
+![MCU Block Diagram](assets/ASIC_block_diagram.png)
+
+
 ## Table of Contents
 
 - [Features and Typical Applications](#features-and-typical-applications)
