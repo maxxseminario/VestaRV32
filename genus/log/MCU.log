@@ -5,16 +5,16 @@ of Cadence Design Systems, Inc. in the United States and other countries.
 
 Version: 19.15-s090_1, built Tue Sep 29 09:43:45 PDT 2020
 Options: -overwrite -log log/MCU.log -files tcl/MCU.genus.tcl 
-Date:    Sun Nov 09 14:17:42 2025
+Date:    Sun Nov 09 17:45:08 2025
 Host:    atlas (x86_64 w/Linux 5.3.18-lp152.106-default) (64cores*128cpus*1physical cpu*AMD Ryzen Threadripper 3990X 64-Core Processor 512KB) (263795392KB)
-PID:     91676
+PID:     127018
 OS:      Unsupported OS as /etc does not have release info
 
 Checking out license: Genus_Synthesis
 
 Loading tool scripts...
 
-Finished loading tool scripts (5 seconds elapsed).
+Finished loading tool scripts (4 seconds elapsed).
 
 #@ Processing -files option
 @genus 1> source tcl/MCU.genus.tcl
@@ -1215,7 +1215,7 @@ stamp 'PBS_Generic-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -1238,7 +1238,7 @@ Following instances are deleted as they do not drive any primary output:
 'core/datapath_inst/mainalu/clmul_64_449_36:mux_result_45_65', 
 'core/mux_repeat_if_req_618_50'.
 Starting mux data reorder optimization [v1.0] (stage: post_to_gen_setup, startdef: MCU, recur: true)
-Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.742s)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.745s)
 Info    : Equivalent sequential instances have been merged. [GLO-42]
         : Instances 'addr_periph_reg[2]' and 'mab_out_reg[2]' in 'adddec_ENABLE_FLASH_EXTENDED_MEM1' have been merged.
         : To prevent merging of sequential instances, set the 'optimize_merge_flops' and 'optimize_merge_latches' root attributes to 'false' or the 'optimize_merge_seq' instance attribute to 'false'.
@@ -1262,9 +1262,9 @@ Info    : Combinational hierarchical blocks with identical inputs have been merg
 Info    : Combinational hierarchical blocks with identical inputs have been merged. [GLO-40]
         : Instances 'g1' and 'g4' in 'irq_handler_NUM_IRQS83_DATA_WIDTH32' have been merged.
 Starting reconvergence optimization [v1.0] (stage: pre_rtlopt, startdef: MCU, recur: true)
-Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.006s)
+Completed reconvergence optimization (accepts: 0, rejects: 0, runtime: 0.005s)
 Starting logic restructure optimization [v1.0] (stage: pre_rtlopt, startdef: MCU, recur: true)
-Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.027s)
+Completed logic restructure optimization (accepts: 0, rejects: 0, runtime: 0.026s)
 Info    : Deleting sequential instances not driving any primary outputs. [GLO-32]
         : Deleting 6 sequential instances. 
 Following instances are deleted as they do not drive any primary output:
@@ -2048,7 +2048,7 @@ Info    : Equivalent sequential instances have been merged. [GLO-42]
 Info    : Equivalent sequential instances have been merged. [GLO-42]
         : Instances 'I2CxSRLat_reg[0]' and 'I2CxSRXLat_reg[3]' in 'I2C' have been merged.
 Starting mux data reorder optimization [v1.0] (stage: post_rtlopt, startdef: MCU, recur: true)
-Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.001s)
+Completed mux data reorder optimization (accepts: 0, rejects: 0, runtime: 0.000s)
       Removing temporary intermediate hierarchies under MCU
 Info    : Deleting sequential instances not driving any primary outputs. [GLO-32]
         : Deleting 36 sequential instances. 
@@ -2072,7 +2072,7 @@ Following instances are deleted as they do not drive any primary output:
 Starting mux speculation [v1.0] (stage: post_muxopt, startdef: MCU, recur: true)
 Starting speculation optimization
 Completed speculation optimization (accepts:0)
-Completed mux speculation (accepts: 0, rejects: 0, runtime: 2.339s)
+Completed mux speculation (accepts: 0, rejects: 0, runtime: 2.190s)
 ==================================
 Stage : to_generic 
 ==================================
@@ -2417,25 +2417,25 @@ Info    : Attempting to launch a super-threading server. [ST-120]
         : Attempting to Launch server 1 of 8.
         : The tool is entering super-threading mode and is launching a CPU server process.  This is enabled by the root attribute 'super_thread_servers' or 'auto_super_thread'.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_0' is process '92223' on this host.
+        : The server 'localhost_1_0' is process '127560' on this host.
         : The tool is entering super-threading mode and has established a connection with a CPU server process.  This is enabled by the root attributes 'super_thread_servers' or 'auto_super_thread'.
 Info    : Super thread servers are launched successfully. [ST-128]
         : 8 out of 8 super thread servers are launched. Minimum 1 active super thread server is required.
                   Library loading done successfully on server 'localhost_1_0'.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_1' is forked process '92448' on this host.
+        : The server 'localhost_1_1' is forked process '127712' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_2' is forked process '92450' on this host.
+        : The server 'localhost_1_2' is forked process '127714' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_3' is forked process '92452' on this host.
+        : The server 'localhost_1_3' is forked process '127716' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_4' is forked process '92454' on this host.
+        : The server 'localhost_1_4' is forked process '127718' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_5' is forked process '92456' on this host.
+        : The server 'localhost_1_5' is forked process '127720' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_6' is forked process '92458' on this host.
+        : The server 'localhost_1_6' is forked process '127722' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_7' is forked process '92460' on this host.
+        : The server 'localhost_1_7' is forked process '127724' on this host.
 Info    : Super thread servers are launched successfully. [ST-128]
         : 8 out of 8 super thread servers are launched. Minimum 1 active super thread server is required.
 Multi-threaded constant propagation [1|0] ...
@@ -2595,210 +2595,210 @@ Following instance is deleted as they do not drive any primary output:
 'core/datapath_inst/mainalu/divider/cnt_reg[5]'.
 Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usable)
         Distributing super-thread jobs: cb_part_11826 cb_part_11918 cb_part_11916 cb_oseq_11812 cb_oseq_11810 cb_oseq_11808 cb_part_11854 cb_part_11858 csa_tree_19878 cb_part_11910 cb_part_11834 increment_unsigned_22468_22502 add_unsigned_7506 add_unsigned_5218 add_unsigned_5216 add_unsigned_5216_9594 sub_unsigned_5212
-          Sending 'cb_part_11826' to server 'localhost_1_7'...
-            Sent 'cb_part_11826' to server 'localhost_1_7'.
-          Sending 'cb_part_11918' to server 'localhost_1_6'...
-            Sent 'cb_part_11918' to server 'localhost_1_6'.
+          Sending 'cb_part_11826' to server 'localhost_1_3'...
+            Sent 'cb_part_11826' to server 'localhost_1_3'.
+          Sending 'cb_part_11918' to server 'localhost_1_2'...
+            Sent 'cb_part_11918' to server 'localhost_1_2'.
           Sending 'cb_part_11916' to server 'localhost_1_0'...
             Sent 'cb_part_11916' to server 'localhost_1_0'.
-          Sending 'cb_oseq_11812' to server 'localhost_1_3'...
-            Sent 'cb_oseq_11812' to server 'localhost_1_3'.
-          Sending 'cb_oseq_11810' to server 'localhost_1_2'...
-            Sent 'cb_oseq_11810' to server 'localhost_1_2'.
-          Sending 'cb_oseq_11808' to server 'localhost_1_5'...
-            Sent 'cb_oseq_11808' to server 'localhost_1_5'.
-          Sending 'cb_part_11854' to server 'localhost_1_4'...
-            Sent 'cb_part_11854' to server 'localhost_1_4'.
-          Sending 'cb_part_11858' to server 'localhost_1_1'...
-            Sent 'cb_part_11858' to server 'localhost_1_1'.
-          Received 'cb_part_11854' from server 'localhost_1_4'. (1007 ms elapsed)
-          Sending 'csa_tree_19878' to server 'localhost_1_4'...
-            Sent 'csa_tree_19878' to server 'localhost_1_4'.
-          Received 'cb_part_11858' from server 'localhost_1_1'. (1010 ms elapsed)
-          Sending 'cb_part_11910' to server 'localhost_1_1'...
-            Sent 'cb_part_11910' to server 'localhost_1_1'.
-          Received 'cb_oseq_11808' from server 'localhost_1_5'. (1060 ms elapsed)
-          Sending 'cb_part_11834' to server 'localhost_1_5'...
-            Sent 'cb_part_11834' to server 'localhost_1_5'.
-          Received 'cb_oseq_11810' from server 'localhost_1_2'. (1094 ms elapsed)
-          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_2'...
-            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_2'.
-          Received 'cb_oseq_11812' from server 'localhost_1_3'. (1335 ms elapsed)
-          Sending 'add_unsigned_7506' to server 'localhost_1_3'...
-            Sent 'add_unsigned_7506' to server 'localhost_1_3'.
-          Received 'cb_part_11918' from server 'localhost_1_6'. (1448 ms elapsed)
-          Sending 'add_unsigned_5218' to server 'localhost_1_6'...
-            Sent 'add_unsigned_5218' to server 'localhost_1_6'.
-          Received 'cb_part_11916' from server 'localhost_1_0'. (1621 ms elapsed)
-          Sending 'add_unsigned_5216' to server 'localhost_1_0'...
-            Sent 'add_unsigned_5216' to server 'localhost_1_0'.
-          Received 'add_unsigned_7506' from server 'localhost_1_3'. (250 ms elapsed)
-          Sending 'add_unsigned_5216_9594' to server 'localhost_1_3'...
-            Sent 'add_unsigned_5216_9594' to server 'localhost_1_3'.
-          Received 'add_unsigned_5216' from server 'localhost_1_0'. (184 ms elapsed)
-          Sending 'sub_unsigned_5212' to server 'localhost_1_0'...
-            Sent 'sub_unsigned_5212' to server 'localhost_1_0'.
-          Received 'add_unsigned_5216_9594' from server 'localhost_1_3'. (587 ms elapsed)
-          Received 'increment_unsigned_22468_22502' from server 'localhost_1_2'. (1056 ms elapsed)
-          Received 'cb_part_11834' from server 'localhost_1_5'. (1077 ms elapsed)
-          Received 'csa_tree_19878' from server 'localhost_1_4'. (1115 ms elapsed)
-          Received 'cb_part_11826' from server 'localhost_1_7'. (2332 ms elapsed)
-          Received 'add_unsigned_5218' from server 'localhost_1_6'. (941 ms elapsed)
-          Received 'sub_unsigned_5212' from server 'localhost_1_0'. (184 ms elapsed)
-          Received 'cb_part_11910' from server 'localhost_1_1'. (1372 ms elapsed)
+          Sending 'cb_oseq_11812' to server 'localhost_1_5'...
+            Sent 'cb_oseq_11812' to server 'localhost_1_5'.
+          Sending 'cb_oseq_11810' to server 'localhost_1_4'...
+            Sent 'cb_oseq_11810' to server 'localhost_1_4'.
+          Sending 'cb_oseq_11808' to server 'localhost_1_1'...
+            Sent 'cb_oseq_11808' to server 'localhost_1_1'.
+          Sending 'cb_part_11854' to server 'localhost_1_7'...
+            Sent 'cb_part_11854' to server 'localhost_1_7'.
+          Sending 'cb_part_11858' to server 'localhost_1_6'...
+            Sent 'cb_part_11858' to server 'localhost_1_6'.
+          Received 'cb_part_11854' from server 'localhost_1_7'. (1004 ms elapsed)
+          Sending 'csa_tree_19878' to server 'localhost_1_7'...
+            Sent 'csa_tree_19878' to server 'localhost_1_7'.
+          Received 'cb_oseq_11810' from server 'localhost_1_4'. (1060 ms elapsed)
+          Sending 'cb_part_11910' to server 'localhost_1_4'...
+            Sent 'cb_part_11910' to server 'localhost_1_4'.
+          Received 'cb_part_11858' from server 'localhost_1_6'. (1026 ms elapsed)
+          Sending 'cb_part_11834' to server 'localhost_1_6'...
+            Sent 'cb_part_11834' to server 'localhost_1_6'.
+          Received 'cb_oseq_11812' from server 'localhost_1_5'. (1233 ms elapsed)
+          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_5'...
+            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_5'.
+          Received 'cb_part_11918' from server 'localhost_1_2'. (1691 ms elapsed)
+          Sending 'add_unsigned_7506' to server 'localhost_1_2'...
+            Sent 'add_unsigned_7506' to server 'localhost_1_2'.
+          Received 'increment_unsigned_22468_22502' from server 'localhost_1_5'. (384 ms elapsed)
+          Sending 'add_unsigned_5218' to server 'localhost_1_5'...
+            Sent 'add_unsigned_5218' to server 'localhost_1_5'.
+          Received 'csa_tree_19878' from server 'localhost_1_7'. (637 ms elapsed)
+          Sending 'add_unsigned_5216' to server 'localhost_1_7'...
+            Sent 'add_unsigned_5216' to server 'localhost_1_7'.
+          Received 'cb_part_11916' from server 'localhost_1_0'. (1916 ms elapsed)
+          Sending 'add_unsigned_5216_9594' to server 'localhost_1_0'...
+            Sent 'add_unsigned_5216_9594' to server 'localhost_1_0'.
+          Received 'cb_part_11834' from server 'localhost_1_6'. (912 ms elapsed)
+          Sending 'sub_unsigned_5212' to server 'localhost_1_6'...
+            Sent 'sub_unsigned_5212' to server 'localhost_1_6'.
+          Received 'cb_part_11910' from server 'localhost_1_4'. (1037 ms elapsed)
+          Received 'add_unsigned_5218' from server 'localhost_1_5'. (600 ms elapsed)
+          Received 'cb_part_11826' from server 'localhost_1_3'. (2376 ms elapsed)
+          Received 'add_unsigned_5216' from server 'localhost_1_7'. (576 ms elapsed)
+          Received 'cb_oseq_11808' from server 'localhost_1_1'. (2254 ms elapsed)
+          Received 'add_unsigned_5216_9594' from server 'localhost_1_0'. (576 ms elapsed)
+          Received 'sub_unsigned_5212' from server 'localhost_1_6'. (834 ms elapsed)
+          Received 'add_unsigned_7506' from server 'localhost_1_2'. (1242 ms elapsed)
         Distributing super-thread jobs: cb_part_11823 cb_seq_11847 cb_oseq_11766 cb_part_11850 cb_oseq_11768 cb_seq_11811
-          Sending 'cb_part_11823' to server 'localhost_1_7'...
-            Sent 'cb_part_11823' to server 'localhost_1_7'.
-          Sending 'cb_seq_11847' to server 'localhost_1_6'...
-            Sent 'cb_seq_11847' to server 'localhost_1_6'.
+          Sending 'cb_part_11823' to server 'localhost_1_3'...
+            Sent 'cb_part_11823' to server 'localhost_1_3'.
+          Sending 'cb_seq_11847' to server 'localhost_1_2'...
+            Sent 'cb_seq_11847' to server 'localhost_1_2'.
           Sending 'cb_oseq_11766' to server 'localhost_1_0'...
             Sent 'cb_oseq_11766' to server 'localhost_1_0'.
-          Sending 'cb_part_11850' to server 'localhost_1_3'...
-            Sent 'cb_part_11850' to server 'localhost_1_3'.
-          Sending 'cb_oseq_11768' to server 'localhost_1_2'...
-            Sent 'cb_oseq_11768' to server 'localhost_1_2'.
-          Sending 'cb_seq_11811' to server 'localhost_1_5'...
-            Sent 'cb_seq_11811' to server 'localhost_1_5'.
-          Received 'cb_seq_11847' from server 'localhost_1_6'. (248 ms elapsed)
-          Received 'cb_seq_11811' from server 'localhost_1_5'. (207 ms elapsed)
-          Received 'cb_oseq_11766' from server 'localhost_1_0'. (408 ms elapsed)
-          Received 'cb_part_11850' from server 'localhost_1_3'. (397 ms elapsed)
-          Received 'cb_oseq_11768' from server 'localhost_1_2'. (465 ms elapsed)
-          Received 'cb_part_11823' from server 'localhost_1_7'. (3502 ms elapsed)
+          Sending 'cb_part_11850' to server 'localhost_1_5'...
+            Sent 'cb_part_11850' to server 'localhost_1_5'.
+          Sending 'cb_oseq_11768' to server 'localhost_1_4'...
+            Sent 'cb_oseq_11768' to server 'localhost_1_4'.
+          Sending 'cb_seq_11811' to server 'localhost_1_1'...
+            Sent 'cb_seq_11811' to server 'localhost_1_1'.
+          Received 'cb_seq_11847' from server 'localhost_1_2'. (220 ms elapsed)
+          Received 'cb_seq_11811' from server 'localhost_1_1'. (180 ms elapsed)
+          Received 'cb_oseq_11766' from server 'localhost_1_0'. (417 ms elapsed)
+          Received 'cb_part_11850' from server 'localhost_1_5'. (497 ms elapsed)
+          Received 'cb_oseq_11768' from server 'localhost_1_4'. (487 ms elapsed)
+          Received 'cb_part_11823' from server 'localhost_1_3'. (3705 ms elapsed)
         Distributing super-thread jobs: cb_part_11861
-          Sending 'cb_part_11861' to server 'localhost_1_7'...
-            Sent 'cb_part_11861' to server 'localhost_1_7'.
-          Received 'cb_part_11861' from server 'localhost_1_7'. (1031 ms elapsed)
+          Sending 'cb_part_11861' to server 'localhost_1_3'...
+            Sent 'cb_part_11861' to server 'localhost_1_3'.
+          Received 'cb_part_11861' from server 'localhost_1_3'. (1090 ms elapsed)
         Distributing super-thread jobs: c_dec
-          Sending 'c_dec' to server 'localhost_1_7'...
-            Sent 'c_dec' to server 'localhost_1_7'.
-          Received 'c_dec' from server 'localhost_1_7'. (1013 ms elapsed)
+          Sending 'c_dec' to server 'localhost_1_3'...
+            Sent 'c_dec' to server 'localhost_1_3'.
+          Received 'c_dec' from server 'localhost_1_3'. (1050 ms elapsed)
         Distributing super-thread jobs: cb_part_11869 cb_part_11867
-          Sending 'cb_part_11869' to server 'localhost_1_7'...
-            Sent 'cb_part_11869' to server 'localhost_1_7'.
-          Sending 'cb_part_11867' to server 'localhost_1_6'...
-            Sent 'cb_part_11867' to server 'localhost_1_6'.
-          Received 'cb_part_11867' from server 'localhost_1_6'. (259 ms elapsed)
-          Received 'cb_part_11869' from server 'localhost_1_7'. (6162 ms elapsed)
+          Sending 'cb_part_11869' to server 'localhost_1_3'...
+            Sent 'cb_part_11869' to server 'localhost_1_3'.
+          Sending 'cb_part_11867' to server 'localhost_1_2'...
+            Sent 'cb_part_11867' to server 'localhost_1_2'.
+          Received 'cb_part_11867' from server 'localhost_1_2'. (225 ms elapsed)
+          Received 'cb_part_11869' from server 'localhost_1_3'. (6376 ms elapsed)
         Distributing super-thread jobs: cb_part_11884 add_unsigned
-          Sending 'cb_part_11884' to server 'localhost_1_7'...
-            Sent 'cb_part_11884' to server 'localhost_1_7'.
-          Sending 'add_unsigned' to server 'localhost_1_6'...
-            Sent 'add_unsigned' to server 'localhost_1_6'.
-          Received 'add_unsigned' from server 'localhost_1_6'. (478 ms elapsed)
-          Received 'cb_part_11884' from server 'localhost_1_7'. (1151 ms elapsed)
+          Sending 'cb_part_11884' to server 'localhost_1_3'...
+            Sent 'cb_part_11884' to server 'localhost_1_3'.
+          Sending 'add_unsigned' to server 'localhost_1_2'...
+            Sent 'add_unsigned' to server 'localhost_1_2'.
+          Received 'add_unsigned' from server 'localhost_1_2'. (471 ms elapsed)
+          Received 'cb_part_11884' from server 'localhost_1_3'. (1208 ms elapsed)
         Distributing super-thread jobs: mult_mixed_1670 addsub_unsigned_6892 sub_unsigned_332_3819 arith_shift_right_vhdl_unsigned rotate_left_vhdl_unsigned_8083 shift_left_vhdl_unsigned shift_right_vhdl_unsigned rotate_right_vhdl_unsigned_7085 cmp6_signed cmp6_unsigned_3258 abs abs_9373 abs_9374 csa_tree_ADD_TC_OP29_group_2 geq_unsigned_rtlopto_model_22215
-          Sending 'mult_mixed_1670' to server 'localhost_1_7'...
-            Sent 'mult_mixed_1670' to server 'localhost_1_7'.
-          Sending 'addsub_unsigned_6892' to server 'localhost_1_6'...
-            Sent 'addsub_unsigned_6892' to server 'localhost_1_6'.
+          Sending 'mult_mixed_1670' to server 'localhost_1_3'...
+            Sent 'mult_mixed_1670' to server 'localhost_1_3'.
+          Sending 'addsub_unsigned_6892' to server 'localhost_1_2'...
+            Sent 'addsub_unsigned_6892' to server 'localhost_1_2'.
           Sending 'sub_unsigned_332_3819' to server 'localhost_1_0'...
             Sent 'sub_unsigned_332_3819' to server 'localhost_1_0'.
-          Sending 'arith_shift_right_vhdl_unsigned' to server 'localhost_1_3'...
-            Sent 'arith_shift_right_vhdl_unsigned' to server 'localhost_1_3'.
-          Sending 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_2'...
-            Sent 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_2'.
-          Sending 'shift_left_vhdl_unsigned' to server 'localhost_1_5'...
-            Sent 'shift_left_vhdl_unsigned' to server 'localhost_1_5'.
-          Sending 'shift_right_vhdl_unsigned' to server 'localhost_1_4'...
-            Sent 'shift_right_vhdl_unsigned' to server 'localhost_1_4'.
-          Sending 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_1'...
-            Sent 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_1'.
-          Received 'sub_unsigned_332_3819' from server 'localhost_1_0'. (390 ms elapsed)
+          Sending 'arith_shift_right_vhdl_unsigned' to server 'localhost_1_5'...
+            Sent 'arith_shift_right_vhdl_unsigned' to server 'localhost_1_5'.
+          Sending 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_4'...
+            Sent 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_4'.
+          Sending 'shift_left_vhdl_unsigned' to server 'localhost_1_1'...
+            Sent 'shift_left_vhdl_unsigned' to server 'localhost_1_1'.
+          Sending 'shift_right_vhdl_unsigned' to server 'localhost_1_7'...
+            Sent 'shift_right_vhdl_unsigned' to server 'localhost_1_7'.
+          Sending 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_6'...
+            Sent 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_6'.
+          Received 'sub_unsigned_332_3819' from server 'localhost_1_0'. (404 ms elapsed)
           Sending 'cmp6_signed' to server 'localhost_1_0'...
             Sent 'cmp6_signed' to server 'localhost_1_0'.
-          Received 'addsub_unsigned_6892' from server 'localhost_1_6'. (836 ms elapsed)
-          Sending 'cmp6_unsigned_3258' to server 'localhost_1_6'...
-            Sent 'cmp6_unsigned_3258' to server 'localhost_1_6'.
-          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_3'. (836 ms elapsed)
-          Sending 'abs' to server 'localhost_1_3'...
-            Sent 'abs' to server 'localhost_1_3'.
-          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_5'. (832 ms elapsed)
-          Sending 'abs_9373' to server 'localhost_1_5'...
-            Sent 'abs_9373' to server 'localhost_1_5'.
-          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_4'. (831 ms elapsed)
-          Sending 'abs_9374' to server 'localhost_1_4'...
-            Sent 'abs_9374' to server 'localhost_1_4'.
-          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_2'. (884 ms elapsed)
-          Sending 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_2'...
-            Sent 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_2'.
-          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_1'. (869 ms elapsed)
-          Sending 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_1'...
-            Sent 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_1'.
-          Received 'cmp6_signed' from server 'localhost_1_0'. (558 ms elapsed)
-          Received 'abs_9373' from server 'localhost_1_5'. (273 ms elapsed)
-          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_1'. (219 ms elapsed)
-          Received 'abs_9374' from server 'localhost_1_4'. (269 ms elapsed)
-          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_2'. (381 ms elapsed)
-          Received 'cmp6_unsigned_3258' from server 'localhost_1_6'. (479 ms elapsed)
-          Received 'abs' from server 'localhost_1_3'. (528 ms elapsed)
-          Received 'mult_mixed_1670' from server 'localhost_1_7'. (6852 ms elapsed)
+          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_7'. (691 ms elapsed)
+          Sending 'cmp6_unsigned_3258' to server 'localhost_1_7'...
+            Sent 'cmp6_unsigned_3258' to server 'localhost_1_7'.
+          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_4'. (719 ms elapsed)
+          Sending 'abs' to server 'localhost_1_4'...
+            Sent 'abs' to server 'localhost_1_4'.
+          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_1'. (717 ms elapsed)
+          Sending 'abs_9373' to server 'localhost_1_1'...
+            Sent 'abs_9373' to server 'localhost_1_1'.
+          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_6'. (771 ms elapsed)
+          Sending 'abs_9374' to server 'localhost_1_6'...
+            Sent 'abs_9374' to server 'localhost_1_6'.
+          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_5'. (811 ms elapsed)
+          Sending 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_5'...
+            Sent 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_5'.
+          Received 'addsub_unsigned_6892' from server 'localhost_1_2'. (934 ms elapsed)
+          Sending 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_2'...
+            Sent 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_2'.
+          Received 'abs' from server 'localhost_1_4'. (188 ms elapsed)
+          Received 'abs_9374' from server 'localhost_1_6'. (233 ms elapsed)
+          Received 'cmp6_signed' from server 'localhost_1_0'. (764 ms elapsed)
+          Received 'abs_9373' from server 'localhost_1_1'. (626 ms elapsed)
+          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_2'. (576 ms elapsed)
+          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_5'. (733 ms elapsed)
+          Received 'cmp6_unsigned_3258' from server 'localhost_1_7'. (837 ms elapsed)
+          Received 'mult_mixed_1670' from server 'localhost_1_3'. (7126 ms elapsed)
         Distributing super-thread jobs: square_signed_25825 sub_signed geq_signed_rtlopto_model_22214
-          Sending 'square_signed_25825' to server 'localhost_1_7'...
-            Sent 'square_signed_25825' to server 'localhost_1_7'.
-          Sending 'sub_signed' to server 'localhost_1_6'...
-            Sent 'sub_signed' to server 'localhost_1_6'.
+          Sending 'square_signed_25825' to server 'localhost_1_3'...
+            Sent 'square_signed_25825' to server 'localhost_1_3'.
+          Sending 'sub_signed' to server 'localhost_1_2'...
+            Sent 'sub_signed' to server 'localhost_1_2'.
           Sending 'geq_signed_rtlopto_model_22214' to server 'localhost_1_0'...
             Sent 'geq_signed_rtlopto_model_22214' to server 'localhost_1_0'.
-          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_0'. (163 ms elapsed)
-          Received 'sub_signed' from server 'localhost_1_6'. (296 ms elapsed)
-          Received 'square_signed_25825' from server 'localhost_1_7'. (1653 ms elapsed)
+          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_0'. (218 ms elapsed)
+          Received 'sub_signed' from server 'localhost_1_2'. (344 ms elapsed)
+          Received 'square_signed_25825' from server 'localhost_1_3'. (1717 ms elapsed)
         Distributing super-thread jobs: cb_part_11840 sub_signed_8089
-          Sending 'cb_part_11840' to server 'localhost_1_7'...
-            Sent 'cb_part_11840' to server 'localhost_1_7'.
-          Sending 'sub_signed_8089' to server 'localhost_1_6'...
-            Sent 'sub_signed_8089' to server 'localhost_1_6'.
-          Received 'sub_signed_8089' from server 'localhost_1_6'. (124 ms elapsed)
-          Received 'cb_part_11840' from server 'localhost_1_7'. (624 ms elapsed)
+          Sending 'cb_part_11840' to server 'localhost_1_3'...
+            Sent 'cb_part_11840' to server 'localhost_1_3'.
+          Sending 'sub_signed_8089' to server 'localhost_1_2'...
+            Sent 'sub_signed_8089' to server 'localhost_1_2'.
+          Received 'sub_signed_8089' from server 'localhost_1_2'. (137 ms elapsed)
+          Received 'cb_part_11840' from server 'localhost_1_3'. (650 ms elapsed)
         Distributing super-thread jobs: cb_part_11905
-          Sending 'cb_part_11905' to server 'localhost_1_7'...
-            Sent 'cb_part_11905' to server 'localhost_1_7'.
-          Received 'cb_part_11905' from server 'localhost_1_7'. (758 ms elapsed)
+          Sending 'cb_part_11905' to server 'localhost_1_3'...
+            Sent 'cb_part_11905' to server 'localhost_1_3'.
+          Received 'cb_part_11905' from server 'localhost_1_3'. (803 ms elapsed)
         Distributing super-thread jobs: cb_part_11904
-          Sending 'cb_part_11904' to server 'localhost_1_7'...
-            Sent 'cb_part_11904' to server 'localhost_1_7'.
-          Received 'cb_part_11904' from server 'localhost_1_7'. (17152 ms elapsed)
+          Sending 'cb_part_11904' to server 'localhost_1_3'...
+            Sent 'cb_part_11904' to server 'localhost_1_3'.
+          Received 'cb_part_11904' from server 'localhost_1_3'. (17772 ms elapsed)
         Distributing super-thread jobs: cb_part_11882
-          Sending 'cb_part_11882' to server 'localhost_1_7'...
-            Sent 'cb_part_11882' to server 'localhost_1_7'.
-          Received 'cb_part_11882' from server 'localhost_1_7'. (1951 ms elapsed)
+          Sending 'cb_part_11882' to server 'localhost_1_3'...
+            Sent 'cb_part_11882' to server 'localhost_1_3'.
+          Received 'cb_part_11882' from server 'localhost_1_3'. (1997 ms elapsed)
         Distributing super-thread jobs: cb_seq_11755 cb_part_11880 cb_part_11908 cb_oseq cb_part_11914
-          Sending 'cb_seq_11755' to server 'localhost_1_7'...
-            Sent 'cb_seq_11755' to server 'localhost_1_7'.
-          Sending 'cb_part_11880' to server 'localhost_1_6'...
-            Sent 'cb_part_11880' to server 'localhost_1_6'.
+          Sending 'cb_seq_11755' to server 'localhost_1_3'...
+            Sent 'cb_seq_11755' to server 'localhost_1_3'.
+          Sending 'cb_part_11880' to server 'localhost_1_2'...
+            Sent 'cb_part_11880' to server 'localhost_1_2'.
           Sending 'cb_part_11908' to server 'localhost_1_0'...
             Sent 'cb_part_11908' to server 'localhost_1_0'.
-          Sending 'cb_oseq' to server 'localhost_1_3'...
-            Sent 'cb_oseq' to server 'localhost_1_3'.
-          Sending 'cb_part_11914' to server 'localhost_1_2'...
-            Sent 'cb_part_11914' to server 'localhost_1_2'.
-          Received 'cb_oseq' from server 'localhost_1_3'. (397 ms elapsed)
-          Received 'cb_part_11908' from server 'localhost_1_0'. (558 ms elapsed)
-          Received 'cb_seq_11755' from server 'localhost_1_7'. (913 ms elapsed)
-          Received 'cb_part_11914' from server 'localhost_1_2'. (784 ms elapsed)
-          Received 'cb_part_11880' from server 'localhost_1_6'. (13011 ms elapsed)
+          Sending 'cb_oseq' to server 'localhost_1_5'...
+            Sent 'cb_oseq' to server 'localhost_1_5'.
+          Sending 'cb_part_11914' to server 'localhost_1_4'...
+            Sent 'cb_part_11914' to server 'localhost_1_4'.
+          Received 'cb_oseq' from server 'localhost_1_5'. (390 ms elapsed)
+          Received 'cb_part_11908' from server 'localhost_1_0'. (547 ms elapsed)
+          Received 'cb_seq_11755' from server 'localhost_1_3'. (931 ms elapsed)
+          Received 'cb_part_11914' from server 'localhost_1_4'. (843 ms elapsed)
+          Received 'cb_part_11880' from server 'localhost_1_2'. (13464 ms elapsed)
         Distributing super-thread jobs: cb_part_11846 cb_seq_11761 cb_seq_11751 cb_seq_11749
-          Sending 'cb_part_11846' to server 'localhost_1_7'...
-            Sent 'cb_part_11846' to server 'localhost_1_7'.
-          Sending 'cb_seq_11761' to server 'localhost_1_6'...
-            Sent 'cb_seq_11761' to server 'localhost_1_6'.
+          Sending 'cb_part_11846' to server 'localhost_1_3'...
+            Sent 'cb_part_11846' to server 'localhost_1_3'.
+          Sending 'cb_seq_11761' to server 'localhost_1_2'...
+            Sent 'cb_seq_11761' to server 'localhost_1_2'.
           Sending 'cb_seq_11751' to server 'localhost_1_0'...
             Sent 'cb_seq_11751' to server 'localhost_1_0'.
-          Sending 'cb_seq_11749' to server 'localhost_1_3'...
-            Sent 'cb_seq_11749' to server 'localhost_1_3'.
-          Received 'cb_seq_11751' from server 'localhost_1_0'. (186 ms elapsed)
-          Received 'cb_seq_11761' from server 'localhost_1_6'. (216 ms elapsed)
-          Received 'cb_seq_11749' from server 'localhost_1_3'. (187 ms elapsed)
-          Received 'cb_part_11846' from server 'localhost_1_7'. (694 ms elapsed)
+          Sending 'cb_seq_11749' to server 'localhost_1_5'...
+            Sent 'cb_seq_11749' to server 'localhost_1_5'.
+          Received 'cb_seq_11761' from server 'localhost_1_2'. (229 ms elapsed)
+          Received 'cb_seq_11751' from server 'localhost_1_0'. (221 ms elapsed)
+          Received 'cb_seq_11749' from server 'localhost_1_5'. (212 ms elapsed)
+          Received 'cb_part_11846' from server 'localhost_1_3'. (719 ms elapsed)
         Distributing super-thread jobs: csa_tree_add_40_61_group_2
-          Sending 'csa_tree_add_40_61_group_2' to server 'localhost_1_7'...
-            Sent 'csa_tree_add_40_61_group_2' to server 'localhost_1_7'.
-          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_7'. (4351 ms elapsed)
+          Sending 'csa_tree_add_40_61_group_2' to server 'localhost_1_3'...
+            Sent 'csa_tree_add_40_61_group_2' to server 'localhost_1_3'.
+          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_3'. (4550 ms elapsed)
         Distributing super-thread jobs: cb_part_11815
-          Sending 'cb_part_11815' to server 'localhost_1_7'...
-            Sent 'cb_part_11815' to server 'localhost_1_7'.
-          Received 'cb_part_11815' from server 'localhost_1_7'. (218 ms elapsed)
+          Sending 'cb_part_11815' to server 'localhost_1_3'...
+            Sent 'cb_part_11815' to server 'localhost_1_3'.
+          Received 'cb_part_11815' from server 'localhost_1_3'. (225 ms elapsed)
 ==================================
 Stage : first_condense 
 ==================================
@@ -4289,40 +4289,40 @@ The global mapper estimates a slack for this path of 13715ps.
 +-----------+---------------+-----+----------------------+---------------------------+
 |   Host    |    Machine    | CPU | Physical Memory (MB) | Peak Physical Memory (MB) |
 +-----------+---------------+-----+----------------------+---------------------------+
-| localhost | atlas.unl.edu |  8  |        1573.9        |          1573.9           |
+| localhost | atlas.unl.edu |  8  |        1517.8        |          1529.1           |
 +-----------+---------------+-----+----------------------+---------------------------+
 
 +---------------+----------------------+---------------------------+
 |    Server     | Physical Memory (MB) | Peak Physical Memory (MB) |
 +---------------+----------------------+---------------------------+
-| localhost_1_0 |      776.5 [1]       |         801.6 [1]         |
-| localhost_1_1 |       89.6 [2]       |          [2] [3]          |
-| localhost_1_4 |       89.1 [2]       |          [2] [3]          |
-| localhost_1_5 |       88.3 [2]       |          [2] [3]          |
-| localhost_1_2 |       93.3 [2]       |          [2] [3]          |
-| localhost_1_3 |       90.3 [2]       |          [2] [3]          |
-| localhost_1_6 |      100.2 [2]       |          [2] [3]          |
-| localhost_1_7 |      110.3 [2]       |          [2] [3]          |
+| localhost_1_1 |       85.6 [1]       |          [1] [2]          |
+| localhost_1_4 |       91.1 [1]       |          [1] [2]          |
+| localhost_1_5 |       88.2 [1]       |          [1] [2]          |
+| localhost_1_2 |       97.4 [1]       |          [1] [2]          |
+| localhost_1_0 |      754.6 [3]       |         767.7 [3]         |
+| localhost_1_6 |       85.5 [1]       |          [1] [2]          |
+| localhost_1_7 |       86.8 [1]       |          [1] [2]          |
+| localhost_1_3 |      107.7 [1]       |          [1] [2]          |
 +---------------+----------------------+---------------------------+
-[1] Memory of child processes is included.
-[2] Memory is included in parent localhost_1_0.
-[3] Peak physical memory is not available for forked background servers.
+[1] Memory is included in parent localhost_1_0.
+[2] Peak physical memory is not available for forked background servers.
+[3] Memory of child processes is included.
 
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_7' was forked process '92460' on this host.
+        : The server 'localhost_1_3' was forked process '127716' on this host.
         : A super-threaded optimization is complete and a CPU server was successfully shut down.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_6' was forked process '92458' on this host.
+        : The server 'localhost_1_2' was forked process '127714' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_3' was forked process '92452' on this host.
+        : The server 'localhost_1_5' was forked process '127720' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_2' was forked process '92450' on this host.
+        : The server 'localhost_1_4' was forked process '127718' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_5' was forked process '92456' on this host.
+        : The server 'localhost_1_1' was forked process '127712' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_4' was forked process '92454' on this host.
+        : The server 'localhost_1_7' was forked process '127724' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_1' was forked process '92448' on this host.
+        : The server 'localhost_1_6' was forked process '127722' on this host.
 
 Test connection status
 ======================
@@ -4350,19 +4350,19 @@ State Retention instances           0        0          0.0
 +-----------+---------------+-----+----------------------+---------------------------+
 |   Host    |    Machine    | CPU | Physical Memory (MB) | Peak Physical Memory (MB) |
 +-----------+---------------+-----+----------------------+---------------------------+
-| localhost | atlas.unl.edu |  1  |        1394.2        |          1573.9           |
+| localhost | atlas.unl.edu |  1  |        1371.5        |          1529.1           |
 +-----------+---------------+-----+----------------------+---------------------------+
 
 +---------------+----------------------+---------------------------+
 |    Server     | Physical Memory (MB) | Peak Physical Memory (MB) |
 +---------------+----------------------+---------------------------+
-| localhost_1_0 |        572.0         |           801.6           |
+| localhost_1_0 |        487.1         |           767.7           |
 +---------------+----------------------+---------------------------+
 
 Info    : Using '2' number of super-threading servers using the attribute 'super_thread_servers' could have
-          saved '22' more seconds during global map.
-Info    : Using '7' number of super-threading servers using the attribute 'super_thread_servers' could have
-          saved '29' more seconds during global map.
+          saved '24' more seconds during global map.
+Info    : Using '6' number of super-threading servers using the attribute 'super_thread_servers' could have
+          saved '31' more seconds during global map.
 Info    : Removed object. [TUI-58]
         : Removed external_delay 'external_delay:MCU/clk_gating_check_1'.
 Info    : Removed object. [TUI-58]
@@ -4444,14 +4444,14 @@ Info    : Resetting the break_timing_paths attribute of a pin removes exceptions
         : The pin is 'timer1/g8376/in_0'.
 Info    : Resetting the break_timing_paths attribute of a pin removes exceptions set on the pin. break_timing_paths attribute has default value of false and can be reset to other values either false or clock_gating depends on the enable signal. [TIM-501]
         : The pin is 'timer1/g8375/in_0'.
-PBS_Generic_Opt-Post - Elapsed_Time 514, CPU_Time 492.741132
+PBS_Generic_Opt-Post - Elapsed_Time 524, CPU_Time 503.42064000000005
 stamp 'PBS_Generic_Opt-Post' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) | 100.0(100.0) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) | 100.0(100.0) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -4461,11 +4461,11 @@ stamp 'PBS_Generic-Postgen HBO Optimizations' being created for table 'pbs_debug
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  99.8( 99.8) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  99.8( 99.8) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.2(  0.2) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.2(  0.2) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -4476,7 +4476,7 @@ Info: CPU time includes time of parent + longest thread
 ##>----------------------------------------------------------------------------------------
 ##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
 ##>----------------------------------------------------------------------------------------
-##>G:Initial                            4         -         -    157431   1178480       797
+##>G:Initial                            4         -         -    157432   1178482       781
 ##>G:Setup                              0         -         -         -         -         -
 ##>G:Launch ST                          0         -         -         -         -         -
 ##>G:Design Partition                   0         -         -         -         -         -
@@ -4490,10 +4490,10 @@ Info: CPU time includes time of parent + longest thread
 ##>G:Timer                              0         -         -         -         -         -
 ##>G:Assembly                           0         -         -         -         -         -
 ##>G:DFT                                0         -         -         -         -         -
-##>G:Const Prop                         1         -         -     65137    658391      1394
-##>G:Misc                             513
+##>G:Const Prop                         1         -         -     65138    658393      1371
+##>G:Misc                             524
 ##>----------------------------------------------------------------------------------------
-##>Total Elapsed                      518
+##>Total Elapsed                      529
 ##>========================================================================================
 Info    : Done synthesizing. [SYNTH-2]
         : Done synthesizing 'MCU' to generic gates.
@@ -4512,31 +4512,31 @@ stamp 'PBS_TechMap-Start' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  99.2( 99.2) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  99.2( 99.1) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.2(  0.2) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.2(  0.2) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.6(  0.6) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.6(  0.8) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 2, CPU_Time 1.0
+PBS_TechMap-Premap HBO Optimizations - Elapsed_Time 1, CPU_Time 1.0
 stamp 'PBS_TechMap-Premap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  99.0( 98.8) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  99.0( 98.9) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.2(  0.2) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.2(  0.2) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.6(  0.6) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.6(  0.8) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.2(  0.4) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.2(  0.2) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -4548,19 +4548,19 @@ Mapper: Libraries have:
       Mapping 'MCU'...
 Updating ST server settings
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_8' is forked process '94004' on this host.
+        : The server 'localhost_1_8' is forked process '129313' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_9' is forked process '94006' on this host.
+        : The server 'localhost_1_9' is forked process '129315' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_10' is forked process '94008' on this host.
+        : The server 'localhost_1_10' is forked process '129317' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_11' is forked process '94010' on this host.
+        : The server 'localhost_1_11' is forked process '129319' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_12' is forked process '94012' on this host.
+        : The server 'localhost_1_12' is forked process '129321' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_13' is forked process '94014' on this host.
+        : The server 'localhost_1_13' is forked process '129323' on this host.
 Info    : Connection established with super-threading server. [ST-110]
-        : The server 'localhost_1_14' is forked process '94016' on this host.
+        : The server 'localhost_1_14' is forked process '129325' on this host.
 Info    : Super thread servers are launched successfully. [ST-128]
         : 8 out of 8 super thread servers are launched. Minimum 1 active super thread server is required.
 Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usable)
@@ -4581,53 +4581,53 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_oseq_15013' to server 'localhost_1_11'.
           Sending 'cb_part_15059' to server 'localhost_1_8'...
             Sent 'cb_part_15059' to server 'localhost_1_8'.
-          Received 'cb_part_15031' from server 'localhost_1_13'. (431 ms elapsed)
-          Sending 'cb_part_15065' to server 'localhost_1_13'...
-            Sent 'cb_part_15065' to server 'localhost_1_13'.
-          Received 'cb_part_15035' from server 'localhost_1_9'. (546 ms elapsed)
+          Received 'csa_tree_19878' from server 'localhost_1_10'. (290 ms elapsed)
+          Sending 'cb_part_15065' to server 'localhost_1_10'...
+            Sent 'cb_part_15065' to server 'localhost_1_10'.
+          Received 'cb_part_15035' from server 'localhost_1_9'. (533 ms elapsed)
           Sending 'cb_oseq_15017' to server 'localhost_1_9'...
             Sent 'cb_oseq_15017' to server 'localhost_1_9'.
-          Received 'cb_part_15059' from server 'localhost_1_8'. (652 ms elapsed)
-          Sending 'cb_part_15109' to server 'localhost_1_8'...
-            Sent 'cb_part_15109' to server 'localhost_1_8'.
-          Received 'cb_oseq_15013' from server 'localhost_1_11'. (957 ms elapsed)
-          Sending 'cb_part_15039' to server 'localhost_1_11'...
-            Sent 'cb_part_15039' to server 'localhost_1_11'.
-          Received 'cb_oseq_15015' from server 'localhost_1_12'. (994 ms elapsed)
-          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_12'...
-            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_12'.
-          Received 'csa_tree_19878' from server 'localhost_1_10'. (1086 ms elapsed)
-          Sending 'cb_part_15048' to server 'localhost_1_10'...
-            Sent 'cb_part_15048' to server 'localhost_1_10'.
-          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (1433 ms elapsed)
-          Sending 'add_unsigned_7506' to server 'localhost_1_14'...
-            Sent 'add_unsigned_7506' to server 'localhost_1_14'.
-          Received 'cb_part_15039' from server 'localhost_1_11'. (146 ms elapsed)
-          Sending 'cb_seq_14980' to server 'localhost_1_11'...
-            Sent 'cb_seq_14980' to server 'localhost_1_11'.
-          Received 'cb_part_15048' from server 'localhost_1_10'. (76 ms elapsed)
-          Sending 'cb_seq_14976' to server 'localhost_1_10'...
-            Sent 'cb_seq_14976' to server 'localhost_1_10'.
-          Received 'cb_part_15065' from server 'localhost_1_13'. (924 ms elapsed)
-          Sending 'abs' to server 'localhost_1_13'...
-            Sent 'abs' to server 'localhost_1_13'.
-          Received 'abs' from server 'localhost_1_13'. (91 ms elapsed)
-          Sending 'CRC16_POLYNOMIAL51287' to server 'localhost_1_13'...
-            Sent 'CRC16_POLYNOMIAL51287' to server 'localhost_1_13'.
-          Received 'CRC16_POLYNOMIAL51287' from server 'localhost_1_13'. (83 ms elapsed)
-          Sending 'increment_unsigned_22306_22345' to server 'localhost_1_13'...
-            Sent 'increment_unsigned_22306_22345' to server 'localhost_1_13'.
-          Received 'cb_part_15033' from server 'localhost_1_0'. (1463 ms elapsed)
-          Sending 'increment_unsigned_22306_22385' to server 'localhost_1_0'...
-            Sent 'increment_unsigned_22306_22385' to server 'localhost_1_0'.
-          Received 'increment_unsigned_22306_22345' from server 'localhost_1_13'. (116 ms elapsed)
-          Received 'increment_unsigned_22306_22385' from server 'localhost_1_0'. (111 ms elapsed)
-          Received 'increment_unsigned_22468_22502' from server 'localhost_1_12'. (581 ms elapsed)
-          Received 'cb_part_15109' from server 'localhost_1_8'. (952 ms elapsed)
-          Received 'add_unsigned_7506' from server 'localhost_1_14'. (532 ms elapsed)
-          Received 'cb_oseq_15017' from server 'localhost_1_9'. (1309 ms elapsed)
-          Received 'cb_seq_14980' from server 'localhost_1_11'. (859 ms elapsed)
-          Received 'cb_seq_14976' from server 'localhost_1_10'. (863 ms elapsed)
+          Received 'cb_part_15031' from server 'localhost_1_13'. (620 ms elapsed)
+          Sending 'cb_part_15109' to server 'localhost_1_13'...
+            Sent 'cb_part_15109' to server 'localhost_1_13'.
+          Received 'cb_part_15033' from server 'localhost_1_0'. (559 ms elapsed)
+          Sending 'cb_part_15039' to server 'localhost_1_0'...
+            Sent 'cb_part_15039' to server 'localhost_1_0'.
+          Received 'cb_part_15109' from server 'localhost_1_13'. (1650 ms elapsed)
+          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_13'...
+            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_13'.
+          Received 'cb_oseq_15017' from server 'localhost_1_9'. (1701 ms elapsed)
+          Sending 'cb_part_15048' to server 'localhost_1_9'...
+            Sent 'cb_part_15048' to server 'localhost_1_9'.
+          Received 'cb_part_15065' from server 'localhost_1_10'. (1877 ms elapsed)
+          Sending 'add_unsigned_7506' to server 'localhost_1_10'...
+            Sent 'add_unsigned_7506' to server 'localhost_1_10'.
+          Received 'cb_part_15059' from server 'localhost_1_8'. (2128 ms elapsed)
+          Sending 'cb_seq_14980' to server 'localhost_1_8'...
+            Sent 'cb_seq_14980' to server 'localhost_1_8'.
+          Received 'cb_oseq_15013' from server 'localhost_1_11'. (2154 ms elapsed)
+          Sending 'cb_seq_14976' to server 'localhost_1_11'...
+            Sent 'cb_seq_14976' to server 'localhost_1_11'.
+          Received 'cb_oseq_15015' from server 'localhost_1_12'. (2184 ms elapsed)
+          Sending 'abs' to server 'localhost_1_12'...
+            Sent 'abs' to server 'localhost_1_12'.
+          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (2521 ms elapsed)
+          Sending 'CRC16_POLYNOMIAL51287' to server 'localhost_1_14'...
+            Sent 'CRC16_POLYNOMIAL51287' to server 'localhost_1_14'.
+          Received 'cb_part_15039' from server 'localhost_1_0'. (100 ms elapsed)
+          Sending 'increment_unsigned_22306_22345' to server 'localhost_1_0'...
+            Sent 'increment_unsigned_22306_22345' to server 'localhost_1_0'.
+          Received 'cb_seq_14980' from server 'localhost_1_8'. (66 ms elapsed)
+          Sending 'increment_unsigned_22306_22385' to server 'localhost_1_8'...
+            Sent 'increment_unsigned_22306_22385' to server 'localhost_1_8'.
+          Received 'abs' from server 'localhost_1_12'. (61 ms elapsed)
+          Received 'CRC16_POLYNOMIAL51287' from server 'localhost_1_14'. (71 ms elapsed)
+          Received 'increment_unsigned_22468_22502' from server 'localhost_1_13'. (169 ms elapsed)
+          Received 'cb_part_15048' from server 'localhost_1_9'. (511 ms elapsed)
+          Received 'add_unsigned_7506' from server 'localhost_1_10'. (526 ms elapsed)
+          Received 'increment_unsigned_22306_22345' from server 'localhost_1_0'. (530 ms elapsed)
+          Received 'increment_unsigned_22306_22385' from server 'localhost_1_8'. (505 ms elapsed)
+          Received 'cb_seq_14976' from server 'localhost_1_11'. (863 ms elapsed)
         Distributing super-thread jobs: square_signed_25825 cb_part_15026 cb_seq_15006 cb_seq_15016 cb_seq_15010 cb_seq_15002 cb_seq_14992 cb_oseq_14971 cb_oseq_14973 cb_seq_15012 cb_seq_15014 cb_part_15113 cb_seq_14978 cb_seq_14982 cb_part_15107 increment_signed_23012_25083
           Sending 'square_signed_25825' to server 'localhost_1_14'...
             Sent 'square_signed_25825' to server 'localhost_1_14'.
@@ -4645,38 +4645,38 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_14992' to server 'localhost_1_11'.
           Sending 'cb_oseq_14971' to server 'localhost_1_8'...
             Sent 'cb_oseq_14971' to server 'localhost_1_8'.
-          Received 'cb_part_15026' from server 'localhost_1_13'. (429 ms elapsed)
-          Sending 'cb_oseq_14973' to server 'localhost_1_13'...
-            Sent 'cb_oseq_14973' to server 'localhost_1_13'.
-          Received 'square_signed_25825' from server 'localhost_1_14'. (700 ms elapsed)
-          Sending 'cb_seq_15012' to server 'localhost_1_14'...
-            Sent 'cb_seq_15012' to server 'localhost_1_14'.
-          Received 'cb_oseq_14973' from server 'localhost_1_13'. (297 ms elapsed)
+          Received 'cb_seq_15016' from server 'localhost_1_0'. (338 ms elapsed)
+          Sending 'cb_oseq_14973' to server 'localhost_1_0'...
+            Sent 'cb_oseq_14973' to server 'localhost_1_0'.
+          Received 'cb_seq_15006' from server 'localhost_1_9'. (478 ms elapsed)
+          Sending 'cb_seq_15012' to server 'localhost_1_9'...
+            Sent 'cb_seq_15012' to server 'localhost_1_9'.
+          Received 'cb_part_15026' from server 'localhost_1_13'. (673 ms elapsed)
           Sending 'cb_seq_15014' to server 'localhost_1_13'...
             Sent 'cb_seq_15014' to server 'localhost_1_13'.
-          Received 'cb_seq_15006' from server 'localhost_1_9'. (704 ms elapsed)
+          Received 'cb_seq_15012' from server 'localhost_1_9'. (175 ms elapsed)
           Sending 'cb_part_15113' to server 'localhost_1_9'...
             Sent 'cb_part_15113' to server 'localhost_1_9'.
-          Received 'cb_seq_15016' from server 'localhost_1_0'. (726 ms elapsed)
-          Sending 'cb_seq_14978' to server 'localhost_1_0'...
-            Sent 'cb_seq_14978' to server 'localhost_1_0'.
-          Received 'cb_seq_15012' from server 'localhost_1_14'. (152 ms elapsed)
-          Sending 'cb_seq_14982' to server 'localhost_1_14'...
-            Sent 'cb_seq_14982' to server 'localhost_1_14'.
-          Received 'cb_part_15113' from server 'localhost_1_9'. (98 ms elapsed)
-          Sending 'cb_part_15107' to server 'localhost_1_9'...
-            Sent 'cb_part_15107' to server 'localhost_1_9'.
-          Received 'cb_seq_14978' from server 'localhost_1_0'. (67 ms elapsed)
-          Sending 'increment_signed_23012_25083' to server 'localhost_1_0'...
-            Sent 'increment_signed_23012_25083' to server 'localhost_1_0'.
-          Received 'cb_seq_14982' from server 'localhost_1_14'. (119 ms elapsed)
-          Received 'increment_signed_23012_25083' from server 'localhost_1_0'. (164 ms elapsed)
-          Received 'cb_seq_15002' from server 'localhost_1_12'. (1012 ms elapsed)
-          Received 'cb_seq_14992' from server 'localhost_1_11'. (1079 ms elapsed)
-          Received 'cb_seq_15010' from server 'localhost_1_10'. (1214 ms elapsed)
-          Received 'cb_part_15107' from server 'localhost_1_9'. (531 ms elapsed)
-          Received 'cb_oseq_14971' from server 'localhost_1_8'. (1294 ms elapsed)
-          Received 'cb_seq_15014' from server 'localhost_1_13'. (875 ms elapsed)
+          Received 'cb_seq_15010' from server 'localhost_1_10'. (692 ms elapsed)
+          Sending 'cb_seq_14978' to server 'localhost_1_10'...
+            Sent 'cb_seq_14978' to server 'localhost_1_10'.
+          Received 'cb_seq_15002' from server 'localhost_1_12'. (797 ms elapsed)
+          Sending 'cb_seq_14982' to server 'localhost_1_12'...
+            Sent 'cb_seq_14982' to server 'localhost_1_12'.
+          Received 'square_signed_25825' from server 'localhost_1_14'. (1100 ms elapsed)
+          Sending 'cb_part_15107' to server 'localhost_1_14'...
+            Sent 'cb_part_15107' to server 'localhost_1_14'.
+          Received 'cb_seq_14982' from server 'localhost_1_12'. (358 ms elapsed)
+          Sending 'increment_signed_23012_25083' to server 'localhost_1_12'...
+            Sent 'increment_signed_23012_25083' to server 'localhost_1_12'.
+          Received 'cb_seq_14978' from server 'localhost_1_10'. (501 ms elapsed)
+          Received 'cb_part_15113' from server 'localhost_1_9'. (604 ms elapsed)
+          Received 'cb_seq_15014' from server 'localhost_1_13'. (625 ms elapsed)
+          Received 'cb_seq_14992' from server 'localhost_1_11'. (1147 ms elapsed)
+          Received 'cb_part_15107' from server 'localhost_1_14'. (60 ms elapsed)
+          Received 'increment_signed_23012_25083' from server 'localhost_1_12'. (74 ms elapsed)
+          Received 'cb_oseq_14971' from server 'localhost_1_8'. (1340 ms elapsed)
+          Received 'cb_oseq_14973' from server 'localhost_1_0'. (1306 ms elapsed)
         Distributing super-thread jobs: cb_part_15068 cb_seq_15023 cb_seq_15050 cb_part_15041 cb_seq_15052 cb_part_15103 mux_ctl_0x_14909
           Sending 'cb_part_15068' to server 'localhost_1_14'...
             Sent 'cb_part_15068' to server 'localhost_1_14'.
@@ -4692,42 +4692,42 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_part_15103' to server 'localhost_1_12'.
           Sending 'mux_ctl_0x_14909' to server 'localhost_1_11'...
             Sent 'mux_ctl_0x_14909' to server 'localhost_1_11'.
-          Received 'mux_ctl_0x_14909' from server 'localhost_1_11'. (151 ms elapsed)
-          Received 'cb_part_15068' from server 'localhost_1_14'. (307 ms elapsed)
-          Received 'cb_seq_15023' from server 'localhost_1_13'. (336 ms elapsed)
-          Received 'cb_part_15041' from server 'localhost_1_0'. (557 ms elapsed)
-          Received 'cb_seq_15052' from server 'localhost_1_10'. (545 ms elapsed)
-          Received 'cb_seq_15050' from server 'localhost_1_9'. (652 ms elapsed)
-          Received 'cb_part_15103' from server 'localhost_1_12'. (889 ms elapsed)
+          Received 'mux_ctl_0x_14909' from server 'localhost_1_11'. (106 ms elapsed)
+          Received 'cb_part_15103' from server 'localhost_1_12'. (127 ms elapsed)
+          Received 'cb_part_15068' from server 'localhost_1_14'. (413 ms elapsed)
+          Received 'cb_seq_15023' from server 'localhost_1_13'. (423 ms elapsed)
+          Received 'cb_part_15041' from server 'localhost_1_0'. (515 ms elapsed)
+          Received 'cb_seq_15050' from server 'localhost_1_9'. (960 ms elapsed)
+          Received 'cb_seq_15052' from server 'localhost_1_10'. (985 ms elapsed)
         Distributing super-thread jobs: cb_seq_15019 cb_part_15021
           Sending 'cb_seq_15019' to server 'localhost_1_14'...
             Sent 'cb_seq_15019' to server 'localhost_1_14'.
           Sending 'cb_part_15021' to server 'localhost_1_13'...
             Sent 'cb_part_15021' to server 'localhost_1_13'.
-          Received 'cb_seq_15019' from server 'localhost_1_14'. (86 ms elapsed)
-          Received 'cb_part_15021' from server 'localhost_1_13'. (150 ms elapsed)
+          Received 'cb_seq_15019' from server 'localhost_1_14'. (92 ms elapsed)
+          Received 'cb_part_15021' from server 'localhost_1_13'. (146 ms elapsed)
         Distributing super-thread jobs: c_dec
           Sending 'c_dec' to server 'localhost_1_14'...
             Sent 'c_dec' to server 'localhost_1_14'.
-          Received 'c_dec' from server 'localhost_1_14'. (217 ms elapsed)
+          Received 'c_dec' from server 'localhost_1_14'. (229 ms elapsed)
         Distributing super-thread jobs: cb_part_15073
           Sending 'cb_part_15073' to server 'localhost_1_14'...
             Sent 'cb_part_15073' to server 'localhost_1_14'.
-          Received 'cb_part_15073' from server 'localhost_1_14'. (117 ms elapsed)
+          Received 'cb_part_15073' from server 'localhost_1_14'. (118 ms elapsed)
         Distributing super-thread jobs: cb_part_15079 cb_part_15110
           Sending 'cb_part_15079' to server 'localhost_1_14'...
             Sent 'cb_part_15079' to server 'localhost_1_14'.
           Sending 'cb_part_15110' to server 'localhost_1_13'...
             Sent 'cb_part_15110' to server 'localhost_1_13'.
-          Received 'cb_part_15110' from server 'localhost_1_13'. (100 ms elapsed)
-          Received 'cb_part_15079' from server 'localhost_1_14'. (231 ms elapsed)
+          Received 'cb_part_15110' from server 'localhost_1_13'. (114 ms elapsed)
+          Received 'cb_part_15079' from server 'localhost_1_14'. (246 ms elapsed)
         Distributing super-thread jobs: cb_part_15082 cb_oseq_14965
           Sending 'cb_part_15082' to server 'localhost_1_14'...
             Sent 'cb_part_15082' to server 'localhost_1_14'.
           Sending 'cb_oseq_14965' to server 'localhost_1_13'...
             Sent 'cb_oseq_14965' to server 'localhost_1_13'.
-          Received 'cb_oseq_14965' from server 'localhost_1_13'. (549 ms elapsed)
-          Received 'cb_part_15082' from server 'localhost_1_14'. (1087 ms elapsed)
+          Received 'cb_oseq_14965' from server 'localhost_1_13'. (833 ms elapsed)
+          Received 'cb_part_15082' from server 'localhost_1_14'. (1106 ms elapsed)
         Distributing super-thread jobs: cb_part_15092 cb_part_15084 add_unsigned
           Sending 'cb_part_15092' to server 'localhost_1_14'...
             Sent 'cb_part_15092' to server 'localhost_1_14'.
@@ -4735,9 +4735,9 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_part_15084' to server 'localhost_1_13'.
           Sending 'add_unsigned' to server 'localhost_1_9'...
             Sent 'add_unsigned' to server 'localhost_1_9'.
-          Received 'cb_part_15084' from server 'localhost_1_13'. (169 ms elapsed)
-          Received 'add_unsigned' from server 'localhost_1_9'. (344 ms elapsed)
-          Received 'cb_part_15092' from server 'localhost_1_14'. (709 ms elapsed)
+          Received 'cb_part_15084' from server 'localhost_1_13'. (241 ms elapsed)
+          Received 'add_unsigned' from server 'localhost_1_9'. (367 ms elapsed)
+          Received 'cb_part_15092' from server 'localhost_1_14'. (719 ms elapsed)
         Distributing super-thread jobs: rotate_left_vhdl_unsigned_8083 rotate_right_vhdl_unsigned_7085 arith_shift_right_vhdl_unsigned shift_left_vhdl_unsigned shift_right_vhdl_unsigned cmp6_signed cmp6_unsigned_3258 csa_tree_ADD_TC_OP29_group_2 cb_part_15088 abs_9374 abs_9373
           Sending 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_14'...
             Sent 'rotate_left_vhdl_unsigned_8083' to server 'localhost_1_14'.
@@ -4755,38 +4755,38 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cmp6_unsigned_3258' to server 'localhost_1_11'.
           Sending 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_8'...
             Sent 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_8'.
-          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_14'. (224 ms elapsed)
+          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_14'. (212 ms elapsed)
           Sending 'cb_part_15088' to server 'localhost_1_14'...
             Sent 'cb_part_15088' to server 'localhost_1_14'.
-          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_13'. (288 ms elapsed)
+          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_13'. (296 ms elapsed)
           Sending 'abs_9374' to server 'localhost_1_13'...
             Sent 'abs_9374' to server 'localhost_1_13'.
-          Received 'cb_part_15088' from server 'localhost_1_14'. (134 ms elapsed)
+          Received 'cb_part_15088' from server 'localhost_1_14'. (108 ms elapsed)
           Sending 'abs_9373' to server 'localhost_1_14'...
             Sent 'abs_9373' to server 'localhost_1_14'.
-          Received 'abs_9374' from server 'localhost_1_13'. (124 ms elapsed)
-          Received 'abs_9373' from server 'localhost_1_14'. (140 ms elapsed)
-          Received 'cmp6_signed' from server 'localhost_1_12'. (549 ms elapsed)
-          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_0'. (682 ms elapsed)
-          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_10'. (721 ms elapsed)
-          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_9'. (978 ms elapsed)
-          Received 'cmp6_unsigned_3258' from server 'localhost_1_11'. (1345 ms elapsed)
-          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_8'. (1439 ms elapsed)
+          Received 'abs_9374' from server 'localhost_1_13'. (129 ms elapsed)
+          Received 'abs_9373' from server 'localhost_1_14'. (177 ms elapsed)
+          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_10'. (611 ms elapsed)
+          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_0'. (684 ms elapsed)
+          Received 'cmp6_signed' from server 'localhost_1_12'. (682 ms elapsed)
+          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_9'. (989 ms elapsed)
+          Received 'cmp6_unsigned_3258' from server 'localhost_1_11'. (1379 ms elapsed)
+          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_8'. (1401 ms elapsed)
         Distributing super-thread jobs: mult_mixed_1670 addsub_unsigned_6892
           Sending 'mult_mixed_1670' to server 'localhost_1_14'...
             Sent 'mult_mixed_1670' to server 'localhost_1_14'.
           Sending 'addsub_unsigned_6892' to server 'localhost_1_13'...
             Sent 'addsub_unsigned_6892' to server 'localhost_1_13'.
-          Received 'addsub_unsigned_6892' from server 'localhost_1_13'. (249 ms elapsed)
-          Received 'mult_mixed_1670' from server 'localhost_1_14'. (2977 ms elapsed)
+          Received 'addsub_unsigned_6892' from server 'localhost_1_13'. (285 ms elapsed)
+          Received 'mult_mixed_1670' from server 'localhost_1_14'. (3172 ms elapsed)
         Distributing super-thread jobs: cb_part_15095
           Sending 'cb_part_15095' to server 'localhost_1_14'...
             Sent 'cb_part_15095' to server 'localhost_1_14'.
-          Received 'cb_part_15095' from server 'localhost_1_14'. (2026 ms elapsed)
+          Received 'cb_part_15095' from server 'localhost_1_14'. (2123 ms elapsed)
         Distributing super-thread jobs: cb_oseq_15115
           Sending 'cb_oseq_15115' to server 'localhost_1_14'...
             Sent 'cb_oseq_15115' to server 'localhost_1_14'.
-          Received 'cb_oseq_15115' from server 'localhost_1_14'. (461 ms elapsed)
+          Received 'cb_oseq_15115' from server 'localhost_1_14'. (446 ms elapsed)
         Distributing super-thread jobs: cb_seq_14964 cb_seq_14990 cb_seq_14966 cb_part_15101 cb_part_15049 cb_oseq loadext
           Sending 'cb_seq_14964' to server 'localhost_1_14'...
             Sent 'cb_seq_14964' to server 'localhost_1_14'.
@@ -4802,13 +4802,13 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_oseq' to server 'localhost_1_12'.
           Sending 'loadext' to server 'localhost_1_11'...
             Sent 'loadext' to server 'localhost_1_11'.
-          Received 'cb_part_15049' from server 'localhost_1_10'. (280 ms elapsed)
-          Received 'cb_seq_14990' from server 'localhost_1_13'. (359 ms elapsed)
-          Received 'cb_seq_14964' from server 'localhost_1_14'. (405 ms elapsed)
-          Received 'cb_part_15101' from server 'localhost_1_0'. (578 ms elapsed)
-          Received 'cb_oseq' from server 'localhost_1_12'. (552 ms elapsed)
-          Received 'cb_seq_14966' from server 'localhost_1_9'. (665 ms elapsed)
-          Received 'loadext' from server 'localhost_1_11'. (859 ms elapsed)
+          Received 'cb_oseq' from server 'localhost_1_12'. (106 ms elapsed)
+          Received 'cb_seq_14964' from server 'localhost_1_14'. (344 ms elapsed)
+          Received 'cb_seq_14990' from server 'localhost_1_13'. (389 ms elapsed)
+          Received 'cb_seq_14966' from server 'localhost_1_9'. (590 ms elapsed)
+          Received 'cb_part_15101' from server 'localhost_1_0'. (643 ms elapsed)
+          Received 'cb_part_15049' from server 'localhost_1_10'. (652 ms elapsed)
+          Received 'loadext' from server 'localhost_1_11'. (873 ms elapsed)
         Distributing super-thread jobs: cb_seq_14986 cb_part_15091 sub_signed sub_unsigned_332_3819 cb_seq_15029 geq_signed_rtlopto_model_22214 geq_unsigned_rtlopto_model_22215 sub_signed_8089
           Sending 'cb_seq_14986' to server 'localhost_1_14'...
             Sent 'cb_seq_14986' to server 'localhost_1_14'.
@@ -4826,14 +4826,14 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_11'.
           Sending 'sub_signed_8089' to server 'localhost_1_8'...
             Sent 'sub_signed_8089' to server 'localhost_1_8'.
-          Received 'cb_seq_14986' from server 'localhost_1_14'. (181 ms elapsed)
-          Received 'sub_signed' from server 'localhost_1_9'. (153 ms elapsed)
-          Received 'cb_seq_15029' from server 'localhost_1_10'. (139 ms elapsed)
-          Received 'cb_part_15091' from server 'localhost_1_13'. (223 ms elapsed)
-          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_12'. (495 ms elapsed)
-          Received 'sub_unsigned_332_3819' from server 'localhost_1_0'. (547 ms elapsed)
-          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_11'. (886 ms elapsed)
-          Received 'sub_signed_8089' from server 'localhost_1_8'. (918 ms elapsed)
+          Received 'cb_seq_14986' from server 'localhost_1_14'. (155 ms elapsed)
+          Received 'sub_signed_8089' from server 'localhost_1_8'. (91 ms elapsed)
+          Received 'sub_signed' from server 'localhost_1_9'. (194 ms elapsed)
+          Received 'cb_part_15091' from server 'localhost_1_13'. (231 ms elapsed)
+          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_11'. (459 ms elapsed)
+          Received 'cb_seq_15029' from server 'localhost_1_10'. (531 ms elapsed)
+          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_12'. (523 ms elapsed)
+          Received 'sub_unsigned_332_3819' from server 'localhost_1_0'. (569 ms elapsed)
         Distributing super-thread jobs: cb_seq_14960 cb_seq_14956 cb_seq_14954
           Sending 'cb_seq_14960' to server 'localhost_1_14'...
             Sent 'cb_seq_14960' to server 'localhost_1_14'.
@@ -4841,9 +4841,9 @@ Multi-threaded Virtual Mapping    (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_14956' to server 'localhost_1_13'.
           Sending 'cb_seq_14954' to server 'localhost_1_9'...
             Sent 'cb_seq_14954' to server 'localhost_1_9'.
-          Received 'cb_seq_14956' from server 'localhost_1_13'. (522 ms elapsed)
-          Received 'cb_seq_14954' from server 'localhost_1_9'. (489 ms elapsed)
-          Received 'cb_seq_14960' from server 'localhost_1_14'. (953 ms elapsed)
+          Received 'cb_seq_14954' from server 'localhost_1_9'. (490 ms elapsed)
+          Received 'cb_seq_14956' from server 'localhost_1_13'. (637 ms elapsed)
+          Received 'cb_seq_14960' from server 'localhost_1_14'. (970 ms elapsed)
  
 Global mapping target info
 ==========================
@@ -6271,16 +6271,16 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_14956' to server 'localhost_1_13'.
           Sending 'cb_seq_14954' to server 'localhost_1_9'...
             Sent 'cb_seq_14954' to server 'localhost_1_9'.
-          Received 'cb_seq_14954' from server 'localhost_1_9'. (830 ms elapsed)
-          Received 'cb_seq_14960' from server 'localhost_1_14'. (2076 ms elapsed)
-          Received 'cb_seq_14956' from server 'localhost_1_13'. (2307 ms elapsed)
+          Received 'cb_seq_14960' from server 'localhost_1_14'. (1820 ms elapsed)
+          Received 'cb_seq_14954' from server 'localhost_1_9'. (1820 ms elapsed)
+          Received 'cb_seq_14956' from server 'localhost_1_13'. (2177 ms elapsed)
         Distributing super-thread jobs: cb_seq_14986 cb_seq_15029
           Sending 'cb_seq_14986' to server 'localhost_1_14'...
             Sent 'cb_seq_14986' to server 'localhost_1_14'.
           Sending 'cb_seq_15029' to server 'localhost_1_13'...
             Sent 'cb_seq_15029' to server 'localhost_1_13'.
-          Received 'cb_seq_15029' from server 'localhost_1_13'. (242 ms elapsed)
-          Received 'cb_seq_14986' from server 'localhost_1_14'. (438 ms elapsed)
+          Received 'cb_seq_15029' from server 'localhost_1_13'. (238 ms elapsed)
+          Received 'cb_seq_14986' from server 'localhost_1_14'. (445 ms elapsed)
         Distributing super-thread jobs: cb_part_15091 sub_signed sub_unsigned_332_3819 geq_signed_rtlopto_model_22214 geq_unsigned_rtlopto_model_22215 sub_signed_8089
           Sending 'cb_part_15091' to server 'localhost_1_14'...
             Sent 'cb_part_15091' to server 'localhost_1_14'.
@@ -6294,12 +6294,12 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'geq_unsigned_rtlopto_model_22215' to server 'localhost_1_10'.
           Sending 'sub_signed_8089' to server 'localhost_1_12'...
             Sent 'sub_signed_8089' to server 'localhost_1_12'.
-          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_0'. (519 ms elapsed)
-          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_10'. (580 ms elapsed)
-          Received 'cb_part_15091' from server 'localhost_1_14'. (734 ms elapsed)
-          Received 'sub_signed' from server 'localhost_1_13'. (1116 ms elapsed)
-          Received 'sub_unsigned_332_3819' from server 'localhost_1_9'. (1142 ms elapsed)
-          Received 'sub_signed_8089' from server 'localhost_1_12'. (1694 ms elapsed)
+          Received 'geq_signed_rtlopto_model_22214' from server 'localhost_1_0'. (518 ms elapsed)
+          Received 'cb_part_15091' from server 'localhost_1_14'. (744 ms elapsed)
+          Received 'sub_signed' from server 'localhost_1_13'. (1114 ms elapsed)
+          Received 'sub_unsigned_332_3819' from server 'localhost_1_9'. (1174 ms elapsed)
+          Received 'geq_unsigned_rtlopto_model_22215' from server 'localhost_1_10'. (1239 ms elapsed)
+          Received 'sub_signed_8089' from server 'localhost_1_12'. (1712 ms elapsed)
         Distributing super-thread jobs: cb_seq_14964 cb_seq_14990 cb_seq_14966
           Sending 'cb_seq_14964' to server 'localhost_1_14'...
             Sent 'cb_seq_14964' to server 'localhost_1_14'.
@@ -6307,9 +6307,9 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_14990' to server 'localhost_1_13'.
           Sending 'cb_seq_14966' to server 'localhost_1_9'...
             Sent 'cb_seq_14966' to server 'localhost_1_9'.
-          Received 'cb_seq_14966' from server 'localhost_1_9'. (478 ms elapsed)
-          Received 'cb_seq_14990' from server 'localhost_1_13'. (884 ms elapsed)
-          Received 'cb_seq_14964' from server 'localhost_1_14'. (1384 ms elapsed)
+          Received 'cb_seq_14966' from server 'localhost_1_9'. (462 ms elapsed)
+          Received 'cb_seq_14990' from server 'localhost_1_13'. (928 ms elapsed)
+          Received 'cb_seq_14964' from server 'localhost_1_14'. (1479 ms elapsed)
         Distributing super-thread jobs: cb_part_15101 cb_part_15049 cb_oseq loadext
           Sending 'cb_part_15101' to server 'localhost_1_14'...
             Sent 'cb_part_15101' to server 'localhost_1_14'.
@@ -6319,25 +6319,25 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_oseq' to server 'localhost_1_9'.
           Sending 'loadext' to server 'localhost_1_0'...
             Sent 'loadext' to server 'localhost_1_0'.
-          Received 'cb_oseq' from server 'localhost_1_9'. (224 ms elapsed)
-          Received 'loadext' from server 'localhost_1_0'. (357 ms elapsed)
-          Received 'cb_part_15101' from server 'localhost_1_14'. (496 ms elapsed)
-          Received 'cb_part_15049' from server 'localhost_1_13'. (665 ms elapsed)
+          Received 'cb_oseq' from server 'localhost_1_9'. (208 ms elapsed)
+          Received 'loadext' from server 'localhost_1_0'. (470 ms elapsed)
+          Received 'cb_part_15101' from server 'localhost_1_14'. (521 ms elapsed)
+          Received 'cb_part_15049' from server 'localhost_1_13'. (647 ms elapsed)
         Distributing super-thread jobs: cb_oseq_15115
           Sending 'cb_oseq_15115' to server 'localhost_1_14'...
             Sent 'cb_oseq_15115' to server 'localhost_1_14'.
-          Received 'cb_oseq_15115' from server 'localhost_1_14'. (1821 ms elapsed)
+          Received 'cb_oseq_15115' from server 'localhost_1_14'. (1898 ms elapsed)
         Distributing super-thread jobs: cb_part_15095
           Sending 'cb_part_15095' to server 'localhost_1_14'...
             Sent 'cb_part_15095' to server 'localhost_1_14'.
-          Received 'cb_part_15095' from server 'localhost_1_14'. (8677 ms elapsed)
+          Received 'cb_part_15095' from server 'localhost_1_14'. (9095 ms elapsed)
         Distributing super-thread jobs: mult_mixed_1670 addsub_unsigned_6892
           Sending 'mult_mixed_1670' to server 'localhost_1_14'...
             Sent 'mult_mixed_1670' to server 'localhost_1_14'.
           Sending 'addsub_unsigned_6892' to server 'localhost_1_13'...
             Sent 'addsub_unsigned_6892' to server 'localhost_1_13'.
-          Received 'addsub_unsigned_6892' from server 'localhost_1_13'. (2180 ms elapsed)
-          Received 'mult_mixed_1670' from server 'localhost_1_14'. (32701 ms elapsed)
+          Received 'addsub_unsigned_6892' from server 'localhost_1_13'. (2204 ms elapsed)
+          Received 'mult_mixed_1670' from server 'localhost_1_14'. (33501 ms elapsed)
         Distributing super-thread jobs: rotate_right_vhdl_unsigned_7085 rotate_left_vhdl_unsigned_8083 arith_shift_right_vhdl_unsigned shift_right_vhdl_unsigned shift_left_vhdl_unsigned cmp6_signed cmp6_unsigned_3258 csa_tree_ADD_TC_OP29_group_2 cb_part_15088 abs_9374 abs_9373
           Sending 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_14'...
             Sent 'rotate_right_vhdl_unsigned_7085' to server 'localhost_1_14'.
@@ -6355,23 +6355,23 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cmp6_unsigned_3258' to server 'localhost_1_11'.
           Sending 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_8'...
             Sent 'csa_tree_ADD_TC_OP29_group_2' to server 'localhost_1_8'.
-          Received 'cmp6_signed' from server 'localhost_1_12'. (1140 ms elapsed)
+          Received 'cmp6_signed' from server 'localhost_1_12'. (1486 ms elapsed)
           Sending 'cb_part_15088' to server 'localhost_1_12'...
             Sent 'cb_part_15088' to server 'localhost_1_12'.
-          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_9'. (2571 ms elapsed)
-          Sending 'abs_9374' to server 'localhost_1_9'...
-            Sent 'abs_9374' to server 'localhost_1_9'.
-          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_14'. (2797 ms elapsed)
-          Sending 'abs_9373' to server 'localhost_1_14'...
-            Sent 'abs_9373' to server 'localhost_1_14'.
-          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_0'. (2852 ms elapsed)
-          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_13'. (2999 ms elapsed)
-          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_8'. (3431 ms elapsed)
-          Received 'cmp6_unsigned_3258' from server 'localhost_1_11'. (3462 ms elapsed)
-          Received 'cb_part_15088' from server 'localhost_1_12'. (2591 ms elapsed)
-          Received 'abs_9373' from server 'localhost_1_14'. (1227 ms elapsed)
-          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_10'. (4634 ms elapsed)
-          Received 'abs_9374' from server 'localhost_1_9'. (2367 ms elapsed)
+          Received 'csa_tree_ADD_TC_OP29_group_2' from server 'localhost_1_8'. (1914 ms elapsed)
+          Sending 'abs_9374' to server 'localhost_1_8'...
+            Sent 'abs_9374' to server 'localhost_1_8'.
+          Received 'rotate_left_vhdl_unsigned_8083' from server 'localhost_1_13'. (2458 ms elapsed)
+          Sending 'abs_9373' to server 'localhost_1_13'...
+            Sent 'abs_9373' to server 'localhost_1_13'.
+          Received 'arith_shift_right_vhdl_unsigned' from server 'localhost_1_9'. (2509 ms elapsed)
+          Received 'rotate_right_vhdl_unsigned_7085' from server 'localhost_1_14'. (2871 ms elapsed)
+          Received 'cb_part_15088' from server 'localhost_1_12'. (1416 ms elapsed)
+          Received 'abs_9374' from server 'localhost_1_8'. (1300 ms elapsed)
+          Received 'abs_9373' from server 'localhost_1_13'. (1199 ms elapsed)
+          Received 'cmp6_unsigned_3258' from server 'localhost_1_11'. (4484 ms elapsed)
+          Received 'shift_right_vhdl_unsigned' from server 'localhost_1_0'. (4530 ms elapsed)
+          Received 'shift_left_vhdl_unsigned' from server 'localhost_1_10'. (4957 ms elapsed)
         Distributing super-thread jobs: cb_part_15092 cb_part_15084 add_unsigned
           Sending 'cb_part_15092' to server 'localhost_1_14'...
             Sent 'cb_part_15092' to server 'localhost_1_14'.
@@ -6379,39 +6379,39 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_part_15084' to server 'localhost_1_13'.
           Sending 'add_unsigned' to server 'localhost_1_9'...
             Sent 'add_unsigned' to server 'localhost_1_9'.
-          Received 'cb_part_15084' from server 'localhost_1_13'. (385 ms elapsed)
-          Received 'add_unsigned' from server 'localhost_1_9'. (1724 ms elapsed)
-          Received 'cb_part_15092' from server 'localhost_1_14'. (2400 ms elapsed)
+          Received 'cb_part_15084' from server 'localhost_1_13'. (594 ms elapsed)
+          Received 'add_unsigned' from server 'localhost_1_9'. (1771 ms elapsed)
+          Received 'cb_part_15092' from server 'localhost_1_14'. (2350 ms elapsed)
         Distributing super-thread jobs: cb_part_15082 cb_oseq_14965
           Sending 'cb_part_15082' to server 'localhost_1_14'...
             Sent 'cb_part_15082' to server 'localhost_1_14'.
           Sending 'cb_oseq_14965' to server 'localhost_1_13'...
             Sent 'cb_oseq_14965' to server 'localhost_1_13'.
-          Received 'cb_oseq_14965' from server 'localhost_1_13'. (3245 ms elapsed)
-          Received 'cb_part_15082' from server 'localhost_1_14'. (4189 ms elapsed)
+          Received 'cb_oseq_14965' from server 'localhost_1_13'. (3300 ms elapsed)
+          Received 'cb_part_15082' from server 'localhost_1_14'. (4222 ms elapsed)
         Distributing super-thread jobs: cb_part_15079 cb_part_15110
           Sending 'cb_part_15079' to server 'localhost_1_14'...
             Sent 'cb_part_15079' to server 'localhost_1_14'.
           Sending 'cb_part_15110' to server 'localhost_1_13'...
             Sent 'cb_part_15110' to server 'localhost_1_13'.
-          Received 'cb_part_15110' from server 'localhost_1_13'. (433 ms elapsed)
-          Received 'cb_part_15079' from server 'localhost_1_14'. (868 ms elapsed)
+          Received 'cb_part_15110' from server 'localhost_1_13'. (452 ms elapsed)
+          Received 'cb_part_15079' from server 'localhost_1_14'. (780 ms elapsed)
         Distributing super-thread jobs: cb_part_15073
           Sending 'cb_part_15073' to server 'localhost_1_14'...
             Sent 'cb_part_15073' to server 'localhost_1_14'.
-          Received 'cb_part_15073' from server 'localhost_1_14'. (351 ms elapsed)
+          Received 'cb_part_15073' from server 'localhost_1_14'. (361 ms elapsed)
         Distributing super-thread jobs: c_dec
           Sending 'c_dec' to server 'localhost_1_14'...
             Sent 'c_dec' to server 'localhost_1_14'.
-          Received 'c_dec' from server 'localhost_1_14'. (651 ms elapsed)
+          Received 'c_dec' from server 'localhost_1_14'. (676 ms elapsed)
         Distributing super-thread jobs: cb_seq_15019
           Sending 'cb_seq_15019' to server 'localhost_1_14'...
             Sent 'cb_seq_15019' to server 'localhost_1_14'.
-          Received 'cb_seq_15019' from server 'localhost_1_14'. (219 ms elapsed)
+          Received 'cb_seq_15019' from server 'localhost_1_14'. (168 ms elapsed)
         Distributing super-thread jobs: cb_part_15021
           Sending 'cb_part_15021' to server 'localhost_1_14'...
             Sent 'cb_part_15021' to server 'localhost_1_14'.
-          Received 'cb_part_15021' from server 'localhost_1_14'. (291 ms elapsed)
+          Received 'cb_part_15021' from server 'localhost_1_14'. (325 ms elapsed)
         Distributing super-thread jobs: cb_seq_15023 cb_seq_15050 cb_seq_15052 mux_ctl_0x_14909
           Sending 'cb_seq_15023' to server 'localhost_1_14'...
             Sent 'cb_seq_15023' to server 'localhost_1_14'.
@@ -6421,10 +6421,10 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_15052' to server 'localhost_1_9'.
           Sending 'mux_ctl_0x_14909' to server 'localhost_1_0'...
             Sent 'mux_ctl_0x_14909' to server 'localhost_1_0'.
-          Received 'cb_seq_15052' from server 'localhost_1_9'. (246 ms elapsed)
-          Received 'mux_ctl_0x_14909' from server 'localhost_1_0'. (333 ms elapsed)
-          Received 'cb_seq_15023' from server 'localhost_1_14'. (757 ms elapsed)
-          Received 'cb_seq_15050' from server 'localhost_1_13'. (892 ms elapsed)
+          Received 'cb_seq_15052' from server 'localhost_1_9'. (244 ms elapsed)
+          Received 'mux_ctl_0x_14909' from server 'localhost_1_0'. (353 ms elapsed)
+          Received 'cb_seq_15023' from server 'localhost_1_14'. (773 ms elapsed)
+          Received 'cb_seq_15050' from server 'localhost_1_13'. (842 ms elapsed)
         Distributing super-thread jobs: cb_part_15068 cb_part_15041 cb_part_15103
           Sending 'cb_part_15068' to server 'localhost_1_14'...
             Sent 'cb_part_15068' to server 'localhost_1_14'.
@@ -6432,9 +6432,9 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_part_15041' to server 'localhost_1_13'.
           Sending 'cb_part_15103' to server 'localhost_1_9'...
             Sent 'cb_part_15103' to server 'localhost_1_9'.
-          Received 'cb_part_15103' from server 'localhost_1_9'. (333 ms elapsed)
-          Received 'cb_part_15041' from server 'localhost_1_13'. (750 ms elapsed)
-          Received 'cb_part_15068' from server 'localhost_1_14'. (1500 ms elapsed)
+          Received 'cb_part_15103' from server 'localhost_1_9'. (337 ms elapsed)
+          Received 'cb_part_15041' from server 'localhost_1_13'. (678 ms elapsed)
+          Received 'cb_part_15068' from server 'localhost_1_14'. (1534 ms elapsed)
         Distributing super-thread jobs: cb_seq_15006 cb_seq_15016 cb_seq_15010 cb_seq_15002 cb_seq_14992 cb_seq_15012 cb_seq_15014 cb_seq_14982 cb_seq_14978
           Sending 'cb_seq_15006' to server 'localhost_1_14'...
             Sent 'cb_seq_15006' to server 'localhost_1_14'.
@@ -6452,17 +6452,17 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_seq_15014' to server 'localhost_1_11'.
           Sending 'cb_seq_14982' to server 'localhost_1_8'...
             Sent 'cb_seq_14982' to server 'localhost_1_8'.
-          Received 'cb_seq_14982' from server 'localhost_1_8'. (310 ms elapsed)
-          Sending 'cb_seq_14978' to server 'localhost_1_8'...
-            Sent 'cb_seq_14978' to server 'localhost_1_8'.
-          Received 'cb_seq_15016' from server 'localhost_1_13'. (924 ms elapsed)
-          Received 'cb_seq_14978' from server 'localhost_1_8'. (795 ms elapsed)
-          Received 'cb_seq_15006' from server 'localhost_1_14'. (1371 ms elapsed)
-          Received 'cb_seq_15010' from server 'localhost_1_9'. (1390 ms elapsed)
-          Received 'cb_seq_15012' from server 'localhost_1_12'. (1350 ms elapsed)
-          Received 'cb_seq_14992' from server 'localhost_1_10'. (1598 ms elapsed)
-          Received 'cb_seq_15014' from server 'localhost_1_11'. (1563 ms elapsed)
-          Received 'cb_seq_15002' from server 'localhost_1_0'. (2309 ms elapsed)
+          Received 'cb_seq_15014' from server 'localhost_1_11'. (353 ms elapsed)
+          Sending 'cb_seq_14978' to server 'localhost_1_11'...
+            Sent 'cb_seq_14978' to server 'localhost_1_11'.
+          Received 'cb_seq_15016' from server 'localhost_1_13'. (672 ms elapsed)
+          Received 'cb_seq_14978' from server 'localhost_1_11'. (701 ms elapsed)
+          Received 'cb_seq_15012' from server 'localhost_1_12'. (1294 ms elapsed)
+          Received 'cb_seq_15010' from server 'localhost_1_9'. (1408 ms elapsed)
+          Received 'cb_seq_15006' from server 'localhost_1_14'. (1611 ms elapsed)
+          Received 'cb_seq_15002' from server 'localhost_1_0'. (1640 ms elapsed)
+          Received 'cb_seq_14992' from server 'localhost_1_10'. (2051 ms elapsed)
+          Received 'cb_seq_14982' from server 'localhost_1_8'. (2054 ms elapsed)
         Distributing super-thread jobs: square_signed_25825 cb_part_15026 cb_oseq_14971 cb_oseq_14973 cb_part_15113 cb_part_15107 increment_signed_23012_25083
           Sending 'square_signed_25825' to server 'localhost_1_14'...
             Sent 'square_signed_25825' to server 'localhost_1_14'.
@@ -6478,20 +6478,20 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_part_15107' to server 'localhost_1_12'.
           Sending 'increment_signed_23012_25083' to server 'localhost_1_11'...
             Sent 'increment_signed_23012_25083' to server 'localhost_1_11'.
-          Received 'cb_part_15113' from server 'localhost_1_10'. (409 ms elapsed)
-          Received 'cb_oseq_14973' from server 'localhost_1_0'. (577 ms elapsed)
-          Received 'cb_oseq_14971' from server 'localhost_1_9'. (595 ms elapsed)
-          Received 'cb_part_15107' from server 'localhost_1_12'. (1142 ms elapsed)
-          Received 'cb_part_15026' from server 'localhost_1_13'. (1349 ms elapsed)
-          Received 'increment_signed_23012_25083' from server 'localhost_1_11'. (1493 ms elapsed)
-          Received 'square_signed_25825' from server 'localhost_1_14'. (7569 ms elapsed)
+          Received 'cb_part_15107' from server 'localhost_1_12'. (354 ms elapsed)
+          Received 'cb_oseq_14971' from server 'localhost_1_9'. (479 ms elapsed)
+          Received 'cb_oseq_14973' from server 'localhost_1_0'. (532 ms elapsed)
+          Received 'cb_part_15026' from server 'localhost_1_13'. (1215 ms elapsed)
+          Received 'cb_part_15113' from server 'localhost_1_10'. (1817 ms elapsed)
+          Received 'increment_signed_23012_25083' from server 'localhost_1_11'. (2271 ms elapsed)
+          Received 'square_signed_25825' from server 'localhost_1_14'. (7747 ms elapsed)
         Distributing super-thread jobs: cb_seq_14980 cb_seq_14976
           Sending 'cb_seq_14980' to server 'localhost_1_14'...
             Sent 'cb_seq_14980' to server 'localhost_1_14'.
           Sending 'cb_seq_14976' to server 'localhost_1_13'...
             Sent 'cb_seq_14976' to server 'localhost_1_13'.
-          Received 'cb_seq_14980' from server 'localhost_1_14'. (217 ms elapsed)
-          Received 'cb_seq_14976' from server 'localhost_1_13'. (314 ms elapsed)
+          Received 'cb_seq_14980' from server 'localhost_1_14'. (218 ms elapsed)
+          Received 'cb_seq_14976' from server 'localhost_1_13'. (285 ms elapsed)
         Distributing super-thread jobs: csa_tree_add_40_61_group_2 cb_part_15031 cb_part_15035 cb_part_15033 csa_tree_19878 cb_oseq_15015 cb_oseq_15013 cb_part_15059 cb_part_15065 cb_oseq_15017 cb_part_15109 cb_part_15039 increment_unsigned_22468_22502 cb_part_15048 add_unsigned_7506 abs CRC16_POLYNOMIAL51287 increment_unsigned_22306_22385 increment_unsigned_22306_22345
           Sending 'csa_tree_add_40_61_group_2' to server 'localhost_1_14'...
             Sent 'csa_tree_add_40_61_group_2' to server 'localhost_1_14'.
@@ -6509,47 +6509,47 @@ Multi-threaded Technology Mapping (8 threads per ST process, 8 of 128 CPUs usabl
             Sent 'cb_oseq_15013' to server 'localhost_1_11'.
           Sending 'cb_part_15059' to server 'localhost_1_8'...
             Sent 'cb_part_15059' to server 'localhost_1_8'.
-          Received 'cb_part_15035' from server 'localhost_1_9'. (1005 ms elapsed)
+          Received 'cb_part_15035' from server 'localhost_1_9'. (1044 ms elapsed)
           Sending 'cb_part_15065' to server 'localhost_1_9'...
             Sent 'cb_part_15065' to server 'localhost_1_9'.
-          Received 'cb_part_15065' from server 'localhost_1_9'. (519 ms elapsed)
+          Received 'cb_part_15065' from server 'localhost_1_9'. (531 ms elapsed)
           Sending 'cb_oseq_15017' to server 'localhost_1_9'...
             Sent 'cb_oseq_15017' to server 'localhost_1_9'.
-          Received 'cb_part_15031' from server 'localhost_1_13'. (1935 ms elapsed)
+          Received 'cb_part_15031' from server 'localhost_1_13'. (2139 ms elapsed)
           Sending 'cb_part_15109' to server 'localhost_1_13'...
             Sent 'cb_part_15109' to server 'localhost_1_13'.
-          Received 'cb_part_15033' from server 'localhost_1_0'. (2155 ms elapsed)
+          Received 'cb_part_15033' from server 'localhost_1_0'. (2238 ms elapsed)
           Sending 'cb_part_15039' to server 'localhost_1_0'...
             Sent 'cb_part_15039' to server 'localhost_1_0'.
-          Received 'cb_oseq_15017' from server 'localhost_1_9'. (1500 ms elapsed)
-          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_9'...
-            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_9'.
-          Received 'cb_part_15059' from server 'localhost_1_8'. (2876 ms elapsed)
-          Sending 'cb_part_15048' to server 'localhost_1_8'...
-            Sent 'cb_part_15048' to server 'localhost_1_8'.
-          Received 'cb_part_15039' from server 'localhost_1_0'. (419 ms elapsed)
-          Sending 'add_unsigned_7506' to server 'localhost_1_0'...
-            Sent 'add_unsigned_7506' to server 'localhost_1_0'.
-          Received 'cb_part_15048' from server 'localhost_1_8'. (406 ms elapsed)
-          Sending 'abs' to server 'localhost_1_8'...
-            Sent 'abs' to server 'localhost_1_8'.
-          Received 'cb_oseq_15013' from server 'localhost_1_11'. (3374 ms elapsed)
-          Sending 'CRC16_POLYNOMIAL51287' to server 'localhost_1_11'...
-            Sent 'CRC16_POLYNOMIAL51287' to server 'localhost_1_11'.
-          Received 'cb_part_15109' from server 'localhost_1_13'. (2072 ms elapsed)
-          Sending 'increment_unsigned_22306_22385' to server 'localhost_1_13'...
-            Sent 'increment_unsigned_22306_22385' to server 'localhost_1_13'.
-          Received 'abs' from server 'localhost_1_8'. (615 ms elapsed)
-          Sending 'increment_unsigned_22306_22345' to server 'localhost_1_8'...
-            Sent 'increment_unsigned_22306_22345' to server 'localhost_1_8'.
-          Received 'CRC16_POLYNOMIAL51287' from server 'localhost_1_11'. (574 ms elapsed)
-          Received 'increment_unsigned_22468_22502' from server 'localhost_1_9'. (1275 ms elapsed)
-          Received 'increment_unsigned_22306_22385' from server 'localhost_1_13'. (692 ms elapsed)
-          Received 'cb_oseq_15015' from server 'localhost_1_12'. (5353 ms elapsed)
-          Received 'increment_unsigned_22306_22345' from server 'localhost_1_8'. (1454 ms elapsed)
-          Received 'add_unsigned_7506' from server 'localhost_1_0'. (2232 ms elapsed)
-          Received 'csa_tree_19878' from server 'localhost_1_10'. (5578 ms elapsed)
-          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (23231 ms elapsed)
+          Received 'cb_part_15109' from server 'localhost_1_13'. (2635 ms elapsed)
+          Sending 'increment_unsigned_22468_22502' to server 'localhost_1_13'...
+            Sent 'increment_unsigned_22468_22502' to server 'localhost_1_13'.
+          Received 'cb_oseq_15017' from server 'localhost_1_9'. (3143 ms elapsed)
+          Sending 'cb_part_15048' to server 'localhost_1_9'...
+            Sent 'cb_part_15048' to server 'localhost_1_9'.
+          Received 'cb_oseq_15013' from server 'localhost_1_11'. (4586 ms elapsed)
+          Sending 'add_unsigned_7506' to server 'localhost_1_11'...
+            Sent 'add_unsigned_7506' to server 'localhost_1_11'.
+          Received 'csa_tree_19878' from server 'localhost_1_10'. (4638 ms elapsed)
+          Sending 'abs' to server 'localhost_1_10'...
+            Sent 'abs' to server 'localhost_1_10'.
+          Received 'cb_oseq_15015' from server 'localhost_1_12'. (4621 ms elapsed)
+          Sending 'CRC16_POLYNOMIAL51287' to server 'localhost_1_12'...
+            Sent 'CRC16_POLYNOMIAL51287' to server 'localhost_1_12'.
+          Received 'cb_part_15059' from server 'localhost_1_8'. (4587 ms elapsed)
+          Sending 'increment_unsigned_22306_22385' to server 'localhost_1_8'...
+            Sent 'increment_unsigned_22306_22385' to server 'localhost_1_8'.
+          Received 'cb_part_15039' from server 'localhost_1_0'. (377 ms elapsed)
+          Sending 'increment_unsigned_22306_22345' to server 'localhost_1_0'...
+            Sent 'increment_unsigned_22306_22345' to server 'localhost_1_0'.
+          Received 'abs' from server 'localhost_1_10'. (577 ms elapsed)
+          Received 'increment_unsigned_22306_22385' from server 'localhost_1_8'. (649 ms elapsed)
+          Received 'increment_unsigned_22306_22345' from server 'localhost_1_0'. (661 ms elapsed)
+          Received 'increment_unsigned_22468_22502' from server 'localhost_1_13'. (1254 ms elapsed)
+          Received 'add_unsigned_7506' from server 'localhost_1_11'. (1344 ms elapsed)
+          Received 'CRC16_POLYNOMIAL51287' from server 'localhost_1_12'. (1358 ms elapsed)
+          Received 'cb_part_15048' from server 'localhost_1_9'. (1492 ms elapsed)
+          Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (23055 ms elapsed)
  
 Global mapping timing result
 ============================
@@ -8530,37 +8530,37 @@ The global mapper estimates a slack for this path of 13680ps.
                   Sent 'cb_seq_14964' to server 'localhost_1_9'.
                 Sending 'cb_seq_14990' to server 'localhost_1_0'...
                   Sent 'cb_seq_14990' to server 'localhost_1_0'.
-                Received 'cb_seq_14964' from server 'localhost_1_9'. (257 ms elapsed)
-                Received 'cb_seq_14956' from server 'localhost_1_13'. (292 ms elapsed)
-                Received 'cb_seq_14990' from server 'localhost_1_0'. (319 ms elapsed)
-                Received 'cb_seq_14960' from server 'localhost_1_14'. (653 ms elapsed)
+                Received 'cb_seq_14964' from server 'localhost_1_9'. (265 ms elapsed)
+                Received 'cb_seq_14956' from server 'localhost_1_13'. (301 ms elapsed)
+                Received 'cb_seq_14990' from server 'localhost_1_0'. (320 ms elapsed)
+                Received 'cb_seq_14960' from server 'localhost_1_14'. (657 ms elapsed)
               Distributing super-thread jobs: cb_oseq_15115
                 Sending 'cb_oseq_15115' to server 'localhost_1_14'...
                   Sent 'cb_oseq_15115' to server 'localhost_1_14'.
-                Received 'cb_oseq_15115' from server 'localhost_1_14'. (308 ms elapsed)
+                Received 'cb_oseq_15115' from server 'localhost_1_14'. (309 ms elapsed)
               Distributing super-thread jobs: cb_part_15095
                 Sending 'cb_part_15095' to server 'localhost_1_14'...
                   Sent 'cb_part_15095' to server 'localhost_1_14'.
-                Received 'cb_part_15095' from server 'localhost_1_14'. (609 ms elapsed)
+                Received 'cb_part_15095' from server 'localhost_1_14'. (639 ms elapsed)
               Distributing super-thread jobs: mult_mixed_1670
                 Sending 'mult_mixed_1670' to server 'localhost_1_14'...
                   Sent 'mult_mixed_1670' to server 'localhost_1_14'.
-                Received 'mult_mixed_1670' from server 'localhost_1_14'. (561 ms elapsed)
+                Received 'mult_mixed_1670' from server 'localhost_1_14'. (569 ms elapsed)
               Distributing super-thread jobs: cb_part_15092
                 Sending 'cb_part_15092' to server 'localhost_1_14'...
                   Sent 'cb_part_15092' to server 'localhost_1_14'.
-                Received 'cb_part_15092' from server 'localhost_1_14'. (326 ms elapsed)
+                Received 'cb_part_15092' from server 'localhost_1_14'. (331 ms elapsed)
               Distributing super-thread jobs: cb_part_15082 cb_oseq_14965
                 Sending 'cb_part_15082' to server 'localhost_1_14'...
                   Sent 'cb_part_15082' to server 'localhost_1_14'.
                 Sending 'cb_oseq_14965' to server 'localhost_1_13'...
                   Sent 'cb_oseq_14965' to server 'localhost_1_13'.
-                Received 'cb_oseq_14965' from server 'localhost_1_13'. (198 ms elapsed)
-                Received 'cb_part_15082' from server 'localhost_1_14'. (496 ms elapsed)
+                Received 'cb_oseq_14965' from server 'localhost_1_13'. (238 ms elapsed)
+                Received 'cb_part_15082' from server 'localhost_1_14'. (473 ms elapsed)
               Distributing super-thread jobs: cb_part_15079
                 Sending 'cb_part_15079' to server 'localhost_1_14'...
                   Sent 'cb_part_15079' to server 'localhost_1_14'.
-                Received 'cb_part_15079' from server 'localhost_1_14'. (108 ms elapsed)
+                Received 'cb_part_15079' from server 'localhost_1_14'. (109 ms elapsed)
               Distributing super-thread jobs: cb_seq_15006 cb_seq_15010 cb_seq_15023 cb_seq_14992
                 Sending 'cb_seq_15006' to server 'localhost_1_14'...
                   Sent 'cb_seq_15006' to server 'localhost_1_14'.
@@ -8570,14 +8570,14 @@ The global mapper estimates a slack for this path of 13680ps.
                   Sent 'cb_seq_15023' to server 'localhost_1_9'.
                 Sending 'cb_seq_14992' to server 'localhost_1_0'...
                   Sent 'cb_seq_14992' to server 'localhost_1_0'.
-                Received 'cb_seq_14992' from server 'localhost_1_0'. (130 ms elapsed)
-                Received 'cb_seq_15023' from server 'localhost_1_9'. (186 ms elapsed)
-                Received 'cb_seq_15006' from server 'localhost_1_14'. (321 ms elapsed)
-                Received 'cb_seq_15010' from server 'localhost_1_13'. (329 ms elapsed)
+                Received 'cb_seq_14992' from server 'localhost_1_0'. (120 ms elapsed)
+                Received 'cb_seq_15023' from server 'localhost_1_9'. (161 ms elapsed)
+                Received 'cb_seq_15010' from server 'localhost_1_13'. (278 ms elapsed)
+                Received 'cb_seq_15006' from server 'localhost_1_14'. (307 ms elapsed)
               Distributing super-thread jobs: cb_part_15068
                 Sending 'cb_part_15068' to server 'localhost_1_14'...
                   Sent 'cb_part_15068' to server 'localhost_1_14'.
-                Received 'cb_part_15068' from server 'localhost_1_14'. (303 ms elapsed)
+                Received 'cb_part_15068' from server 'localhost_1_14'. (260 ms elapsed)
               Distributing super-thread jobs: cb_seq_15050 cb_seq_15016 cb_seq_15002
                 Sending 'cb_seq_15050' to server 'localhost_1_14'...
                   Sent 'cb_seq_15050' to server 'localhost_1_14'.
@@ -8585,9 +8585,9 @@ The global mapper estimates a slack for this path of 13680ps.
                   Sent 'cb_seq_15016' to server 'localhost_1_13'.
                 Sending 'cb_seq_15002' to server 'localhost_1_9'...
                   Sent 'cb_seq_15002' to server 'localhost_1_9'.
-                Received 'cb_seq_15002' from server 'localhost_1_9'. (149 ms elapsed)
-                Received 'cb_seq_15016' from server 'localhost_1_13'. (176 ms elapsed)
-                Received 'cb_seq_15050' from server 'localhost_1_14'. (504 ms elapsed)
+                Received 'cb_seq_15016' from server 'localhost_1_13'. (134 ms elapsed)
+                Received 'cb_seq_15002' from server 'localhost_1_9'. (152 ms elapsed)
+                Received 'cb_seq_15050' from server 'localhost_1_14'. (480 ms elapsed)
               Distributing super-thread jobs: csa_tree_add_40_61_group_2 cb_part_15031 cb_part_15026 square_signed_25825 cb_part_15035 cb_part_15033
                 Sending 'csa_tree_add_40_61_group_2' to server 'localhost_1_14'...
                   Sent 'csa_tree_add_40_61_group_2' to server 'localhost_1_14'.
@@ -8601,12 +8601,12 @@ The global mapper estimates a slack for this path of 13680ps.
                   Sent 'cb_part_15035' to server 'localhost_1_10'.
                 Sending 'cb_part_15033' to server 'localhost_1_12'...
                   Sent 'cb_part_15033' to server 'localhost_1_12'.
-                Received 'cb_part_15026' from server 'localhost_1_9'. (179 ms elapsed)
-                Received 'cb_part_15031' from server 'localhost_1_13'. (284 ms elapsed)
-                Received 'square_signed_25825' from server 'localhost_1_0'. (202 ms elapsed)
-                Received 'cb_part_15035' from server 'localhost_1_10'. (325 ms elapsed)
-                Received 'cb_part_15033' from server 'localhost_1_12'. (301 ms elapsed)
-                Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (568 ms elapsed)
+                Received 'cb_part_15026' from server 'localhost_1_9'. (225 ms elapsed)
+                Received 'cb_part_15031' from server 'localhost_1_13'. (270 ms elapsed)
+                Received 'square_signed_25825' from server 'localhost_1_0'. (193 ms elapsed)
+                Received 'cb_part_15035' from server 'localhost_1_10'. (340 ms elapsed)
+                Received 'cb_part_15033' from server 'localhost_1_12'. (348 ms elapsed)
+                Received 'csa_tree_add_40_61_group_2' from server 'localhost_1_14'. (545 ms elapsed)
  
 Global incremental timing result
 ================================
@@ -9622,39 +9622,39 @@ Scan mapping status report
 +-----------+---------------+-----+----------------------+---------------------------+
 |   Host    |    Machine    | CPU | Physical Memory (MB) | Peak Physical Memory (MB) |
 +-----------+---------------+-----+----------------------+---------------------------+
-| localhost | atlas.unl.edu |  8  |        1647.7        |          1647.7           |
+| localhost | atlas.unl.edu |  8  |        1616.7        |          1616.7           |
 +-----------+---------------+-----+----------------------+---------------------------+
 
 +----------------+----------------------+---------------------------+
 |     Server     | Physical Memory (MB) | Peak Physical Memory (MB) |
 +----------------+----------------------+---------------------------+
-| localhost_1_10 |      102.6 [1]       |          [1] [2]          |
-| localhost_1_0  |      872.3 [3]       |         872.3 [3]         |
-| localhost_1_9  |      106.2 [1]       |          [1] [2]          |
-| localhost_1_13 |      109.1 [1]       |          [1] [2]          |
-| localhost_1_14 |      140.7 [1]       |          [1] [2]          |
-| localhost_1_8  |       92.5 [1]       |          [1] [2]          |
-| localhost_1_11 |       92.2 [1]       |          [1] [2]          |
-| localhost_1_12 |      100.4 [1]       |          [1] [2]          |
+| localhost_1_10 |       99.3 [1]       |          [1] [2]          |
+| localhost_1_9  |      103.3 [1]       |          [1] [2]          |
+| localhost_1_13 |      106.0 [1]       |          [1] [2]          |
+| localhost_1_14 |      138.3 [1]       |          [1] [2]          |
+| localhost_1_8  |       90.9 [1]       |          [1] [2]          |
+| localhost_1_11 |       90.6 [1]       |          [1] [2]          |
+| localhost_1_12 |       98.8 [1]       |          [1] [2]          |
+| localhost_1_0  |      854.8 [3]       |         854.8 [3]         |
 +----------------+----------------------+---------------------------+
 [1] Memory is included in parent localhost_1_0.
 [2] Peak physical memory is not available for forked background servers.
 [3] Memory of child processes is included.
 
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_14' was forked process '94016' on this host.
+        : The server 'localhost_1_14' was forked process '129325' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_13' was forked process '94014' on this host.
+        : The server 'localhost_1_13' was forked process '129323' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_9' was forked process '94006' on this host.
+        : The server 'localhost_1_9' was forked process '129315' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_10' was forked process '94008' on this host.
+        : The server 'localhost_1_10' was forked process '129317' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_12' was forked process '94012' on this host.
+        : The server 'localhost_1_12' was forked process '129321' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_11' was forked process '94010' on this host.
+        : The server 'localhost_1_11' was forked process '129319' on this host.
 Info    : A super-threading server has been shut down normally. [ST-112]
-        : The server 'localhost_1_8' was forked process '94004' on this host.
+        : The server 'localhost_1_8' was forked process '129313' on this host.
 
 Test connection status
 ======================
@@ -9759,22 +9759,22 @@ Info    : Resetting the break_timing_paths attribute of a pin removes exceptions
         : The pin is 'i2c0/CGMaster/g1218/B0'.
 Info    : Resetting the break_timing_paths attribute of a pin removes exceptions set on the pin. break_timing_paths attribute has default value of false and can be reset to other values either false or clock_gating depends on the enable signal. [TIM-501]
         : The pin is 'afe0/g4320/A2'.
-PBS_Techmap-Global Mapping - Elapsed_Time 179, CPU_Time 177.51964699999996
+PBS_Techmap-Global Mapping - Elapsed_Time 183, CPU_Time 180.85631999999987
 stamp 'PBS_Techmap-Global Mapping' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  73.0( 73.5) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  73.0( 73.5) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  26.3( 25.6) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  26.2( 25.7) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -9785,48 +9785,48 @@ Info    : Existing dofile found. Copied as fv/MCU/rtl_to_fv_map.do~.
 Info    : Wrote dofile. [CFM-1]
         : Dofile is 'fv/MCU/rtl_to_fv_map.do'.
         : Alias mapping flow is enabled.
-PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 5, CPU_Time 5.609722000000033
+PBS_TechMap-Datapath Postmap Operations - Elapsed_Time 5, CPU_Time 5.616860999999972
 stamp 'PBS_TechMap-Datapath Postmap Operations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  72.4( 73.0) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  72.4( 73.0) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  26.1( 25.4) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  26.0( 25.5) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:58(00:12:12) |  00:00:05(00:00:05) |   0.8(  0.7) |   14:29:57 (Nov09) |   1.29 GB | PBS_TechMap-Datapath Postmap Operations
+ 00:12:12(00:12:27) |  00:00:05(00:00:05) |   0.8(  0.7) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 1, CPU_Time 0.5590969999999515
+PBS_TechMap-Postmap HBO Optimizations - Elapsed_Time 0, CPU_Time 0.5733360000000403
 stamp 'PBS_TechMap-Postmap HBO Optimizations' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  72.3( 72.9) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  72.4( 73.0) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  26.1( 25.4) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  26.0( 25.5) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:58(00:12:12) |  00:00:05(00:00:05) |   0.8(  0.7) |   14:29:57 (Nov09) |   1.29 GB | PBS_TechMap-Datapath Postmap Operations
+ 00:12:12(00:12:27) |  00:00:05(00:00:05) |   0.8(  0.7) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:59(00:12:13) |  00:00:00(00:00:01) |   0.1(  0.1) |   14:29:58 (Nov09) |   1.29 GB | PBS_TechMap-Postmap HBO Optimizations
+ 00:12:13(00:12:27) |  00:00:00(00:00:00) |   0.1(  0.0) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -9851,23 +9851,23 @@ stamp 'PBS_TechMap-Postmap Clock Gating' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  71.8( 72.4) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  71.9( 72.5) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  25.9( 25.2) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  25.8( 25.3) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:58(00:12:12) |  00:00:05(00:00:05) |   0.8(  0.7) |   14:29:57 (Nov09) |   1.29 GB | PBS_TechMap-Datapath Postmap Operations
+ 00:12:12(00:12:27) |  00:00:05(00:00:05) |   0.8(  0.7) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:59(00:12:13) |  00:00:00(00:00:01) |   0.1(  0.1) |   14:29:58 (Nov09) |   1.29 GB | PBS_TechMap-Postmap HBO Optimizations
+ 00:12:13(00:12:27) |  00:00:00(00:00:00) |   0.1(  0.0) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:04(00:12:18) |  00:00:05(00:00:05) |   0.7(  0.7) |   14:30:03 (Nov09) |   1.30 GB | PBS_TechMap-Postmap Clock Gating
+ 00:12:18(00:12:32) |  00:00:05(00:00:05) |   0.7(  0.7) |   17:57:42 (Nov09) |   1.28 GB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -9877,7 +9877,7 @@ Info: CPU time includes time of parent + longest thread
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-       hi_fo_buf         4  (        4 /        4 )  0.49
+       hi_fo_buf         4  (        4 /        4 )  0.47
 
  
 Incremental optimization status
@@ -9927,60 +9927,60 @@ Operation                   Area   Slacks      Slack    Trans      Cap
         setup_dn         0  (        0 /        0 )  0.00
         mb_split         0  (        0 /        0 )  0.00
 
-PBS_TechMap-Postmap Cleanup - Elapsed_Time 1, CPU_Time 1.5563990000000558
+PBS_TechMap-Postmap Cleanup - Elapsed_Time 1, CPU_Time 1.5448420000001306
 stamp 'PBS_TechMap-Postmap Cleanup' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  71.6( 72.3) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  71.7( 72.4) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  25.8( 25.2) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  25.8( 25.3) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:58(00:12:12) |  00:00:05(00:00:05) |   0.8(  0.7) |   14:29:57 (Nov09) |   1.29 GB | PBS_TechMap-Datapath Postmap Operations
+ 00:12:12(00:12:27) |  00:00:05(00:00:05) |   0.8(  0.7) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:59(00:12:13) |  00:00:00(00:00:01) |   0.1(  0.1) |   14:29:58 (Nov09) |   1.29 GB | PBS_TechMap-Postmap HBO Optimizations
+ 00:12:13(00:12:27) |  00:00:00(00:00:00) |   0.1(  0.0) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:04(00:12:18) |  00:00:05(00:00:05) |   0.7(  0.7) |   14:30:03 (Nov09) |   1.30 GB | PBS_TechMap-Postmap Clock Gating
+ 00:12:18(00:12:32) |  00:00:05(00:00:05) |   0.7(  0.7) |   17:57:42 (Nov09) |   1.28 GB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:05(00:12:19) |  00:00:01(00:00:01) |   0.2(  0.1) |   14:30:04 (Nov09) |   1.30 GB | PBS_TechMap-Postmap Cleanup
+ 00:12:20(00:12:33) |  00:00:01(00:00:01) |   0.2(  0.1) |   17:57:43 (Nov09) |   1.28 GB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
 Info: CPU time includes time of parent + longest thread
-PBS_Techmap-Post_MBCI - Elapsed_Time 0, CPU_Time 1.0
+PBS_Techmap-Post_MBCI - Elapsed_Time 1, CPU_Time 0.0
 stamp 'PBS_Techmap-Post_MBCI' being created for table 'pbs_debug'
 
   Total Time (Wall) |  Stage Time (Wall)  |   % (Wall)   |    Date - Time     |  Memory   | Stage
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:00:38(00:00:28) |  00:00:00(00:00:00) |   0.0(  0.0) |   14:18:13 (Nov09) |  797.5 MB | PBS_Generic-Start
+ 00:00:38(00:00:29) |  00:00:00(00:00:00) |   0.0(  0.0) |   17:45:39 (Nov09) |  781.9 MB | PBS_Generic-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:50(00:09:02) |  00:08:12(00:08:34) |  71.5( 72.3) |   14:26:47 (Nov09) |   1.39 GB | PBS_Generic_Opt-Post
+ 00:09:01(00:09:13) |  00:08:23(00:08:44) |  71.7( 72.3) |   17:54:23 (Nov09) |   1.37 GB | PBS_Generic_Opt-Post
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:51(00:09:03) |  00:00:01(00:00:01) |   0.1(  0.1) |   14:26:48 (Nov09) |   1.39 GB | PBS_Generic-Postgen HBO Optimizations
+ 00:09:02(00:09:14) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:24 (Nov09) |   1.37 GB | PBS_Generic-Postgen HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:54(00:09:06) |  00:00:03(00:00:03) |   0.4(  0.4) |   14:26:51 (Nov09) |   1.28 GB | PBS_TechMap-Start
+ 00:09:05(00:09:18) |  00:00:03(00:00:04) |   0.4(  0.6) |   17:54:28 (Nov09) |   1.26 GB | PBS_TechMap-Start
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:08:55(00:09:08) |  00:00:01(00:00:02) |   0.1(  0.3) |   14:26:53 (Nov09) |   1.28 GB | PBS_TechMap-Premap HBO Optimizations
+ 00:09:06(00:09:19) |  00:00:01(00:00:01) |   0.1(  0.1) |   17:54:29 (Nov09) |   1.26 GB | PBS_TechMap-Premap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:53(00:12:07) |  00:02:57(00:02:59) |  25.8( 25.2) |   14:29:52 (Nov09) |   1.30 GB | PBS_Techmap-Global Mapping
+ 00:12:07(00:12:22) |  00:03:00(00:03:03) |  25.8( 25.2) |   17:57:32 (Nov09) |   1.28 GB | PBS_Techmap-Global Mapping
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:58(00:12:12) |  00:00:05(00:00:05) |   0.8(  0.7) |   14:29:57 (Nov09) |   1.29 GB | PBS_TechMap-Datapath Postmap Operations
+ 00:12:12(00:12:27) |  00:00:05(00:00:05) |   0.8(  0.7) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Datapath Postmap Operations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:11:59(00:12:13) |  00:00:00(00:00:01) |   0.1(  0.1) |   14:29:58 (Nov09) |   1.29 GB | PBS_TechMap-Postmap HBO Optimizations
+ 00:12:13(00:12:27) |  00:00:00(00:00:00) |   0.1(  0.0) |   17:57:37 (Nov09) |   1.27 GB | PBS_TechMap-Postmap HBO Optimizations
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:04(00:12:18) |  00:00:05(00:00:05) |   0.7(  0.7) |   14:30:03 (Nov09) |   1.30 GB | PBS_TechMap-Postmap Clock Gating
+ 00:12:18(00:12:32) |  00:00:05(00:00:05) |   0.7(  0.7) |   17:57:42 (Nov09) |   1.28 GB | PBS_TechMap-Postmap Clock Gating
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:05(00:12:19) |  00:00:01(00:00:01) |   0.2(  0.1) |   14:30:04 (Nov09) |   1.30 GB | PBS_TechMap-Postmap Cleanup
+ 00:12:20(00:12:33) |  00:00:01(00:00:01) |   0.2(  0.1) |   17:57:43 (Nov09) |   1.28 GB | PBS_TechMap-Postmap Cleanup
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
- 00:12:06(00:12:19) |  00:00:01(00:00:00) |   0.1(  0.0) |   14:30:04 (Nov09) |   1.30 GB | PBS_Techmap-Post_MBCI
+ 00:12:20(00:12:34) |  00:00:00(00:00:01) |   0.0(  0.1) |   17:57:44 (Nov09) |   1.28 GB | PBS_Techmap-Post_MBCI
 --------------------+---------------------+--------------+--------------------+-----------+----------------------
 Number of threads: 8 * 1   (id: pbs_debug, time_info v1.57)
 Info: (*N*) indicates data that was populated from previously saved time_info database
@@ -9990,8 +9990,8 @@ Info: CPU time includes time of parent + longest thread
 ##>----------------------------------------------------------------------------------------
 ##>STEP                           Elapsed       WNS       TNS     Insts      Area    Memory
 ##>----------------------------------------------------------------------------------------
-##>M:Initial                            1         -         -     65137    658391      1276
-##>M:Pre Cleanup                        1         -         -     65137    658391      1276
+##>M:Initial                            1         -         -     65138    658393      1257
+##>M:Pre Cleanup                        0         -         -     65138    658393      1257
 ##>M:Setup                              0         -         -         -         -         -
 ##>M:Launch ST                          0         -         -         -         -         -
 ##>M:Design Partition                   0         -         -         -         -         -
@@ -10005,26 +10005,26 @@ Info: CPU time includes time of parent + longest thread
 ##>M:Timer                              0         -         -         -         -         -
 ##>M:Assembly                           0         -         -         -         -         -
 ##>M:DFT                                0         -         -         -         -         -
-##>M:DP Operations                      5         -         -     27829    445647      1289
-##>M:Const Prop                         0      3027         0     27829    445647      1289
-##>M:Cleanup                            1      3033         0     28098    446122      1304
-##>M:MBCI                               0         -         -     28098    446122      1304
+##>M:DP Operations                      5         -         -     27830    445648      1267
+##>M:Const Prop                         0      3027         0     27830    445648      1267
+##>M:Cleanup                            1      3033         0     28099    446123      1284
+##>M:MBCI                               1         -         -     28099    446123      1284
 ##>M:Const Gate Removal                 0         -         -         -         -         -
-##>M:Misc                             185
+##>M:Misc                             189
 ##>----------------------------------------------------------------------------------------
-##>Total Elapsed                      193
+##>Total Elapsed                      197
 ##>========================================================================================
 
 +-----------+---------------+-----+----------------------+---------------------------+
 |   Host    |    Machine    | CPU | Physical Memory (MB) | Peak Physical Memory (MB) |
 +-----------+---------------+-----+----------------------+---------------------------+
-| localhost | atlas.unl.edu |  1  |        1304.8        |          1647.7           |
+| localhost | atlas.unl.edu |  1  |        1284.5        |          1616.7           |
 +-----------+---------------+-----+----------------------+---------------------------+
 
 +---------------+----------------------+---------------------------+
 |    Server     | Physical Memory (MB) | Peak Physical Memory (MB) |
 +---------------+----------------------+---------------------------+
-| localhost_1_0 |        504.7         |           872.3           |
+| localhost_1_0 |        499.1         |           854.8           |
 +---------------+----------------------+---------------------------+
 
 Info    : Done mapping. [SYNTH-5]
@@ -10057,10 +10057,10 @@ Incremental optimization status
 Operation                   Area   Slacks      Slack    Trans      Cap 
  init_iopt                446123        0         0         0        0
 -------------------------------------------------------------------------------
- const_prop               446118        0         0         0        0
- simp_cc_inputs           446034        0         0         0        0
+ const_prop               446119        0         0         0        0
+ simp_cc_inputs           446035        0         0         0        0
 -------------------------------------------------------------------------------
- hi_fo_buf                446034        0         0         0        0
+ hi_fo_buf                446035        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10073,7 +10073,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - DRC Totals - -
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
- init_delay               446034        0         0         0        0
+ init_delay               446035        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10196,7 +10196,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        gate_deco         0  (        0 /        0 )  0.00
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
- init_drc                 446034        0         0         0        0
+ init_drc                 446035        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10238,7 +10238,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_tns                 446034        0         0         0        0
+ init_tns                 446035        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10280,37 +10280,37 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crr_local         0  (        0 /        0 )  0.00
          buf2inv         0  (        0 /        0 )  0.00
 
- init_area                446034        0         0         0        0
- undup                    445926        0         0         0        0
- rem_buf                  445607        0         0         0        0
+ init_area                446035        0         0         0        0
+ undup                    445927        0         0         0        0
+ rem_buf                  445608        0         0         0        0
  rem_inv                  445301        0         0         0        0
- merge_bi                 444952        0         0         0        0
- rem_inv_qb               444948        0         0         0        0
- seq_res_area             444881        0         0         0        0
+ merge_bi                 444953        0         0         0        0
+ rem_inv_qb               444949        0         0         0        0
+ seq_res_area             444882        0         0         0        0
  io_phase                 444867        0         0         0        0
- gate_comp                444849        0         0         0        0
- glob_area                444835        0         0         0        0
+ gate_comp                444850        0         0         0        0
+ glob_area                444836        0         0         0        0
  area_down                444537        0         0         0        0
- rem_inv                  444534        0         0         0        0
+ rem_inv                  444535        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-           undup        51  (       47 /       47 )  0.92
-         rem_buf       309  (      121 /      121 )  1.49
-         rem_inv       222  (      205 /      205 )  1.66
-        merge_bi       304  (      290 /      290 )  2.83
+           undup        51  (       47 /       47 )  0.96
+         rem_buf       309  (      121 /      121 )  1.59
+         rem_inv       222  (      205 /      205 )  1.75
+        merge_bi       304  (      290 /      290 )  2.95
       rem_inv_qb       669  (        8 /        8 )  0.06
-    seq_res_area       245  (       26 /       26 )  28.05
-        io_phase       193  (       18 /       18 )  0.39
-       gate_comp       259  (       14 /       14 )  2.56
-       gcomp_mog         5  (        0 /        0 )  0.68
-       glob_area       122  (       22 /      122 )  0.51
-       area_down       164  (       72 /       72 )  2.37
-      size_n_buf         3  (        0 /        0 )  0.12
-  gate_deco_area         0  (        0 /        0 )  0.04
-         rem_buf       188  (        0 /        0 )  0.30
-         rem_inv         9  (        2 /        2 )  0.07
-        merge_bi        14  (        0 /        0 )  0.16
+    seq_res_area       245  (       26 /       26 )  29.58
+        io_phase       193  (       18 /       18 )  0.43
+       gate_comp       259  (       14 /       14 )  2.70
+       gcomp_mog         5  (        0 /        0 )  0.71
+       glob_area       122  (       22 /      122 )  0.55
+       area_down       164  (       72 /       72 )  2.52
+      size_n_buf         3  (        0 /        0 )  0.13
+  gate_deco_area         0  (        0 /        0 )  0.05
+         rem_buf       188  (        0 /        0 )  0.31
+         rem_inv         9  (        2 /        2 )  0.08
+        merge_bi        14  (        0 /        0 )  0.18
       rem_inv_qb       658  (        0 /        0 )  0.03
 
  
@@ -10320,7 +10320,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - DRC Totals - -
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
- init_delay               444534        0         0         0        0
+ init_delay               444535        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10391,7 +10391,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        gate_deco         0  (        0 /        0 )  0.00
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
- init_drc                 444534        0         0         0        0
+ init_drc                 444535        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10431,7 +10431,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crit_dnsz         0  (        0 /        0 )  0.00
        crit_upsz         0  (        0 /        0 )  0.00
 
- init_tns                 444534        0         0         0        0
+ init_tns                 444535        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10473,26 +10473,26 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        crr_local         0  (        0 /        0 )  0.00
          buf2inv         0  (        0 /        0 )  0.00
 
- init_area                444534        0         0         0        0
- undup                    444420        0         0         0        0
- merge_bi                 444419        0         0         0        0
+ init_area                444535        0         0         0        0
+ undup                    444421        0         0         0        0
+ merge_bi                 444420        0         0         0        0
  gate_comp                444419        0         0         0        0
- glob_area                444418        0         0         0        0
- area_down                444153        0         0         0        0
+ glob_area                444419        0         0         0        0
+ area_down                444154        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
-           undup        47  (       43 /       43 )  1.07
-         rem_buf       188  (        0 /        0 )  0.34
+           undup        47  (       43 /       43 )  1.14
+         rem_buf       188  (        0 /        0 )  0.35
          rem_inv         6  (        0 /        0 )  0.02
-        merge_bi        15  (        1 /        1 )  0.15
+        merge_bi        15  (        1 /        1 )  0.17
       rem_inv_qb       658  (        0 /        0 )  0.03
-        io_phase       173  (        0 /        0 )  0.23
-       gate_comp       233  (        1 /        1 )  2.38
-       gcomp_mog         5  (        0 /        0 )  0.69
-       glob_area        53  (        2 /       53 )  0.45
-       area_down       151  (       49 /       49 )  1.34
-      size_n_buf         0  (        0 /        0 )  0.09
+        io_phase       173  (        0 /        0 )  0.24
+       gate_comp       233  (        1 /        1 )  2.47
+       gcomp_mog         5  (        0 /        0 )  0.71
+       glob_area        53  (        2 /       53 )  0.49
+       area_down       151  (       49 /       49 )  1.37
+      size_n_buf         0  (        0 /        0 )  0.10
   gate_deco_area         0  (        0 /        0 )  0.00
 
  
@@ -10502,7 +10502,7 @@ Incremental optimization status
                                   Tot Wrst     Total - - DRC Totals - -
                            Total  Weighted      Neg      Max       Max 
 Operation                   Area   Slacks      Slack    Trans      Cap 
- init_delay               444153        0         0         0        0
+ init_delay               444154        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10555,7 +10555,7 @@ Operation                   Area   Slacks      Slack    Trans      Cap
        gcomp_tim         0  (        0 /        0 )  0.00
   inv_pair_2_buf         0  (        0 /        0 )  0.00
 
- init_drc                 444153        0         0         0        0
+ init_drc                 444154        0         0         0        0
 
            Trick     Calls     Accepts   Attempts    Time(secs) 
 -----------------------------------------------------------
@@ -10839,7 +10839,7 @@ Output file: rpt/MCU.genus.power.rpt
 @file(MCU.genus.tcl) 354: write_script > $OUTPUT_DIR/$BASENAME.g
 @file(MCU.genus.tcl) 355: write_hdl    > $OUTPUT_DIR/$BASENAME.v
 @file(MCU.genus.tcl) 356: write_sdc    > $OUTPUT_DIR/$BASENAME.sdc
-Finished SDC export (command execution time mm:ss (real) = 00:01).
+Finished SDC export (command execution time mm:ss (real) = 00:00).
 @file(MCU.genus.tcl) 357: write_sdf    > $OUTPUT_DIR/$BASENAME.sdf
 Warning : Default value for an option has changed in this release. [WSDF-104]
         : Default value for -setuphold has changed from split to merge_always. Specify '-setuphold split' to preserve the behavior of the previous release.
@@ -10888,7 +10888,7 @@ Warning : No delay description exists for an instance. [WSDF-201]
 Warning : No delay description exists for an instance. [WSDF-201]
         : Cell adddec0/gen_cg_periph[15].cg_periph/tie_0_cell.
 @file(MCU.genus.tcl) 364: toc
-### UNL RUNTIME ### : 00:13:54
+### UNL RUNTIME ### : 00:14:12
 @file(MCU.genus.tcl) 365: set total_run_time [getHMS $START_TIME $STOP_TIME]
 @file(MCU.genus.tcl) 366: exec echo "Genus run is complete." | \
 	# mail -s "Genus run is complete. Run time $total_run_time" mseminario2@huskers.unl.edu

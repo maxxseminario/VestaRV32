@@ -285,9 +285,6 @@ begin
 
 
 
-
-
-
     -- This is safe becuase since WDT is the highest priority interrupt, it cannot be interrupted - if wdt_trigger = '1' then the next isr ret signal is gauranteed to be for the wdt_isr. Once returned, we will perform a system reset.
     wdt_eoi_proc: process(resetn_sys, isr_ret)
     begin
@@ -409,11 +406,19 @@ begin
         ClkOut     => smclk_undiv
     );
 
+    -- NOTE: smclk_divider increments on falling_edge(smclk_undiv) to avoid timing issues
+    -- when smclk_div changes on rising_edge (from address decoder). Since smclk_div is sampled by the clock mux
+    -- and may change synchronously with smclk_undiv (when it's the same clock), using
+    -- opposite clock edges prevents the selector from changing at the same instant the
+    -- divider outputs toggle, reducing the likelihood of glitches or metastability.
+    -- TODO: Consider adding proper synchronization of smclk_div before use in ClockMuxGlitchFree
+    -- for maximum robustness, though the risk of failure with current implementation is slim.
+
     smclk_div_proc: process(resetn_sys, smclk_undiv, smclk_off, smclk_div)
     begin
         if resetn_sys = '0' or smclk_off = '1' or smclk_div = "000" then
             smclk_divider <= (others => '0');
-        elsif rising_edge(smclk_undiv) then
+        elsif falling_edge(smclk_undiv) then
             smclk_divider <= smclk_divider + 1;
         end if;
     end process;
