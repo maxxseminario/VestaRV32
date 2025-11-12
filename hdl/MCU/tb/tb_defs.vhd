@@ -20,7 +20,7 @@ package tb_defs is
         -- List of RCF test files
     constant test_files : file_array := (
         -- "../rcf/xxxrv32ui-p-simple.rcf", -- Simplest Test
-        -- "../rcf/xxxxxrv32ua-p-lrsc.rcf", -- Currently only working if ran on its own - signature section overwritten by previous tests. Also - need to zero foo section of memory to work post genus. Fail innovus
+        "../rcf/xxxxxrv32ua-p-lrsc.rcf", -- Currently only working if ran on its own - signature section overwritten by previous tests. Also - need to zero foo section of memory to work post genus. Fail innovus
         "../rcf/xxxxxxxrv32ui-p-lb.rcf", -- Load Instructions
         "../rcf/xxxxxxxrv32ui-p-lh.rcf",
         "../rcf/xxxxxxxrv32ui-p-lw.rcf", 
@@ -113,13 +113,15 @@ package tb_defs is
         "../rcf/xxxxxxperiph-p-AFE.rcf",  
         "../rcf/xxxperiph-p-SARADC.rcf",  
         "../rcf/xxxxperiph-p-GPIO1.rcf",   
-        "../rcf/xxxxperiph-p-GPIO2.rcf",   
-        "../rcf/xxxxxperiph-p-UART.rcf", 
+        "../rcf/xxxxperiph-p-GPIO2.rcf",  
+        "../rcf/xxxxxperiph-p-UART.rcf",  
+        "../rcf/xxperiph-p-UARTIRQ.rcf", 
         "../rcf/xxxperiph-p-SYSTEM.rcf", 
         "../rcf/xxxxperiph-p-TIMER.rcf",
-        "../rcf/xxxrv32ziscr-p-csr.rcf",     -- CSR Instructions (Custom)    
+        "../rcf/xxxrv32ziscr-p-csr.rcf"     -- CSR Instructions (Custom)    
         -- "../rcf/xxxxxxperiph-p-SPI.rcf",  -- not tested here down
-        "../rcf/xxxxperiph-p-SPISR.rcf" -- New SPI Slave test - SCK hf glitch in tb
+        -- "../rcf/xxxxperiph-p-SPISR.rcf", -- New SPI Slave test - SCK hf glitch in tb
+        -- "../rcf/xxxxxxperiph-p-SPI.rcf" 
        
     );
 

@@ -3,6 +3,7 @@
 #-----------------------------------------------------------------------
 
 periph_sc_tests = \
+    UARTIRQ \
     SPISR \
     GPIO1 \
     GPIO2 \
@@ -14,6 +15,7 @@ periph_sc_tests = \
     UART \
     TIMER \
     AFE \
+    
 
     
 

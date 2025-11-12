@@ -2,7 +2,7 @@
 *	Innovus 20.12-s088_1 (64bit) 11/06/2020 10:29 (Linux 2.6.32-431.11.2.el6.x86_64)
 *	
 *
-* 	Date & Time:	2025-Nov-09 21:00:33 (2025-Nov-10 03:00:33 GMT)
+* 	Date & Time:	2025-Nov-11 20:17:09 (2025-Nov-12 02:17:09 GMT)
 *
 *----------------------------------------------------------------------------------------
 *
@@ -47,40 +47,40 @@
 
 Total Power 
 -----------------------------------------------------------------------------------------
-Total Leakage Power:         1.24847848 
+Total Leakage Power:         1.24632090 
 -----------------------------------------------------------------------------------------
 
 
 Group                           Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-Sequential                         0.111       8.893 
-Macro                             0.8624       69.08 
+Sequential                        0.1111       8.917 
+Macro                             0.8624        69.2 
 IO                                     0           0 
-Combinational                     0.2653       21.25 
-Clock (Combinational)           0.002696      0.2159 
-Clock (Sequential)              0.006976      0.5587 
+Combinational                     0.2641       21.19 
+Clock (Combinational)           0.002571      0.2063 
+Clock (Sequential)              0.006116      0.4908 
 -----------------------------------------------------------------------------------------
-Total                              1.248         100 
+Total                              1.246         100 
 -----------------------------------------------------------------------------------------
 
 
 Rail                  Voltage   Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-VDD                       0.9      1.248         100 
+VDD                       0.9      1.246         100 
 
 
 Clock                           Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-clk_sck1                       0.0001733     0.01388 
-smclk                           0.003343      0.2678 
-mclk                            0.002768      0.2217 
-clk_cpu                         0.003837      0.3073 
-clk_sck0                        0.000147     0.01177 
+clk_sck1                       0.0001763     0.01415 
+smclk                           0.002878      0.2309 
+mclk                            0.002603      0.2088 
+clk_cpu                         0.003339      0.2679 
+clk_sck0                       0.0002013     0.01615 
 -----------------------------------------------------------------------------------------
-Total (excluding duplicates)    0.009671      0.7747 
+Total (excluding duplicates)    0.008687       0.697 
 -----------------------------------------------------------------------------------------
 Clock: clk_sck1
 Clock Period: 0.028571 usec 
@@ -113,14 +113,14 @@ Clock Static Probability:  0.5000
 *	Power Distribution Summary: 
 *                Highest Average Power:                      ram0 (sram1p16k_hvt_pg):           0.3719 
 *                Highest Leakage Power:                      ram0 (sram1p16k_hvt_pg):           0.3719 
-*          Total Cap:      5.01961e-10 F
-*          Total instances in design: 29890
+*          Total Cap:      4.98861e-10 F
+*          Total instances in design: 29845
 *          Total instances in design with no power:     6
 *          Total instances in design with no activity:     0
 *          Total Fillers and Decap:     6
 -----------------------------------------------------------------------------------------
 
-Total leakage power = 1.24848 mW
+Total leakage power = 1.24632 mW
 Cell usage statistics:  
-Library USERLIB_nldm_ss_0p90v_0p90v_125c , 3 cells ( 0.000000%) , 0.862443 mW ( 69.079527%  ) 
-Library scadv10_cln65gp_hvt_ss_0p9v_125c , 29881 cells ( 0.000000%) , 0.386035 mW ( 30.920473%  ) 
+Library USERLIB_nldm_ss_0p90v_0p90v_125c , 3 cells ( 0.000000%) , 0.862443 mW ( 69.199115%  ) 
+Library scadv10_cln65gp_hvt_ss_0p9v_125c , 29836 cells ( 0.000000%) , 0.383878 mW ( 30.800885%  ) 

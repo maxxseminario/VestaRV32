@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Sun Nov  9 23:28:41 2025                
+#  Created on Tue Nov 11 19:57:29 2025                
 #                                                     
 #######################################################
 
@@ -77,18 +77,17 @@ addStripe -layer M7 -nets {VDD VSS} -direction vertical -extend_to design_bounda
 editTrim -all
 setCheckMode -globalNet true -io true -route true -tapeOut true
 sroute -nets { VSS VDD } -allowLayerChange 0 -allowJogging 0 -connect corePin -corePinWidth 0.3
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_src.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_src.drc
 clearDrc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_1.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_0.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_2.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_4.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_3.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_7.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_5.drc
-saveDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_6.drc
-loadDrc /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread.drc
-loadDrc -incremental /tmp/innovus_temp_7758_atlas_mseminario2_Y7nX0E/vergQTmphHBZOs/qthread_src.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_1.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_6.drc
+loadDrc -incremental /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpDwz42C/qthread_src.drc
 fixVia -short
 fixVia -minCut
 fixVia -minStep
@@ -103,3 +102,149 @@ createRouteBlk -box 121.795 407 180.205 440.39 -layer all
 createRouteBlk -box 221.795 407 280.205 440.39 -layer all
 addWellTap -cell FILLTIE2A10TH -cellInterval 24 -fixedGap -checkerBoard -prefix WELLTAP
 place_opt_design
+fit
+redraw
+add_ndr -name CTS_2W2S -width {M2:M6 0.4} -generate_via -spacing {M2:M6 0.42}
+add_ndr -name CTS_2W1S -width {M2:M6 0.4} -generate_via -spacing {M2:M6 0.21}
+create_route_type -name top_rule -non_default_rule CTS_2W2S -top_preferred_layer M6 -bottom_preferred_layer M5 -shield_net VSS -bottom_shield_layer M5
+create_route_type -name trunk_rule -non_default_rule CTS_2W2S -top_preferred_layer M4 -bottom_preferred_layer M3 -shield_net VSS -bottom_shield_layer M3
+create_route_type -name leaf_rule -non_default_rule CTS_2W1S -top_preferred_layer M3 -bottom_preferred_layer M2
+set_ccopt_property -net_type top route_type top_rule
+set_ccopt_property -net_type trunk route_type trunk_rule
+set_ccopt_property -net_type leaf route_type leaf_rule
+set_ccopt_property routing_top_min_fanout 10000
+set_ccopt_property buffer_cells {BUFX0P7BA10TH BUFX0P8BA10TH BUFX11BA10TH BUFX13BA10TH BUFX16BA10TH BUFX1BA10TH BUFX1P2BA10TH BUFX1P4BA10TH BUFX1P7BA10TH BUFX2BA10TH BUFX2P5BA10TH BUFX3BA10TH BUFX3P5BA10TH BUFX4BA10TH BUFX5BA10TH BUFX6BA10TH BUFX7P5BA10TH BUFX9BA10TH}
+set_ccopt_property inverter_cells {INVX0P5BA10TH INVX0P6BA10TH INVX0P7BA10TH INVX0P8BA10TH INVX11BA10TH INVX13BA10TH INVX16BA10TH INVX1BA10TH INVX1P2BA10TH INVX1P4BA10TH INVX1P7BA10TH INVX2BA10TH INVX2P5BA10TH INVX3BA10TH INVX3P5BA10TH INVX4BA10TH INVX5BA10TH INVX6BA10TH INVX7P5BA10TH INVX9BA10TH}
+set_ccopt_property delay_cells {DLY2X0P5MA10TH DLY4X0P5MA10TH}
+set_ccopt_property use_inverters true
+set_ccopt_property target_max_trans 400ps
+create_ccopt_clock_tree_spec
+ccopt_design
+fit
+redraw
+optDesign -postCTS -hold
+fit
+redraw
+timeDesign -postCTS -expandedViews -outDir rpt/MCU.timeDesign.postcts
+report_ccopt_clock_trees -file rpt/MCU.report_ccopt_clock_trees.postcts
+report_ccopt_skew_groups -file rpt/MCU.report_ccopt_skew_groups.postcts
+setNanoRouteMode -routeTopRoutingLayer 7 -envNumberFailLimit 10 -droutePostRouteSwapVia multiCut -drouteUseMultiCutViaEffort medium -routeAllowPowerGroundPin true -drouteFixAntenna true -routeAntennaCellName ANTENNA2A10TH -routeInsertAntennaDiode true -routeInsertDiodeForClockNets true -routeIgnoreAntennaTopCellPin false -routeFixTopLayerAntenna false -drouteAntennaEcoListFile rpt/MCU.routeDesign.diodes.txt -dbSkipAnalog true -drouteEndIteration default
+routeDesign
+fit
+redraw
+optDesign -postRoute -setup -hold
+fit
+redraw
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_1.drc
+loadDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread.drc
+loadDrc -incremental /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmphKf023/qthread_src.drc
+ecoRoute -fix_drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread_1.drc
+loadDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpFX37EE/qthread.drc
+ecoRoute -fix_drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread_1.drc
+loadDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpycVkgH/qthread.drc
+routeDesign
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread_1.drc
+loadDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpTwaHfZ/qthread.drc
+streamOut out/MCU.gds2 -libName WorkLib -structureName MCU -stripes 1 -units 1000 -mode ALL -mapFile in/innovus2gds.map
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread_1.drc
+loadDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpHEVDqu/qthread.drc
+addFiller
+verifyConnectivity -error 100000 -connectPadSpecialPorts -report rpt/MCU.verifyConnectivity.signoff.rpt
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_src.drc
+clearDrc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_5.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_6.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_4.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_7.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_2.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_3.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_0.drc
+saveDrc /tmp/innovus_temp_125928_atlas_mseminario2_b1mYBd/vergQTmpBAtiOj/qthread_1.drc
+verifyProcessAntenna -report rpt/MCU.verifyProcessAntenna.signoff.rpt
+fit
+redraw
+setDelayCalMode -SIAware false
+setAnalysisMode -analysisType onChipVariation -cppr both
+timeDesign -si -signoff -outdir rpt/MCU.timeDesign.signoff.rpt
+setAnalysisMode -cppr both
+report_clock_timing \
+    -type skew \
+    -nworst 10 > $REPORT_DIR/$DESIGN_NAME.report_clock_timing.skew.signoff.rpt
+report_timing -net > $REPORT_DIR/$DESIGN_NAME.report_timing.signoff.rpt
+setAnalysisMode -checkType hold -skew true
+report_timing > $REPORT_DIR/$DESIGN_NAME.report_timing.hold.signoff.rpt
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -early > $REPORT_DIR/$DESIGN_NAME.report_timing.hold.signoff.mtarpt
+setAnalysisMode -checkType setup -skew true
+report_timing > $REPORT_DIR/$DESIGN_NAME.report_timing.setup.signoff.rpt
+report_timing -machine_readable -max_paths 10000 -max_slack 0.75 -path_exceptions all -late > $REPORT_DIR/$DESIGN_NAME.report_timing.setup.signoff.mtarpt
+all_hold_analysis_views
+all_setup_analysis_views
+getPlaceMode -doneQuickCTS -quiet
+checkPlace -ignoreOutOfCore -noPreplaced rpt/MCU.checkPlace.signoff.rpt
+reportGateCount -level 2 -outfile rpt/MCU.reportGateCount.signoff.rpt
+summaryReport -noHtml -outfile rpt/MCU.summaryReport.signoff.rpt
+checkDesign -all -noHtml -outfile rpt/MCU.checkDesign.signoff.rpt
+saveDesign dbs/MCU.signoff.innovus -def -netlist -rc -tcon
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 1
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 2
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 3
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 4
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 5
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 6
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 7
+createRouteBlk -box 0 0 1186 686 -spacing 0.0 -layer 8
+streamOut out/MCU.gds2 -libName WorkLib -structureName MCU -stripes 1 -units 1000 -mode ALL -mapFile in/innovus2gds.map
+write_sdf $OUTPUT_DIR/$DESIGN_NAME.sdf
+write_sdf $OUTPUT_DIR/$DESIGN_NAME.explicit.sdf -recompute_delay_calc
+saveNetlist out/MCU.xsim.v -excludeCellInst ANTENNA2A10TH
+saveNetlist -excludeLeafCell out/MCU.lvs.v -excludeCellInst {FILLTIE128A10TH FILLTIE64A10TH FILLTIE32A10TH FILLTIE16A10TH FILLTIE8A10TH FILLTIE4A10TH FILLTIE2A10TH FILL128A10TH FILL64A10TH FILL32A10TH FILL16A10TH FILL8A10TH FILL4A10TH FILL2A10TH FILL1A10TH} -flat -phys
+createInterfaceLogic -hold -dir out/MCU.ilm
+saveDesign dbs/MCU.final.innovus -def -netlist -rc -tcon
+win

@@ -131,6 +131,7 @@ architecture Behavioral of UART is
     signal clr_SR_RX : std_logic; -- Clear RX flags in Status Register
     signal clr_UTEIF : std_logic; -- Clear TX Empty Interrupt Flag
     signal clr_UTCIF : std_logic; -- Clear TX Complete Interrupt Flag
+    signal clr_URCIF : std_logic; -- Clear RX Complete Interrupt Flag
 
 begin 
 
@@ -303,6 +304,7 @@ begin
             if clr_UTCIF = '1' then
                 USR_UTCIF <= '0';
             end if;
+ 
     end process;
 
     -- TX Output Logic (Combinational)
@@ -357,7 +359,7 @@ begin
 
 
     -- RX Finite State Machine 
-    RX_FSM : process(resetn, clk_baud, en_clk_baud, UCR_EN, UCR_PEN, UCR_PSEL, clr_SR_RX)
+    RX_FSM : process(resetn, clk_baud, en_clk_baud, UCR_EN, UCR_PEN, UCR_PSEL, clr_SR_RX, clr_URCIF)
     begin 
         if resetn = '0' or rx_in_progress = '0' then
             rx_bit_cntr <= BIT_COUNTER_START; -- was "1010"
@@ -431,6 +433,10 @@ begin
             USR_RCIF <= '0';
             USR_PEF <= '0';
         end if;
+    
+        if clr_URCIF = '1' then
+            USR_RCIF <= '0';
+        end if;
 
         if resetn = '0' then 
             UART_RX <= (others => '0');
@@ -481,11 +487,13 @@ begin
             clr_SR_RX <= '0';
             clr_UTCIF <= '0';
             clr_UTEIF <= '0';
+            clr_URCIF <= '0';
         elsif rising_edge(clk_mem) then
             -- Default values for one-cycle pulses
             clr_SR_RX <= '0';
             clr_UTCIF <= '0';
             clr_UTEIF <= '0';
+            clr_URCIF <= '0';
             
             -- Handle register writes
             if en_mem = '0' then 
@@ -501,6 +509,9 @@ begin
                             end if;
                             if write_data(1) = '1' then
                                 clr_UTEIF <= '1';
+                            end if;
+                            if write_data(2) = '1' then 
+                                clr_URCIF <= '1';
                             end if;
                         end if;
                     when RegSlotUARTxBR =>

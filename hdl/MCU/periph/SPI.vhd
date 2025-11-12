@@ -229,7 +229,7 @@ begin
 
     cg_clk_baud_src: entity work.ClkGate
         port map (
-            ClkIn   => clk,
+            ClkIn   => not clk, -- TODO: !! JUST CHANGED THIS TO NOT
             En      => en_clk_baud_src,
             ClkOut  => clk_baud_src
         );
@@ -254,7 +254,7 @@ begin
     en_clk_baud <= '1' when baud_counter = "00000000" and en_clk_baud_src = '1' else '0'; 
     cg_clk_baud: entity work.ClkGate
         port map (
-            ClkIn   => not clk,
+            ClkIn   => not clk, --TODO: JUST CHANGED FROM NOT CLK TO CLK
             En      => en_clk_baud,
             ClkOut  => clk_baud
     );
