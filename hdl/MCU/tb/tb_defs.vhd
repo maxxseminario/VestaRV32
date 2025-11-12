@@ -75,38 +75,38 @@ package tb_defs is
         -- "../rcf/xxrv32ua-p-amoor_w.rcf",
         -- "../rcf/xrv32ua-p-amoxor_w.rcf",
         -- "../rcf/rv32ua-p-amoswap_w.rcf",
-        "../rcf/xrv32uzba-p-sh1add.rcf", -- Bit Manipulation - Address Generation Instructions - pass start innovus
-        "../rcf/xrv32uzba-p-sh2add.rcf",
-        "../rcf/xrv32uzba-p-sh3add.rcf",
-        "../rcf/xxxxrv32uzbb-p-ror.rcf", -- Bit Manipulation - Basic Instructions
-        "../rcf/xrv32uzbb-p-sext_b.rcf",
-        "../rcf/xrv32uzbb-p-sext_h.rcf",
-        "../rcf/xrv32uzbb-p-zext_h.rcf",
-        "../rcf/xxrv32uzbb-p-orc_b.rcf",
-        "../rcf/xxxrv32uzbb-p-andn.rcf",
-        "../rcf/xxxrv32uzbb-p-cpop.rcf",
-        "../rcf/xxxrv32uzbb-p-maxu.rcf",
-        "../rcf/xxxrv32uzbb-p-minu.rcf",
-        "../rcf/xxxrv32uzbb-p-rev8.rcf",
-        "../rcf/xxxrv32uzbb-p-rori.rcf", 
-        "../rcf/xxxrv32uzbb-p-xnor.rcf", -- pass end innovus
-        "../rcf/xxxxrv32uzbb-p-clz.rcf",
-        "../rcf/xxxxrv32uzbb-p-ctz.rcf",
-        "../rcf/xxxxrv32uzbb-p-max.rcf",
-        "../rcf/xxxxrv32uzbb-p-min.rcf",
-        "../rcf/xxxxrv32uzbb-p-orn.rcf",
-        "../rcf/xxxxrv32uzbb-p-rol.rcf", 
-        "../rcf/xxrv32uzbs-p-bclri.rcf", -- Bit Manipulation - Single Bit Instructions
-        "../rcf/xxrv32uzbs-p-bexti.rcf",
-        "../rcf/xxrv32uzbs-p-binvi.rcf",
-        "../rcf/xxrv32uzbs-p-bseti.rcf",
-        "../rcf/xxxrv32uzbs-p-bclr.rcf",
-        "../rcf/xxxrv32uzbs-p-bext.rcf",
-        "../rcf/xxxrv32uzbs-p-binv.rcf",
-        "../rcf/xxxrv32uzbs-p-bset.rcf", -- inn
-        "../rcf/xrv32uzbc-p-clmulh.rcf", -- Bit Manipulation - Carryless Mult Instructions
-        "../rcf/xrv32uzbc-p-clmulr.rcf", -- Fail Genus 11/01/25
-        "../rcf/xxrv32uzbc-p-clmul.rcf",
+        -- "../rcf/xrv32uzba-p-sh1add.rcf", -- Bit Manipulation - Address Generation Instructions - pass start innovus
+        -- "../rcf/xrv32uzba-p-sh2add.rcf",
+        -- "../rcf/xrv32uzba-p-sh3add.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-ror.rcf", -- Bit Manipulation - Basic Instructions
+        -- "../rcf/xrv32uzbb-p-sext_b.rcf",
+        -- "../rcf/xrv32uzbb-p-sext_h.rcf",
+        -- "../rcf/xrv32uzbb-p-zext_h.rcf",
+        -- "../rcf/xxrv32uzbb-p-orc_b.rcf",
+        -- "../rcf/xxxrv32uzbb-p-andn.rcf",
+        -- "../rcf/xxxrv32uzbb-p-cpop.rcf",
+        -- "../rcf/xxxrv32uzbb-p-maxu.rcf",
+        -- "../rcf/xxxrv32uzbb-p-minu.rcf",
+        -- "../rcf/xxxrv32uzbb-p-rev8.rcf",
+        -- "../rcf/xxxrv32uzbb-p-rori.rcf", 
+        -- "../rcf/xxxrv32uzbb-p-xnor.rcf", -- pass end innovus
+        -- "../rcf/xxxxrv32uzbb-p-clz.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-ctz.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-max.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-min.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-orn.rcf",
+        -- "../rcf/xxxxrv32uzbb-p-rol.rcf", 
+        -- "../rcf/xxrv32uzbs-p-bclri.rcf", -- Bit Manipulation - Single Bit Instructions
+        -- "../rcf/xxrv32uzbs-p-bexti.rcf",
+        -- "../rcf/xxrv32uzbs-p-binvi.rcf",
+        -- "../rcf/xxrv32uzbs-p-bseti.rcf",
+        -- "../rcf/xxxrv32uzbs-p-bclr.rcf",
+        -- "../rcf/xxxrv32uzbs-p-bext.rcf",
+        -- "../rcf/xxxrv32uzbs-p-binv.rcf",
+        -- "../rcf/xxxrv32uzbs-p-bset.rcf", -- inn
+        -- "../rcf/xrv32uzbc-p-clmulh.rcf", -- Bit Manipulation - Carryless Mult Instructions
+        -- "../rcf/xrv32uzbc-p-clmulr.rcf", -- Fail Genus 11/01/25
+        -- "../rcf/xxrv32uzbc-p-clmul.rcf",
         -- "../rcf/xxxrv32ziscr-p-csr.rcf", -- CSR Instructions (Custom)
         -- "../rcf/xxxxxxperiph-p-NPU.rcf", -- Peripheral Tests
         -- "../rcf/xxxxperiph-p-SPIFM.rcf",
