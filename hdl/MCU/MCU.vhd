@@ -141,7 +141,7 @@ architecture behav of MCU is
             mem_addr          : out std_logic_vector(11 downto 0);  -- 12 bits for 16KB memory blocks
             addr_periph       : out std_logic_vector(7 downto 2);
             mab_out           : out std_logic_vector(31 downto 0);  -- Full address bus for flash
-            wen_periph        : out std_logic_vector(3 downto 0);
+            wen_fe        : out std_logic_vector(3 downto 0);
             -- wen_mem           : out std_logic_vector(3 downto 0);
             GWEN              : out std_logic;
 
@@ -682,8 +682,8 @@ architecture behav of MCU is
         signal read_data        : std_logic_vector(31 downto 0);
         signal write_word       : std_logic_vector(31 downto 0);
         signal data_addr        : std_logic_vector(31 downto 0);
-        signal wen              : std_logic_vector(3 downto 0);
-        signal wen_periph       : std_logic_vector(3 downto 0);
+        signal wen_re           : std_logic_vector(3 downto 0);
+        signal wen_fe           : std_logic_vector(3 downto 0);
         -- signal inst_retired     : std_logic; -- Instruction Retired Signal from Core
         -- signal mem_access       : std_logic; -- High when memory access is occurring
 
@@ -1288,7 +1288,7 @@ begin
             clk_cpu     => clk_cpu,
 
             data_addr    => data_addr, 
-            wen          => wen,
+            wen          => wen_re,
             write_data   => write_word,
             read_data    => read_data,
             mask         => mask, 
@@ -1329,7 +1329,7 @@ begin
 
             clk_mem       => clk_periph(PeriphSlotSystem0),
             en_mem        => mem_en_periph(PeriphSlotSystem0),
-            wen           => wen_periph,
+            wen           => wen_fe,
             addr_periph   => addr_periph,
             write_data    => write_data,
             read_data     => periph_dout(PeriphSlotSystem0),
@@ -1357,7 +1357,7 @@ begin
             clk             => clk_cpu,
             resetn          => resetn,
 
-            wen             => wen,
+            wen             => wen_re,
             data_addr       => data_addr,
             write_word      => write_word,
             mask            => mask,
@@ -1367,7 +1367,7 @@ begin
             mem_addr        => mem_addr, 
             addr_periph     => addr_periph(7 downto 2),
             mab_out         => mab_flash, 
-            wen_periph      => wen_periph,
+            wen_fe      => wen_fe,
             -- wen_mem         => wen_mem,
             GWEN            => GWEN,
 
@@ -1402,7 +1402,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotGPIO0), 
             en              => mem_en_periph(PeriphSlotGPIO0), 
-            wen             => wen_periph, 
+            wen             => wen_fe, 
             write_data      => write_data, 
             read_data       => periph_dout(PeriphSlotGPIO0), 
             addr_periph     => addr_periph, 
@@ -1440,7 +1440,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotGPIO1), 
             en              => mem_en_periph(PeriphSlotGPIO1), 
-            wen             => wen_periph, 
+            wen             => wen_fe, 
             write_data      => write_data, 
             read_data       => periph_dout(PeriphSlotGPIO1), 
             addr_periph     => addr_periph, 
@@ -1478,7 +1478,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotGPIO2), 
             en              => mem_en_periph(PeriphSlotGPIO2), 
-            wen             => wen_periph, 
+            wen             => wen_fe, 
             write_data      => write_data, 
             read_data       => periph_dout(PeriphSlotGPIO2), 
             addr_periph     => addr_periph, 
@@ -1516,7 +1516,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotGPIO3),
             en              => mem_en_periph(PeriphSlotGPIO3),
-            wen             => wen_periph, 
+            wen             => wen_fe, 
             write_data      => write_data, 
             read_data       => periph_dout(PeriphSlotGPIO3), 
             addr_periph     => addr_periph, 
@@ -1549,7 +1549,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotSPI0),
             en_mem          => mem_en_periph(PeriphSlotSPI0),
-            wen             => wen_periph,
+            wen             => wen_fe,
             write_data      => write_data,
             read_data       => periph_dout(PeriphSlotSPI0),
             addr_periph     => addr_periph,
@@ -1601,7 +1601,7 @@ begin
 
             clk_mem         => clk_periph(PeriphSlotSPI1),
             en_mem          => mem_en_periph(PeriphSlotSPI1),
-            wen             => wen_periph,
+            wen             => wen_fe,
             write_data      => write_data,
             read_data       => periph_dout(PeriphSlotSPI1),
             addr_periph     => addr_periph,
@@ -1652,7 +1652,7 @@ begin
             -- Memory Bus
             clk_mem     => clk_periph(PeriphSlotUART0), 
             en_mem      => mem_en_periph(PeriphSlotUART0),
-            wen         => wen_periph,
+            wen         => wen_fe,
             addr_periph => addr_periph,
             write_data  => write_data,
             read_data   => periph_dout(PeriphSlotUART0),
@@ -1682,7 +1682,7 @@ begin
             -- Memory Bus
             clk_mem     => clk_periph(PeriphSlotUART1), 
             en_mem      => mem_en_periph(PeriphSlotUART1),
-            wen         => wen_periph,
+            wen         => wen_fe,
             addr_periph => addr_periph,
             write_data  => write_data,
             read_data   => periph_dout(PeriphSlotUART1),
@@ -1722,7 +1722,7 @@ begin
             -- Memory Bus
             ClkMem			=> clk_periph(PeriphSlotI2C0),
             EnMemPeriph		=> mem_en_periph(PeriphSlotI2C0),
-            WEn				=> wen_periph,
+            WEn				=> wen_fe,
             MABPart			=> addr_periph,
             wdata			=> write_data,
             rdata_out		=> periph_dout(PeriphSlotI2C0),
@@ -1765,7 +1765,7 @@ begin
             -- Memory Bus
             ClkMem			=> clk_periph(PeriphSlotI2C1),
             EnMemPeriph		=> mem_en_periph(PeriphSlotI2C1),
-            WEn				=> wen_periph,
+            WEn				=> wen_fe,
             MABPart			=> addr_periph,
             wdata			=> write_data,
             rdata_out		=> periph_dout(PeriphSlotI2C1),
@@ -1804,7 +1804,7 @@ begin
             -- Memory Bus
             clk_mem      => clk_periph(PeriphSlotTIMER0),
             en_mem       => mem_en_periph(PeriphSlotTIMER0),
-            wen          => wen_periph,
+            wen          => wen_fe,
             addr_periph  => addr_periph,
             write_data   => write_data,
             read_data    => periph_dout(PeriphSlotTIMER0),
@@ -1851,7 +1851,7 @@ begin
             -- Memory Bus
             clk_mem      => clk_periph(PeriphSlotTIMER1),
             en_mem       => mem_en_periph(PeriphSlotTIMER1),
-            wen          => wen_periph,
+            wen          => wen_fe,
             addr_periph  => addr_periph,
             write_data   => write_data,
             read_data    => periph_dout(PeriphSlotTIMER1),
@@ -1896,7 +1896,7 @@ begin
             MabMmrD     => write_data,
             MabMmrCLK   => clk_periph(PeriphSlotNPU0),
             MabMmrCEN   => '0',
-            MabMmrWEN   => wen_periph,
+            MabMmrWEN   => wen_fe,
             MabMmrQ     => periph_dout(PeriphSlotNPU0),
 
             -- MUXed SRAM Inputs (connect directly to address decoder outputs)
@@ -1906,7 +1906,7 @@ begin
             SramCLK_in    => clk_mem(2),
             SramCEN_in    => mem_en(2),
             SramGWEN_in   => GWEN,
-            SramWEN_in    => wen,
+            SramWEN_in    => wen_fe,
 
             -- SRAM Interface (connect directly to SRAM blocks without going through address decoder)
             NpuSramA_out    => npu0_mux_ram_a,
@@ -1927,7 +1927,7 @@ begin
 
             clk_mem     => clk_periph(PeriphSlotAFE0),
             en_mem      => mem_en_periph(PeriphSlotAFE0),
-            wen         => wen_periph, 
+            wen         => wen_fe, 
             addr_periph => addr_periph,
             write_data  => write_data,
             read_data   => periph_dout(PeriphSlotAFE0),
@@ -1998,7 +1998,7 @@ begin
 
             clk_mem     => clk_periph(PeriphSlotSARADC0),
             en_mem      => mem_en_periph(PeriphSlotSARADC0),
-            wen         => wen_periph,
+            wen         => wen_fe,
             addr_periph => addr_periph,
             write_data  => write_data,
             read_data   => periph_dout(PeriphSlotSARADC0),
@@ -2031,7 +2031,7 @@ begin
             Q     => mem_dout(1),
             CLK   => clk_mem(1),
             CEN   => mem_en(1),
-            WEN   => wen_periph,
+            WEN   => wen_fe,
             A     => mem_addr,
             D     => write_data,
             EMA   => "000",

@@ -44,6 +44,13 @@ TEST_CASE( 2, a4, 1, \
   sc.w a4, a5, (a0); \
 )
 
+# Added by Maxx Seminario 11/13/25
+# Explicitly zero foo before test 3 
+# This is in order to not cause issues post genus / innovus where memory
+# contents may be non-zero.
+la t0, foo
+sw zero, 0(t0)
+
 # make sure the failing sc did not commit into memory
 TEST_CASE( 3, a4, 0, \
   lw a4, foo; \

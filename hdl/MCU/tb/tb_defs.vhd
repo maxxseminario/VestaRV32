@@ -66,15 +66,15 @@ package tb_defs is
         -- "../rcf/xxxxrv32um-p-mulhu.rcf", 
         -- "../rcf/xxxxxxrv32um-p-rem.rcf", -- Remainder Instructions 
         -- "../rcf/xxxxxrv32um-p-remu.rcf",
-        -- "../rcf/xrv32ua-p-amoadd_w.rcf", -- Atomic Instructions
-        -- "../rcf/xrv32ua-p-amoand_w.rcf",
-        -- "../rcf/xrv32ua-p-amomax_w.rcf",
-        -- "../rcf/rv32ua-p-amomaxu_w.rcf",
-        -- "../rcf/xrv32ua-p-amomin_w.rcf",
-        -- "../rcf/rv32ua-p-amominu_w.rcf",
-        -- "../rcf/xxrv32ua-p-amoor_w.rcf",
-        -- "../rcf/xrv32ua-p-amoxor_w.rcf",
-        -- "../rcf/rv32ua-p-amoswap_w.rcf",
+        "../rcf/xrv32ua-p-amoadd_w.rcf", -- Atomic Instructions
+        "../rcf/xrv32ua-p-amoand_w.rcf",
+        "../rcf/xrv32ua-p-amomax_w.rcf",
+        "../rcf/rv32ua-p-amomaxu_w.rcf",
+        "../rcf/xrv32ua-p-amomin_w.rcf",
+        "../rcf/rv32ua-p-amominu_w.rcf",
+        "../rcf/xxrv32ua-p-amoor_w.rcf",
+        "../rcf/xrv32ua-p-amoxor_w.rcf",
+        "../rcf/rv32ua-p-amoswap_w.rcf",
         -- "../rcf/xrv32uzba-p-sh1add.rcf", -- Bit Manipulation - Address Generation Instructions - pass start innovus
         -- "../rcf/xrv32uzba-p-sh2add.rcf",
         -- "../rcf/xrv32uzba-p-sh3add.rcf",
@@ -108,7 +108,7 @@ package tb_defs is
         -- "../rcf/xrv32uzbc-p-clmulr.rcf", -- Fail Genus 11/01/25
         -- "../rcf/xxrv32uzbc-p-clmul.rcf",
         -- "../rcf/xxxrv32ziscr-p-csr.rcf", -- CSR Instructions (Custom)
-        -- "../rcf/xxxxxxperiph-p-NPU.rcf", -- Peripheral Tests
+        "../rcf/xxxxxxperiph-p-NPU.rcf", -- Peripheral Tests
         -- "../rcf/xxxxperiph-p-SPIFM.rcf",
         -- "../rcf/xxxxxxperiph-p-AFE.rcf",  
         -- "../rcf/xxxperiph-p-SARADC.rcf",  
