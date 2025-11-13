@@ -96,6 +96,14 @@ set_timer_gpio:
     jal ra, init_gpio_timer
     jal ra, init_gpio_interrogator 
 
+init_resets:
+    # address of timer we are testing is stored in a0
+    li t0, TIMER_CMP2_RESET_MASK 
+    sw t0, TIMER_CR(a0)   # Reset timer
+    jal ra, wait_short
+    sw zero, TIMER_CR(a0) # Clear reset
+
+test_suite:
     # Run all test suites
     jal ra, basic_timer_tests
     jal ra, compare_pwm_tests
@@ -344,10 +352,19 @@ test_timer_enable_disable:
 test_timer_counting:
     mv s1, ra
 
+    # # Reset and enable timer with fastest clock
+    # jal ra, reset_timer
+    # li s5, TIMER_EN_MASK | CLK_SRC_MCLK
+    # sw s5, TIMER_CR(a0)
+
     # Reset and enable timer with fastest clock
     jal ra, reset_timer
+    li s5, CLK_SRC_MCLK
+    sw s5, TIMER_CR(a0)
+    jal ra, wait_short
     li s5, TIMER_EN_MASK | CLK_SRC_MCLK
     sw s5, TIMER_CR(a0)
+
 
     # Take initial reading
     lw s3, TIMER_VAL(a0)
@@ -1160,10 +1177,20 @@ test_clock_source_selection:
 clock_source_loop:
     jal ra, reset_timer
     
+    # # Set clock source based on loop counter
+    # li t0, 4
+    # sub t1, t0, s0  # t1 = 0,1,2,3 for s0 = 4,3,2,1
+    # slli t2, t1, 8  # Shift to bits 9:8
+    # ori s5, t2, TIMER_EN_MASK
+    # sw s5, TIMER_CR(a0)
+
     # Set clock source based on loop counter
     li t0, 4
     sub t1, t0, s0  # t1 = 0,1,2,3 for s0 = 4,3,2,1
     slli t2, t1, 8  # Shift to bits 9:8
+    # ori s5, t2, TIMER_EN_MASK
+    sw t2, TIMER_CR(a0)
+    jal ra, wait_short  # Wait for clk_mux_glitch free to sync on new clock
     ori s5, t2, TIMER_EN_MASK
     sw s5, TIMER_CR(a0)
 

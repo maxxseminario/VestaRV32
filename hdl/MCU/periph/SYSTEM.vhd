@@ -194,6 +194,10 @@ begin
         1 => wdt_if
     );
 
+    -- Assign Outputs 
+    clk_lfxt_out    <= clk_lfxt;
+    clk_hfxt_out    <= clk_hfxt;
+
 
     -- ===========================
     -- Synchronizers 
