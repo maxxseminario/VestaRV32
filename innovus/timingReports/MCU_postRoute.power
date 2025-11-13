@@ -2,7 +2,7 @@
 *	Innovus 20.12-s088_1 (64bit) 11/06/2020 10:29 (Linux 2.6.32-431.11.2.el6.x86_64)
 *	
 *
-* 	Date & Time:	2025-Nov-11 20:17:09 (2025-Nov-12 02:17:09 GMT)
+* 	Date & Time:	2025-Nov-13 16:23:41 (2025-Nov-13 22:23:41 GMT)
 *
 *----------------------------------------------------------------------------------------
 *
@@ -47,57 +47,44 @@
 
 Total Power 
 -----------------------------------------------------------------------------------------
-Total Leakage Power:         1.24632090 
+Total Leakage Power:         1.24713404 
 -----------------------------------------------------------------------------------------
 
 
 Group                           Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-Sequential                        0.1111       8.917 
-Macro                             0.8624        69.2 
+Sequential                        0.1117       8.959 
+Macro                             0.8624       69.15 
 IO                                     0           0 
-Combinational                     0.2641       21.19 
-Clock (Combinational)           0.002571      0.2063 
-Clock (Sequential)              0.006116      0.4908 
+Combinational                     0.2624       21.04 
+Clock (Combinational)           0.002758      0.2212 
+Clock (Sequential)              0.007782       0.624 
 -----------------------------------------------------------------------------------------
-Total                              1.246         100 
+Total                              1.247         100 
 -----------------------------------------------------------------------------------------
 
 
 Rail                  Voltage   Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-VDD                       0.9      1.246         100 
+VDD                       0.9      1.247         100 
 
 
 Clock                           Leakage       Percentage 
                                 Power         (%)        
 -----------------------------------------------------------------------------------------
-clk_sck1                       0.0001763     0.01415 
-smclk                           0.002878      0.2309 
-mclk                            0.002603      0.2088 
-clk_cpu                         0.003339      0.2679 
-clk_sck0                       0.0002013     0.01615 
+clk_sck1                       0.0001888     0.01514 
+clk_sck0                       0.0001931     0.01549 
+clk_cpu                         0.004211      0.3377 
+clk_hfxt                       0.0007606     0.06099 
+mclk                            0.003013      0.2416 
+smclk                           0.003335      0.2674 
+clk_lfxt                       0.0007896     0.06331 
 -----------------------------------------------------------------------------------------
-Total (excluding duplicates)    0.008687       0.697 
+Total (excluding duplicates)     0.01054      0.8452 
 -----------------------------------------------------------------------------------------
 Clock: clk_sck1
-Clock Period: 0.028571 usec 
-Clock Toggle Rate:    70.0000 Mhz 
-Clock Static Probability:  0.5000
-
-Clock: smclk
-Clock Period: 0.028571 usec 
-Clock Toggle Rate:    70.0000 Mhz 
-Clock Static Probability:  0.5000
-
-Clock: mclk
-Clock Period: 0.028571 usec 
-Clock Toggle Rate:    70.0000 Mhz 
-Clock Static Probability:  0.5000
-
-Clock: clk_cpu
 Clock Period: 0.028571 usec 
 Clock Toggle Rate:    70.0000 Mhz 
 Clock Static Probability:  0.5000
@@ -107,20 +94,45 @@ Clock Period: 0.028571 usec
 Clock Toggle Rate:    70.0000 Mhz 
 Clock Static Probability:  0.5000
 
+Clock: clk_cpu
+Clock Period: 0.028571 usec 
+Clock Toggle Rate:    70.0000 Mhz 
+Clock Static Probability:  0.5000
+
+Clock: clk_hfxt
+Clock Period: 0.028571 usec 
+Clock Toggle Rate:    70.0000 Mhz 
+Clock Static Probability:  0.5000
+
+Clock: mclk
+Clock Period: 0.028571 usec 
+Clock Toggle Rate:    70.0000 Mhz 
+Clock Static Probability:  0.5000
+
+Clock: smclk
+Clock Period: 0.028571 usec 
+Clock Toggle Rate:    70.0000 Mhz 
+Clock Static Probability:  0.5000
+
+Clock: clk_lfxt
+Clock Period: 0.028571 usec 
+Clock Toggle Rate:     0.0655 Mhz 
+Clock Static Probability:  0.5000
+
 
 
 -----------------------------------------------------------------------------------------
 *	Power Distribution Summary: 
 *                Highest Average Power:                      ram0 (sram1p16k_hvt_pg):           0.3719 
 *                Highest Leakage Power:                      ram0 (sram1p16k_hvt_pg):           0.3719 
-*          Total Cap:      4.98861e-10 F
-*          Total instances in design: 29845
+*          Total Cap:      5.018e-10 F
+*          Total instances in design: 29977
 *          Total instances in design with no power:     6
 *          Total instances in design with no activity:     0
 *          Total Fillers and Decap:     6
 -----------------------------------------------------------------------------------------
 
-Total leakage power = 1.24632 mW
+Total leakage power = 1.24713 mW
 Cell usage statistics:  
-Library USERLIB_nldm_ss_0p90v_0p90v_125c , 3 cells ( 0.000000%) , 0.862443 mW ( 69.199115%  ) 
-Library scadv10_cln65gp_hvt_ss_0p9v_125c , 29836 cells ( 0.000000%) , 0.383878 mW ( 30.800885%  ) 
+Library USERLIB_nldm_ss_0p90v_0p90v_125c , 3 cells ( 0.000000%) , 0.862443 mW ( 69.153997%  ) 
+Library scadv10_cln65gp_hvt_ss_0p9v_125c , 29968 cells ( 0.000000%) , 0.384691 mW ( 30.846003%  ) 

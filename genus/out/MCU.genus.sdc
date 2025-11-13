@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 19.15-s090_1 on Tue Nov 11 18:53:11 CST 2025
+#  Created by Genus(TM) Synthesis Solution 19.15-s090_1 on Thu Nov 13 16:00:15 CST 2025
 
 # ####################################################################
 
@@ -1176,8 +1176,6 @@ group_path -weight 1.000000 -name cg_enable_group_mclk -through [list \
   [get_pins npu0/RC_CG_HIER_INST161/enable]  \
   [get_pins npu0/RC_CG_HIER_INST162/enable]  \
   [get_pins npu0/RC_CG_HIER_INST171/enable]  \
-  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
-  [get_pins timer1/RC_CG_HIER_INST283/enable]  \
   [get_pins core/RC_CG_HIER_INST37/enable]  \
   [get_pins core/RC_CG_HIER_INST38/enable]  \
   [get_pins core/RC_CG_HIER_INST39/enable]  \
@@ -1245,8 +1243,6 @@ group_path -weight 1.000000 -name cg_enable_group_mclk -through [list \
   [get_pins npu0/RC_CG_HIER_INST161/enable]  \
   [get_pins npu0/RC_CG_HIER_INST162/enable]  \
   [get_pins npu0/RC_CG_HIER_INST171/enable]  \
-  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
-  [get_pins timer1/RC_CG_HIER_INST283/enable]  \
   [get_pins core/RC_CG_HIER_INST37/enable]  \
   [get_pins core/RC_CG_HIER_INST38/enable]  \
   [get_pins core/RC_CG_HIER_INST39/enable]  \
@@ -1313,9 +1309,7 @@ group_path -weight 1.000000 -name cg_enable_group_mclk -through [list \
   [get_pins npu0/RC_CG_HIER_INST160/enable]  \
   [get_pins npu0/RC_CG_HIER_INST161/enable]  \
   [get_pins npu0/RC_CG_HIER_INST162/enable]  \
-  [get_pins npu0/RC_CG_HIER_INST171/enable]  \
-  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
-  [get_pins timer1/RC_CG_HIER_INST283/enable] ]
+  [get_pins npu0/RC_CG_HIER_INST171/enable] ]
 group_path -weight 1.000000 -name cg_enable_group_clk_sck0 -through [list \
   [get_pins spi0/RC_CG_HIER_INST196/enable]  \
   [get_pins spi0/RC_CG_HIER_INST196/enable]  \
@@ -1346,6 +1340,13 @@ group_path -weight 1.000000 -name cg_enable_group_default -through [list \
   [get_pins timer0/RC_CG_HIER_INST246/enable]  \
   [get_pins timer1/RC_CG_HIER_INST265/enable]  \
   [get_pins timer1/RC_CG_HIER_INST266/enable] ]
+group_path -weight 1.000000 -name cg_enable_group_clk_hfxt -through [list \
+  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
+  [get_pins timer1/RC_CG_HIER_INST283/enable]  \
+  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
+  [get_pins timer1/RC_CG_HIER_INST283/enable]  \
+  [get_pins timer0/RC_CG_HIER_INST263/enable]  \
+  [get_pins timer1/RC_CG_HIER_INST283/enable] ]
 set_clock_gating_check -setup 0.0 
 set_max_transition 0.5 [current_design]
 set_driving_cell -lib_cell INVX1MA10TH -library scadv10_cln65gp_hvt_tt_1p0v_25c -pin "Y" [get_ports resetn_in]

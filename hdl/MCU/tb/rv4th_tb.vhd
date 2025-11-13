@@ -304,15 +304,15 @@ begin
         wait for clk_hfxt_period;
         ReceivedSync <= '0';
 
-        -- -- Test 1.3: Clock frequency response
-        -- wait for 100 ms;
-        -- UartReceiveStringFromTXUntil(baudratePeriodROM, '>', TX0, TXing, str);
-        -- TXStr <= str;
-        -- wait for clk_hfxt_period;
-        -- report "Measured MCLK frequency: " & str(1 to 50);  -- Show first 50 chars
-        -- ReceivedSync <= '1';
-        -- wait for clk_hfxt_period;
-        -- ReceivedSync <= '0';
+        -- Test 1.3: Clock frequency response
+        wait for 100 ms;
+        UartReceiveStringFromTXUntil(baudratePeriodROM, '>', TX0, TXing, str);
+        TXStr <= str;
+        wait for clk_hfxt_period;
+        report "Measured MCLK frequency: " & str(1 to 50);  -- Show first 50 chars
+        ReceivedSync <= '1';
+        wait for clk_hfxt_period;
+        ReceivedSync <= '0';
 
         -- Test 1.4: Multiply command response
         len := 27;
@@ -395,14 +395,14 @@ begin
         SentSync <= '0';
         wait until ReceivedSync = '1';
 
-        -- -- Test 1.3: Clock frequency test
-        -- report "Test 1.3: Get MCLK frequency";
-        -- UartSendStrToRX(baudratePeriodROM, RX0, RXing, "3 1 clk ." & lf);
-        -- SentSync <= '1';
-        -- wait for clk_hfxt_period;
-        -- SentSync <= '0';
-        -- wait until ReceivedSync = '1';
-        -- wait for 5 ms;
+        -- Test 1.3: Clock frequency test
+        report "Test 1.3: Get MCLK frequency";
+        UartSendStrToRX(baudratePeriodROM, RX0, RXing, "3 1 clk ." & lf);
+        SentSync <= '1';
+        wait for clk_hfxt_period;
+        SentSync <= '0';
+        wait until ReceivedSync = '1';
+        wait for 5 ms;
 
         -- Test 1.4: Arithmetic test
         report "Test 1.4: Multiply command test";

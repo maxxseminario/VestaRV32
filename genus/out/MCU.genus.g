@@ -1,6 +1,6 @@
 ######################################################################
 
-# Created by Genus(TM) Synthesis Solution 19.15-s090_1 on Tue Nov 11 18:53:09 CST 2025
+# Created by Genus(TM) Synthesis Solution 19.15-s090_1 on Thu Nov 13 16:00:13 CST 2025
 
 # This file contains the RC script for design:MCU
 
@@ -16,21 +16,21 @@ set_db -quiet phys_route_time_out 120.0
 set_db -quiet capacitance_per_unit_length_mmmc {}
 set_db -quiet resistance_per_unit_length_mmmc {}
 set_db -quiet lp_insert_clock_gating true
-set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 34 0.0 41.0} {to_generic 356 395 375 421} {first_condense 92 538 39 511} {PBS_Generic_Opt-Post 517 551 497.8765289999999 538.8765289999999} {{PBS_Generic-Postgen HBO Optimizations} 2 553 1.0 539.8765289999999} {PBS_TechMap-Start 0 556 0.0 543.8765289999999} {{PBS_TechMap-Premap HBO Optimizations} 1 557 1.0 544.8765289999999} {second_condense 36 595 32 559} {reify 118 713 32 591} {global_incr_map 18 731 20 612} {{PBS_Techmap-Global Mapping} 182 739 178.37802699999997 723.2545559999999} {{PBS_TechMap-Datapath Postmap Operations} 5 744 5.5978489999999965 728.8524049999999} {{PBS_TechMap-Postmap HBO Optimizations} 0 744 0.5943529999999555 729.4467579999998} {{PBS_TechMap-Postmap Clock Gating} 5 749 4.0 733.4467579999998} {{PBS_TechMap-Postmap Cleanup} 1 750 1.5504550000000563 734.9972129999999} {PBS_Techmap-Post_MBCI 0 750 0.0 734.9972129999999} {incr_opt 55 807 62 690} }
+set_db -quiet runtime_by_stage {{PBS_Generic-Start 0 32 0.0 38.0} {to_generic 364 401 382 425} {first_condense 86 535 37 509} {PBS_Generic_Opt-Post 516 548 494.28482399999996 532.284824} {{PBS_Generic-Postgen HBO Optimizations} 1 549 1.0 533.284824} {PBS_TechMap-Start 0 552 0.0 536.284824} {{PBS_TechMap-Premap HBO Optimizations} 1 553 1.0 537.284824} {second_condense 35 590 31 554} {reify 122 712 33 588} {global_incr_map 18 730 20 608} {{PBS_Techmap-Global Mapping} 185 738 182.854237 720.139061} {{PBS_TechMap-Datapath Postmap Operations} 6 744 5.59204699999998 725.731108} {{PBS_TechMap-Postmap HBO Optimizations} 0 744 0.5575959999999895 726.2887039999999} {{PBS_TechMap-Postmap Clock Gating} 5 749 5.0 731.2887039999999} {{PBS_TechMap-Postmap Cleanup} 2 751 1.5693280000000414 732.858032} {PBS_Techmap-Post_MBCI 0 751 0.0 732.858032} {incr_opt 32 785 39 666} }
 set_db -quiet tinfo_tstamp_file .rs_mseminario2.tstamp
 set_db -quiet metric_enable true
 set_db -quiet auto_ungroup none
 set_db -quiet lp_clock_gating_register_aware true
 set_db -quiet use_tiehilo_for_const duplicate
-set_db -quiet flow_metrics_snapshot_uuid 2546a7de-d348-40bb-847d-4107d7fbc578
-set_db -quiet pin:MCU/afe0/g4314__9315/AN .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g4315__9945/AN .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g4316__2883/AN .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g4317__2346/AN .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g5411__9945/B .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g5412__2883/B .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g5414__1666/B .break_timing_paths clock_gating
-set_db -quiet pin:MCU/afe0/g5418__2398/B .break_timing_paths clock_gating
+set_db -quiet flow_metrics_snapshot_uuid 9a4a5b81-0c69-405c-88ec-e854fbffe583
+set_db -quiet pin:MCU/afe0/g4314__2883/AN .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g4315__2346/AN .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g4316__1666/AN .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g4317__7410/AN .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g5411__2346/B .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g5412__1666/B .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g5414__6417/B .break_timing_paths clock_gating
+set_db -quiet pin:MCU/afe0/g5418__6260/B .break_timing_paths clock_gating
 set_db -quiet hpin:MCU/core/clk_cpu .break_timing_paths true
 set_db -quiet pin:MCU/gpio3/g3374/B .break_timing_paths clock_gating
 set_db -quiet pin:MCU/gpio3/g3375/B .break_timing_paths clock_gating
@@ -50,8 +50,6 @@ set_db -quiet hpin:MCU/system0/mclk_out .break_timing_paths true
 set_db -quiet hpin:MCU/system0/smclk_out .break_timing_paths true
 set_db -quiet hpin:MCU/system0/clk_lfxt_out .break_timing_paths true
 set_db -quiet hpin:MCU/system0/clk_hfxt_out .break_timing_paths true
-set_db -quiet pin:MCU/timer0/clk_mux/g83/A .break_timing_paths clock_gating
-set_db -quiet pin:MCU/timer1/clk_mux/g83/A .break_timing_paths clock_gating
 set_db -quiet phys_use_segment_parasitics true
 set_db -quiet probabilistic_extraction true
 set_db -quiet ple_correlation_factors {1.9000 2.0000}
@@ -84,6 +82,7 @@ define_clock -name clk_scl1 -domain clk_scl1_domain -period 200000.0 -divide_per
 define_clock -name clk_sck0 -domain clk_sck0_domain -period 2857143.0 -divide_period 100 -rise 0 -divide_rise 1 -fall 1 -divide_fall 2 -remove -design design:MCU hpin:MCU/spi0/sck_in
 define_clock -name clk_sck1 -domain clk_sck1_domain -period 2857143.0 -divide_period 100 -rise 0 -divide_rise 1 -fall 1 -divide_fall 2 -remove -design design:MCU hpin:MCU/spi1/sck_in
 define_cost_group -design design:MCU -name cg_enable_group_clk_cpu
+define_cost_group -design design:MCU -name cg_enable_group_clk_hfxt
 define_cost_group -design design:MCU -name cg_enable_group_clk_sck0
 define_cost_group -design design:MCU -name cg_enable_group_clk_sck1
 define_cost_group -design design:MCU -name cg_enable_group_default
@@ -143,66 +142,60 @@ external_delay -accumulate -input {0.0 no_value 0.0 no_value} -clock clock:MCU/c
 set_db -quiet external_delay:MCU/create_clock_delay_clk_sck1_domain_clk_sck1_R_0 .clock_network_latency_included true
 external_delay -accumulate -input {no_value 0.0 no_value 0.0} -clock clock:MCU/clk_sck1 -edge_fall -name create_clock_delay_clk_sck1_domain_clk_sck1_F_0 hpin:MCU/spi1/sck_in
 set_db -quiet external_delay:MCU/create_clock_delay_clk_sck1_domain_clk_sck1_F_0 .clock_network_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_191 pin:MCU/saradc0/g3618/B
-set_db -quiet external_delay:MCU/clk_gating_check_191 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_191 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_192 pin:MCU/saradc0/g2837/B
-set_db -quiet external_delay:MCU/clk_gating_check_192 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_192 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_193 pin:MCU/afe0/g5411__9945/B
-set_db -quiet external_delay:MCU/clk_gating_check_193 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_193 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_194 pin:MCU/afe0/g5418__2398/B
-set_db -quiet external_delay:MCU/clk_gating_check_194 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_194 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_195 pin:MCU/afe0/g5414__1666/B
-set_db -quiet external_delay:MCU/clk_gating_check_195 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_195 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_196 pin:MCU/afe0/g5412__2883/B
-set_db -quiet external_delay:MCU/clk_gating_check_196 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_196 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_197 pin:MCU/afe0/g4317__2346/AN
-set_db -quiet external_delay:MCU/clk_gating_check_197 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_197 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_198 pin:MCU/afe0/g4316__2883/AN
-set_db -quiet external_delay:MCU/clk_gating_check_198 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_198 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_199 pin:MCU/afe0/g4315__9945/AN
-set_db -quiet external_delay:MCU/clk_gating_check_199 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_199 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_200 pin:MCU/afe0/g4314__9315/AN
-set_db -quiet external_delay:MCU/clk_gating_check_200 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_200 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/mclk -edge_fall -name clk_gating_check_201 pin:MCU/timer1/clk_mux/g83/A
-set_db -quiet external_delay:MCU/clk_gating_check_201 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_201 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/mclk -edge_fall -name clk_gating_check_202 pin:MCU/timer0/clk_mux/g83/A
-set_db -quiet external_delay:MCU/clk_gating_check_202 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_202 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_203 pin:MCU/gpio3/g3432/A
-set_db -quiet external_delay:MCU/clk_gating_check_203 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_203 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_204 pin:MCU/gpio3/g3430/A
-set_db -quiet external_delay:MCU/clk_gating_check_204 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_204 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_205 pin:MCU/gpio3/g3428/A
-set_db -quiet external_delay:MCU/clk_gating_check_205 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_205 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_206 pin:MCU/gpio3/g3433/A
-set_db -quiet external_delay:MCU/clk_gating_check_206 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_206 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_207 pin:MCU/gpio3/g3374/B
-set_db -quiet external_delay:MCU/clk_gating_check_207 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_207 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_208 pin:MCU/gpio3/g3375/B
-set_db -quiet external_delay:MCU/clk_gating_check_208 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_208 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_209 pin:MCU/gpio3/g3376/B
-set_db -quiet external_delay:MCU/clk_gating_check_209 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_209 .clock_source_latency_included true
-external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_210 pin:MCU/gpio3/g3377/B
-set_db -quiet external_delay:MCU/clk_gating_check_210 .clock_network_latency_included true
-set_db -quiet external_delay:MCU/clk_gating_check_210 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_213 pin:MCU/saradc0/g3618/B
+set_db -quiet external_delay:MCU/clk_gating_check_213 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_213 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_214 pin:MCU/saradc0/g2837/B
+set_db -quiet external_delay:MCU/clk_gating_check_214 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_214 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_215 pin:MCU/afe0/g5411__2346/B
+set_db -quiet external_delay:MCU/clk_gating_check_215 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_215 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_216 pin:MCU/afe0/g5414__6417/B
+set_db -quiet external_delay:MCU/clk_gating_check_216 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_216 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_217 pin:MCU/afe0/g5412__1666/B
+set_db -quiet external_delay:MCU/clk_gating_check_217 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_217 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_218 pin:MCU/afe0/g5418__6260/B
+set_db -quiet external_delay:MCU/clk_gating_check_218 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_218 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_219 pin:MCU/afe0/g4316__1666/AN
+set_db -quiet external_delay:MCU/clk_gating_check_219 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_219 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_220 pin:MCU/afe0/g4317__7410/AN
+set_db -quiet external_delay:MCU/clk_gating_check_220 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_220 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_221 pin:MCU/afe0/g4314__2883/AN
+set_db -quiet external_delay:MCU/clk_gating_check_221 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_221 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_222 pin:MCU/afe0/g4315__2346/AN
+set_db -quiet external_delay:MCU/clk_gating_check_222 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_222 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_223 pin:MCU/gpio3/g3428/A
+set_db -quiet external_delay:MCU/clk_gating_check_223 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_223 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_224 pin:MCU/gpio3/g3430/A
+set_db -quiet external_delay:MCU/clk_gating_check_224 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_224 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_225 pin:MCU/gpio3/g3432/A
+set_db -quiet external_delay:MCU/clk_gating_check_225 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_225 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -name clk_gating_check_226 pin:MCU/gpio3/g3433/A
+set_db -quiet external_delay:MCU/clk_gating_check_226 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_226 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_227 pin:MCU/gpio3/g3374/B
+set_db -quiet external_delay:MCU/clk_gating_check_227 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_227 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_228 pin:MCU/gpio3/g3376/B
+set_db -quiet external_delay:MCU/clk_gating_check_228 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_228 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_229 pin:MCU/gpio3/g3377/B
+set_db -quiet external_delay:MCU/clk_gating_check_229 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_229 .clock_source_latency_included true
+external_delay -accumulate -output {no_value no_value 0.0 0.0} -clock clock:MCU/smclk -edge_fall -name clk_gating_check_230 pin:MCU/gpio3/g3375/B
+set_db -quiet external_delay:MCU/clk_gating_check_230 .clock_network_latency_included true
+set_db -quiet external_delay:MCU/clk_gating_check_230 .clock_source_latency_included true
 path_group -paths [specify_paths -to clock:MCU/mclk]  -name mclk -group cost_group:MCU/mclk -user_priority -1047552
 path_group -paths [specify_paths -to clock:MCU/smclk]  -name smclk -group cost_group:MCU/smclk -user_priority -1047552
 path_group -paths [specify_paths -to clock:MCU/clk_cpu]  -name clk_cpu -group cost_group:MCU/clk_cpu -user_priority -1047552
@@ -224,21 +217,22 @@ path_group -paths [specify_paths -from clock:MCU/clk_sck1]  -name grp_9 -group c
 path_disable -paths [specify_paths -lenient -to {pin:MCU/rom0/PGEN pin:MCU/ram0/PGEN pin:MCU/ram1/PGEN}]  -name zipped_path_disable_0 -user_priority -892928
 path_group -paths [specify_paths -through {hpin:MCU/adddec0/RC_CG_HIER_INST0/enable hpin:MCU/adddec0/RC_CG_HIER_INST1/enable hpin:MCU/adddec0/RC_CG_HIER_INST2/enable hpin:MCU/adddec0/RC_CG_HIER_INST3/enable hpin:MCU/adddec0/RC_CG_HIER_INST4/enable hpin:MCU/adddec0/RC_CG_HIER_INST5/enable hpin:MCU/adddec0/RC_CG_HIER_INST6/enable hpin:MCU/afe0/RC_CG_HIER_INST7/enable hpin:MCU/afe0/RC_CG_HIER_INST8/enable hpin:MCU/afe0/RC_CG_HIER_INST9/enable hpin:MCU/afe0/RC_CG_HIER_INST10/enable hpin:MCU/afe0/RC_CG_HIER_INST11/enable hpin:MCU/afe0/RC_CG_HIER_INST12/enable hpin:MCU/afe0/RC_CG_HIER_INST13/enable hpin:MCU/afe0/RC_CG_HIER_INST14/enable hpin:MCU/afe0/RC_CG_HIER_INST15/enable hpin:MCU/afe0/RC_CG_HIER_INST16/enable hpin:MCU/afe0/RC_CG_HIER_INST17/enable hpin:MCU/afe0/RC_CG_HIER_INST18/enable hpin:MCU/afe0/RC_CG_HIER_INST19/enable hpin:MCU/afe0/RC_CG_HIER_INST20/enable hpin:MCU/afe0/RC_CG_HIER_INST21/enable hpin:MCU/afe0/RC_CG_HIER_INST22/enable hpin:MCU/afe0/RC_CG_HIER_INST23/enable hpin:MCU/afe0/RC_CG_HIER_INST24/enable hpin:MCU/afe0/RC_CG_HIER_INST25/enable hpin:MCU/afe0/RC_CG_HIER_INST26/enable hpin:MCU/afe0/RC_CG_HIER_INST27/enable hpin:MCU/afe0/RC_CG_HIER_INST28/enable hpin:MCU/afe0/RC_CG_HIER_INST29/enable hpin:MCU/afe0/RC_CG_HIER_INST30/enable hpin:MCU/afe0/RC_CG_HIER_INST31/enable hpin:MCU/afe0/RC_CG_HIER_INST32/enable hpin:MCU/afe0/RC_CG_HIER_INST33/enable hpin:MCU/afe0/RC_CG_HIER_INST34/enable hpin:MCU/gpio0/RC_CG_HIER_INST96/enable hpin:MCU/gpio0/RC_CG_HIER_INST97/enable hpin:MCU/gpio0/RC_CG_HIER_INST98/enable hpin:MCU/gpio0/RC_CG_HIER_INST99/enable hpin:MCU/gpio0/RC_CG_HIER_INST100/enable hpin:MCU/gpio0/RC_CG_HIER_INST101/enable hpin:MCU/gpio0/RC_CG_HIER_INST102/enable hpin:MCU/gpio0/RC_CG_HIER_INST103/enable hpin:MCU/gpio1/RC_CG_HIER_INST104/enable hpin:MCU/gpio1/RC_CG_HIER_INST105/enable hpin:MCU/gpio1/RC_CG_HIER_INST106/enable hpin:MCU/gpio1/RC_CG_HIER_INST107/enable hpin:MCU/gpio1/RC_CG_HIER_INST108/enable hpin:MCU/gpio1/RC_CG_HIER_INST109/enable hpin:MCU/gpio1/RC_CG_HIER_INST110/enable hpin:MCU/gpio1/RC_CG_HIER_INST111/enable hpin:MCU/gpio2/RC_CG_HIER_INST112/enable hpin:MCU/gpio2/RC_CG_HIER_INST113/enable hpin:MCU/gpio2/RC_CG_HIER_INST114/enable hpin:MCU/gpio2/RC_CG_HIER_INST115/enable hpin:MCU/gpio2/RC_CG_HIER_INST116/enable hpin:MCU/gpio2/RC_CG_HIER_INST117/enable hpin:MCU/gpio2/RC_CG_HIER_INST118/enable hpin:MCU/gpio2/RC_CG_HIER_INST119/enable hpin:MCU/gpio3/RC_CG_HIER_INST120/enable hpin:MCU/gpio3/RC_CG_HIER_INST121/enable hpin:MCU/gpio3/RC_CG_HIER_INST122/enable hpin:MCU/gpio3/RC_CG_HIER_INST123/enable hpin:MCU/gpio3/RC_CG_HIER_INST124/enable hpin:MCU/gpio3/RC_CG_HIER_INST125/enable hpin:MCU/gpio3/RC_CG_HIER_INST126/enable hpin:MCU/gpio3/RC_CG_HIER_INST127/enable hpin:MCU/i2c0/RC_CG_HIER_INST129/enable hpin:MCU/i2c0/RC_CG_HIER_INST130/enable hpin:MCU/i2c0/RC_CG_HIER_INST131/enable hpin:MCU/i2c0/RC_CG_HIER_INST132/enable hpin:MCU/i2c0/RC_CG_HIER_INST133/enable hpin:MCU/i2c0/RC_CG_HIER_INST134/enable hpin:MCU/i2c0/RC_CG_HIER_INST136/enable hpin:MCU/i2c0/RC_CG_HIER_INST137/enable hpin:MCU/i2c1/RC_CG_HIER_INST143/enable hpin:MCU/i2c1/RC_CG_HIER_INST144/enable hpin:MCU/i2c1/RC_CG_HIER_INST145/enable hpin:MCU/i2c1/RC_CG_HIER_INST146/enable hpin:MCU/i2c1/RC_CG_HIER_INST147/enable hpin:MCU/i2c1/RC_CG_HIER_INST148/enable hpin:MCU/i2c1/RC_CG_HIER_INST150/enable hpin:MCU/i2c1/RC_CG_HIER_INST151/enable hpin:MCU/npu0/RC_CG_HIER_INST163/enable hpin:MCU/npu0/RC_CG_HIER_INST164/enable hpin:MCU/npu0/RC_CG_HIER_INST165/enable hpin:MCU/npu0/RC_CG_HIER_INST166/enable hpin:MCU/npu0/RC_CG_HIER_INST167/enable hpin:MCU/npu0/RC_CG_HIER_INST168/enable hpin:MCU/npu0/RC_CG_HIER_INST169/enable hpin:MCU/npu0/RC_CG_HIER_INST170/enable hpin:MCU/saradc0/RC_CG_HIER_INST174/enable hpin:MCU/saradc0/RC_CG_HIER_INST175/enable hpin:MCU/spi0/RC_CG_HIER_INST179/enable hpin:MCU/spi0/RC_CG_HIER_INST180/enable hpin:MCU/spi0/RC_CG_HIER_INST181/enable hpin:MCU/spi0/RC_CG_HIER_INST182/enable hpin:MCU/spi0/RC_CG_HIER_INST183/enable hpin:MCU/spi0/RC_CG_HIER_INST184/enable hpin:MCU/spi0/RC_CG_HIER_INST185/enable hpin:MCU/spi0/RC_CG_HIER_INST186/enable hpin:MCU/spi0/RC_CG_HIER_INST187/enable hpin:MCU/spi0/RC_CG_HIER_INST188/enable hpin:MCU/spi0/RC_CG_HIER_INST190/enable hpin:MCU/spi1/RC_CG_HIER_INST197/enable hpin:MCU/spi1/RC_CG_HIER_INST198/enable hpin:MCU/spi1/RC_CG_HIER_INST199/enable hpin:MCU/spi1/RC_CG_HIER_INST200/enable hpin:MCU/spi1/RC_CG_HIER_INST201/enable hpin:MCU/spi1/RC_CG_HIER_INST202/enable hpin:MCU/spi1/RC_CG_HIER_INST203/enable hpin:MCU/spi1/RC_CG_HIER_INST205/enable hpin:MCU/system0/RC_CG_HIER_INST212/enable hpin:MCU/system0/RC_CG_HIER_INST213/enable hpin:MCU/system0/RC_CG_HIER_INST214/enable hpin:MCU/system0/RC_CG_HIER_INST215/enable hpin:MCU/system0/RC_CG_HIER_INST216/enable hpin:MCU/system0/RC_CG_HIER_INST217/enable hpin:MCU/system0/RC_CG_HIER_INST218/enable hpin:MCU/system0/RC_CG_HIER_INST219/enable hpin:MCU/system0/RC_CG_HIER_INST220/enable hpin:MCU/system0/RC_CG_HIER_INST221/enable hpin:MCU/system0/RC_CG_HIER_INST222/enable hpin:MCU/system0/RC_CG_HIER_INST223/enable hpin:MCU/system0/RC_CG_HIER_INST224/enable hpin:MCU/system0/RC_CG_HIER_INST225/enable hpin:MCU/system0/RC_CG_HIER_INST226/enable hpin:MCU/system0/RC_CG_HIER_INST227/enable hpin:MCU/system0/RC_CG_HIER_INST228/enable hpin:MCU/system0/RC_CG_HIER_INST229/enable hpin:MCU/system0/RC_CG_HIER_INST230/enable hpin:MCU/system0/RC_CG_HIER_INST231/enable hpin:MCU/system0/RC_CG_HIER_INST232/enable hpin:MCU/system0/RC_CG_HIER_INST233/enable hpin:MCU/system0/RC_CG_HIER_INST234/enable hpin:MCU/system0/RC_CG_HIER_INST235/enable hpin:MCU/system0/RC_CG_HIER_INST236/enable hpin:MCU/system0/RC_CG_HIER_INST237/enable hpin:MCU/system0/RC_CG_HIER_INST238/enable hpin:MCU/system0/RC_CG_HIER_INST239/enable hpin:MCU/system0/RC_CG_HIER_INST240/enable hpin:MCU/system0/RC_CG_HIER_INST241/enable hpin:MCU/timer0/RC_CG_HIER_INST247/enable hpin:MCU/timer0/RC_CG_HIER_INST248/enable hpin:MCU/timer0/RC_CG_HIER_INST249/enable hpin:MCU/timer0/RC_CG_HIER_INST250/enable hpin:MCU/timer0/RC_CG_HIER_INST251/enable hpin:MCU/timer0/RC_CG_HIER_INST252/enable hpin:MCU/timer0/RC_CG_HIER_INST253/enable hpin:MCU/timer0/RC_CG_HIER_INST254/enable hpin:MCU/timer0/RC_CG_HIER_INST255/enable hpin:MCU/timer0/RC_CG_HIER_INST256/enable hpin:MCU/timer0/RC_CG_HIER_INST257/enable hpin:MCU/timer0/RC_CG_HIER_INST258/enable hpin:MCU/timer0/RC_CG_HIER_INST259/enable hpin:MCU/timer0/RC_CG_HIER_INST260/enable hpin:MCU/timer0/RC_CG_HIER_INST261/enable hpin:MCU/timer0/RC_CG_HIER_INST262/enable hpin:MCU/timer0/RC_CG_HIER_INST264/enable hpin:MCU/timer1/RC_CG_HIER_INST267/enable hpin:MCU/timer1/RC_CG_HIER_INST268/enable hpin:MCU/timer1/RC_CG_HIER_INST269/enable hpin:MCU/timer1/RC_CG_HIER_INST270/enable hpin:MCU/timer1/RC_CG_HIER_INST271/enable hpin:MCU/timer1/RC_CG_HIER_INST272/enable hpin:MCU/timer1/RC_CG_HIER_INST273/enable hpin:MCU/timer1/RC_CG_HIER_INST274/enable hpin:MCU/timer1/RC_CG_HIER_INST275/enable hpin:MCU/timer1/RC_CG_HIER_INST276/enable hpin:MCU/timer1/RC_CG_HIER_INST277/enable hpin:MCU/timer1/RC_CG_HIER_INST278/enable hpin:MCU/timer1/RC_CG_HIER_INST279/enable hpin:MCU/timer1/RC_CG_HIER_INST280/enable hpin:MCU/timer1/RC_CG_HIER_INST281/enable hpin:MCU/timer1/RC_CG_HIER_INST282/enable hpin:MCU/timer1/RC_CG_HIER_INST284/enable hpin:MCU/uart0/RC_CG_HIER_INST285/enable hpin:MCU/uart0/RC_CG_HIER_INST286/enable hpin:MCU/uart0/RC_CG_HIER_INST287/enable hpin:MCU/uart0/RC_CG_HIER_INST289/enable hpin:MCU/uart1/RC_CG_HIER_INST300/enable hpin:MCU/uart1/RC_CG_HIER_INST301/enable hpin:MCU/uart1/RC_CG_HIER_INST302/enable hpin:MCU/uart1/RC_CG_HIER_INST304/enable}]  -name cg_enable_group_clk_cpu -group cost_group:MCU/cg_enable_group_clk_cpu
 path_group -paths [specify_paths -through {hpin:MCU/afe0/adc_fsm/counter/RC_CG_HIER_INST35/enable hpin:MCU/afe0/adc_fsm/fsm/RC_CG_HIER_INST36/enable hpin:MCU/i2c0/CGMaster/RC_CG_HIER_INST141/enable hpin:MCU/i2c0/RC_CG_HIER_INST128/enable hpin:MCU/i2c0/RC_CG_HIER_INST135/enable hpin:MCU/i2c0/RC_CG_HIER_INST138/enable hpin:MCU/i2c0/RC_CG_HIER_INST139/enable hpin:MCU/i2c0/RC_CG_HIER_INST140/enable hpin:MCU/i2c1/CGMaster/RC_CG_HIER_INST155/enable hpin:MCU/i2c1/RC_CG_HIER_INST142/enable hpin:MCU/i2c1/RC_CG_HIER_INST149/enable hpin:MCU/i2c1/RC_CG_HIER_INST152/enable hpin:MCU/i2c1/RC_CG_HIER_INST153/enable hpin:MCU/i2c1/RC_CG_HIER_INST154/enable hpin:MCU/saradc0/RC_CG_HIER_INST172/enable hpin:MCU/saradc0/RC_CG_HIER_INST173/enable hpin:MCU/saradc0/RC_CG_HIER_INST176/enable hpin:MCU/spi0/RC_CG_HIER_INST177/enable hpin:MCU/spi0/RC_CG_HIER_INST178/enable hpin:MCU/spi0/RC_CG_HIER_INST189/enable hpin:MCU/spi0/RC_CG_HIER_INST191/enable hpin:MCU/spi0/RC_CG_HIER_INST192/enable hpin:MCU/spi0/RC_CG_HIER_INST193/enable hpin:MCU/spi0/RC_CG_HIER_INST194/enable hpin:MCU/spi0/RC_CG_HIER_INST195/enable hpin:MCU/spi1/RC_CG_HIER_INST204/enable hpin:MCU/spi1/RC_CG_HIER_INST206/enable hpin:MCU/spi1/RC_CG_HIER_INST207/enable hpin:MCU/spi1/RC_CG_HIER_INST208/enable hpin:MCU/spi1/RC_CG_HIER_INST209/enable hpin:MCU/spi1/RC_CG_HIER_INST210/enable hpin:MCU/uart0/RC_CG_HIER_INST288/enable hpin:MCU/uart0/RC_CG_HIER_INST290/enable hpin:MCU/uart0/RC_CG_HIER_INST291/enable hpin:MCU/uart0/RC_CG_HIER_INST292/enable hpin:MCU/uart0/RC_CG_HIER_INST293/enable hpin:MCU/uart0/RC_CG_HIER_INST294/enable hpin:MCU/uart0/RC_CG_HIER_INST295/enable hpin:MCU/uart0/RC_CG_HIER_INST296/enable hpin:MCU/uart0/RC_CG_HIER_INST297/enable hpin:MCU/uart0/RC_CG_HIER_INST298/enable hpin:MCU/uart0/RC_CG_HIER_INST299/enable hpin:MCU/uart1/RC_CG_HIER_INST303/enable hpin:MCU/uart1/RC_CG_HIER_INST305/enable hpin:MCU/uart1/RC_CG_HIER_INST306/enable hpin:MCU/uart1/RC_CG_HIER_INST307/enable hpin:MCU/uart1/RC_CG_HIER_INST308/enable hpin:MCU/uart1/RC_CG_HIER_INST309/enable hpin:MCU/uart1/RC_CG_HIER_INST310/enable hpin:MCU/uart1/RC_CG_HIER_INST311/enable hpin:MCU/uart1/RC_CG_HIER_INST312/enable hpin:MCU/uart1/RC_CG_HIER_INST313/enable hpin:MCU/uart1/RC_CG_HIER_INST314/enable}]  -name cg_enable_group_smclk -group cost_group:MCU/cg_enable_group_smclk
-path_group -paths [specify_paths -through {hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST45/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST46/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST47/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST48/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST51/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST52/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST53/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST54/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST55/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST56/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST57/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST58/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST59/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST60/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST61/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST62/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST63/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST64/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST65/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST66/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST67/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST68/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST69/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST70/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST71/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST72/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST73/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST74/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST75/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST76/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST77/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST78/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST79/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST80/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST81/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST82/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST83/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST84/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST85/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST86/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST87/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST88/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST89/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST90/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST91/enable hpin:MCU/core/datapath_inst/RC_CG_HIER_INST49/enable hpin:MCU/core/datapath_inst/RC_CG_HIER_INST50/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST92/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST93/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST94/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST95/enable hpin:MCU/core/RC_CG_HIER_INST37/enable hpin:MCU/core/RC_CG_HIER_INST38/enable hpin:MCU/core/RC_CG_HIER_INST39/enable hpin:MCU/core/RC_CG_HIER_INST40/enable hpin:MCU/core/RC_CG_HIER_INST41/enable hpin:MCU/core/RC_CG_HIER_INST42/enable hpin:MCU/core/RC_CG_HIER_INST43/enable hpin:MCU/core/RC_CG_HIER_INST44/enable hpin:MCU/npu0/RC_CG_HIER_INST156/enable hpin:MCU/npu0/RC_CG_HIER_INST157/enable hpin:MCU/npu0/RC_CG_HIER_INST158/enable hpin:MCU/npu0/RC_CG_HIER_INST159/enable hpin:MCU/npu0/RC_CG_HIER_INST160/enable hpin:MCU/npu0/RC_CG_HIER_INST161/enable hpin:MCU/npu0/RC_CG_HIER_INST162/enable hpin:MCU/npu0/RC_CG_HIER_INST171/enable hpin:MCU/timer0/RC_CG_HIER_INST263/enable hpin:MCU/timer1/RC_CG_HIER_INST283/enable}]  -name cg_enable_group_mclk -group cost_group:MCU/cg_enable_group_mclk
+path_group -paths [specify_paths -through {hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST45/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST46/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST47/enable hpin:MCU/core/csr_unit_inst/RC_CG_HIER_INST48/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST51/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST52/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST53/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST54/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST55/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST56/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST57/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST58/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST59/enable hpin:MCU/core/datapath_inst/mainalu/divider/RC_CG_HIER_INST60/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST61/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST62/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST63/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST64/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST65/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST66/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST67/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST68/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST69/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST70/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST71/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST72/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST73/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST74/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST75/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST76/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST77/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST78/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST79/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST80/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST81/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST82/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST83/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST84/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST85/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST86/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST87/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST88/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST89/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST90/enable hpin:MCU/core/datapath_inst/rf/RC_CG_HIER_INST91/enable hpin:MCU/core/datapath_inst/RC_CG_HIER_INST49/enable hpin:MCU/core/datapath_inst/RC_CG_HIER_INST50/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST92/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST93/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST94/enable hpin:MCU/core/irq_handler_inst/RC_CG_HIER_INST95/enable hpin:MCU/core/RC_CG_HIER_INST37/enable hpin:MCU/core/RC_CG_HIER_INST38/enable hpin:MCU/core/RC_CG_HIER_INST39/enable hpin:MCU/core/RC_CG_HIER_INST40/enable hpin:MCU/core/RC_CG_HIER_INST41/enable hpin:MCU/core/RC_CG_HIER_INST42/enable hpin:MCU/core/RC_CG_HIER_INST43/enable hpin:MCU/core/RC_CG_HIER_INST44/enable hpin:MCU/npu0/RC_CG_HIER_INST156/enable hpin:MCU/npu0/RC_CG_HIER_INST157/enable hpin:MCU/npu0/RC_CG_HIER_INST158/enable hpin:MCU/npu0/RC_CG_HIER_INST159/enable hpin:MCU/npu0/RC_CG_HIER_INST160/enable hpin:MCU/npu0/RC_CG_HIER_INST161/enable hpin:MCU/npu0/RC_CG_HIER_INST162/enable hpin:MCU/npu0/RC_CG_HIER_INST171/enable}]  -name cg_enable_group_mclk -group cost_group:MCU/cg_enable_group_mclk
 path_group -paths [specify_paths -through hpin:MCU/spi0/RC_CG_HIER_INST196/enable]  -name cg_enable_group_clk_sck0 -group cost_group:MCU/cg_enable_group_clk_sck0
 path_group -paths [specify_paths -through hpin:MCU/spi1/RC_CG_HIER_INST211/enable]  -name cg_enable_group_clk_sck1 -group cost_group:MCU/cg_enable_group_clk_sck1
 path_group -paths [specify_paths -through {hpin:MCU/system0/RC_CG_HIER_INST242/enable hpin:MCU/system0/RC_CG_HIER_INST243/enable hpin:MCU/system0/RC_CG_HIER_INST244/enable hpin:MCU/timer0/RC_CG_HIER_INST245/enable hpin:MCU/timer0/RC_CG_HIER_INST246/enable hpin:MCU/timer1/RC_CG_HIER_INST265/enable hpin:MCU/timer1/RC_CG_HIER_INST266/enable}]  -name cg_enable_group_default -group cost_group:MCU/cg_enable_group_default
+path_group -paths [specify_paths -through {hpin:MCU/timer0/RC_CG_HIER_INST263/enable hpin:MCU/timer1/RC_CG_HIER_INST283/enable}]  -name cg_enable_group_clk_hfxt -group cost_group:MCU/cg_enable_group_clk_hfxt
 # BEGIN DFT SECTION
 set_db -quiet dft_scan_style muxed_scan
 set_db -quiet dft_scanbit_waveform_analysis false
 # END DFT SECTION
-set_db -quiet design:MCU .seq_reason_deleted_internal {{{i2c1/CGMaster/ClkStagesFF_reg[0]} unloaded {i2c1/CGMaster/ClkStagesFF[0]}} {{i2c0/CGMaster/ClkStagesFF_reg[0]} unloaded {i2c0/CGMaster/ClkStagesFF[0]}} {core/datapath_inst/mainalu/divider/N unloaded core/datapath_inst/mainalu/divider/N} {core/datapath_inst/mainalu/divider/D unloaded core/datapath_inst/mainalu/divider/D} {core/datapath_inst/mainalu/div_rq unloaded core/datapath_inst/mainalu/div_rq} {core/datapath_inst/amo_read_data_reg unloaded core/datapath_inst/amo_read_data_reg} {core/irq_handler_inst/prev_state unloaded core/irq_handler_inst/prev_state} {core/irq_handler_inst/nesting_count unloaded core/irq_handler_inst/nesting_count} {core/c_dec_inst/funct6 unloaded core/c_dec_inst/funct6} {core/amo_read_data unloaded core/amo_read_data} {core/data_addr_reg unloaded core/data_addr_reg} {core/irq_save_int unloaded core/irq_save_int} {spi1/SPIxFOS unloaded spi1/SPIxFOS} {timer1/timer_value_latched unloaded timer1/timer_value_latched} {timer0/timer_value_latched unloaded timer0/timer_value_latched} {afe0/adc_data_read unloaded afe0/adc_data_read} {afe0/clr_adc_ovf unloaded afe0/clr_adc_ovf} {{core/irq_handler_inst/pending_irqs_reg_reg[0]} unloaded {core/irq_handler_inst/pending_irqs_reg[0]}} {{core/irq_handler_inst/pending_irqs_reg_reg[1]} unloaded {core/irq_handler_inst/pending_irqs_reg[1]}} {{core/irq_handler_inst/pending_irqs_reg_reg[2]} unloaded {core/irq_handler_inst/pending_irqs_reg[2]}} {{core/irq_handler_inst/pending_irqs_reg_reg[3]} unloaded {core/irq_handler_inst/pending_irqs_reg[3]}} {{core/irq_handler_inst/pending_irqs_reg_reg[4]} unloaded {core/irq_handler_inst/pending_irqs_reg[4]}} {{core/irq_handler_inst/pending_irqs_reg_reg[5]} unloaded {core/irq_handler_inst/pending_irqs_reg[5]}} {{core/irq_handler_inst/pending_irqs_reg_reg[6]} unloaded {core/irq_handler_inst/pending_irqs_reg[6]}} {{core/irq_handler_inst/pending_irqs_reg_reg[7]} unloaded {core/irq_handler_inst/pending_irqs_reg[7]}} {{core/irq_handler_inst/pending_irqs_reg_reg[8]} unloaded {core/irq_handler_inst/pending_irqs_reg[8]}} {{core/irq_handler_inst/pending_irqs_reg_reg[9]} unloaded {core/irq_handler_inst/pending_irqs_reg[9]}} {{core/irq_handler_inst/pending_irqs_reg_reg[10]} unloaded {core/irq_handler_inst/pending_irqs_reg[10]}} {{core/irq_handler_inst/pending_irqs_reg_reg[11]} unloaded {core/irq_handler_inst/pending_irqs_reg[11]}} {{core/irq_handler_inst/pending_irqs_reg_reg[12]} unloaded {core/irq_handler_inst/pending_irqs_reg[12]}} {{core/irq_handler_inst/pending_irqs_reg_reg[13]} unloaded {core/irq_handler_inst/pending_irqs_reg[13]}} {{core/irq_handler_inst/pending_irqs_reg_reg[14]} unloaded {core/irq_handler_inst/pending_irqs_reg[14]}} {{core/irq_handler_inst/pending_irqs_reg_reg[15]} unloaded {core/irq_handler_inst/pending_irqs_reg[15]}} {{core/irq_handler_inst/pending_irqs_reg_reg[16]} unloaded {core/irq_handler_inst/pending_irqs_reg[16]}} {{core/irq_handler_inst/pending_irqs_reg_reg[17]} unloaded {core/irq_handler_inst/pending_irqs_reg[17]}} {{core/irq_handler_inst/pending_irqs_reg_reg[18]} unloaded {core/irq_handler_inst/pending_irqs_reg[18]}} {{core/irq_handler_inst/pending_irqs_reg_reg[19]} unloaded {core/irq_handler_inst/pending_irqs_reg[19]}} {{core/irq_handler_inst/pending_irqs_reg_reg[20]} unloaded {core/irq_handler_inst/pending_irqs_reg[20]}} {{core/irq_handler_inst/pending_irqs_reg_reg[21]} unloaded {core/irq_handler_inst/pending_irqs_reg[21]}} {{core/irq_handler_inst/pending_irqs_reg_reg[22]} unloaded {core/irq_handler_inst/pending_irqs_reg[22]}} {{core/irq_handler_inst/pending_irqs_reg_reg[23]} unloaded {core/irq_handler_inst/pending_irqs_reg[23]}} {{core/irq_handler_inst/pending_irqs_reg_reg[24]} unloaded {core/irq_handler_inst/pending_irqs_reg[24]}} {{core/irq_handler_inst/pending_irqs_reg_reg[25]} unloaded {core/irq_handler_inst/pending_irqs_reg[25]}} {{core/irq_handler_inst/pending_irqs_reg_reg[26]} unloaded {core/irq_handler_inst/pending_irqs_reg[26]}} {{core/irq_handler_inst/pending_irqs_reg_reg[27]} unloaded {core/irq_handler_inst/pending_irqs_reg[27]}} {{core/irq_handler_inst/pending_irqs_reg_reg[28]} unloaded {core/irq_handler_inst/pending_irqs_reg[28]}} {{core/irq_handler_inst/pending_irqs_reg_reg[29]} unloaded {core/irq_handler_inst/pending_irqs_reg[29]}} {{core/irq_handler_inst/pending_irqs_reg_reg[30]} unloaded {core/irq_handler_inst/pending_irqs_reg[30]}} {{core/irq_handler_inst/pending_irqs_reg_reg[31]} unloaded {core/irq_handler_inst/pending_irqs_reg[31]}} {{core/irq_handler_inst/pending_irqs_reg_reg[32]} unloaded {core/irq_handler_inst/pending_irqs_reg[32]}} {{core/irq_handler_inst/pending_irqs_reg_reg[33]} unloaded {core/irq_handler_inst/pending_irqs_reg[33]}} {{core/irq_handler_inst/pending_irqs_reg_reg[34]} unloaded {core/irq_handler_inst/pending_irqs_reg[34]}} {{core/irq_handler_inst/pending_irqs_reg_reg[35]} unloaded {core/irq_handler_inst/pending_irqs_reg[35]}} {{core/irq_handler_inst/pending_irqs_reg_reg[36]} unloaded {core/irq_handler_inst/pending_irqs_reg[36]}} {{core/irq_handler_inst/pending_irqs_reg_reg[37]} unloaded {core/irq_handler_inst/pending_irqs_reg[37]}} {{core/irq_handler_inst/pending_irqs_reg_reg[38]} unloaded {core/irq_handler_inst/pending_irqs_reg[38]}} {{core/irq_handler_inst/pending_irqs_reg_reg[39]} unloaded {core/irq_handler_inst/pending_irqs_reg[39]}} {{core/irq_handler_inst/pending_irqs_reg_reg[40]} unloaded {core/irq_handler_inst/pending_irqs_reg[40]}} {{core/irq_handler_inst/pending_irqs_reg_reg[41]} unloaded {core/irq_handler_inst/pending_irqs_reg[41]}} {{core/irq_handler_inst/pending_irqs_reg_reg[42]} unloaded {core/irq_handler_inst/pending_irqs_reg[42]}} {{core/irq_handler_inst/pending_irqs_reg_reg[43]} unloaded {core/irq_handler_inst/pending_irqs_reg[43]}} {{core/irq_handler_inst/pending_irqs_reg_reg[44]} unloaded {core/irq_handler_inst/pending_irqs_reg[44]}} {{core/irq_handler_inst/pending_irqs_reg_reg[45]} unloaded {core/irq_handler_inst/pending_irqs_reg[45]}} {{core/irq_handler_inst/pending_irqs_reg_reg[46]} unloaded {core/irq_handler_inst/pending_irqs_reg[46]}} {{core/irq_handler_inst/pending_irqs_reg_reg[47]} unloaded {core/irq_handler_inst/pending_irqs_reg[47]}} {{core/irq_handler_inst/pending_irqs_reg_reg[48]} unloaded {core/irq_handler_inst/pending_irqs_reg[48]}} {{core/irq_handler_inst/pending_irqs_reg_reg[49]} unloaded {core/irq_handler_inst/pending_irqs_reg[49]}} {{core/irq_handler_inst/pending_irqs_reg_reg[50]} unloaded {core/irq_handler_inst/pending_irqs_reg[50]}} {{core/irq_handler_inst/pending_irqs_reg_reg[51]} unloaded {core/irq_handler_inst/pending_irqs_reg[51]}} {{core/irq_handler_inst/pending_irqs_reg_reg[52]} unloaded {core/irq_handler_inst/pending_irqs_reg[52]}} {{core/irq_handler_inst/pending_irqs_reg_reg[53]} unloaded {core/irq_handler_inst/pending_irqs_reg[53]}} {{core/irq_handler_inst/pending_irqs_reg_reg[54]} unloaded {core/irq_handler_inst/pending_irqs_reg[54]}} {{core/irq_handler_inst/pending_irqs_reg_reg[55]} unloaded {core/irq_handler_inst/pending_irqs_reg[55]}} {{core/irq_handler_inst/pending_irqs_reg_reg[56]} unloaded {core/irq_handler_inst/pending_irqs_reg[56]}} {{core/irq_handler_inst/pending_irqs_reg_reg[57]} unloaded {core/irq_handler_inst/pending_irqs_reg[57]}} {{core/irq_handler_inst/pending_irqs_reg_reg[58]} unloaded {core/irq_handler_inst/pending_irqs_reg[58]}} {{core/irq_handler_inst/pending_irqs_reg_reg[59]} unloaded {core/irq_handler_inst/pending_irqs_reg[59]}} {{core/irq_handler_inst/pending_irqs_reg_reg[60]} unloaded {core/irq_handler_inst/pending_irqs_reg[60]}} {{core/irq_handler_inst/pending_irqs_reg_reg[61]} unloaded {core/irq_handler_inst/pending_irqs_reg[61]}} {{core/irq_handler_inst/pending_irqs_reg_reg[62]} unloaded {core/irq_handler_inst/pending_irqs_reg[62]}} {{core/irq_handler_inst/pending_irqs_reg_reg[63]} unloaded {core/irq_handler_inst/pending_irqs_reg[63]}} {{core/irq_handler_inst/pending_irqs_reg_reg[64]} unloaded {core/irq_handler_inst/pending_irqs_reg[64]}} {{core/irq_handler_inst/pending_irqs_reg_reg[65]} unloaded {core/irq_handler_inst/pending_irqs_reg[65]}} {{core/irq_handler_inst/pending_irqs_reg_reg[66]} unloaded {core/irq_handler_inst/pending_irqs_reg[66]}} {{core/irq_handler_inst/pending_irqs_reg_reg[67]} unloaded {core/irq_handler_inst/pending_irqs_reg[67]}} {{core/irq_handler_inst/pending_irqs_reg_reg[68]} unloaded {core/irq_handler_inst/pending_irqs_reg[68]}} {{core/irq_handler_inst/pending_irqs_reg_reg[69]} unloaded {core/irq_handler_inst/pending_irqs_reg[69]}} {{core/irq_handler_inst/pending_irqs_reg_reg[70]} unloaded {core/irq_handler_inst/pending_irqs_reg[70]}} {{core/irq_handler_inst/pending_irqs_reg_reg[71]} unloaded {core/irq_handler_inst/pending_irqs_reg[71]}} {{core/irq_handler_inst/pending_irqs_reg_reg[72]} unloaded {core/irq_handler_inst/pending_irqs_reg[72]}} {{core/irq_handler_inst/pending_irqs_reg_reg[73]} unloaded {core/irq_handler_inst/pending_irqs_reg[73]}} {{core/irq_handler_inst/pending_irqs_reg_reg[74]} unloaded {core/irq_handler_inst/pending_irqs_reg[74]}} {{core/irq_handler_inst/pending_irqs_reg_reg[75]} unloaded {core/irq_handler_inst/pending_irqs_reg[75]}} {{core/irq_handler_inst/pending_irqs_reg_reg[76]} unloaded {core/irq_handler_inst/pending_irqs_reg[76]}} {{core/irq_handler_inst/pending_irqs_reg_reg[77]} unloaded {core/irq_handler_inst/pending_irqs_reg[77]}} {{core/irq_handler_inst/pending_irqs_reg_reg[78]} unloaded {core/irq_handler_inst/pending_irqs_reg[78]}} {{core/irq_handler_inst/pending_irqs_reg_reg[79]} unloaded {core/irq_handler_inst/pending_irqs_reg[79]}} {{core/irq_handler_inst/pending_irqs_reg_reg[80]} unloaded {core/irq_handler_inst/pending_irqs_reg[80]}} {{core/irq_handler_inst/pending_irqs_reg_reg[81]} unloaded {core/irq_handler_inst/pending_irqs_reg[81]}} {{core/irq_handler_inst/pending_irqs_reg_reg[82]} unloaded {core/irq_handler_inst/pending_irqs_reg[82]}} {{adddec0/mab_out_reg[24]} unloaded {adddec0/mab_out[24]}} {{adddec0/mab_out_reg[25]} unloaded {adddec0/mab_out[25]}} {{adddec0/mab_out_reg[26]} unloaded {adddec0/mab_out[26]}} {{adddec0/mab_out_reg[27]} unloaded {adddec0/mab_out[27]}} {{adddec0/mab_out_reg[28]} unloaded {adddec0/mab_out[28]}} {{adddec0/mab_out_reg[29]} unloaded {adddec0/mab_out[29]}} {{adddec0/mab_out_reg[30]} unloaded {adddec0/mab_out[30]}} {{adddec0/mab_out_reg[31]} unloaded {adddec0/mab_out[31]}} {{gpio0/read_data_reg[8]} {{constant 0}} {gpio0/read_data[8]}} {{gpio0/read_data_reg[9]} {{constant 0}} {gpio0/read_data[9]}} {{gpio0/read_data_reg[10]} {{constant 0}} {gpio0/read_data[10]}} {{gpio0/read_data_reg[11]} {{constant 0}} {gpio0/read_data[11]}} {{gpio0/read_data_reg[12]} {{constant 0}} {gpio0/read_data[12]}} {{gpio0/read_data_reg[13]} {{constant 0}} {gpio0/read_data[13]}} {{gpio0/read_data_reg[14]} {{constant 0}} {gpio0/read_data[14]}} {{gpio0/read_data_reg[15]} {{constant 0}} {gpio0/read_data[15]}} {{gpio0/read_data_reg[16]} {{constant 0}} {gpio0/read_data[16]}} {{gpio0/read_data_reg[17]} {{constant 0}} {gpio0/read_data[17]}} {{gpio0/read_data_reg[18]} {{constant 0}} {gpio0/read_data[18]}} {{gpio0/read_data_reg[19]} {{constant 0}} {gpio0/read_data[19]}} {{gpio0/read_data_reg[20]} {{constant 0}} {gpio0/read_data[20]}} {{gpio0/read_data_reg[21]} {{constant 0}} {gpio0/read_data[21]}} {{gpio0/read_data_reg[22]} {{constant 0}} {gpio0/read_data[22]}} {{gpio0/read_data_reg[23]} {{constant 0}} {gpio0/read_data[23]}} {{gpio0/read_data_reg[24]} {{constant 0}} {gpio0/read_data[24]}} {{gpio0/read_data_reg[25]} {{constant 0}} {gpio0/read_data[25]}} {{gpio0/read_data_reg[26]} {{constant 0}} {gpio0/read_data[26]}} {{gpio0/read_data_reg[27]} {{constant 0}} {gpio0/read_data[27]}} {{gpio0/read_data_reg[28]} {{constant 0}} {gpio0/read_data[28]}} {{gpio0/read_data_reg[29]} {{constant 0}} {gpio0/read_data[29]}} {{gpio0/read_data_reg[30]} {{constant 0}} {gpio0/read_data[30]}} {{gpio0/read_data_reg[31]} {{constant 0}} {gpio0/read_data[31]}} {{gpio1/read_data_reg[8]} {{constant 0}} {gpio1/read_data[8]}} {{gpio1/read_data_reg[9]} {{constant 0}} {gpio1/read_data[9]}} {{gpio1/read_data_reg[10]} {{constant 0}} {gpio1/read_data[10]}} {{gpio1/read_data_reg[11]} {{constant 0}} {gpio1/read_data[11]}} {{gpio1/read_data_reg[12]} {{constant 0}} {gpio1/read_data[12]}} {{gpio1/read_data_reg[13]} {{constant 0}} {gpio1/read_data[13]}} {{gpio1/read_data_reg[14]} {{constant 0}} {gpio1/read_data[14]}} {{gpio1/read_data_reg[15]} {{constant 0}} {gpio1/read_data[15]}} {{gpio1/read_data_reg[16]} {{constant 0}} {gpio1/read_data[16]}} {{gpio1/read_data_reg[17]} {{constant 0}} {gpio1/read_data[17]}} {{gpio1/read_data_reg[18]} {{constant 0}} {gpio1/read_data[18]}} {{gpio1/read_data_reg[19]} {{constant 0}} {gpio1/read_data[19]}} {{gpio1/read_data_reg[20]} {{constant 0}} {gpio1/read_data[20]}} {{gpio1/read_data_reg[21]} {{constant 0}} {gpio1/read_data[21]}} {{gpio1/read_data_reg[22]} {{constant 0}} {gpio1/read_data[22]}} {{gpio1/read_data_reg[23]} {{constant 0}} {gpio1/read_data[23]}} {{gpio1/read_data_reg[24]} {{constant 0}} {gpio1/read_data[24]}} {{gpio1/read_data_reg[25]} {{constant 0}} {gpio1/read_data[25]}} {{gpio1/read_data_reg[26]} {{constant 0}} {gpio1/read_data[26]}} {{gpio1/read_data_reg[27]} {{constant 0}} {gpio1/read_data[27]}} {{gpio1/read_data_reg[28]} {{constant 0}} {gpio1/read_data[28]}} {{gpio1/read_data_reg[29]} {{constant 0}} {gpio1/read_data[29]}} {{gpio1/read_data_reg[30]} {{constant 0}} {gpio1/read_data[30]}} {{gpio1/read_data_reg[31]} {{constant 0}} {gpio1/read_data[31]}} {{npu0/NPUCR_reg[16]} {{constant 0}} {npu0/NPUCR[16]}} {{afe0/read_data_reg[24]} {{constant 0}} {afe0/read_data[24]}} {{afe0/read_data_reg[25]} {{constant 0}} {afe0/read_data[25]}} {{afe0/read_data_reg[26]} {{constant 0}} {afe0/read_data[26]}} {{afe0/read_data_reg[27]} {{constant 0}} {afe0/read_data[27]}} {{afe0/read_data_reg[28]} {{constant 0}} {afe0/read_data[28]}} {{afe0/read_data_reg[29]} {{constant 0}} {afe0/read_data[29]}} {{afe0/read_data_reg[30]} {{constant 0}} {afe0/read_data[30]}} {{afe0/read_data_reg[31]} {{constant 0}} {afe0/read_data[31]}} {{saradc0/read_data_reg[10]} {{constant 0}} {saradc0/read_data[10]}} {{saradc0/read_data_reg[11]} {{constant 0}} {saradc0/read_data[11]}} {{saradc0/read_data_reg[12]} {{constant 0}} {saradc0/read_data[12]}} {{saradc0/read_data_reg[13]} {{constant 0}} {saradc0/read_data[13]}} {{saradc0/read_data_reg[14]} {{constant 0}} {saradc0/read_data[14]}} {{saradc0/read_data_reg[15]} {{constant 0}} {saradc0/read_data[15]}} {{saradc0/read_data_reg[16]} {{constant 0}} {saradc0/read_data[16]}} {{saradc0/read_data_reg[17]} {{constant 0}} {saradc0/read_data[17]}} {{saradc0/read_data_reg[18]} {{constant 0}} {saradc0/read_data[18]}} {{saradc0/read_data_reg[19]} {{constant 0}} {saradc0/read_data[19]}} {{saradc0/read_data_reg[20]} {{constant 0}} {saradc0/read_data[20]}} {{saradc0/read_data_reg[21]} {{constant 0}} {saradc0/read_data[21]}} {{saradc0/read_data_reg[22]} {{constant 0}} {saradc0/read_data[22]}} {{saradc0/read_data_reg[23]} {{constant 0}} {saradc0/read_data[23]}} {{saradc0/read_data_reg[24]} {{constant 0}} {saradc0/read_data[24]}} {{saradc0/read_data_reg[25]} {{constant 0}} {saradc0/read_data[25]}} {{saradc0/read_data_reg[26]} {{constant 0}} {saradc0/read_data[26]}} {{saradc0/read_data_reg[27]} {{constant 0}} {saradc0/read_data[27]}} {{saradc0/read_data_reg[28]} {{constant 0}} {saradc0/read_data[28]}} {{saradc0/read_data_reg[29]} {{constant 0}} {saradc0/read_data[29]}} {{saradc0/read_data_reg[30]} {{constant 0}} {saradc0/read_data[30]}} {{saradc0/read_data_reg[31]} {{constant 0}} {saradc0/read_data[31]}} {{uart1/read_data_reg[12]} {{constant 0}} {uart1/read_data[12]}} {{uart0/read_data_reg[12]} {{constant 0}} {uart0/read_data[12]}} {{uart1/read_data_reg[13]} {{constant 0}} {uart1/read_data[13]}} {{uart0/read_data_reg[13]} {{constant 0}} {uart0/read_data[13]}} {{uart1/read_data_reg[14]} {{constant 0}} {uart1/read_data[14]}} {{uart0/read_data_reg[14]} {{constant 0}} {uart0/read_data[14]}} {{uart1/read_data_reg[15]} {{constant 0}} {uart1/read_data[15]}} {{uart0/read_data_reg[15]} {{constant 0}} {uart0/read_data[15]}} {{uart1/read_data_reg[16]} {{constant 0}} {uart1/read_data[16]}} {{uart0/read_data_reg[16]} {{constant 0}} {uart0/read_data[16]}} {{uart1/read_data_reg[17]} {{constant 0}} {uart1/read_data[17]}} {{uart0/read_data_reg[17]} {{constant 0}} {uart0/read_data[17]}} {{uart1/read_data_reg[18]} {{constant 0}} {uart1/read_data[18]}} {{uart0/read_data_reg[18]} {{constant 0}} {uart0/read_data[18]}} {{uart1/read_data_reg[19]} {{constant 0}} {uart1/read_data[19]}} {{uart0/read_data_reg[19]} {{constant 0}} {uart0/read_data[19]}} {{uart1/read_data_reg[20]} {{constant 0}} {uart1/read_data[20]}} {{uart0/read_data_reg[20]} {{constant 0}} {uart0/read_data[20]}} {{uart1/read_data_reg[21]} {{constant 0}} {uart1/read_data[21]}} {{uart0/read_data_reg[21]} {{constant 0}} {uart0/read_data[21]}} {{uart1/read_data_reg[22]} {{constant 0}} {uart1/read_data[22]}} {{uart0/read_data_reg[22]} {{constant 0}} {uart0/read_data[22]}} {{uart1/read_data_reg[23]} {{constant 0}} {uart1/read_data[23]}} {{uart0/read_data_reg[23]} {{constant 0}} {uart0/read_data[23]}} {{uart1/read_data_reg[24]} {{constant 0}} {uart1/read_data[24]}} {{uart0/read_data_reg[24]} {{constant 0}} {uart0/read_data[24]}} {{uart1/read_data_reg[25]} {{constant 0}} {uart1/read_data[25]}} {{uart0/read_data_reg[25]} {{constant 0}} {uart0/read_data[25]}} {{uart1/read_data_reg[26]} {{constant 0}} {uart1/read_data[26]}} {{uart0/read_data_reg[26]} {{constant 0}} {uart0/read_data[26]}} {{uart1/read_data_reg[27]} {{constant 0}} {uart1/read_data[27]}} {{uart0/read_data_reg[27]} {{constant 0}} {uart0/read_data[27]}} {{uart1/read_data_reg[28]} {{constant 0}} {uart1/read_data[28]}} {{uart0/read_data_reg[28]} {{constant 0}} {uart0/read_data[28]}} {{uart1/read_data_reg[29]} {{constant 0}} {uart1/read_data[29]}} {{uart0/read_data_reg[29]} {{constant 0}} {uart0/read_data[29]}} {{uart1/read_data_reg[30]} {{constant 0}} {uart1/read_data[30]}} {{uart0/read_data_reg[30]} {{constant 0}} {uart0/read_data[30]}} {{uart1/read_data_reg[31]} {{constant 0}} {uart1/read_data[31]}} {{uart0/read_data_reg[31]} {{constant 0}} {uart0/read_data[31]}} {i2c1/I2CSTR_reg {{constant 0}} i2c1/I2CSTR} {i2c0/I2CSTR_reg {{constant 0}} i2c0/I2CSTR} {i2c1/StartSlaveRX_reg {{constant 0}} i2c1/StartSlaveRX} {i2c0/StartSlaveRX_reg {{constant 0}} i2c0/StartSlaveRX} {i2c1/ClearStartSlaveRX_reg {{constant 0}} i2c1/ClearStartSlaveRX} {i2c0/ClearStartSlaveRX_reg {{constant 0}} i2c0/ClearStartSlaveRX} {i2c1/I2CSPR_reg {{constant 0}} i2c1/I2CSPR} {i2c0/I2CSPR_reg {{constant 0}} i2c0/I2CSPR} {i2c1/I2CMNR_reg {{constant 0}} i2c1/I2CMNR} {i2c0/I2CMNR_reg {{constant 0}} i2c0/I2CMNR} {i2c1/I2CMARB_reg {{constant 0}} i2c1/I2CMARB} {i2c0/I2CMARB_reg {{constant 0}} i2c0/I2CMARB} {i2c1/SDA_LAT_reg {{constant 0}} i2c1/SDA_LAT} {i2c0/SDA_LAT_reg {{constant 0}} i2c0/SDA_LAT} {{i2c1/I2CxSRX_reg[0]} {{constant 0}} {i2c1/I2CxSRX[0]}} {{i2c0/I2CxSRX_reg[0]} {{constant 0}} {i2c0/I2CxSRX[0]}} {{i2c1/I2CxSRX_reg[1]} {{constant 0}} {i2c1/I2CxSRX[1]}} {{i2c0/I2CxSRX_reg[1]} {{constant 0}} {i2c0/I2CxSRX[1]}} {{i2c1/I2CxSRX_reg[2]} {{constant 0}} {i2c1/I2CxSRX[2]}} {{i2c0/I2CxSRX_reg[2]} {{constant 0}} {i2c0/I2CxSRX[2]}} {{i2c1/I2CxSRX_reg[3]} {{constant 0}} {i2c1/I2CxSRX[3]}} {{i2c0/I2CxSRX_reg[3]} {{constant 0}} {i2c0/I2CxSRX[3]}} {{i2c1/I2CxSRX_reg[4]} {{constant 0}} {i2c1/I2CxSRX[4]}} {{i2c0/I2CxSRX_reg[4]} {{constant 0}} {i2c0/I2CxSRX[4]}} {{i2c1/I2CxSRX_reg[5]} {{constant 0}} {i2c1/I2CxSRX[5]}} {{i2c0/I2CxSRX_reg[5]} {{constant 0}} {i2c0/I2CxSRX[5]}} {{i2c1/I2CxSRX_reg[6]} {{constant 0}} {i2c1/I2CxSRX[6]}} {{i2c0/I2CxSRX_reg[6]} {{constant 0}} {i2c0/I2CxSRX[6]}} {{i2c1/I2CxSRX_reg[7]} {{constant 0}} {i2c1/I2CxSRX[7]}} {{i2c0/I2CxSRX_reg[7]} {{constant 0}} {i2c0/I2CxSRX[7]}} {i2c1/I2CSXC_reg {{constant 0}} i2c1/I2CSXC} {i2c0/I2CSXC_reg {{constant 0}} i2c0/I2CSXC} {i2c1/I2CSNR_reg {{constant 0}} i2c1/I2CSNR} {i2c0/I2CSNR_reg {{constant 0}} i2c0/I2CSNR} {i2c1/I2CSOVF_reg {{constant 0}} i2c1/I2CSOVF} {i2c0/I2CSOVF_reg {{constant 0}} i2c0/I2CSOVF} {i2c1/I2CSTXE_reg {{constant 0}} i2c1/I2CSTXE} {i2c0/I2CSTXE_reg {{constant 0}} i2c0/I2CSTXE} {i2c1/I2CSA_reg {{constant 0}} i2c1/I2CSA} {i2c0/I2CSA_reg {{constant 0}} i2c0/I2CSA} {i2c1/I2CSTM_reg {{constant 0}} i2c1/I2CSTM} {i2c0/I2CSTM_reg {{constant 0}} i2c0/I2CSTM} {i2c1/SlaveFsmSDA_reg {{constant 1}} i2c1/SlaveFsmSDA} {i2c0/SlaveFsmSDA_reg {{constant 1}} i2c0/SlaveFsmSDA} {{i2c1/SlaveState_reg[0]} {{constant 0}} {i2c1/SlaveState[0]}} {{i2c0/SlaveState_reg[0]} {{constant 0}} {i2c0/SlaveState[0]}} {{i2c1/SlaveState_reg[1]} {{constant 0}} {i2c1/SlaveState[1]}} {{i2c0/SlaveState_reg[1]} {{constant 0}} {i2c0/SlaveState[1]}} {{i2c1/SlaveState_reg[2]} {{constant 0}} {i2c1/SlaveState[2]}} {{i2c0/SlaveState_reg[2]} {{constant 0}} {i2c0/SlaveState[2]}} {{i2c1/SlaveBit_reg[0]} {{constant 1}} {i2c1/SlaveBit[0]}} {{i2c0/SlaveBit_reg[0]} {{constant 1}} {i2c0/SlaveBit[0]}} {{i2c1/SlaveBit_reg[1]} {{constant 1}} {i2c1/SlaveBit[1]}} {{i2c0/SlaveBit_reg[1]} {{constant 1}} {i2c0/SlaveBit[1]}} {{i2c1/SlaveBit_reg[2]} {{constant 1}} {i2c1/SlaveBit[2]}} {{i2c0/SlaveBit_reg[2]} {{constant 1}} {i2c0/SlaveBit[2]}} {{i2c1/SlaveData_reg[0]} {{constant 0}} {i2c1/SlaveData[0]}} {{i2c0/SlaveData_reg[0]} {{constant 0}} {i2c0/SlaveData[0]}} {{i2c1/SlaveData_reg[1]} {{constant 0}} {i2c1/SlaveData[1]}} {{i2c0/SlaveData_reg[1]} {{constant 0}} {i2c0/SlaveData[1]}} {{i2c1/SlaveData_reg[2]} {{constant 0}} {i2c1/SlaveData[2]}} {{i2c0/SlaveData_reg[2]} {{constant 0}} {i2c0/SlaveData[2]}} {{i2c1/SlaveData_reg[3]} {{constant 0}} {i2c1/SlaveData[3]}} {{i2c0/SlaveData_reg[3]} {{constant 0}} {i2c0/SlaveData[3]}} {{i2c1/SlaveData_reg[4]} {{constant 0}} {i2c1/SlaveData[4]}} {{i2c0/SlaveData_reg[4]} {{constant 0}} {i2c0/SlaveData[4]}} {{i2c1/SlaveData_reg[5]} {{constant 0}} {i2c1/SlaveData[5]}} {{i2c0/SlaveData_reg[5]} {{constant 0}} {i2c0/SlaveData[5]}} {{i2c1/SlaveData_reg[6]} {{constant 0}} {i2c1/SlaveData[6]}} {{i2c0/SlaveData_reg[6]} {{constant 0}} {i2c0/SlaveData[6]}} {{i2c1/SlaveData_reg[7]} {{constant 0}} {i2c1/SlaveData[7]}} {{i2c0/SlaveData_reg[7]} {{constant 0}} {i2c0/SlaveData[7]}} {i2c1/SlaveJustAddressed_reg {{constant 0}} i2c1/SlaveJustAddressed} {i2c0/SlaveJustAddressed_reg {{constant 0}} i2c0/SlaveJustAddressed} {i2c1/ClearI2CSC_reg {{constant 1}} i2c1/ClearI2CSC} {i2c0/ClearI2CSC_reg {{constant 1}} i2c0/ClearI2CSC} {i2c1/I2CBS_reg {{constant 0}} i2c1/I2CBS} {i2c0/I2CBS_reg {{constant 0}} i2c0/I2CBS} {i2c1/I2CSC_reg {{constant 0}} i2c1/I2CSC} {i2c0/I2CSC_reg {{constant 0}} i2c0/I2CSC} {{gpio3/read_data_reg[8]} {{constant 0}} {gpio3/read_data[8]}} {{gpio3/read_data_reg[9]} {{constant 0}} {gpio3/read_data[9]}} {{gpio3/read_data_reg[10]} {{constant 0}} {gpio3/read_data[10]}} {{gpio3/read_data_reg[11]} {{constant 0}} {gpio3/read_data[11]}} {{gpio3/read_data_reg[12]} {{constant 0}} {gpio3/read_data[12]}} {{gpio3/read_data_reg[13]} {{constant 0}} {gpio3/read_data[13]}} {{gpio3/read_data_reg[14]} {{constant 0}} {gpio3/read_data[14]}} {{gpio3/read_data_reg[15]} {{constant 0}} {gpio3/read_data[15]}} {{gpio3/read_data_reg[16]} {{constant 0}} {gpio3/read_data[16]}} {{gpio3/read_data_reg[17]} {{constant 0}} {gpio3/read_data[17]}} {{gpio3/read_data_reg[18]} {{constant 0}} {gpio3/read_data[18]}} {{gpio3/read_data_reg[19]} {{constant 0}} {gpio3/read_data[19]}} {{gpio3/read_data_reg[20]} {{constant 0}} {gpio3/read_data[20]}} {{gpio3/read_data_reg[21]} {{constant 0}} {gpio3/read_data[21]}} {{gpio3/read_data_reg[22]} {{constant 0}} {gpio3/read_data[22]}} {{gpio3/read_data_reg[23]} {{constant 0}} {gpio3/read_data[23]}} {{gpio3/read_data_reg[24]} {{constant 0}} {gpio3/read_data[24]}} {{gpio3/read_data_reg[25]} {{constant 0}} {gpio3/read_data[25]}} {{gpio3/read_data_reg[26]} {{constant 0}} {gpio3/read_data[26]}} {{gpio3/read_data_reg[27]} {{constant 0}} {gpio3/read_data[27]}} {{gpio3/read_data_reg[28]} {{constant 0}} {gpio3/read_data[28]}} {{gpio3/read_data_reg[29]} {{constant 0}} {gpio3/read_data[29]}} {{gpio3/read_data_reg[30]} {{constant 0}} {gpio3/read_data[30]}} {{gpio3/read_data_reg[31]} {{constant 0}} {gpio3/read_data[31]}} {{gpio2/read_data_reg[8]} {{constant 0}} {gpio2/read_data[8]}} {{gpio2/read_data_reg[9]} {{constant 0}} {gpio2/read_data[9]}} {{gpio2/read_data_reg[10]} {{constant 0}} {gpio2/read_data[10]}} {{gpio2/read_data_reg[11]} {{constant 0}} {gpio2/read_data[11]}} {{gpio2/read_data_reg[12]} {{constant 0}} {gpio2/read_data[12]}} {{gpio2/read_data_reg[13]} {{constant 0}} {gpio2/read_data[13]}} {{gpio2/read_data_reg[14]} {{constant 0}} {gpio2/read_data[14]}} {{gpio2/read_data_reg[15]} {{constant 0}} {gpio2/read_data[15]}} {{gpio2/read_data_reg[16]} {{constant 0}} {gpio2/read_data[16]}} {{gpio2/read_data_reg[17]} {{constant 0}} {gpio2/read_data[17]}} {{gpio2/read_data_reg[18]} {{constant 0}} {gpio2/read_data[18]}} {{gpio2/read_data_reg[19]} {{constant 0}} {gpio2/read_data[19]}} {{gpio2/read_data_reg[20]} {{constant 0}} {gpio2/read_data[20]}} {{gpio2/read_data_reg[21]} {{constant 0}} {gpio2/read_data[21]}} {{gpio2/read_data_reg[22]} {{constant 0}} {gpio2/read_data[22]}} {{gpio2/read_data_reg[23]} {{constant 0}} {gpio2/read_data[23]}} {{gpio2/read_data_reg[24]} {{constant 0}} {gpio2/read_data[24]}} {{gpio2/read_data_reg[25]} {{constant 0}} {gpio2/read_data[25]}} {{gpio2/read_data_reg[26]} {{constant 0}} {gpio2/read_data[26]}} {{gpio2/read_data_reg[27]} {{constant 0}} {gpio2/read_data[27]}} {{gpio2/read_data_reg[28]} {{constant 0}} {gpio2/read_data[28]}} {{gpio2/read_data_reg[29]} {{constant 0}} {gpio2/read_data[29]}} {{gpio2/read_data_reg[30]} {{constant 0}} {gpio2/read_data[30]}} {{gpio2/read_data_reg[31]} {{constant 0}} {gpio2/read_data[31]}} {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} {{constant 0}} {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}} {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} {{constant 0}} {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}} {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} {{constant 0}} {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}} {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} {{constant 0}} {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}} {{timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} {{constant 0}} {timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}} {{timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} {{constant 0}} {timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}} {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} {{constant 0}} {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}} {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} {{constant 0}} {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}} {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} {{constant 0}} {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}} {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} {{constant 0}} {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}} {{timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} {{constant 0}} {timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}} {{timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} {{constant 0}} {timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}} {i2c0/ClearI2CMARB_reg unloaded i2c0/ClearI2CMARB} {i2c0/ClearI2CMNR_reg unloaded i2c0/ClearI2CMNR} {i2c0/ClearI2CSA_reg unloaded i2c0/ClearI2CSA} {i2c0/ClearI2CSNR_reg unloaded i2c0/ClearI2CSNR} {i2c0/ClearI2CSOVF_reg unloaded i2c0/ClearI2CSOVF} {i2c0/ClearI2CSPR_reg unloaded i2c0/ClearI2CSPR} {i2c0/ClearI2CSTR_reg unloaded i2c0/ClearI2CSTR} {i2c0/ClearI2CSTXE_reg unloaded i2c0/ClearI2CSTXE} {i2c0/ClearI2CSXC_reg unloaded i2c0/ClearI2CSXC} {i2c1/ClearI2CMARB_reg unloaded i2c1/ClearI2CMARB} {i2c1/ClearI2CMNR_reg unloaded i2c1/ClearI2CMNR} {i2c1/ClearI2CSA_reg unloaded i2c1/ClearI2CSA} {i2c1/ClearI2CSNR_reg unloaded i2c1/ClearI2CSNR} {i2c1/ClearI2CSOVF_reg unloaded i2c1/ClearI2CSOVF} {i2c1/ClearI2CSPR_reg unloaded i2c1/ClearI2CSPR} {i2c1/ClearI2CSTR_reg unloaded i2c1/ClearI2CSTR} {i2c1/ClearI2CSTXE_reg unloaded i2c1/ClearI2CSTXE} {i2c1/ClearI2CSXC_reg unloaded i2c1/ClearI2CSXC} {{adddec0/mab_out_reg[2]} {{merged with adddec0/addr_periph_reg[2]}} {adddec0/mab_out[2]} {adddec0/addr_periph[2]}} {{adddec0/mab_out_reg[3]} {{merged with adddec0/addr_periph_reg[3]}} {adddec0/mab_out[3]} {adddec0/addr_periph[3]}} {{adddec0/mab_out_reg[4]} {{merged with adddec0/addr_periph_reg[4]}} {adddec0/mab_out[4]} {adddec0/addr_periph[4]}} {{adddec0/mab_out_reg[5]} {{merged with adddec0/addr_periph_reg[5]}} {adddec0/mab_out[5]} {adddec0/addr_periph[5]}} {{adddec0/mab_out_reg[6]} {{merged with adddec0/addr_periph_reg[6]}} {adddec0/mab_out[6]} {adddec0/addr_periph[6]}} {{adddec0/mab_out_reg[7]} {{merged with adddec0/addr_periph_reg[7]}} {adddec0/mab_out[7]} {adddec0/addr_periph[7]}} {{i2c0/I2CxSRLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[1]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[3]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[5]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[8]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[8]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[9]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[9]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[10]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[10]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[11]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[11]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[12]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[12]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[13]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[13]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[15]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[15]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[0]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[0]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[1]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[2]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[2]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[3]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[4]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[4]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[5]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[6]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[6]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[7]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[7]} {i2c0/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[1]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[3]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[5]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[8]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[8]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[9]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[9]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[10]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[10]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[11]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[11]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[12]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[12]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[13]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[13]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[15]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[15]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[0]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[0]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[1]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[2]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[2]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[3]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[4]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[4]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[5]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[6]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[6]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[7]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[7]} {i2c1/I2CxSRLat[0]}} {{core/datapath_inst/rf/registers_reg[0][31]} {{constant 0}} {core/datapath_inst/rf/registers[0][31]}} {{core/datapath_inst/rf/registers_reg[0][30]} {{constant 0}} {core/datapath_inst/rf/registers[0][30]}} {{core/datapath_inst/rf/registers_reg[0][29]} {{constant 0}} {core/datapath_inst/rf/registers[0][29]}} {{core/datapath_inst/rf/registers_reg[0][28]} {{constant 0}} {core/datapath_inst/rf/registers[0][28]}} {{core/datapath_inst/rf/registers_reg[0][27]} {{constant 0}} {core/datapath_inst/rf/registers[0][27]}} {{core/datapath_inst/rf/registers_reg[0][26]} {{constant 0}} {core/datapath_inst/rf/registers[0][26]}} {{core/datapath_inst/rf/registers_reg[0][25]} {{constant 0}} {core/datapath_inst/rf/registers[0][25]}} {{core/datapath_inst/rf/registers_reg[0][24]} {{constant 0}} {core/datapath_inst/rf/registers[0][24]}} {{core/datapath_inst/rf/registers_reg[0][23]} {{constant 0}} {core/datapath_inst/rf/registers[0][23]}} {{core/datapath_inst/rf/registers_reg[0][22]} {{constant 0}} {core/datapath_inst/rf/registers[0][22]}} {{core/datapath_inst/rf/registers_reg[0][21]} {{constant 0}} {core/datapath_inst/rf/registers[0][21]}} {{core/datapath_inst/rf/registers_reg[0][20]} {{constant 0}} {core/datapath_inst/rf/registers[0][20]}} {{core/datapath_inst/rf/registers_reg[0][19]} {{constant 0}} {core/datapath_inst/rf/registers[0][19]}} {{core/datapath_inst/rf/registers_reg[0][18]} {{constant 0}} {core/datapath_inst/rf/registers[0][18]}} {{core/datapath_inst/rf/registers_reg[0][17]} {{constant 0}} {core/datapath_inst/rf/registers[0][17]}} {{core/datapath_inst/rf/registers_reg[0][16]} {{constant 0}} {core/datapath_inst/rf/registers[0][16]}} {{core/datapath_inst/rf/registers_reg[0][15]} {{constant 0}} {core/datapath_inst/rf/registers[0][15]}} {{core/datapath_inst/rf/registers_reg[0][14]} {{constant 0}} {core/datapath_inst/rf/registers[0][14]}} {{core/datapath_inst/rf/registers_reg[0][13]} {{constant 0}} {core/datapath_inst/rf/registers[0][13]}} {{core/datapath_inst/rf/registers_reg[0][12]} {{constant 0}} {core/datapath_inst/rf/registers[0][12]}} {{core/datapath_inst/rf/registers_reg[0][11]} {{constant 0}} {core/datapath_inst/rf/registers[0][11]}} {{core/datapath_inst/rf/registers_reg[0][10]} {{constant 0}} {core/datapath_inst/rf/registers[0][10]}} {{core/datapath_inst/rf/registers_reg[0][9]} {{constant 0}} {core/datapath_inst/rf/registers[0][9]}} {{core/datapath_inst/rf/registers_reg[0][8]} {{constant 0}} {core/datapath_inst/rf/registers[0][8]}} {{core/datapath_inst/rf/registers_reg[0][7]} {{constant 0}} {core/datapath_inst/rf/registers[0][7]}} {{core/datapath_inst/rf/registers_reg[0][6]} {{constant 0}} {core/datapath_inst/rf/registers[0][6]}} {{core/datapath_inst/rf/registers_reg[0][5]} {{constant 0}} {core/datapath_inst/rf/registers[0][5]}} {{core/datapath_inst/rf/registers_reg[0][4]} {{constant 0}} {core/datapath_inst/rf/registers[0][4]}} {{core/datapath_inst/rf/registers_reg[0][3]} {{constant 0}} {core/datapath_inst/rf/registers[0][3]}} {{core/datapath_inst/rf/registers_reg[0][2]} {{constant 0}} {core/datapath_inst/rf/registers[0][2]}} {{core/datapath_inst/rf/registers_reg[0][1]} {{constant 0}} {core/datapath_inst/rf/registers[0][1]}} {{core/datapath_inst/rf/registers_reg[0][0]} {{constant 0}} {core/datapath_inst/rf/registers[0][0]}} {system0/wdt_trigger_reg {{constant 0}} system0/wdt_trigger} {system0/wdt_if_reg {{constant 0}} system0/wdt_if} {system0/wdt_interrupt_ret_reg {{constant 0}} system0/wdt_interrupt_ret} {{i2c0/I2CxSRLat_reg[0]} {{constant 1}} {i2c0/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[0]} {{constant 1}} {i2c1/I2CxSRLat[0]}} {system0/wdt_rf_reg {{constant 0}} system0/wdt_rf} {system0/clr_wdt_if_reg unloaded system0/clr_wdt_if} {system0/clr_wdt_rf_reg unloaded system0/clr_wdt_rf} {{core/datapath_inst/mainalu/divider/cnt_reg[5]} {{constant 0}} {core/datapath_inst/mainalu/divider/cnt[5]}}}
+set_db -quiet design:MCU .seq_reason_deleted_internal {{{i2c1/CGMaster/ClkStagesFF_reg[0]} unloaded {i2c1/CGMaster/ClkStagesFF[0]}} {{i2c0/CGMaster/ClkStagesFF_reg[0]} unloaded {i2c0/CGMaster/ClkStagesFF[0]}} {core/datapath_inst/mainalu/divider/N unloaded core/datapath_inst/mainalu/divider/N} {core/datapath_inst/mainalu/divider/D unloaded core/datapath_inst/mainalu/divider/D} {core/datapath_inst/mainalu/div_rq unloaded core/datapath_inst/mainalu/div_rq} {core/datapath_inst/amo_read_data_reg unloaded core/datapath_inst/amo_read_data_reg} {core/irq_handler_inst/prev_state unloaded core/irq_handler_inst/prev_state} {core/irq_handler_inst/nesting_count unloaded core/irq_handler_inst/nesting_count} {core/c_dec_inst/funct6 unloaded core/c_dec_inst/funct6} {core/amo_read_data unloaded core/amo_read_data} {core/data_addr_reg unloaded core/data_addr_reg} {core/irq_save_int unloaded core/irq_save_int} {spi1/SPIxFOS unloaded spi1/SPIxFOS} {timer1/timer_value_latched unloaded timer1/timer_value_latched} {timer0/timer_value_latched unloaded timer0/timer_value_latched} {afe0/adc_data_read unloaded afe0/adc_data_read} {afe0/clr_adc_ovf unloaded afe0/clr_adc_ovf} {{core/irq_handler_inst/pending_irqs_reg_reg[0]} unloaded {core/irq_handler_inst/pending_irqs_reg[0]}} {{core/irq_handler_inst/pending_irqs_reg_reg[1]} unloaded {core/irq_handler_inst/pending_irqs_reg[1]}} {{core/irq_handler_inst/pending_irqs_reg_reg[2]} unloaded {core/irq_handler_inst/pending_irqs_reg[2]}} {{core/irq_handler_inst/pending_irqs_reg_reg[3]} unloaded {core/irq_handler_inst/pending_irqs_reg[3]}} {{core/irq_handler_inst/pending_irqs_reg_reg[4]} unloaded {core/irq_handler_inst/pending_irqs_reg[4]}} {{core/irq_handler_inst/pending_irqs_reg_reg[5]} unloaded {core/irq_handler_inst/pending_irqs_reg[5]}} {{core/irq_handler_inst/pending_irqs_reg_reg[6]} unloaded {core/irq_handler_inst/pending_irqs_reg[6]}} {{core/irq_handler_inst/pending_irqs_reg_reg[7]} unloaded {core/irq_handler_inst/pending_irqs_reg[7]}} {{core/irq_handler_inst/pending_irqs_reg_reg[8]} unloaded {core/irq_handler_inst/pending_irqs_reg[8]}} {{core/irq_handler_inst/pending_irqs_reg_reg[9]} unloaded {core/irq_handler_inst/pending_irqs_reg[9]}} {{core/irq_handler_inst/pending_irqs_reg_reg[10]} unloaded {core/irq_handler_inst/pending_irqs_reg[10]}} {{core/irq_handler_inst/pending_irqs_reg_reg[11]} unloaded {core/irq_handler_inst/pending_irqs_reg[11]}} {{core/irq_handler_inst/pending_irqs_reg_reg[12]} unloaded {core/irq_handler_inst/pending_irqs_reg[12]}} {{core/irq_handler_inst/pending_irqs_reg_reg[13]} unloaded {core/irq_handler_inst/pending_irqs_reg[13]}} {{core/irq_handler_inst/pending_irqs_reg_reg[14]} unloaded {core/irq_handler_inst/pending_irqs_reg[14]}} {{core/irq_handler_inst/pending_irqs_reg_reg[15]} unloaded {core/irq_handler_inst/pending_irqs_reg[15]}} {{core/irq_handler_inst/pending_irqs_reg_reg[16]} unloaded {core/irq_handler_inst/pending_irqs_reg[16]}} {{core/irq_handler_inst/pending_irqs_reg_reg[17]} unloaded {core/irq_handler_inst/pending_irqs_reg[17]}} {{core/irq_handler_inst/pending_irqs_reg_reg[18]} unloaded {core/irq_handler_inst/pending_irqs_reg[18]}} {{core/irq_handler_inst/pending_irqs_reg_reg[19]} unloaded {core/irq_handler_inst/pending_irqs_reg[19]}} {{core/irq_handler_inst/pending_irqs_reg_reg[20]} unloaded {core/irq_handler_inst/pending_irqs_reg[20]}} {{core/irq_handler_inst/pending_irqs_reg_reg[21]} unloaded {core/irq_handler_inst/pending_irqs_reg[21]}} {{core/irq_handler_inst/pending_irqs_reg_reg[22]} unloaded {core/irq_handler_inst/pending_irqs_reg[22]}} {{core/irq_handler_inst/pending_irqs_reg_reg[23]} unloaded {core/irq_handler_inst/pending_irqs_reg[23]}} {{core/irq_handler_inst/pending_irqs_reg_reg[24]} unloaded {core/irq_handler_inst/pending_irqs_reg[24]}} {{core/irq_handler_inst/pending_irqs_reg_reg[25]} unloaded {core/irq_handler_inst/pending_irqs_reg[25]}} {{core/irq_handler_inst/pending_irqs_reg_reg[26]} unloaded {core/irq_handler_inst/pending_irqs_reg[26]}} {{core/irq_handler_inst/pending_irqs_reg_reg[27]} unloaded {core/irq_handler_inst/pending_irqs_reg[27]}} {{core/irq_handler_inst/pending_irqs_reg_reg[28]} unloaded {core/irq_handler_inst/pending_irqs_reg[28]}} {{core/irq_handler_inst/pending_irqs_reg_reg[29]} unloaded {core/irq_handler_inst/pending_irqs_reg[29]}} {{core/irq_handler_inst/pending_irqs_reg_reg[30]} unloaded {core/irq_handler_inst/pending_irqs_reg[30]}} {{core/irq_handler_inst/pending_irqs_reg_reg[31]} unloaded {core/irq_handler_inst/pending_irqs_reg[31]}} {{core/irq_handler_inst/pending_irqs_reg_reg[32]} unloaded {core/irq_handler_inst/pending_irqs_reg[32]}} {{core/irq_handler_inst/pending_irqs_reg_reg[33]} unloaded {core/irq_handler_inst/pending_irqs_reg[33]}} {{core/irq_handler_inst/pending_irqs_reg_reg[34]} unloaded {core/irq_handler_inst/pending_irqs_reg[34]}} {{core/irq_handler_inst/pending_irqs_reg_reg[35]} unloaded {core/irq_handler_inst/pending_irqs_reg[35]}} {{core/irq_handler_inst/pending_irqs_reg_reg[36]} unloaded {core/irq_handler_inst/pending_irqs_reg[36]}} {{core/irq_handler_inst/pending_irqs_reg_reg[37]} unloaded {core/irq_handler_inst/pending_irqs_reg[37]}} {{core/irq_handler_inst/pending_irqs_reg_reg[38]} unloaded {core/irq_handler_inst/pending_irqs_reg[38]}} {{core/irq_handler_inst/pending_irqs_reg_reg[39]} unloaded {core/irq_handler_inst/pending_irqs_reg[39]}} {{core/irq_handler_inst/pending_irqs_reg_reg[40]} unloaded {core/irq_handler_inst/pending_irqs_reg[40]}} {{core/irq_handler_inst/pending_irqs_reg_reg[41]} unloaded {core/irq_handler_inst/pending_irqs_reg[41]}} {{core/irq_handler_inst/pending_irqs_reg_reg[42]} unloaded {core/irq_handler_inst/pending_irqs_reg[42]}} {{core/irq_handler_inst/pending_irqs_reg_reg[43]} unloaded {core/irq_handler_inst/pending_irqs_reg[43]}} {{core/irq_handler_inst/pending_irqs_reg_reg[44]} unloaded {core/irq_handler_inst/pending_irqs_reg[44]}} {{core/irq_handler_inst/pending_irqs_reg_reg[45]} unloaded {core/irq_handler_inst/pending_irqs_reg[45]}} {{core/irq_handler_inst/pending_irqs_reg_reg[46]} unloaded {core/irq_handler_inst/pending_irqs_reg[46]}} {{core/irq_handler_inst/pending_irqs_reg_reg[47]} unloaded {core/irq_handler_inst/pending_irqs_reg[47]}} {{core/irq_handler_inst/pending_irqs_reg_reg[48]} unloaded {core/irq_handler_inst/pending_irqs_reg[48]}} {{core/irq_handler_inst/pending_irqs_reg_reg[49]} unloaded {core/irq_handler_inst/pending_irqs_reg[49]}} {{core/irq_handler_inst/pending_irqs_reg_reg[50]} unloaded {core/irq_handler_inst/pending_irqs_reg[50]}} {{core/irq_handler_inst/pending_irqs_reg_reg[51]} unloaded {core/irq_handler_inst/pending_irqs_reg[51]}} {{core/irq_handler_inst/pending_irqs_reg_reg[52]} unloaded {core/irq_handler_inst/pending_irqs_reg[52]}} {{core/irq_handler_inst/pending_irqs_reg_reg[53]} unloaded {core/irq_handler_inst/pending_irqs_reg[53]}} {{core/irq_handler_inst/pending_irqs_reg_reg[54]} unloaded {core/irq_handler_inst/pending_irqs_reg[54]}} {{core/irq_handler_inst/pending_irqs_reg_reg[55]} unloaded {core/irq_handler_inst/pending_irqs_reg[55]}} {{core/irq_handler_inst/pending_irqs_reg_reg[56]} unloaded {core/irq_handler_inst/pending_irqs_reg[56]}} {{core/irq_handler_inst/pending_irqs_reg_reg[57]} unloaded {core/irq_handler_inst/pending_irqs_reg[57]}} {{core/irq_handler_inst/pending_irqs_reg_reg[58]} unloaded {core/irq_handler_inst/pending_irqs_reg[58]}} {{core/irq_handler_inst/pending_irqs_reg_reg[59]} unloaded {core/irq_handler_inst/pending_irqs_reg[59]}} {{core/irq_handler_inst/pending_irqs_reg_reg[60]} unloaded {core/irq_handler_inst/pending_irqs_reg[60]}} {{core/irq_handler_inst/pending_irqs_reg_reg[61]} unloaded {core/irq_handler_inst/pending_irqs_reg[61]}} {{core/irq_handler_inst/pending_irqs_reg_reg[62]} unloaded {core/irq_handler_inst/pending_irqs_reg[62]}} {{core/irq_handler_inst/pending_irqs_reg_reg[63]} unloaded {core/irq_handler_inst/pending_irqs_reg[63]}} {{core/irq_handler_inst/pending_irqs_reg_reg[64]} unloaded {core/irq_handler_inst/pending_irqs_reg[64]}} {{core/irq_handler_inst/pending_irqs_reg_reg[65]} unloaded {core/irq_handler_inst/pending_irqs_reg[65]}} {{core/irq_handler_inst/pending_irqs_reg_reg[66]} unloaded {core/irq_handler_inst/pending_irqs_reg[66]}} {{core/irq_handler_inst/pending_irqs_reg_reg[67]} unloaded {core/irq_handler_inst/pending_irqs_reg[67]}} {{core/irq_handler_inst/pending_irqs_reg_reg[68]} unloaded {core/irq_handler_inst/pending_irqs_reg[68]}} {{core/irq_handler_inst/pending_irqs_reg_reg[69]} unloaded {core/irq_handler_inst/pending_irqs_reg[69]}} {{core/irq_handler_inst/pending_irqs_reg_reg[70]} unloaded {core/irq_handler_inst/pending_irqs_reg[70]}} {{core/irq_handler_inst/pending_irqs_reg_reg[71]} unloaded {core/irq_handler_inst/pending_irqs_reg[71]}} {{core/irq_handler_inst/pending_irqs_reg_reg[72]} unloaded {core/irq_handler_inst/pending_irqs_reg[72]}} {{core/irq_handler_inst/pending_irqs_reg_reg[73]} unloaded {core/irq_handler_inst/pending_irqs_reg[73]}} {{core/irq_handler_inst/pending_irqs_reg_reg[74]} unloaded {core/irq_handler_inst/pending_irqs_reg[74]}} {{core/irq_handler_inst/pending_irqs_reg_reg[75]} unloaded {core/irq_handler_inst/pending_irqs_reg[75]}} {{core/irq_handler_inst/pending_irqs_reg_reg[76]} unloaded {core/irq_handler_inst/pending_irqs_reg[76]}} {{core/irq_handler_inst/pending_irqs_reg_reg[77]} unloaded {core/irq_handler_inst/pending_irqs_reg[77]}} {{core/irq_handler_inst/pending_irqs_reg_reg[78]} unloaded {core/irq_handler_inst/pending_irqs_reg[78]}} {{core/irq_handler_inst/pending_irqs_reg_reg[79]} unloaded {core/irq_handler_inst/pending_irqs_reg[79]}} {{core/irq_handler_inst/pending_irqs_reg_reg[80]} unloaded {core/irq_handler_inst/pending_irqs_reg[80]}} {{core/irq_handler_inst/pending_irqs_reg_reg[81]} unloaded {core/irq_handler_inst/pending_irqs_reg[81]}} {{core/irq_handler_inst/pending_irqs_reg_reg[82]} unloaded {core/irq_handler_inst/pending_irqs_reg[82]}} {{adddec0/mab_out_reg[24]} unloaded {adddec0/mab_out[24]}} {{adddec0/mab_out_reg[25]} unloaded {adddec0/mab_out[25]}} {{adddec0/mab_out_reg[26]} unloaded {adddec0/mab_out[26]}} {{adddec0/mab_out_reg[27]} unloaded {adddec0/mab_out[27]}} {{adddec0/mab_out_reg[28]} unloaded {adddec0/mab_out[28]}} {{adddec0/mab_out_reg[29]} unloaded {adddec0/mab_out[29]}} {{adddec0/mab_out_reg[30]} unloaded {adddec0/mab_out[30]}} {{adddec0/mab_out_reg[31]} unloaded {adddec0/mab_out[31]}} {{gpio0/read_data_reg[8]} {{constant 0}} {gpio0/read_data[8]}} {{gpio0/read_data_reg[9]} {{constant 0}} {gpio0/read_data[9]}} {{gpio0/read_data_reg[10]} {{constant 0}} {gpio0/read_data[10]}} {{gpio0/read_data_reg[11]} {{constant 0}} {gpio0/read_data[11]}} {{gpio0/read_data_reg[12]} {{constant 0}} {gpio0/read_data[12]}} {{gpio0/read_data_reg[13]} {{constant 0}} {gpio0/read_data[13]}} {{gpio0/read_data_reg[14]} {{constant 0}} {gpio0/read_data[14]}} {{gpio0/read_data_reg[15]} {{constant 0}} {gpio0/read_data[15]}} {{gpio0/read_data_reg[16]} {{constant 0}} {gpio0/read_data[16]}} {{gpio0/read_data_reg[17]} {{constant 0}} {gpio0/read_data[17]}} {{gpio0/read_data_reg[18]} {{constant 0}} {gpio0/read_data[18]}} {{gpio0/read_data_reg[19]} {{constant 0}} {gpio0/read_data[19]}} {{gpio0/read_data_reg[20]} {{constant 0}} {gpio0/read_data[20]}} {{gpio0/read_data_reg[21]} {{constant 0}} {gpio0/read_data[21]}} {{gpio0/read_data_reg[22]} {{constant 0}} {gpio0/read_data[22]}} {{gpio0/read_data_reg[23]} {{constant 0}} {gpio0/read_data[23]}} {{gpio0/read_data_reg[24]} {{constant 0}} {gpio0/read_data[24]}} {{gpio0/read_data_reg[25]} {{constant 0}} {gpio0/read_data[25]}} {{gpio0/read_data_reg[26]} {{constant 0}} {gpio0/read_data[26]}} {{gpio0/read_data_reg[27]} {{constant 0}} {gpio0/read_data[27]}} {{gpio0/read_data_reg[28]} {{constant 0}} {gpio0/read_data[28]}} {{gpio0/read_data_reg[29]} {{constant 0}} {gpio0/read_data[29]}} {{gpio0/read_data_reg[30]} {{constant 0}} {gpio0/read_data[30]}} {{gpio0/read_data_reg[31]} {{constant 0}} {gpio0/read_data[31]}} {{gpio1/read_data_reg[8]} {{constant 0}} {gpio1/read_data[8]}} {{gpio1/read_data_reg[9]} {{constant 0}} {gpio1/read_data[9]}} {{gpio1/read_data_reg[10]} {{constant 0}} {gpio1/read_data[10]}} {{gpio1/read_data_reg[11]} {{constant 0}} {gpio1/read_data[11]}} {{gpio1/read_data_reg[12]} {{constant 0}} {gpio1/read_data[12]}} {{gpio1/read_data_reg[13]} {{constant 0}} {gpio1/read_data[13]}} {{gpio1/read_data_reg[14]} {{constant 0}} {gpio1/read_data[14]}} {{gpio1/read_data_reg[15]} {{constant 0}} {gpio1/read_data[15]}} {{gpio1/read_data_reg[16]} {{constant 0}} {gpio1/read_data[16]}} {{gpio1/read_data_reg[17]} {{constant 0}} {gpio1/read_data[17]}} {{gpio1/read_data_reg[18]} {{constant 0}} {gpio1/read_data[18]}} {{gpio1/read_data_reg[19]} {{constant 0}} {gpio1/read_data[19]}} {{gpio1/read_data_reg[20]} {{constant 0}} {gpio1/read_data[20]}} {{gpio1/read_data_reg[21]} {{constant 0}} {gpio1/read_data[21]}} {{gpio1/read_data_reg[22]} {{constant 0}} {gpio1/read_data[22]}} {{gpio1/read_data_reg[23]} {{constant 0}} {gpio1/read_data[23]}} {{gpio1/read_data_reg[24]} {{constant 0}} {gpio1/read_data[24]}} {{gpio1/read_data_reg[25]} {{constant 0}} {gpio1/read_data[25]}} {{gpio1/read_data_reg[26]} {{constant 0}} {gpio1/read_data[26]}} {{gpio1/read_data_reg[27]} {{constant 0}} {gpio1/read_data[27]}} {{gpio1/read_data_reg[28]} {{constant 0}} {gpio1/read_data[28]}} {{gpio1/read_data_reg[29]} {{constant 0}} {gpio1/read_data[29]}} {{gpio1/read_data_reg[30]} {{constant 0}} {gpio1/read_data[30]}} {{gpio1/read_data_reg[31]} {{constant 0}} {gpio1/read_data[31]}} {{npu0/NPUCR_reg[16]} {{constant 0}} {npu0/NPUCR[16]}} {{afe0/read_data_reg[24]} {{constant 0}} {afe0/read_data[24]}} {{afe0/read_data_reg[25]} {{constant 0}} {afe0/read_data[25]}} {{afe0/read_data_reg[26]} {{constant 0}} {afe0/read_data[26]}} {{afe0/read_data_reg[27]} {{constant 0}} {afe0/read_data[27]}} {{afe0/read_data_reg[28]} {{constant 0}} {afe0/read_data[28]}} {{afe0/read_data_reg[29]} {{constant 0}} {afe0/read_data[29]}} {{afe0/read_data_reg[30]} {{constant 0}} {afe0/read_data[30]}} {{afe0/read_data_reg[31]} {{constant 0}} {afe0/read_data[31]}} {{saradc0/read_data_reg[10]} {{constant 0}} {saradc0/read_data[10]}} {{saradc0/read_data_reg[11]} {{constant 0}} {saradc0/read_data[11]}} {{saradc0/read_data_reg[12]} {{constant 0}} {saradc0/read_data[12]}} {{saradc0/read_data_reg[13]} {{constant 0}} {saradc0/read_data[13]}} {{saradc0/read_data_reg[14]} {{constant 0}} {saradc0/read_data[14]}} {{saradc0/read_data_reg[15]} {{constant 0}} {saradc0/read_data[15]}} {{saradc0/read_data_reg[16]} {{constant 0}} {saradc0/read_data[16]}} {{saradc0/read_data_reg[17]} {{constant 0}} {saradc0/read_data[17]}} {{saradc0/read_data_reg[18]} {{constant 0}} {saradc0/read_data[18]}} {{saradc0/read_data_reg[19]} {{constant 0}} {saradc0/read_data[19]}} {{saradc0/read_data_reg[20]} {{constant 0}} {saradc0/read_data[20]}} {{saradc0/read_data_reg[21]} {{constant 0}} {saradc0/read_data[21]}} {{saradc0/read_data_reg[22]} {{constant 0}} {saradc0/read_data[22]}} {{saradc0/read_data_reg[23]} {{constant 0}} {saradc0/read_data[23]}} {{saradc0/read_data_reg[24]} {{constant 0}} {saradc0/read_data[24]}} {{saradc0/read_data_reg[25]} {{constant 0}} {saradc0/read_data[25]}} {{saradc0/read_data_reg[26]} {{constant 0}} {saradc0/read_data[26]}} {{saradc0/read_data_reg[27]} {{constant 0}} {saradc0/read_data[27]}} {{saradc0/read_data_reg[28]} {{constant 0}} {saradc0/read_data[28]}} {{saradc0/read_data_reg[29]} {{constant 0}} {saradc0/read_data[29]}} {{saradc0/read_data_reg[30]} {{constant 0}} {saradc0/read_data[30]}} {{saradc0/read_data_reg[31]} {{constant 0}} {saradc0/read_data[31]}} {{uart1/read_data_reg[12]} {{constant 0}} {uart1/read_data[12]}} {{uart0/read_data_reg[12]} {{constant 0}} {uart0/read_data[12]}} {{uart1/read_data_reg[13]} {{constant 0}} {uart1/read_data[13]}} {{uart0/read_data_reg[13]} {{constant 0}} {uart0/read_data[13]}} {{uart1/read_data_reg[14]} {{constant 0}} {uart1/read_data[14]}} {{uart0/read_data_reg[14]} {{constant 0}} {uart0/read_data[14]}} {{uart1/read_data_reg[15]} {{constant 0}} {uart1/read_data[15]}} {{uart0/read_data_reg[15]} {{constant 0}} {uart0/read_data[15]}} {{uart1/read_data_reg[16]} {{constant 0}} {uart1/read_data[16]}} {{uart0/read_data_reg[16]} {{constant 0}} {uart0/read_data[16]}} {{uart1/read_data_reg[17]} {{constant 0}} {uart1/read_data[17]}} {{uart0/read_data_reg[17]} {{constant 0}} {uart0/read_data[17]}} {{uart1/read_data_reg[18]} {{constant 0}} {uart1/read_data[18]}} {{uart0/read_data_reg[18]} {{constant 0}} {uart0/read_data[18]}} {{uart1/read_data_reg[19]} {{constant 0}} {uart1/read_data[19]}} {{uart0/read_data_reg[19]} {{constant 0}} {uart0/read_data[19]}} {{uart1/read_data_reg[20]} {{constant 0}} {uart1/read_data[20]}} {{uart0/read_data_reg[20]} {{constant 0}} {uart0/read_data[20]}} {{uart1/read_data_reg[21]} {{constant 0}} {uart1/read_data[21]}} {{uart0/read_data_reg[21]} {{constant 0}} {uart0/read_data[21]}} {{uart1/read_data_reg[22]} {{constant 0}} {uart1/read_data[22]}} {{uart0/read_data_reg[22]} {{constant 0}} {uart0/read_data[22]}} {{uart1/read_data_reg[23]} {{constant 0}} {uart1/read_data[23]}} {{uart0/read_data_reg[23]} {{constant 0}} {uart0/read_data[23]}} {{uart1/read_data_reg[24]} {{constant 0}} {uart1/read_data[24]}} {{uart0/read_data_reg[24]} {{constant 0}} {uart0/read_data[24]}} {{uart1/read_data_reg[25]} {{constant 0}} {uart1/read_data[25]}} {{uart0/read_data_reg[25]} {{constant 0}} {uart0/read_data[25]}} {{uart1/read_data_reg[26]} {{constant 0}} {uart1/read_data[26]}} {{uart0/read_data_reg[26]} {{constant 0}} {uart0/read_data[26]}} {{uart1/read_data_reg[27]} {{constant 0}} {uart1/read_data[27]}} {{uart0/read_data_reg[27]} {{constant 0}} {uart0/read_data[27]}} {{uart1/read_data_reg[28]} {{constant 0}} {uart1/read_data[28]}} {{uart0/read_data_reg[28]} {{constant 0}} {uart0/read_data[28]}} {{uart1/read_data_reg[29]} {{constant 0}} {uart1/read_data[29]}} {{uart0/read_data_reg[29]} {{constant 0}} {uart0/read_data[29]}} {{uart1/read_data_reg[30]} {{constant 0}} {uart1/read_data[30]}} {{uart0/read_data_reg[30]} {{constant 0}} {uart0/read_data[30]}} {{uart1/read_data_reg[31]} {{constant 0}} {uart1/read_data[31]}} {{uart0/read_data_reg[31]} {{constant 0}} {uart0/read_data[31]}} {i2c1/I2CSTR_reg {{constant 0}} i2c1/I2CSTR} {i2c0/I2CSTR_reg {{constant 0}} i2c0/I2CSTR} {i2c1/StartSlaveRX_reg {{constant 0}} i2c1/StartSlaveRX} {i2c0/StartSlaveRX_reg {{constant 0}} i2c0/StartSlaveRX} {i2c1/ClearStartSlaveRX_reg {{constant 0}} i2c1/ClearStartSlaveRX} {i2c0/ClearStartSlaveRX_reg {{constant 0}} i2c0/ClearStartSlaveRX} {i2c1/I2CSPR_reg {{constant 0}} i2c1/I2CSPR} {i2c0/I2CSPR_reg {{constant 0}} i2c0/I2CSPR} {i2c1/I2CMNR_reg {{constant 0}} i2c1/I2CMNR} {i2c0/I2CMNR_reg {{constant 0}} i2c0/I2CMNR} {i2c1/I2CMARB_reg {{constant 0}} i2c1/I2CMARB} {i2c0/I2CMARB_reg {{constant 0}} i2c0/I2CMARB} {i2c1/SDA_LAT_reg {{constant 0}} i2c1/SDA_LAT} {i2c0/SDA_LAT_reg {{constant 0}} i2c0/SDA_LAT} {{i2c1/I2CxSRX_reg[0]} {{constant 0}} {i2c1/I2CxSRX[0]}} {{i2c0/I2CxSRX_reg[0]} {{constant 0}} {i2c0/I2CxSRX[0]}} {{i2c1/I2CxSRX_reg[1]} {{constant 0}} {i2c1/I2CxSRX[1]}} {{i2c0/I2CxSRX_reg[1]} {{constant 0}} {i2c0/I2CxSRX[1]}} {{i2c1/I2CxSRX_reg[2]} {{constant 0}} {i2c1/I2CxSRX[2]}} {{i2c0/I2CxSRX_reg[2]} {{constant 0}} {i2c0/I2CxSRX[2]}} {{i2c1/I2CxSRX_reg[3]} {{constant 0}} {i2c1/I2CxSRX[3]}} {{i2c0/I2CxSRX_reg[3]} {{constant 0}} {i2c0/I2CxSRX[3]}} {{i2c1/I2CxSRX_reg[4]} {{constant 0}} {i2c1/I2CxSRX[4]}} {{i2c0/I2CxSRX_reg[4]} {{constant 0}} {i2c0/I2CxSRX[4]}} {{i2c1/I2CxSRX_reg[5]} {{constant 0}} {i2c1/I2CxSRX[5]}} {{i2c0/I2CxSRX_reg[5]} {{constant 0}} {i2c0/I2CxSRX[5]}} {{i2c1/I2CxSRX_reg[6]} {{constant 0}} {i2c1/I2CxSRX[6]}} {{i2c0/I2CxSRX_reg[6]} {{constant 0}} {i2c0/I2CxSRX[6]}} {{i2c1/I2CxSRX_reg[7]} {{constant 0}} {i2c1/I2CxSRX[7]}} {{i2c0/I2CxSRX_reg[7]} {{constant 0}} {i2c0/I2CxSRX[7]}} {i2c1/I2CSXC_reg {{constant 0}} i2c1/I2CSXC} {i2c0/I2CSXC_reg {{constant 0}} i2c0/I2CSXC} {i2c1/I2CSNR_reg {{constant 0}} i2c1/I2CSNR} {i2c0/I2CSNR_reg {{constant 0}} i2c0/I2CSNR} {i2c1/I2CSOVF_reg {{constant 0}} i2c1/I2CSOVF} {i2c0/I2CSOVF_reg {{constant 0}} i2c0/I2CSOVF} {i2c1/I2CSTXE_reg {{constant 0}} i2c1/I2CSTXE} {i2c0/I2CSTXE_reg {{constant 0}} i2c0/I2CSTXE} {i2c1/I2CSA_reg {{constant 0}} i2c1/I2CSA} {i2c0/I2CSA_reg {{constant 0}} i2c0/I2CSA} {i2c1/I2CSTM_reg {{constant 0}} i2c1/I2CSTM} {i2c0/I2CSTM_reg {{constant 0}} i2c0/I2CSTM} {i2c1/SlaveFsmSDA_reg {{constant 1}} i2c1/SlaveFsmSDA} {i2c0/SlaveFsmSDA_reg {{constant 1}} i2c0/SlaveFsmSDA} {{i2c1/SlaveState_reg[0]} {{constant 0}} {i2c1/SlaveState[0]}} {{i2c0/SlaveState_reg[0]} {{constant 0}} {i2c0/SlaveState[0]}} {{i2c1/SlaveState_reg[1]} {{constant 0}} {i2c1/SlaveState[1]}} {{i2c0/SlaveState_reg[1]} {{constant 0}} {i2c0/SlaveState[1]}} {{i2c1/SlaveState_reg[2]} {{constant 0}} {i2c1/SlaveState[2]}} {{i2c0/SlaveState_reg[2]} {{constant 0}} {i2c0/SlaveState[2]}} {{i2c1/SlaveBit_reg[0]} {{constant 1}} {i2c1/SlaveBit[0]}} {{i2c0/SlaveBit_reg[0]} {{constant 1}} {i2c0/SlaveBit[0]}} {{i2c1/SlaveBit_reg[1]} {{constant 1}} {i2c1/SlaveBit[1]}} {{i2c0/SlaveBit_reg[1]} {{constant 1}} {i2c0/SlaveBit[1]}} {{i2c1/SlaveBit_reg[2]} {{constant 1}} {i2c1/SlaveBit[2]}} {{i2c0/SlaveBit_reg[2]} {{constant 1}} {i2c0/SlaveBit[2]}} {{i2c1/SlaveData_reg[0]} {{constant 0}} {i2c1/SlaveData[0]}} {{i2c0/SlaveData_reg[0]} {{constant 0}} {i2c0/SlaveData[0]}} {{i2c1/SlaveData_reg[1]} {{constant 0}} {i2c1/SlaveData[1]}} {{i2c0/SlaveData_reg[1]} {{constant 0}} {i2c0/SlaveData[1]}} {{i2c1/SlaveData_reg[2]} {{constant 0}} {i2c1/SlaveData[2]}} {{i2c0/SlaveData_reg[2]} {{constant 0}} {i2c0/SlaveData[2]}} {{i2c1/SlaveData_reg[3]} {{constant 0}} {i2c1/SlaveData[3]}} {{i2c0/SlaveData_reg[3]} {{constant 0}} {i2c0/SlaveData[3]}} {{i2c1/SlaveData_reg[4]} {{constant 0}} {i2c1/SlaveData[4]}} {{i2c0/SlaveData_reg[4]} {{constant 0}} {i2c0/SlaveData[4]}} {{i2c1/SlaveData_reg[5]} {{constant 0}} {i2c1/SlaveData[5]}} {{i2c0/SlaveData_reg[5]} {{constant 0}} {i2c0/SlaveData[5]}} {{i2c1/SlaveData_reg[6]} {{constant 0}} {i2c1/SlaveData[6]}} {{i2c0/SlaveData_reg[6]} {{constant 0}} {i2c0/SlaveData[6]}} {{i2c1/SlaveData_reg[7]} {{constant 0}} {i2c1/SlaveData[7]}} {{i2c0/SlaveData_reg[7]} {{constant 0}} {i2c0/SlaveData[7]}} {i2c1/SlaveJustAddressed_reg {{constant 0}} i2c1/SlaveJustAddressed} {i2c0/SlaveJustAddressed_reg {{constant 0}} i2c0/SlaveJustAddressed} {i2c1/ClearI2CSC_reg {{constant 1}} i2c1/ClearI2CSC} {i2c0/ClearI2CSC_reg {{constant 1}} i2c0/ClearI2CSC} {i2c1/I2CBS_reg {{constant 0}} i2c1/I2CBS} {i2c0/I2CBS_reg {{constant 0}} i2c0/I2CBS} {i2c1/I2CSC_reg {{constant 0}} i2c1/I2CSC} {i2c0/I2CSC_reg {{constant 0}} i2c0/I2CSC} {{gpio3/read_data_reg[8]} {{constant 0}} {gpio3/read_data[8]}} {{gpio3/read_data_reg[9]} {{constant 0}} {gpio3/read_data[9]}} {{gpio3/read_data_reg[10]} {{constant 0}} {gpio3/read_data[10]}} {{gpio3/read_data_reg[11]} {{constant 0}} {gpio3/read_data[11]}} {{gpio3/read_data_reg[12]} {{constant 0}} {gpio3/read_data[12]}} {{gpio3/read_data_reg[13]} {{constant 0}} {gpio3/read_data[13]}} {{gpio3/read_data_reg[14]} {{constant 0}} {gpio3/read_data[14]}} {{gpio3/read_data_reg[15]} {{constant 0}} {gpio3/read_data[15]}} {{gpio3/read_data_reg[16]} {{constant 0}} {gpio3/read_data[16]}} {{gpio3/read_data_reg[17]} {{constant 0}} {gpio3/read_data[17]}} {{gpio3/read_data_reg[18]} {{constant 0}} {gpio3/read_data[18]}} {{gpio3/read_data_reg[19]} {{constant 0}} {gpio3/read_data[19]}} {{gpio3/read_data_reg[20]} {{constant 0}} {gpio3/read_data[20]}} {{gpio3/read_data_reg[21]} {{constant 0}} {gpio3/read_data[21]}} {{gpio3/read_data_reg[22]} {{constant 0}} {gpio3/read_data[22]}} {{gpio3/read_data_reg[23]} {{constant 0}} {gpio3/read_data[23]}} {{gpio3/read_data_reg[24]} {{constant 0}} {gpio3/read_data[24]}} {{gpio3/read_data_reg[25]} {{constant 0}} {gpio3/read_data[25]}} {{gpio3/read_data_reg[26]} {{constant 0}} {gpio3/read_data[26]}} {{gpio3/read_data_reg[27]} {{constant 0}} {gpio3/read_data[27]}} {{gpio3/read_data_reg[28]} {{constant 0}} {gpio3/read_data[28]}} {{gpio3/read_data_reg[29]} {{constant 0}} {gpio3/read_data[29]}} {{gpio3/read_data_reg[30]} {{constant 0}} {gpio3/read_data[30]}} {{gpio3/read_data_reg[31]} {{constant 0}} {gpio3/read_data[31]}} {{gpio2/read_data_reg[8]} {{constant 0}} {gpio2/read_data[8]}} {{gpio2/read_data_reg[9]} {{constant 0}} {gpio2/read_data[9]}} {{gpio2/read_data_reg[10]} {{constant 0}} {gpio2/read_data[10]}} {{gpio2/read_data_reg[11]} {{constant 0}} {gpio2/read_data[11]}} {{gpio2/read_data_reg[12]} {{constant 0}} {gpio2/read_data[12]}} {{gpio2/read_data_reg[13]} {{constant 0}} {gpio2/read_data[13]}} {{gpio2/read_data_reg[14]} {{constant 0}} {gpio2/read_data[14]}} {{gpio2/read_data_reg[15]} {{constant 0}} {gpio2/read_data[15]}} {{gpio2/read_data_reg[16]} {{constant 0}} {gpio2/read_data[16]}} {{gpio2/read_data_reg[17]} {{constant 0}} {gpio2/read_data[17]}} {{gpio2/read_data_reg[18]} {{constant 0}} {gpio2/read_data[18]}} {{gpio2/read_data_reg[19]} {{constant 0}} {gpio2/read_data[19]}} {{gpio2/read_data_reg[20]} {{constant 0}} {gpio2/read_data[20]}} {{gpio2/read_data_reg[21]} {{constant 0}} {gpio2/read_data[21]}} {{gpio2/read_data_reg[22]} {{constant 0}} {gpio2/read_data[22]}} {{gpio2/read_data_reg[23]} {{constant 0}} {gpio2/read_data[23]}} {{gpio2/read_data_reg[24]} {{constant 0}} {gpio2/read_data[24]}} {{gpio2/read_data_reg[25]} {{constant 0}} {gpio2/read_data[25]}} {{gpio2/read_data_reg[26]} {{constant 0}} {gpio2/read_data[26]}} {{gpio2/read_data_reg[27]} {{constant 0}} {gpio2/read_data[27]}} {{gpio2/read_data_reg[28]} {{constant 0}} {gpio2/read_data[28]}} {{gpio2/read_data_reg[29]} {{constant 0}} {gpio2/read_data[29]}} {{gpio2/read_data_reg[30]} {{constant 0}} {gpio2/read_data[30]}} {{gpio2/read_data_reg[31]} {{constant 0}} {gpio2/read_data[31]}} {i2c0/ClearI2CMARB_reg unloaded i2c0/ClearI2CMARB} {i2c0/ClearI2CMNR_reg unloaded i2c0/ClearI2CMNR} {i2c0/ClearI2CSA_reg unloaded i2c0/ClearI2CSA} {i2c0/ClearI2CSNR_reg unloaded i2c0/ClearI2CSNR} {i2c0/ClearI2CSOVF_reg unloaded i2c0/ClearI2CSOVF} {i2c0/ClearI2CSPR_reg unloaded i2c0/ClearI2CSPR} {i2c0/ClearI2CSTR_reg unloaded i2c0/ClearI2CSTR} {i2c0/ClearI2CSTXE_reg unloaded i2c0/ClearI2CSTXE} {i2c0/ClearI2CSXC_reg unloaded i2c0/ClearI2CSXC} {i2c1/ClearI2CMARB_reg unloaded i2c1/ClearI2CMARB} {i2c1/ClearI2CMNR_reg unloaded i2c1/ClearI2CMNR} {i2c1/ClearI2CSA_reg unloaded i2c1/ClearI2CSA} {i2c1/ClearI2CSNR_reg unloaded i2c1/ClearI2CSNR} {i2c1/ClearI2CSOVF_reg unloaded i2c1/ClearI2CSOVF} {i2c1/ClearI2CSPR_reg unloaded i2c1/ClearI2CSPR} {i2c1/ClearI2CSTR_reg unloaded i2c1/ClearI2CSTR} {i2c1/ClearI2CSTXE_reg unloaded i2c1/ClearI2CSTXE} {i2c1/ClearI2CSXC_reg unloaded i2c1/ClearI2CSXC} {{adddec0/mab_out_reg[2]} {{merged with adddec0/addr_periph_reg[2]}} {adddec0/mab_out[2]} {adddec0/addr_periph[2]}} {{adddec0/mab_out_reg[3]} {{merged with adddec0/addr_periph_reg[3]}} {adddec0/mab_out[3]} {adddec0/addr_periph[3]}} {{adddec0/mab_out_reg[4]} {{merged with adddec0/addr_periph_reg[4]}} {adddec0/mab_out[4]} {adddec0/addr_periph[4]}} {{adddec0/mab_out_reg[5]} {{merged with adddec0/addr_periph_reg[5]}} {adddec0/mab_out[5]} {adddec0/addr_periph[5]}} {{adddec0/mab_out_reg[6]} {{merged with adddec0/addr_periph_reg[6]}} {adddec0/mab_out[6]} {adddec0/addr_periph[6]}} {{adddec0/mab_out_reg[7]} {{merged with adddec0/addr_periph_reg[7]}} {adddec0/mab_out[7]} {adddec0/addr_periph[7]}} {{i2c0/I2CxSRLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[1]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[3]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[5]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[8]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[8]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[9]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[9]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[10]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[10]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[11]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[11]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[12]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[12]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[13]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[13]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRLat_reg[15]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRLat[15]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[0]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[0]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[1]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[2]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[2]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[3]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[4]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[4]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[5]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[6]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[6]} {i2c0/I2CxSRLat[0]}} {{i2c0/I2CxSRXLat_reg[7]} {{merged with i2c0/I2CxSRLat_reg[0]}} {i2c0/I2CxSRXLat[7]} {i2c0/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[1]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[3]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[5]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[8]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[8]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[9]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[9]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[10]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[10]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[11]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[11]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[12]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[12]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[13]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[13]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[15]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRLat[15]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[0]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[0]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[1]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[2]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[2]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[3]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[4]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[4]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[5]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[6]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[6]} {i2c1/I2CxSRLat[0]}} {{i2c1/I2CxSRXLat_reg[7]} {{merged with i2c1/I2CxSRLat_reg[0]}} {i2c1/I2CxSRXLat[7]} {i2c1/I2CxSRLat[0]}} {{core/datapath_inst/rf/registers_reg[0][31]} {{constant 0}} {core/datapath_inst/rf/registers[0][31]}} {{core/datapath_inst/rf/registers_reg[0][30]} {{constant 0}} {core/datapath_inst/rf/registers[0][30]}} {{core/datapath_inst/rf/registers_reg[0][29]} {{constant 0}} {core/datapath_inst/rf/registers[0][29]}} {{core/datapath_inst/rf/registers_reg[0][28]} {{constant 0}} {core/datapath_inst/rf/registers[0][28]}} {{core/datapath_inst/rf/registers_reg[0][27]} {{constant 0}} {core/datapath_inst/rf/registers[0][27]}} {{core/datapath_inst/rf/registers_reg[0][26]} {{constant 0}} {core/datapath_inst/rf/registers[0][26]}} {{core/datapath_inst/rf/registers_reg[0][25]} {{constant 0}} {core/datapath_inst/rf/registers[0][25]}} {{core/datapath_inst/rf/registers_reg[0][24]} {{constant 0}} {core/datapath_inst/rf/registers[0][24]}} {{core/datapath_inst/rf/registers_reg[0][23]} {{constant 0}} {core/datapath_inst/rf/registers[0][23]}} {{core/datapath_inst/rf/registers_reg[0][22]} {{constant 0}} {core/datapath_inst/rf/registers[0][22]}} {{core/datapath_inst/rf/registers_reg[0][21]} {{constant 0}} {core/datapath_inst/rf/registers[0][21]}} {{core/datapath_inst/rf/registers_reg[0][20]} {{constant 0}} {core/datapath_inst/rf/registers[0][20]}} {{core/datapath_inst/rf/registers_reg[0][19]} {{constant 0}} {core/datapath_inst/rf/registers[0][19]}} {{core/datapath_inst/rf/registers_reg[0][18]} {{constant 0}} {core/datapath_inst/rf/registers[0][18]}} {{core/datapath_inst/rf/registers_reg[0][17]} {{constant 0}} {core/datapath_inst/rf/registers[0][17]}} {{core/datapath_inst/rf/registers_reg[0][16]} {{constant 0}} {core/datapath_inst/rf/registers[0][16]}} {{core/datapath_inst/rf/registers_reg[0][15]} {{constant 0}} {core/datapath_inst/rf/registers[0][15]}} {{core/datapath_inst/rf/registers_reg[0][14]} {{constant 0}} {core/datapath_inst/rf/registers[0][14]}} {{core/datapath_inst/rf/registers_reg[0][13]} {{constant 0}} {core/datapath_inst/rf/registers[0][13]}} {{core/datapath_inst/rf/registers_reg[0][12]} {{constant 0}} {core/datapath_inst/rf/registers[0][12]}} {{core/datapath_inst/rf/registers_reg[0][11]} {{constant 0}} {core/datapath_inst/rf/registers[0][11]}} {{core/datapath_inst/rf/registers_reg[0][10]} {{constant 0}} {core/datapath_inst/rf/registers[0][10]}} {{core/datapath_inst/rf/registers_reg[0][9]} {{constant 0}} {core/datapath_inst/rf/registers[0][9]}} {{core/datapath_inst/rf/registers_reg[0][8]} {{constant 0}} {core/datapath_inst/rf/registers[0][8]}} {{core/datapath_inst/rf/registers_reg[0][7]} {{constant 0}} {core/datapath_inst/rf/registers[0][7]}} {{core/datapath_inst/rf/registers_reg[0][6]} {{constant 0}} {core/datapath_inst/rf/registers[0][6]}} {{core/datapath_inst/rf/registers_reg[0][5]} {{constant 0}} {core/datapath_inst/rf/registers[0][5]}} {{core/datapath_inst/rf/registers_reg[0][4]} {{constant 0}} {core/datapath_inst/rf/registers[0][4]}} {{core/datapath_inst/rf/registers_reg[0][3]} {{constant 0}} {core/datapath_inst/rf/registers[0][3]}} {{core/datapath_inst/rf/registers_reg[0][2]} {{constant 0}} {core/datapath_inst/rf/registers[0][2]}} {{core/datapath_inst/rf/registers_reg[0][1]} {{constant 0}} {core/datapath_inst/rf/registers[0][1]}} {{core/datapath_inst/rf/registers_reg[0][0]} {{constant 0}} {core/datapath_inst/rf/registers[0][0]}} {system0/wdt_trigger_reg {{constant 0}} system0/wdt_trigger} {system0/wdt_if_reg {{constant 0}} system0/wdt_if} {system0/wdt_interrupt_ret_reg {{constant 0}} system0/wdt_interrupt_ret} {{i2c0/I2CxSRLat_reg[0]} {{constant 1}} {i2c0/I2CxSRLat[0]}} {{i2c1/I2CxSRLat_reg[0]} {{constant 1}} {i2c1/I2CxSRLat[0]}} {system0/wdt_rf_reg {{constant 0}} system0/wdt_rf} {system0/clr_wdt_if_reg unloaded system0/clr_wdt_if} {system0/clr_wdt_rf_reg unloaded system0/clr_wdt_rf} {{core/datapath_inst/mainalu/divider/cnt_reg[5]} {{constant 0}} {core/datapath_inst/mainalu/divider/cnt[5]}}}
 set_db -quiet design:MCU .max_transition 500.0
-set_db -quiet design:MCU .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 691828} {cell_count 60271} {utilization  0.00} {runtime 356 395 375 422} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 658640} {cell_count 65286} {utilization  0.00} {runtime 92 538 39 511} }{second_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 658322} {cell_count 65171} {utilization  0.00} {runtime 36 595 32 559} }{reify {wns 3269} {tns 0} {vep 0} {area 447042} {cell_count 28307} {utilization  0.00} {runtime 118 713 32 591} }{global_incr_map {wns 3067} {tns 0} {vep 0} {area 445359} {cell_count 27760} {utilization  0.00} {runtime 18 731 20 612} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 444851} {cell_count 27697} {utilization  0.00} {runtime 55 807 62 690} }}
+set_db -quiet design:MCU .qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 692089} {cell_count 60299} {utilization  0.00} {runtime 364 401 382 425} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 658819} {cell_count 65298} {utilization  0.00} {runtime 86 535 37 509} }{second_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 658501} {cell_count 65183} {utilization  0.00} {runtime 35 590 31 554} }{reify {wns 3370} {tns 0} {vep 0} {area 447169} {cell_count 28336} {utilization  0.00} {runtime 122 712 33 588} }{global_incr_map {wns 3033} {tns 0} {vep 0} {area 445482} {cell_count 27784} {utilization  0.00} {runtime 18 730 20 608} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 444936} {cell_count 27706} {utilization  0.00} {runtime 32 785 39 666} }}
 set_db -quiet design:MCU .seq_mbci_coverage 0.0
 set_db -quiet design:MCU .hdl_user_name MCU
 set_db -quiet design:MCU .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/fixed_float_types_c.vhdl} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/fixed_pkg_c.vhdl} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/FPMac.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/FPSigmoid.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/TieLow.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/CRC16.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkDivPower2.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/GPIO.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/SPI.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/UART.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/I2C.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/TIMER.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/SYSTEM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/NPU.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/SARADC.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/AFE_FSM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/AFE.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/div.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/alu.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/extend.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/regfile_sbirq.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/irq_handler.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/loadext.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/store_ext.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/branch_valid.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/csr_unit.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/datapath.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/maindec.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/controller.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/c_dec.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/vesta/vesta.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/adddec.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MCU.vhd} {../hdl} {}}}
-set_db -quiet design:MCU .seq_reason_deleted {{{i2c1/CGMaster/ClkStagesFF_reg[0]} unloaded} {{i2c0/CGMaster/ClkStagesFF_reg[0]} unloaded} {core/datapath_inst/mainalu/divider/N unloaded} {core/datapath_inst/mainalu/divider/D unloaded} {core/datapath_inst/mainalu/div_rq unloaded} {core/datapath_inst/amo_read_data_reg unloaded} {core/irq_handler_inst/prev_state unloaded} {core/irq_handler_inst/nesting_count unloaded} {core/c_dec_inst/funct6 unloaded} {core/amo_read_data unloaded} {core/data_addr_reg unloaded} {core/irq_save_int unloaded} {spi1/SPIxFOS unloaded} {timer1/timer_value_latched unloaded} {timer0/timer_value_latched unloaded} {afe0/adc_data_read unloaded} {afe0/clr_adc_ovf unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[0]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[1]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[2]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[3]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[4]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[5]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[6]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[7]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[8]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[9]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[10]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[11]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[12]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[13]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[14]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[15]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[16]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[17]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[18]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[19]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[20]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[21]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[22]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[23]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[24]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[25]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[26]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[27]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[28]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[29]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[30]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[31]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[32]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[33]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[34]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[35]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[36]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[37]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[38]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[39]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[40]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[41]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[42]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[43]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[44]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[45]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[46]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[47]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[48]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[49]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[50]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[51]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[52]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[53]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[54]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[55]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[56]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[57]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[58]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[59]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[60]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[61]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[62]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[63]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[64]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[65]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[66]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[67]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[68]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[69]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[70]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[71]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[72]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[73]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[74]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[75]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[76]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[77]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[78]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[79]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[80]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[81]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[82]} unloaded} {{adddec0/mab_out_reg[24]} unloaded} {{adddec0/mab_out_reg[25]} unloaded} {{adddec0/mab_out_reg[26]} unloaded} {{adddec0/mab_out_reg[27]} unloaded} {{adddec0/mab_out_reg[28]} unloaded} {{adddec0/mab_out_reg[29]} unloaded} {{adddec0/mab_out_reg[30]} unloaded} {{adddec0/mab_out_reg[31]} unloaded} {{gpio0/read_data_reg[8]} {{constant 0}}} {{gpio0/read_data_reg[9]} {{constant 0}}} {{gpio0/read_data_reg[10]} {{constant 0}}} {{gpio0/read_data_reg[11]} {{constant 0}}} {{gpio0/read_data_reg[12]} {{constant 0}}} {{gpio0/read_data_reg[13]} {{constant 0}}} {{gpio0/read_data_reg[14]} {{constant 0}}} {{gpio0/read_data_reg[15]} {{constant 0}}} {{gpio0/read_data_reg[16]} {{constant 0}}} {{gpio0/read_data_reg[17]} {{constant 0}}} {{gpio0/read_data_reg[18]} {{constant 0}}} {{gpio0/read_data_reg[19]} {{constant 0}}} {{gpio0/read_data_reg[20]} {{constant 0}}} {{gpio0/read_data_reg[21]} {{constant 0}}} {{gpio0/read_data_reg[22]} {{constant 0}}} {{gpio0/read_data_reg[23]} {{constant 0}}} {{gpio0/read_data_reg[24]} {{constant 0}}} {{gpio0/read_data_reg[25]} {{constant 0}}} {{gpio0/read_data_reg[26]} {{constant 0}}} {{gpio0/read_data_reg[27]} {{constant 0}}} {{gpio0/read_data_reg[28]} {{constant 0}}} {{gpio0/read_data_reg[29]} {{constant 0}}} {{gpio0/read_data_reg[30]} {{constant 0}}} {{gpio0/read_data_reg[31]} {{constant 0}}} {{gpio1/read_data_reg[8]} {{constant 0}}} {{gpio1/read_data_reg[9]} {{constant 0}}} {{gpio1/read_data_reg[10]} {{constant 0}}} {{gpio1/read_data_reg[11]} {{constant 0}}} {{gpio1/read_data_reg[12]} {{constant 0}}} {{gpio1/read_data_reg[13]} {{constant 0}}} {{gpio1/read_data_reg[14]} {{constant 0}}} {{gpio1/read_data_reg[15]} {{constant 0}}} {{gpio1/read_data_reg[16]} {{constant 0}}} {{gpio1/read_data_reg[17]} {{constant 0}}} {{gpio1/read_data_reg[18]} {{constant 0}}} {{gpio1/read_data_reg[19]} {{constant 0}}} {{gpio1/read_data_reg[20]} {{constant 0}}} {{gpio1/read_data_reg[21]} {{constant 0}}} {{gpio1/read_data_reg[22]} {{constant 0}}} {{gpio1/read_data_reg[23]} {{constant 0}}} {{gpio1/read_data_reg[24]} {{constant 0}}} {{gpio1/read_data_reg[25]} {{constant 0}}} {{gpio1/read_data_reg[26]} {{constant 0}}} {{gpio1/read_data_reg[27]} {{constant 0}}} {{gpio1/read_data_reg[28]} {{constant 0}}} {{gpio1/read_data_reg[29]} {{constant 0}}} {{gpio1/read_data_reg[30]} {{constant 0}}} {{gpio1/read_data_reg[31]} {{constant 0}}} {{npu0/NPUCR_reg[16]} {{constant 0}}} {{afe0/read_data_reg[24]} {{constant 0}}} {{afe0/read_data_reg[25]} {{constant 0}}} {{afe0/read_data_reg[26]} {{constant 0}}} {{afe0/read_data_reg[27]} {{constant 0}}} {{afe0/read_data_reg[28]} {{constant 0}}} {{afe0/read_data_reg[29]} {{constant 0}}} {{afe0/read_data_reg[30]} {{constant 0}}} {{afe0/read_data_reg[31]} {{constant 0}}} {{saradc0/read_data_reg[10]} {{constant 0}}} {{saradc0/read_data_reg[11]} {{constant 0}}} {{saradc0/read_data_reg[12]} {{constant 0}}} {{saradc0/read_data_reg[13]} {{constant 0}}} {{saradc0/read_data_reg[14]} {{constant 0}}} {{saradc0/read_data_reg[15]} {{constant 0}}} {{saradc0/read_data_reg[16]} {{constant 0}}} {{saradc0/read_data_reg[17]} {{constant 0}}} {{saradc0/read_data_reg[18]} {{constant 0}}} {{saradc0/read_data_reg[19]} {{constant 0}}} {{saradc0/read_data_reg[20]} {{constant 0}}} {{saradc0/read_data_reg[21]} {{constant 0}}} {{saradc0/read_data_reg[22]} {{constant 0}}} {{saradc0/read_data_reg[23]} {{constant 0}}} {{saradc0/read_data_reg[24]} {{constant 0}}} {{saradc0/read_data_reg[25]} {{constant 0}}} {{saradc0/read_data_reg[26]} {{constant 0}}} {{saradc0/read_data_reg[27]} {{constant 0}}} {{saradc0/read_data_reg[28]} {{constant 0}}} {{saradc0/read_data_reg[29]} {{constant 0}}} {{saradc0/read_data_reg[30]} {{constant 0}}} {{saradc0/read_data_reg[31]} {{constant 0}}} {{uart1/read_data_reg[12]} {{constant 0}}} {{uart0/read_data_reg[12]} {{constant 0}}} {{uart1/read_data_reg[13]} {{constant 0}}} {{uart0/read_data_reg[13]} {{constant 0}}} {{uart1/read_data_reg[14]} {{constant 0}}} {{uart0/read_data_reg[14]} {{constant 0}}} {{uart1/read_data_reg[15]} {{constant 0}}} {{uart0/read_data_reg[15]} {{constant 0}}} {{uart1/read_data_reg[16]} {{constant 0}}} {{uart0/read_data_reg[16]} {{constant 0}}} {{uart1/read_data_reg[17]} {{constant 0}}} {{uart0/read_data_reg[17]} {{constant 0}}} {{uart1/read_data_reg[18]} {{constant 0}}} {{uart0/read_data_reg[18]} {{constant 0}}} {{uart1/read_data_reg[19]} {{constant 0}}} {{uart0/read_data_reg[19]} {{constant 0}}} {{uart1/read_data_reg[20]} {{constant 0}}} {{uart0/read_data_reg[20]} {{constant 0}}} {{uart1/read_data_reg[21]} {{constant 0}}} {{uart0/read_data_reg[21]} {{constant 0}}} {{uart1/read_data_reg[22]} {{constant 0}}} {{uart0/read_data_reg[22]} {{constant 0}}} {{uart1/read_data_reg[23]} {{constant 0}}} {{uart0/read_data_reg[23]} {{constant 0}}} {{uart1/read_data_reg[24]} {{constant 0}}} {{uart0/read_data_reg[24]} {{constant 0}}} {{uart1/read_data_reg[25]} {{constant 0}}} {{uart0/read_data_reg[25]} {{constant 0}}} {{uart1/read_data_reg[26]} {{constant 0}}} {{uart0/read_data_reg[26]} {{constant 0}}} {{uart1/read_data_reg[27]} {{constant 0}}} {{uart0/read_data_reg[27]} {{constant 0}}} {{uart1/read_data_reg[28]} {{constant 0}}} {{uart0/read_data_reg[28]} {{constant 0}}} {{uart1/read_data_reg[29]} {{constant 0}}} {{uart0/read_data_reg[29]} {{constant 0}}} {{uart1/read_data_reg[30]} {{constant 0}}} {{uart0/read_data_reg[30]} {{constant 0}}} {{uart1/read_data_reg[31]} {{constant 0}}} {{uart0/read_data_reg[31]} {{constant 0}}} {i2c1/I2CSTR_reg {{constant 0}}} {i2c0/I2CSTR_reg {{constant 0}}} {i2c1/StartSlaveRX_reg {{constant 0}}} {i2c0/StartSlaveRX_reg {{constant 0}}} {i2c1/ClearStartSlaveRX_reg {{constant 0}}} {i2c0/ClearStartSlaveRX_reg {{constant 0}}} {i2c1/I2CSPR_reg {{constant 0}}} {i2c0/I2CSPR_reg {{constant 0}}} {i2c1/I2CMNR_reg {{constant 0}}} {i2c0/I2CMNR_reg {{constant 0}}} {i2c1/I2CMARB_reg {{constant 0}}} {i2c0/I2CMARB_reg {{constant 0}}} {i2c1/SDA_LAT_reg {{constant 0}}} {i2c0/SDA_LAT_reg {{constant 0}}} {{i2c1/I2CxSRX_reg[0]} {{constant 0}}} {{i2c0/I2CxSRX_reg[0]} {{constant 0}}} {{i2c1/I2CxSRX_reg[1]} {{constant 0}}} {{i2c0/I2CxSRX_reg[1]} {{constant 0}}} {{i2c1/I2CxSRX_reg[2]} {{constant 0}}} {{i2c0/I2CxSRX_reg[2]} {{constant 0}}} {{i2c1/I2CxSRX_reg[3]} {{constant 0}}} {{i2c0/I2CxSRX_reg[3]} {{constant 0}}} {{i2c1/I2CxSRX_reg[4]} {{constant 0}}} {{i2c0/I2CxSRX_reg[4]} {{constant 0}}} {{i2c1/I2CxSRX_reg[5]} {{constant 0}}} {{i2c0/I2CxSRX_reg[5]} {{constant 0}}} {{i2c1/I2CxSRX_reg[6]} {{constant 0}}} {{i2c0/I2CxSRX_reg[6]} {{constant 0}}} {{i2c1/I2CxSRX_reg[7]} {{constant 0}}} {{i2c0/I2CxSRX_reg[7]} {{constant 0}}} {i2c1/I2CSXC_reg {{constant 0}}} {i2c0/I2CSXC_reg {{constant 0}}} {i2c1/I2CSNR_reg {{constant 0}}} {i2c0/I2CSNR_reg {{constant 0}}} {i2c1/I2CSOVF_reg {{constant 0}}} {i2c0/I2CSOVF_reg {{constant 0}}} {i2c1/I2CSTXE_reg {{constant 0}}} {i2c0/I2CSTXE_reg {{constant 0}}} {i2c1/I2CSA_reg {{constant 0}}} {i2c0/I2CSA_reg {{constant 0}}} {i2c1/I2CSTM_reg {{constant 0}}} {i2c0/I2CSTM_reg {{constant 0}}} {i2c1/SlaveFsmSDA_reg {{constant 1}}} {i2c0/SlaveFsmSDA_reg {{constant 1}}} {{i2c1/SlaveState_reg[0]} {{constant 0}}} {{i2c0/SlaveState_reg[0]} {{constant 0}}} {{i2c1/SlaveState_reg[1]} {{constant 0}}} {{i2c0/SlaveState_reg[1]} {{constant 0}}} {{i2c1/SlaveState_reg[2]} {{constant 0}}} {{i2c0/SlaveState_reg[2]} {{constant 0}}} {{i2c1/SlaveBit_reg[0]} {{constant 1}}} {{i2c0/SlaveBit_reg[0]} {{constant 1}}} {{i2c1/SlaveBit_reg[1]} {{constant 1}}} {{i2c0/SlaveBit_reg[1]} {{constant 1}}} {{i2c1/SlaveBit_reg[2]} {{constant 1}}} {{i2c0/SlaveBit_reg[2]} {{constant 1}}} {{i2c1/SlaveData_reg[0]} {{constant 0}}} {{i2c0/SlaveData_reg[0]} {{constant 0}}} {{i2c1/SlaveData_reg[1]} {{constant 0}}} {{i2c0/SlaveData_reg[1]} {{constant 0}}} {{i2c1/SlaveData_reg[2]} {{constant 0}}} {{i2c0/SlaveData_reg[2]} {{constant 0}}} {{i2c1/SlaveData_reg[3]} {{constant 0}}} {{i2c0/SlaveData_reg[3]} {{constant 0}}} {{i2c1/SlaveData_reg[4]} {{constant 0}}} {{i2c0/SlaveData_reg[4]} {{constant 0}}} {{i2c1/SlaveData_reg[5]} {{constant 0}}} {{i2c0/SlaveData_reg[5]} {{constant 0}}} {{i2c1/SlaveData_reg[6]} {{constant 0}}} {{i2c0/SlaveData_reg[6]} {{constant 0}}} {{i2c1/SlaveData_reg[7]} {{constant 0}}} {{i2c0/SlaveData_reg[7]} {{constant 0}}} {i2c1/SlaveJustAddressed_reg {{constant 0}}} {i2c0/SlaveJustAddressed_reg {{constant 0}}} {i2c1/ClearI2CSC_reg {{constant 1}}} {i2c0/ClearI2CSC_reg {{constant 1}}} {i2c1/I2CBS_reg {{constant 0}}} {i2c0/I2CBS_reg {{constant 0}}} {i2c1/I2CSC_reg {{constant 0}}} {i2c0/I2CSC_reg {{constant 0}}} {{gpio3/read_data_reg[8]} {{constant 0}}} {{gpio3/read_data_reg[9]} {{constant 0}}} {{gpio3/read_data_reg[10]} {{constant 0}}} {{gpio3/read_data_reg[11]} {{constant 0}}} {{gpio3/read_data_reg[12]} {{constant 0}}} {{gpio3/read_data_reg[13]} {{constant 0}}} {{gpio3/read_data_reg[14]} {{constant 0}}} {{gpio3/read_data_reg[15]} {{constant 0}}} {{gpio3/read_data_reg[16]} {{constant 0}}} {{gpio3/read_data_reg[17]} {{constant 0}}} {{gpio3/read_data_reg[18]} {{constant 0}}} {{gpio3/read_data_reg[19]} {{constant 0}}} {{gpio3/read_data_reg[20]} {{constant 0}}} {{gpio3/read_data_reg[21]} {{constant 0}}} {{gpio3/read_data_reg[22]} {{constant 0}}} {{gpio3/read_data_reg[23]} {{constant 0}}} {{gpio3/read_data_reg[24]} {{constant 0}}} {{gpio3/read_data_reg[25]} {{constant 0}}} {{gpio3/read_data_reg[26]} {{constant 0}}} {{gpio3/read_data_reg[27]} {{constant 0}}} {{gpio3/read_data_reg[28]} {{constant 0}}} {{gpio3/read_data_reg[29]} {{constant 0}}} {{gpio3/read_data_reg[30]} {{constant 0}}} {{gpio3/read_data_reg[31]} {{constant 0}}} {{gpio2/read_data_reg[8]} {{constant 0}}} {{gpio2/read_data_reg[9]} {{constant 0}}} {{gpio2/read_data_reg[10]} {{constant 0}}} {{gpio2/read_data_reg[11]} {{constant 0}}} {{gpio2/read_data_reg[12]} {{constant 0}}} {{gpio2/read_data_reg[13]} {{constant 0}}} {{gpio2/read_data_reg[14]} {{constant 0}}} {{gpio2/read_data_reg[15]} {{constant 0}}} {{gpio2/read_data_reg[16]} {{constant 0}}} {{gpio2/read_data_reg[17]} {{constant 0}}} {{gpio2/read_data_reg[18]} {{constant 0}}} {{gpio2/read_data_reg[19]} {{constant 0}}} {{gpio2/read_data_reg[20]} {{constant 0}}} {{gpio2/read_data_reg[21]} {{constant 0}}} {{gpio2/read_data_reg[22]} {{constant 0}}} {{gpio2/read_data_reg[23]} {{constant 0}}} {{gpio2/read_data_reg[24]} {{constant 0}}} {{gpio2/read_data_reg[25]} {{constant 0}}} {{gpio2/read_data_reg[26]} {{constant 0}}} {{gpio2/read_data_reg[27]} {{constant 0}}} {{gpio2/read_data_reg[28]} {{constant 0}}} {{gpio2/read_data_reg[29]} {{constant 0}}} {{gpio2/read_data_reg[30]} {{constant 0}}} {{gpio2/read_data_reg[31]} {{constant 0}}} {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} {{constant 0}}} {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} {{constant 0}}} {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} {{constant 0}}} {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} {{constant 0}}} {{timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} {{constant 0}}} {{timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} {{constant 0}}} {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} {{constant 0}}} {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} {{constant 0}}} {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} {{constant 0}}} {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} {{constant 0}}} {{timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} {{constant 0}}} {{timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} {{constant 0}}} {i2c0/ClearI2CMARB_reg unloaded} {i2c0/ClearI2CMNR_reg unloaded} {i2c0/ClearI2CSA_reg unloaded} {i2c0/ClearI2CSNR_reg unloaded} {i2c0/ClearI2CSOVF_reg unloaded} {i2c0/ClearI2CSPR_reg unloaded} {i2c0/ClearI2CSTR_reg unloaded} {i2c0/ClearI2CSTXE_reg unloaded} {i2c0/ClearI2CSXC_reg unloaded} {i2c1/ClearI2CMARB_reg unloaded} {i2c1/ClearI2CMNR_reg unloaded} {i2c1/ClearI2CSA_reg unloaded} {i2c1/ClearI2CSNR_reg unloaded} {i2c1/ClearI2CSOVF_reg unloaded} {i2c1/ClearI2CSPR_reg unloaded} {i2c1/ClearI2CSTR_reg unloaded} {i2c1/ClearI2CSTXE_reg unloaded} {i2c1/ClearI2CSXC_reg unloaded} {{adddec0/mab_out_reg[2]} {{merged with adddec0/addr_periph_reg[2]}}} {{adddec0/mab_out_reg[3]} {{merged with adddec0/addr_periph_reg[3]}}} {{adddec0/mab_out_reg[4]} {{merged with adddec0/addr_periph_reg[4]}}} {{adddec0/mab_out_reg[5]} {{merged with adddec0/addr_periph_reg[5]}}} {{adddec0/mab_out_reg[6]} {{merged with adddec0/addr_periph_reg[6]}}} {{adddec0/mab_out_reg[7]} {{merged with adddec0/addr_periph_reg[7]}}} {{i2c0/I2CxSRLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[8]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[9]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[10]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[11]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[12]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[13]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[15]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[0]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[2]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[4]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[6]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[7]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[8]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[9]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[10]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[11]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[12]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[13]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[15]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[0]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[2]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[4]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[6]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[7]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{core/datapath_inst/rf/registers_reg[0][31]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][30]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][29]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][28]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][27]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][26]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][25]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][24]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][23]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][22]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][21]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][20]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][19]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][18]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][17]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][16]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][15]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][14]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][13]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][12]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][11]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][10]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][9]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][8]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][7]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][6]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][5]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][4]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][3]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][2]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][1]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][0]} {{constant 0}}} {system0/wdt_trigger_reg {{constant 0}}} {system0/wdt_if_reg {{constant 0}}} {system0/wdt_interrupt_ret_reg {{constant 0}}} {{i2c0/I2CxSRLat_reg[0]} {{constant 1}}} {{i2c1/I2CxSRLat_reg[0]} {{constant 1}}} {system0/wdt_rf_reg {{constant 0}}} {system0/clr_wdt_if_reg unloaded} {system0/clr_wdt_rf_reg unloaded} {{core/datapath_inst/mainalu/divider/cnt_reg[5]} {{constant 0}}}}
+set_db -quiet design:MCU .seq_reason_deleted {{{i2c1/CGMaster/ClkStagesFF_reg[0]} unloaded} {{i2c0/CGMaster/ClkStagesFF_reg[0]} unloaded} {core/datapath_inst/mainalu/divider/N unloaded} {core/datapath_inst/mainalu/divider/D unloaded} {core/datapath_inst/mainalu/div_rq unloaded} {core/datapath_inst/amo_read_data_reg unloaded} {core/irq_handler_inst/prev_state unloaded} {core/irq_handler_inst/nesting_count unloaded} {core/c_dec_inst/funct6 unloaded} {core/amo_read_data unloaded} {core/data_addr_reg unloaded} {core/irq_save_int unloaded} {spi1/SPIxFOS unloaded} {timer1/timer_value_latched unloaded} {timer0/timer_value_latched unloaded} {afe0/adc_data_read unloaded} {afe0/clr_adc_ovf unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[0]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[1]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[2]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[3]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[4]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[5]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[6]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[7]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[8]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[9]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[10]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[11]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[12]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[13]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[14]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[15]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[16]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[17]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[18]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[19]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[20]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[21]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[22]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[23]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[24]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[25]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[26]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[27]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[28]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[29]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[30]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[31]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[32]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[33]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[34]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[35]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[36]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[37]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[38]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[39]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[40]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[41]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[42]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[43]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[44]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[45]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[46]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[47]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[48]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[49]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[50]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[51]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[52]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[53]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[54]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[55]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[56]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[57]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[58]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[59]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[60]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[61]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[62]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[63]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[64]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[65]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[66]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[67]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[68]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[69]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[70]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[71]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[72]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[73]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[74]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[75]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[76]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[77]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[78]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[79]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[80]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[81]} unloaded} {{core/irq_handler_inst/pending_irqs_reg_reg[82]} unloaded} {{adddec0/mab_out_reg[24]} unloaded} {{adddec0/mab_out_reg[25]} unloaded} {{adddec0/mab_out_reg[26]} unloaded} {{adddec0/mab_out_reg[27]} unloaded} {{adddec0/mab_out_reg[28]} unloaded} {{adddec0/mab_out_reg[29]} unloaded} {{adddec0/mab_out_reg[30]} unloaded} {{adddec0/mab_out_reg[31]} unloaded} {{gpio0/read_data_reg[8]} {{constant 0}}} {{gpio0/read_data_reg[9]} {{constant 0}}} {{gpio0/read_data_reg[10]} {{constant 0}}} {{gpio0/read_data_reg[11]} {{constant 0}}} {{gpio0/read_data_reg[12]} {{constant 0}}} {{gpio0/read_data_reg[13]} {{constant 0}}} {{gpio0/read_data_reg[14]} {{constant 0}}} {{gpio0/read_data_reg[15]} {{constant 0}}} {{gpio0/read_data_reg[16]} {{constant 0}}} {{gpio0/read_data_reg[17]} {{constant 0}}} {{gpio0/read_data_reg[18]} {{constant 0}}} {{gpio0/read_data_reg[19]} {{constant 0}}} {{gpio0/read_data_reg[20]} {{constant 0}}} {{gpio0/read_data_reg[21]} {{constant 0}}} {{gpio0/read_data_reg[22]} {{constant 0}}} {{gpio0/read_data_reg[23]} {{constant 0}}} {{gpio0/read_data_reg[24]} {{constant 0}}} {{gpio0/read_data_reg[25]} {{constant 0}}} {{gpio0/read_data_reg[26]} {{constant 0}}} {{gpio0/read_data_reg[27]} {{constant 0}}} {{gpio0/read_data_reg[28]} {{constant 0}}} {{gpio0/read_data_reg[29]} {{constant 0}}} {{gpio0/read_data_reg[30]} {{constant 0}}} {{gpio0/read_data_reg[31]} {{constant 0}}} {{gpio1/read_data_reg[8]} {{constant 0}}} {{gpio1/read_data_reg[9]} {{constant 0}}} {{gpio1/read_data_reg[10]} {{constant 0}}} {{gpio1/read_data_reg[11]} {{constant 0}}} {{gpio1/read_data_reg[12]} {{constant 0}}} {{gpio1/read_data_reg[13]} {{constant 0}}} {{gpio1/read_data_reg[14]} {{constant 0}}} {{gpio1/read_data_reg[15]} {{constant 0}}} {{gpio1/read_data_reg[16]} {{constant 0}}} {{gpio1/read_data_reg[17]} {{constant 0}}} {{gpio1/read_data_reg[18]} {{constant 0}}} {{gpio1/read_data_reg[19]} {{constant 0}}} {{gpio1/read_data_reg[20]} {{constant 0}}} {{gpio1/read_data_reg[21]} {{constant 0}}} {{gpio1/read_data_reg[22]} {{constant 0}}} {{gpio1/read_data_reg[23]} {{constant 0}}} {{gpio1/read_data_reg[24]} {{constant 0}}} {{gpio1/read_data_reg[25]} {{constant 0}}} {{gpio1/read_data_reg[26]} {{constant 0}}} {{gpio1/read_data_reg[27]} {{constant 0}}} {{gpio1/read_data_reg[28]} {{constant 0}}} {{gpio1/read_data_reg[29]} {{constant 0}}} {{gpio1/read_data_reg[30]} {{constant 0}}} {{gpio1/read_data_reg[31]} {{constant 0}}} {{npu0/NPUCR_reg[16]} {{constant 0}}} {{afe0/read_data_reg[24]} {{constant 0}}} {{afe0/read_data_reg[25]} {{constant 0}}} {{afe0/read_data_reg[26]} {{constant 0}}} {{afe0/read_data_reg[27]} {{constant 0}}} {{afe0/read_data_reg[28]} {{constant 0}}} {{afe0/read_data_reg[29]} {{constant 0}}} {{afe0/read_data_reg[30]} {{constant 0}}} {{afe0/read_data_reg[31]} {{constant 0}}} {{saradc0/read_data_reg[10]} {{constant 0}}} {{saradc0/read_data_reg[11]} {{constant 0}}} {{saradc0/read_data_reg[12]} {{constant 0}}} {{saradc0/read_data_reg[13]} {{constant 0}}} {{saradc0/read_data_reg[14]} {{constant 0}}} {{saradc0/read_data_reg[15]} {{constant 0}}} {{saradc0/read_data_reg[16]} {{constant 0}}} {{saradc0/read_data_reg[17]} {{constant 0}}} {{saradc0/read_data_reg[18]} {{constant 0}}} {{saradc0/read_data_reg[19]} {{constant 0}}} {{saradc0/read_data_reg[20]} {{constant 0}}} {{saradc0/read_data_reg[21]} {{constant 0}}} {{saradc0/read_data_reg[22]} {{constant 0}}} {{saradc0/read_data_reg[23]} {{constant 0}}} {{saradc0/read_data_reg[24]} {{constant 0}}} {{saradc0/read_data_reg[25]} {{constant 0}}} {{saradc0/read_data_reg[26]} {{constant 0}}} {{saradc0/read_data_reg[27]} {{constant 0}}} {{saradc0/read_data_reg[28]} {{constant 0}}} {{saradc0/read_data_reg[29]} {{constant 0}}} {{saradc0/read_data_reg[30]} {{constant 0}}} {{saradc0/read_data_reg[31]} {{constant 0}}} {{uart1/read_data_reg[12]} {{constant 0}}} {{uart0/read_data_reg[12]} {{constant 0}}} {{uart1/read_data_reg[13]} {{constant 0}}} {{uart0/read_data_reg[13]} {{constant 0}}} {{uart1/read_data_reg[14]} {{constant 0}}} {{uart0/read_data_reg[14]} {{constant 0}}} {{uart1/read_data_reg[15]} {{constant 0}}} {{uart0/read_data_reg[15]} {{constant 0}}} {{uart1/read_data_reg[16]} {{constant 0}}} {{uart0/read_data_reg[16]} {{constant 0}}} {{uart1/read_data_reg[17]} {{constant 0}}} {{uart0/read_data_reg[17]} {{constant 0}}} {{uart1/read_data_reg[18]} {{constant 0}}} {{uart0/read_data_reg[18]} {{constant 0}}} {{uart1/read_data_reg[19]} {{constant 0}}} {{uart0/read_data_reg[19]} {{constant 0}}} {{uart1/read_data_reg[20]} {{constant 0}}} {{uart0/read_data_reg[20]} {{constant 0}}} {{uart1/read_data_reg[21]} {{constant 0}}} {{uart0/read_data_reg[21]} {{constant 0}}} {{uart1/read_data_reg[22]} {{constant 0}}} {{uart0/read_data_reg[22]} {{constant 0}}} {{uart1/read_data_reg[23]} {{constant 0}}} {{uart0/read_data_reg[23]} {{constant 0}}} {{uart1/read_data_reg[24]} {{constant 0}}} {{uart0/read_data_reg[24]} {{constant 0}}} {{uart1/read_data_reg[25]} {{constant 0}}} {{uart0/read_data_reg[25]} {{constant 0}}} {{uart1/read_data_reg[26]} {{constant 0}}} {{uart0/read_data_reg[26]} {{constant 0}}} {{uart1/read_data_reg[27]} {{constant 0}}} {{uart0/read_data_reg[27]} {{constant 0}}} {{uart1/read_data_reg[28]} {{constant 0}}} {{uart0/read_data_reg[28]} {{constant 0}}} {{uart1/read_data_reg[29]} {{constant 0}}} {{uart0/read_data_reg[29]} {{constant 0}}} {{uart1/read_data_reg[30]} {{constant 0}}} {{uart0/read_data_reg[30]} {{constant 0}}} {{uart1/read_data_reg[31]} {{constant 0}}} {{uart0/read_data_reg[31]} {{constant 0}}} {i2c1/I2CSTR_reg {{constant 0}}} {i2c0/I2CSTR_reg {{constant 0}}} {i2c1/StartSlaveRX_reg {{constant 0}}} {i2c0/StartSlaveRX_reg {{constant 0}}} {i2c1/ClearStartSlaveRX_reg {{constant 0}}} {i2c0/ClearStartSlaveRX_reg {{constant 0}}} {i2c1/I2CSPR_reg {{constant 0}}} {i2c0/I2CSPR_reg {{constant 0}}} {i2c1/I2CMNR_reg {{constant 0}}} {i2c0/I2CMNR_reg {{constant 0}}} {i2c1/I2CMARB_reg {{constant 0}}} {i2c0/I2CMARB_reg {{constant 0}}} {i2c1/SDA_LAT_reg {{constant 0}}} {i2c0/SDA_LAT_reg {{constant 0}}} {{i2c1/I2CxSRX_reg[0]} {{constant 0}}} {{i2c0/I2CxSRX_reg[0]} {{constant 0}}} {{i2c1/I2CxSRX_reg[1]} {{constant 0}}} {{i2c0/I2CxSRX_reg[1]} {{constant 0}}} {{i2c1/I2CxSRX_reg[2]} {{constant 0}}} {{i2c0/I2CxSRX_reg[2]} {{constant 0}}} {{i2c1/I2CxSRX_reg[3]} {{constant 0}}} {{i2c0/I2CxSRX_reg[3]} {{constant 0}}} {{i2c1/I2CxSRX_reg[4]} {{constant 0}}} {{i2c0/I2CxSRX_reg[4]} {{constant 0}}} {{i2c1/I2CxSRX_reg[5]} {{constant 0}}} {{i2c0/I2CxSRX_reg[5]} {{constant 0}}} {{i2c1/I2CxSRX_reg[6]} {{constant 0}}} {{i2c0/I2CxSRX_reg[6]} {{constant 0}}} {{i2c1/I2CxSRX_reg[7]} {{constant 0}}} {{i2c0/I2CxSRX_reg[7]} {{constant 0}}} {i2c1/I2CSXC_reg {{constant 0}}} {i2c0/I2CSXC_reg {{constant 0}}} {i2c1/I2CSNR_reg {{constant 0}}} {i2c0/I2CSNR_reg {{constant 0}}} {i2c1/I2CSOVF_reg {{constant 0}}} {i2c0/I2CSOVF_reg {{constant 0}}} {i2c1/I2CSTXE_reg {{constant 0}}} {i2c0/I2CSTXE_reg {{constant 0}}} {i2c1/I2CSA_reg {{constant 0}}} {i2c0/I2CSA_reg {{constant 0}}} {i2c1/I2CSTM_reg {{constant 0}}} {i2c0/I2CSTM_reg {{constant 0}}} {i2c1/SlaveFsmSDA_reg {{constant 1}}} {i2c0/SlaveFsmSDA_reg {{constant 1}}} {{i2c1/SlaveState_reg[0]} {{constant 0}}} {{i2c0/SlaveState_reg[0]} {{constant 0}}} {{i2c1/SlaveState_reg[1]} {{constant 0}}} {{i2c0/SlaveState_reg[1]} {{constant 0}}} {{i2c1/SlaveState_reg[2]} {{constant 0}}} {{i2c0/SlaveState_reg[2]} {{constant 0}}} {{i2c1/SlaveBit_reg[0]} {{constant 1}}} {{i2c0/SlaveBit_reg[0]} {{constant 1}}} {{i2c1/SlaveBit_reg[1]} {{constant 1}}} {{i2c0/SlaveBit_reg[1]} {{constant 1}}} {{i2c1/SlaveBit_reg[2]} {{constant 1}}} {{i2c0/SlaveBit_reg[2]} {{constant 1}}} {{i2c1/SlaveData_reg[0]} {{constant 0}}} {{i2c0/SlaveData_reg[0]} {{constant 0}}} {{i2c1/SlaveData_reg[1]} {{constant 0}}} {{i2c0/SlaveData_reg[1]} {{constant 0}}} {{i2c1/SlaveData_reg[2]} {{constant 0}}} {{i2c0/SlaveData_reg[2]} {{constant 0}}} {{i2c1/SlaveData_reg[3]} {{constant 0}}} {{i2c0/SlaveData_reg[3]} {{constant 0}}} {{i2c1/SlaveData_reg[4]} {{constant 0}}} {{i2c0/SlaveData_reg[4]} {{constant 0}}} {{i2c1/SlaveData_reg[5]} {{constant 0}}} {{i2c0/SlaveData_reg[5]} {{constant 0}}} {{i2c1/SlaveData_reg[6]} {{constant 0}}} {{i2c0/SlaveData_reg[6]} {{constant 0}}} {{i2c1/SlaveData_reg[7]} {{constant 0}}} {{i2c0/SlaveData_reg[7]} {{constant 0}}} {i2c1/SlaveJustAddressed_reg {{constant 0}}} {i2c0/SlaveJustAddressed_reg {{constant 0}}} {i2c1/ClearI2CSC_reg {{constant 1}}} {i2c0/ClearI2CSC_reg {{constant 1}}} {i2c1/I2CBS_reg {{constant 0}}} {i2c0/I2CBS_reg {{constant 0}}} {i2c1/I2CSC_reg {{constant 0}}} {i2c0/I2CSC_reg {{constant 0}}} {{gpio3/read_data_reg[8]} {{constant 0}}} {{gpio3/read_data_reg[9]} {{constant 0}}} {{gpio3/read_data_reg[10]} {{constant 0}}} {{gpio3/read_data_reg[11]} {{constant 0}}} {{gpio3/read_data_reg[12]} {{constant 0}}} {{gpio3/read_data_reg[13]} {{constant 0}}} {{gpio3/read_data_reg[14]} {{constant 0}}} {{gpio3/read_data_reg[15]} {{constant 0}}} {{gpio3/read_data_reg[16]} {{constant 0}}} {{gpio3/read_data_reg[17]} {{constant 0}}} {{gpio3/read_data_reg[18]} {{constant 0}}} {{gpio3/read_data_reg[19]} {{constant 0}}} {{gpio3/read_data_reg[20]} {{constant 0}}} {{gpio3/read_data_reg[21]} {{constant 0}}} {{gpio3/read_data_reg[22]} {{constant 0}}} {{gpio3/read_data_reg[23]} {{constant 0}}} {{gpio3/read_data_reg[24]} {{constant 0}}} {{gpio3/read_data_reg[25]} {{constant 0}}} {{gpio3/read_data_reg[26]} {{constant 0}}} {{gpio3/read_data_reg[27]} {{constant 0}}} {{gpio3/read_data_reg[28]} {{constant 0}}} {{gpio3/read_data_reg[29]} {{constant 0}}} {{gpio3/read_data_reg[30]} {{constant 0}}} {{gpio3/read_data_reg[31]} {{constant 0}}} {{gpio2/read_data_reg[8]} {{constant 0}}} {{gpio2/read_data_reg[9]} {{constant 0}}} {{gpio2/read_data_reg[10]} {{constant 0}}} {{gpio2/read_data_reg[11]} {{constant 0}}} {{gpio2/read_data_reg[12]} {{constant 0}}} {{gpio2/read_data_reg[13]} {{constant 0}}} {{gpio2/read_data_reg[14]} {{constant 0}}} {{gpio2/read_data_reg[15]} {{constant 0}}} {{gpio2/read_data_reg[16]} {{constant 0}}} {{gpio2/read_data_reg[17]} {{constant 0}}} {{gpio2/read_data_reg[18]} {{constant 0}}} {{gpio2/read_data_reg[19]} {{constant 0}}} {{gpio2/read_data_reg[20]} {{constant 0}}} {{gpio2/read_data_reg[21]} {{constant 0}}} {{gpio2/read_data_reg[22]} {{constant 0}}} {{gpio2/read_data_reg[23]} {{constant 0}}} {{gpio2/read_data_reg[24]} {{constant 0}}} {{gpio2/read_data_reg[25]} {{constant 0}}} {{gpio2/read_data_reg[26]} {{constant 0}}} {{gpio2/read_data_reg[27]} {{constant 0}}} {{gpio2/read_data_reg[28]} {{constant 0}}} {{gpio2/read_data_reg[29]} {{constant 0}}} {{gpio2/read_data_reg[30]} {{constant 0}}} {{gpio2/read_data_reg[31]} {{constant 0}}} {i2c0/ClearI2CMARB_reg unloaded} {i2c0/ClearI2CMNR_reg unloaded} {i2c0/ClearI2CSA_reg unloaded} {i2c0/ClearI2CSNR_reg unloaded} {i2c0/ClearI2CSOVF_reg unloaded} {i2c0/ClearI2CSPR_reg unloaded} {i2c0/ClearI2CSTR_reg unloaded} {i2c0/ClearI2CSTXE_reg unloaded} {i2c0/ClearI2CSXC_reg unloaded} {i2c1/ClearI2CMARB_reg unloaded} {i2c1/ClearI2CMNR_reg unloaded} {i2c1/ClearI2CSA_reg unloaded} {i2c1/ClearI2CSNR_reg unloaded} {i2c1/ClearI2CSOVF_reg unloaded} {i2c1/ClearI2CSPR_reg unloaded} {i2c1/ClearI2CSTR_reg unloaded} {i2c1/ClearI2CSTXE_reg unloaded} {i2c1/ClearI2CSXC_reg unloaded} {{adddec0/mab_out_reg[2]} {{merged with adddec0/addr_periph_reg[2]}}} {{adddec0/mab_out_reg[3]} {{merged with adddec0/addr_periph_reg[3]}}} {{adddec0/mab_out_reg[4]} {{merged with adddec0/addr_periph_reg[4]}}} {{adddec0/mab_out_reg[5]} {{merged with adddec0/addr_periph_reg[5]}}} {{adddec0/mab_out_reg[6]} {{merged with adddec0/addr_periph_reg[6]}}} {{adddec0/mab_out_reg[7]} {{merged with adddec0/addr_periph_reg[7]}}} {{i2c0/I2CxSRLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[8]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[9]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[10]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[11]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[12]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[13]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRLat_reg[15]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[0]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[1]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[2]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[3]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[4]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[5]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[6]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c0/I2CxSRXLat_reg[7]} {{merged with i2c0/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[8]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[9]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[10]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[11]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[12]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[13]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRLat_reg[15]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[0]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[1]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[2]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[3]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[4]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[5]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[6]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{i2c1/I2CxSRXLat_reg[7]} {{merged with i2c1/I2CxSRLat_reg[0]}}} {{core/datapath_inst/rf/registers_reg[0][31]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][30]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][29]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][28]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][27]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][26]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][25]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][24]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][23]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][22]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][21]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][20]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][19]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][18]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][17]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][16]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][15]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][14]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][13]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][12]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][11]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][10]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][9]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][8]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][7]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][6]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][5]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][4]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][3]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][2]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][1]} {{constant 0}}} {{core/datapath_inst/rf/registers_reg[0][0]} {{constant 0}}} {system0/wdt_trigger_reg {{constant 0}}} {system0/wdt_if_reg {{constant 0}}} {system0/wdt_interrupt_ret_reg {{constant 0}}} {{i2c0/I2CxSRLat_reg[0]} {{constant 1}}} {{i2c1/I2CxSRLat_reg[0]} {{constant 1}}} {system0/wdt_rf_reg {{constant 0}}} {system0/clr_wdt_if_reg unloaded} {system0/clr_wdt_rf_reg unloaded} {{core/datapath_inst/mainalu/divider/cnt_reg[5]} {{constant 0}}}}
 set_db -quiet design:MCU .verification_directory fv/MCU
 set_db -quiet design:MCU .lp_clock_gating_min_flops 3
 set_db -quiet design:MCU .lp_clock_gating_max_flops inf
@@ -1939,186 +1933,186 @@ set_db -quiet module:MCU/RC_CG_MOD_2 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_2 .boundary_opto strict_no
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST2/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST2/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420 .boundary_opto strict_no
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST3/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST3/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_1 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_1 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_1 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_1 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_1 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_1 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_1 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_1 .boundary_opto strict_no
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST4/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST4/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_2 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_2 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_2 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_2 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_2 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_2 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_2 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_2 .boundary_opto strict_no
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST5/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST5/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_3 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_3 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_3 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_3 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_3 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_3 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_3 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_3 .boundary_opto strict_no
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST6/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/adddec0/RC_CG_HIER_INST6/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8244 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8244 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8244 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8244 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8251 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8251 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8251 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8251 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[0].cg_mem/CG1} .original_name {{adddec0/gen_cg_mem[0].cg_mem/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[0].cg_mem/CG1} .single_bit_orig_name {adddec0/gen_cg_mem[0].cg_mem/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[0].cg_mem/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_mem[0].cg_mem/CG1/ECK} .original_name {adddec0/gen_cg_mem[0].cg_mem/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8243 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8243 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8243 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8243 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8250 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8250 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8250 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8250 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[1].cg_mem/CG1} .original_name {{adddec0/gen_cg_mem[1].cg_mem/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[1].cg_mem/CG1} .single_bit_orig_name {adddec0/gen_cg_mem[1].cg_mem/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[1].cg_mem/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_mem[1].cg_mem/CG1/ECK} .original_name {adddec0/gen_cg_mem[1].cg_mem/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8242 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8242 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8242 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8242 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8249 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8249 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8249 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8249 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[2].cg_mem/CG1} .original_name {{adddec0/gen_cg_mem[2].cg_mem/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[2].cg_mem/CG1} .single_bit_orig_name {adddec0/gen_cg_mem[2].cg_mem/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_mem[2].cg_mem/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_mem[2].cg_mem/CG1/ECK} .original_name {adddec0/gen_cg_mem[2].cg_mem/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8241 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8241 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8241 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8241 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8248 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8248 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8248 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8248 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[0].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[0].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[0].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[0].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[0].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[0].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[0].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8240 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8240 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8240 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8240 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8247 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8247 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8247 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8247 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[1].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[1].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[1].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[1].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[1].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[1].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[1].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8239 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8239 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8239 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8239 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8246 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8246 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8246 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8246 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[2].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[2].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[2].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[2].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[2].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[2].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[2].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8238 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8238 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8238 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8238 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8245 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8245 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8245 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8245 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[3].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[3].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[3].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[3].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[3].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[3].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[3].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8237 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8237 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8237 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8237 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8244 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8244 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8244 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8244 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[4].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[4].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[4].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[4].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[4].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[4].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[4].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8236 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8236 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8236 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8236 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8243 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8243 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8243 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8243 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[5].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[5].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[5].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[5].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[5].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[5].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[5].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8235 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8235 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8235 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8235 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8242 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8242 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8242 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8242 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[6].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[6].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[6].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[6].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[6].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[6].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[6].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8234 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8234 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8234 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8234 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8241 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8241 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8241 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8241 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[7].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[7].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[7].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[7].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[7].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[7].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[7].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8233 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8233 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8233 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8233 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8240 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8240 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8240 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8240 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[8].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[8].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[8].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[8].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[8].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[8].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[8].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8232 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8232 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8232 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8232 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8239 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8239 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8239 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8239 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[9].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[9].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[9].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[9].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[9].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[9].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[9].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8231 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8231 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8231 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8231 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8238 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8238 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8238 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8238 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[10].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[10].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[10].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[10].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[10].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[10].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[10].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8230 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8230 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8230 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8230 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8237 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8237 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8237 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8237 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[11].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[11].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[11].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[11].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[11].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[11].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[11].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8229 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8229 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8229 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8229 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8236 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8236 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8236 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8236 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[12].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[12].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[12].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[12].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[12].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[12].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[12].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8228 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8228 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8228 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8228 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8235 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8235 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8235 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8235 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[13].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[13].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[13].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[13].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[13].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[13].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[13].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8227 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8227 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8227 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8227 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8234 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8234 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8234 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8234 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[14].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[14].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[14].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[14].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[14].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[14].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[14].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8226 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8226 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8226 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8226 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8233 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8233 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8233 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8233 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[15].cg_periph/CG1} .original_name {{adddec0/gen_cg_periph[15].cg_periph/CG1}}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[15].cg_periph/CG1} .single_bit_orig_name {adddec0/gen_cg_periph[15].cg_periph/CG1}
 set_db -quiet {inst:MCU/adddec0/gen_cg_periph[15].cg_periph/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/adddec0/gen_cg_periph[15].cg_periph/CG1/ECK} .original_name {adddec0/gen_cg_periph[15].cg_periph/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8225 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8225 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8225 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8225 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8232 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8232 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8232 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8232 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/adddec0/gen_flash_clk.cg_flash/CG1 .original_name adddec0/gen_flash_clk.cg_flash/CG1
 set_db -quiet inst:MCU/adddec0/gen_flash_clk.cg_flash/CG1 .single_bit_orig_name adddec0/gen_flash_clk.cg_flash/CG1
 set_db -quiet inst:MCU/adddec0/gen_flash_clk.cg_flash/CG1 .gint_phase_inversion false
@@ -3135,10 +3129,10 @@ set_db -quiet {inst:MCU/afe0/adc_fsm/fsm/state_reg[2]} .orig_hdl_instantiated fa
 set_db -quiet {inst:MCU/afe0/adc_fsm/fsm/state_reg[2]} .single_bit_orig_name {afe0/adc_fsm/fsm/state[2]}
 set_db -quiet {inst:MCU/afe0/adc_fsm/fsm/state_reg[2]} .gint_phase_inversion false
 set_db -quiet {pin:MCU/afe0/adc_fsm/fsm/state_reg[2]/Q} .original_name {afe0/adc_fsm/fsm/state[2]/q}
-set_db -quiet module:MCU/ClkGate_8185 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8185 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8185 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8185 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8192 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8192 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8192 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8192 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/afe0/cg_clk_afe/CG1 .original_name afe0/cg_clk_afe/CG1
 set_db -quiet inst:MCU/afe0/cg_clk_afe/CG1 .single_bit_orig_name afe0/cg_clk_afe/CG1
 set_db -quiet inst:MCU/afe0/cg_clk_afe/CG1 .gint_phase_inversion false
@@ -4333,10 +4327,10 @@ set_db -quiet inst:MCU/core/cg_clk_cpu/CG1 .original_name core/cg_clk_cpu/CG1
 set_db -quiet inst:MCU/core/cg_clk_cpu/CG1 .single_bit_orig_name core/cg_clk_cpu/CG1
 set_db -quiet inst:MCU/core/cg_clk_cpu/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/core/cg_clk_cpu/CG1/ECK .original_name core/cg_clk_cpu/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8252 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8252 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8252 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8252 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8259 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8259 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8259 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8259 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/core/cg_insret/CG1 .original_name core/cg_insret/CG1
 set_db -quiet inst:MCU/core/cg_insret/CG1 .single_bit_orig_name core/cg_insret/CG1
 set_db -quiet inst:MCU/core/cg_insret/CG1 .gint_phase_inversion false
@@ -14204,66 +14198,66 @@ set_db -quiet module:MCU/RC_CG_MOD_99 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_99 .boundary_opto strict_no
 set_db -quiet inst:MCU/gpio0/RC_CG_HIER_INST103/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/gpio0/RC_CG_HIER_INST103/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8224 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8224 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8224 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8224 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8231 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8231 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8231 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8231 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[0].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[0].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[0].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[0].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[0].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[0].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[0].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8223 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8223 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8223 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8223 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8230 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8230 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8230 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8230 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[1].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[1].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[1].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[1].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[1].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[1].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[1].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8222 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8222 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8222 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8222 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8229 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8229 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8229 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8229 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[2].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[2].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[2].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[2].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[2].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[2].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[2].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8221 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8221 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8221 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8221 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8228 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8228 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8228 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8228 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[3].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[3].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[3].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[3].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[3].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[3].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[3].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8220 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8220 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8220 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8220 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8227 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8227 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8227 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8227 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[4].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[4].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[4].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[4].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[4].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[4].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[4].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8219 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8219 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8219 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8219 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8226 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8226 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8226 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8226 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[5].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[5].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[5].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[5].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[5].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[5].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[5].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8218 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8218 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8218 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8218 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8225 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8225 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8225 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8225 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[6].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[6].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[6].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[6].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[6].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio0/gen_if_clks[6].CGClkIFG/CG1/ECK} .original_name {gpio0/gen_if_clks[6].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8217 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8217 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8217 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8217 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8224 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8224 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8224 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8224 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[7].CGClkIFG/CG1} .original_name {{gpio0/gen_if_clks[7].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[7].CGClkIFG/CG1} .single_bit_orig_name {gpio0/gen_if_clks[7].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio0/gen_if_clks[7].CGClkIFG/CG1} .gint_phase_inversion false
@@ -14768,66 +14762,66 @@ set_db -quiet module:MCU/RC_CG_MOD_107 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_107 .boundary_opto strict_no
 set_db -quiet inst:MCU/gpio1/RC_CG_HIER_INST111/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/gpio1/RC_CG_HIER_INST111/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8216 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8216 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8216 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8216 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8223 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8223 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8223 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8223 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[0].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[0].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[0].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[0].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[0].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[0].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[0].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8215 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8215 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8215 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8215 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8222 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8222 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8222 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8222 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[1].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[1].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[1].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[1].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[1].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[1].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[1].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8214 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8214 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8214 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8214 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8221 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8221 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8221 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8221 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[2].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[2].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[2].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[2].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[2].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[2].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[2].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8213 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8213 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8213 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8213 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8220 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8220 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8220 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8220 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[3].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[3].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[3].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[3].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[3].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[3].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[3].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8212 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8212 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8212 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8212 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8219 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8219 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8219 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8219 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[4].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[4].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[4].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[4].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[4].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[4].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[4].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8211 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8211 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8211 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8211 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8218 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8218 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8218 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8218 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[5].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[5].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[5].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[5].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[5].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[5].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[5].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8210 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8210 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8210 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8210 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8217 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8217 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8217 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8217 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[6].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[6].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[6].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[6].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[6].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio1/gen_if_clks[6].CGClkIFG/CG1/ECK} .original_name {gpio1/gen_if_clks[6].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8209 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8209 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8209 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8209 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8216 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8216 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8216 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8216 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[7].CGClkIFG/CG1} .original_name {{gpio1/gen_if_clks[7].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[7].CGClkIFG/CG1} .single_bit_orig_name {gpio1/gen_if_clks[7].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio1/gen_if_clks[7].CGClkIFG/CG1} .gint_phase_inversion false
@@ -14861,7 +14855,7 @@ set_db -quiet {inst:MCU/gpio1/PxDIR_reg[5]} .original_name {{gpio1/PxDIR[5]}}
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[5]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[5]} .single_bit_orig_name {gpio1/PxDIR[5]}
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[5]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/gpio1/PxDIR_reg[5]/QN} .original_name {gpio1/PxDIR[5]/q}
+set_db -quiet {pin:MCU/gpio1/PxDIR_reg[5]/Q} .original_name {gpio1/PxDIR[5]/q}
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[6]} .original_name {{gpio1/PxDIR[6]}}
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[6]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio1/PxDIR_reg[6]} .single_bit_orig_name {gpio1/PxDIR[6]}
@@ -15332,66 +15326,66 @@ set_db -quiet module:MCU/RC_CG_MOD_115 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_115 .boundary_opto strict_no
 set_db -quiet inst:MCU/gpio2/RC_CG_HIER_INST119/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/gpio2/RC_CG_HIER_INST119/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8208 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8208 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8208 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8208 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8215 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8215 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8215 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8215 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[0].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[0].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[0].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[0].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[0].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[0].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[0].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8207 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8207 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8207 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8207 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8214 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8214 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8214 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8214 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[1].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[1].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[1].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[1].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[1].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[1].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[1].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8206 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8206 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8206 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8206 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8213 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8213 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8213 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8213 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[2].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[2].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[2].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[2].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[2].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[2].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[2].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8205 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8205 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8205 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8205 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8212 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8212 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8212 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8212 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[3].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[3].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[3].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[3].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[3].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[3].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[3].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8204 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8204 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8204 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8204 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8211 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8211 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8211 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8211 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[4].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[4].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[4].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[4].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[4].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[4].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[4].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8203 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8203 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8203 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8203 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8210 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8210 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8210 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8210 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[5].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[5].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[5].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[5].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[5].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[5].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[5].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8202 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8202 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8202 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8202 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8209 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8209 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8209 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8209 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[6].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[6].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[6].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[6].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[6].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio2/gen_if_clks[6].CGClkIFG/CG1/ECK} .original_name {gpio2/gen_if_clks[6].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8201 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8201 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8201 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8201 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8208 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8208 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8208 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8208 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[7].CGClkIFG/CG1} .original_name {{gpio2/gen_if_clks[7].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[7].CGClkIFG/CG1} .single_bit_orig_name {gpio2/gen_if_clks[7].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio2/gen_if_clks[7].CGClkIFG/CG1} .gint_phase_inversion false
@@ -15405,12 +15399,12 @@ set_db -quiet {inst:MCU/gpio2/PxDIR_reg[2]} .original_name {{gpio2/PxDIR[2]}}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[2]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[2]} .single_bit_orig_name {gpio2/PxDIR[2]}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[2]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/gpio2/PxDIR_reg[2]/QN} .original_name {gpio2/PxDIR[2]/q}
+set_db -quiet {pin:MCU/gpio2/PxDIR_reg[2]/Q} .original_name {gpio2/PxDIR[2]/q}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[3]} .original_name {{gpio2/PxDIR[3]}}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[3]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[3]} .single_bit_orig_name {gpio2/PxDIR[3]}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[3]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/gpio2/PxDIR_reg[3]/QN} .original_name {gpio2/PxDIR[3]/q}
+set_db -quiet {pin:MCU/gpio2/PxDIR_reg[3]/Q} .original_name {gpio2/PxDIR[3]/q}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[4]} .original_name {{gpio2/PxDIR[4]}}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[4]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[4]} .single_bit_orig_name {gpio2/PxDIR[4]}
@@ -15425,12 +15419,12 @@ set_db -quiet {inst:MCU/gpio2/PxDIR_reg[6]} .original_name {{gpio2/PxDIR[6]}}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[6]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[6]} .single_bit_orig_name {gpio2/PxDIR[6]}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[6]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/gpio2/PxDIR_reg[6]/QN} .original_name {gpio2/PxDIR[6]/q}
+set_db -quiet {pin:MCU/gpio2/PxDIR_reg[6]/Q} .original_name {gpio2/PxDIR[6]/q}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[7]} .original_name {{gpio2/PxDIR[7]}}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[7]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[7]} .single_bit_orig_name {gpio2/PxDIR[7]}
 set_db -quiet {inst:MCU/gpio2/PxDIR_reg[7]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/gpio2/PxDIR_reg[7]/QN} .original_name {gpio2/PxDIR[7]/q}
+set_db -quiet {pin:MCU/gpio2/PxDIR_reg[7]/Q} .original_name {gpio2/PxDIR[7]/q}
 set_db -quiet {inst:MCU/gpio2/PxIES_reg[0]} .original_name {{gpio2/PxIES[0]}}
 set_db -quiet {inst:MCU/gpio2/PxIES_reg[0]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/gpio2/PxIES_reg[0]} .single_bit_orig_name {gpio2/PxIES[0]}
@@ -15896,66 +15890,66 @@ set_db -quiet module:MCU/RC_CG_MOD_123 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_123 .boundary_opto strict_no
 set_db -quiet inst:MCU/gpio3/RC_CG_HIER_INST127/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/gpio3/RC_CG_HIER_INST127/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8184 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8184 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8184 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8184 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8191 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8191 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8191 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8191 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[0].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[0].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[0].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[0].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[0].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[0].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[0].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8183 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8183 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8183 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8183 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8190 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8190 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8190 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8190 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[1].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[1].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[1].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[1].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[1].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[1].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[1].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8182 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8182 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8182 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8182 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8189 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8189 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8189 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8189 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[2].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[2].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[2].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[2].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[2].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[2].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[2].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8181 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8181 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8181 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8181 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8188 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8188 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8188 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8188 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[3].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[3].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[3].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[3].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[3].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[3].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[3].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8180 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8180 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8180 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8180 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8187 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8187 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8187 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8187 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[4].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[4].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[4].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[4].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[4].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[4].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[4].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8179 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8179 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8179 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8179 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8186 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8186 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8186 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8186 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[5].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[5].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[5].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[5].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[5].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[5].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[5].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8178 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8178 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8178 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8178 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8185 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8185 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8185 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8185 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[6].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[6].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[6].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[6].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[6].CGClkIFG/CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/gpio3/gen_if_clks[6].CGClkIFG/CG1/ECK} .original_name {gpio3/gen_if_clks[6].CGClkIFG/CG1/ECK}
-set_db -quiet module:MCU/ClkGate_8177 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8177 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8177 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8177 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8184 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8184 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8184 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8184 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[7].CGClkIFG/CG1} .original_name {{gpio3/gen_if_clks[7].CGClkIFG/CG1}}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[7].CGClkIFG/CG1} .single_bit_orig_name {gpio3/gen_if_clks[7].CGClkIFG/CG1}
 set_db -quiet {inst:MCU/gpio3/gen_if_clks[7].CGClkIFG/CG1} .gint_phase_inversion false
@@ -16417,18 +16411,18 @@ set_db -quiet module:MCU/ClkDivPower2_nbits4 .hdl_user_name ClkDivPower2
 set_db -quiet module:MCU/ClkDivPower2_nbits4 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkDivPower2.vhd} {../hdl} {}}}
 set_db -quiet module:MCU/ClkDivPower2_nbits4 .lp_clock_gating_min_flops 3
 set_db -quiet module:MCU/ClkDivPower2_nbits4 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/ClkGate_8192 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8192 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8192 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8192 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8199 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8199 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8199 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8199 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/i2c0/CGMaster/CG0/CG1 .original_name i2c0/CGMaster/CG0/CG1
 set_db -quiet inst:MCU/i2c0/CGMaster/CG0/CG1 .single_bit_orig_name i2c0/CGMaster/CG0/CG1
 set_db -quiet inst:MCU/i2c0/CGMaster/CG0/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/i2c0/CGMaster/CG0/CG1/ECK .original_name i2c0/CGMaster/CG0/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8191 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8191 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8191 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8191 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8198 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8198 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8198 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8198 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/i2c0/CGMaster/CG1/CG1 .original_name i2c0/CGMaster/CG1/CG1
 set_db -quiet inst:MCU/i2c0/CGMaster/CG1/CG1 .single_bit_orig_name i2c0/CGMaster/CG1/CG1
 set_db -quiet inst:MCU/i2c0/CGMaster/CG1/CG1 .gint_phase_inversion false
@@ -17097,27 +17091,27 @@ set_db -quiet inst:MCU/i2c0/ClearMasterWrite_reg .orig_hdl_instantiated false
 set_db -quiet inst:MCU/i2c0/ClearMasterWrite_reg .single_bit_orig_name i2c0/ClearMasterWrite
 set_db -quiet inst:MCU/i2c0/ClearMasterWrite_reg .gint_phase_inversion false
 set_db -quiet pin:MCU/i2c0/ClearMasterWrite_reg/QN .original_name i2c0/ClearMasterWrite/q
-set_db -quiet module:MCU/I2C_2725 .is_sop_cluster true
-set_db -quiet module:MCU/I2C_2725 .hdl_user_name I2C
-set_db -quiet module:MCU/I2C_2725 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkDivPower2.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/I2C.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/I2C_2725 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/I2C_2725 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/I2C_2726 .is_sop_cluster true
+set_db -quiet module:MCU/I2C_2726 .hdl_user_name I2C
+set_db -quiet module:MCU/I2C_2726 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkDivPower2.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/I2C.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/I2C_2726 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/I2C_2726 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/ClkDivPower2_nbits4_2638 .hdl_user_name ClkDivPower2
 set_db -quiet module:MCU/ClkDivPower2_nbits4_2638 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkDivPower2.vhd} {../hdl} {}}}
 set_db -quiet module:MCU/ClkDivPower2_nbits4_2638 .lp_clock_gating_min_flops 3
 set_db -quiet module:MCU/ClkDivPower2_nbits4_2638 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/ClkGate_8173 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8173 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8173 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8173 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8180 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8180 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8180 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8180 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/i2c1/CGMaster/CG0/CG1 .original_name i2c1/CGMaster/CG0/CG1
 set_db -quiet inst:MCU/i2c1/CGMaster/CG0/CG1 .single_bit_orig_name i2c1/CGMaster/CG0/CG1
 set_db -quiet inst:MCU/i2c1/CGMaster/CG0/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/i2c1/CGMaster/CG0/CG1/ECK .original_name i2c1/CGMaster/CG0/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8172 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8172 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8172 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8172 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8179 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8179 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8179 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8179 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/i2c1/CGMaster/CG1/CG1 .original_name i2c1/CGMaster/CG1/CG1
 set_db -quiet inst:MCU/i2c1/CGMaster/CG1/CG1 .single_bit_orig_name i2c1/CGMaster/CG1/CG1
 set_db -quiet inst:MCU/i2c1/CGMaster/CG1/CG1 .gint_phase_inversion false
@@ -18182,18 +18176,18 @@ set_db -quiet module:MCU/NPU_X_M_BITS0_W_M_BITS7_Y_M_BITS7_N_BITS24_RHO2 .lp_clo
 set_db -quiet module:MCU/NPU_X_M_BITS0_W_M_BITS7_Y_M_BITS7_N_BITS24_RHO2 .lp_clock_gating_max_flops inf
 set_db -quiet {hnet:MCU/npu0/Decision[15]} .dont_touch true
 set_db -quiet {hnet:MCU/npu0/Decision[15]} .preserve true
-set_db -quiet module:MCU/ClkGate_8187 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8187 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8187 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8187 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8194 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8194 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8194 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8194 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/npu0/MAC_CLK_CG/CG1 .original_name npu0/MAC_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/MAC_CLK_CG/CG1 .single_bit_orig_name npu0/MAC_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/MAC_CLK_CG/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/npu0/MAC_CLK_CG/CG1/ECK .original_name npu0/MAC_CLK_CG/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8188 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8188 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8188 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8188 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8195 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8195 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8195 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8195 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/npu0/NPU_CLK_CG/CG1 .original_name npu0/NPU_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/NPU_CLK_CG/CG1 .single_bit_orig_name npu0/NPU_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/NPU_CLK_CG/CG1 .gint_phase_inversion false
@@ -18464,10 +18458,10 @@ set_db -quiet module:MCU/RC_CG_MOD_167 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_167 .boundary_opto strict_no
 set_db -quiet inst:MCU/npu0/RC_CG_HIER_INST171/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/npu0/RC_CG_HIER_INST171/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8186 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8186 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8186 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8186 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8193 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8193 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8193 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8193 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/npu0/SRAM_CLK_CG/CG1 .original_name npu0/SRAM_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/SRAM_CLK_CG/CG1 .single_bit_orig_name npu0/SRAM_CLK_CG/CG1
 set_db -quiet inst:MCU/npu0/SRAM_CLK_CG/CG1 .gint_phase_inversion false
@@ -18621,7 +18615,7 @@ set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[9]} .original_name {{npu0/NPUOVSAR[9]}
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[9]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[9]} .single_bit_orig_name {npu0/NPUOVSAR[9]}
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[9]} .gint_phase_inversion false
-set_db -quiet {pin:MCU/npu0/NPUOVSAR_reg[9]/QN} .original_name {npu0/NPUOVSAR[9]/q}
+set_db -quiet {pin:MCU/npu0/NPUOVSAR_reg[9]/Q} .original_name {npu0/NPUOVSAR[9]/q}
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[10]} .original_name {{npu0/NPUOVSAR[10]}}
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[10]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/npu0/NPUOVSAR_reg[10]} .single_bit_orig_name {npu0/NPUOVSAR[10]}
@@ -19487,16 +19481,16 @@ set_db -quiet module:MCU/SARADC .hdl_user_name SARADC
 set_db -quiet module:MCU/SARADC .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/SARADC.vhd} {../hdl} {}}}
 set_db -quiet module:MCU/SARADC .lp_clock_gating_min_flops 3
 set_db -quiet module:MCU/SARADC .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_4 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_4 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_4 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_4 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_4 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_4 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_4 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_4 .boundary_opto strict_no
 set_db -quiet inst:MCU/saradc0/RC_CG_HIER_INST172/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/saradc0/RC_CG_HIER_INST172/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_5 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_5 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_5 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_5 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_5 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_5 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_5 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_5 .boundary_opto strict_no
 set_db -quiet inst:MCU/saradc0/RC_CG_HIER_INST173/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/saradc0/RC_CG_HIER_INST173/RC_CGIC_INST .is_genus_clock_gate true
 set_db -quiet module:MCU/RC_CG_MOD_168 .logical_hier false
@@ -19975,32 +19969,32 @@ set_db -quiet module:MCU/RC_CG_MOD_189 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_189 .boundary_opto strict_no
 set_db -quiet inst:MCU/spi0/RC_CG_HIER_INST195/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/spi0/RC_CG_HIER_INST195/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_6 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_6 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_6 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_6 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_6 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_6 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_6 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_6 .boundary_opto strict_no
 set_db -quiet inst:MCU/spi0/RC_CG_HIER_INST196/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/spi0/RC_CG_HIER_INST196/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8199 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8199 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8199 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8199 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8206 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8206 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8206 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8206 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/spi0/cg_clk_baud/CG1 .original_name spi0/cg_clk_baud/CG1
 set_db -quiet inst:MCU/spi0/cg_clk_baud/CG1 .single_bit_orig_name spi0/cg_clk_baud/CG1
 set_db -quiet inst:MCU/spi0/cg_clk_baud/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/spi0/cg_clk_baud/CG1/ECK .original_name spi0/cg_clk_baud/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8200 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8200 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8200 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8200 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8207 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8207 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8207 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8207 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/spi0/cg_clk_baud_src/CG1 .original_name spi0/cg_clk_baud_src/CG1
 set_db -quiet inst:MCU/spi0/cg_clk_baud_src/CG1 .single_bit_orig_name spi0/cg_clk_baud_src/CG1
 set_db -quiet inst:MCU/spi0/cg_clk_baud_src/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/spi0/cg_clk_baud_src/CG1/ECK .original_name spi0/cg_clk_baud_src/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8198 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8198 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8198 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8198 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8205 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8205 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8205 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8205 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/spi0/gen_flash.CGFlash/CG1 .original_name spi0/gen_flash.CGFlash/CG1
 set_db -quiet inst:MCU/spi0/gen_flash.CGFlash/CG1 .single_bit_orig_name spi0/gen_flash.CGFlash/CG1
 set_db -quiet inst:MCU/spi0/gen_flash.CGFlash/CG1 .gint_phase_inversion false
@@ -22088,24 +22082,24 @@ set_db -quiet module:MCU/RC_CG_MOD_203 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_203 .boundary_opto strict_no
 set_db -quiet inst:MCU/spi1/RC_CG_HIER_INST210/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/spi1/RC_CG_HIER_INST210/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_7 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_7 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_7 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_7 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_7 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_7 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_7 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_7 .boundary_opto strict_no
 set_db -quiet inst:MCU/spi1/RC_CG_HIER_INST211/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/spi1/RC_CG_HIER_INST211/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8196 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8196 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8196 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8196 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8203 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8203 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8203 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8203 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/spi1/cg_clk_baud/CG1 .original_name spi1/cg_clk_baud/CG1
 set_db -quiet inst:MCU/spi1/cg_clk_baud/CG1 .single_bit_orig_name spi1/cg_clk_baud/CG1
 set_db -quiet inst:MCU/spi1/cg_clk_baud/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/spi1/cg_clk_baud/CG1/ECK .original_name spi1/cg_clk_baud/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8197 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8197 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8197 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8197 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8204 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8204 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8204 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8204 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/spi1/cg_clk_baud_src/CG1 .original_name spi1/cg_clk_baud_src/CG1
 set_db -quiet inst:MCU/spi1/cg_clk_baud_src/CG1 .single_bit_orig_name spi1/cg_clk_baud_src/CG1
 set_db -quiet inst:MCU/spi1/cg_clk_baud_src/CG1 .gint_phase_inversion false
@@ -24009,10 +24003,10 @@ set_db -quiet module:MCU/RC_CG_MOD_234 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_234 .boundary_opto strict_no
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST242/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST242/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/RC_CG_MOD_11405_8 .logical_hier false
-set_db -quiet module:MCU/RC_CG_MOD_11405_8 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/RC_CG_MOD_11405_8 .lp_clock_gating_max_flops inf
-set_db -quiet module:MCU/RC_CG_MOD_11405_8 .boundary_opto strict_no
+set_db -quiet module:MCU/RC_CG_MOD_11420_8 .logical_hier false
+set_db -quiet module:MCU/RC_CG_MOD_11420_8 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/RC_CG_MOD_11420_8 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/RC_CG_MOD_11420_8 .boundary_opto strict_no
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST243/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST243/RC_CGIC_INST .is_genus_clock_gate true
 set_db -quiet module:MCU/RC_CG_MOD_235 .logical_hier false
@@ -24021,66 +24015,66 @@ set_db -quiet module:MCU/RC_CG_MOD_235 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_235 .boundary_opto strict_no
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST244/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/system0/RC_CG_HIER_INST244/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8247 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8247 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8247 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8247 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8254 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8254 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8254 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8254 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_clk_dco0/CG1 .original_name system0/cg_clk_dco0/CG1
 set_db -quiet inst:MCU/system0/cg_clk_dco0/CG1 .single_bit_orig_name system0/cg_clk_dco0/CG1
 set_db -quiet inst:MCU/system0/cg_clk_dco0/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_clk_dco0/CG1/ECK .original_name system0/cg_clk_dco0/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8246 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8246 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8246 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8246 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8253 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8253 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8253 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8253 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_clk_dco1/CG1 .original_name system0/cg_clk_dco1/CG1
 set_db -quiet inst:MCU/system0/cg_clk_dco1/CG1 .single_bit_orig_name system0/cg_clk_dco1/CG1
 set_db -quiet inst:MCU/system0/cg_clk_dco1/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_clk_dco1/CG1/ECK .original_name system0/cg_clk_dco1/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8249 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8249 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8249 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8249 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8256 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8256 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8256 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8256 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_clk_hfxt/CG1 .original_name system0/cg_clk_hfxt/CG1
 set_db -quiet inst:MCU/system0/cg_clk_hfxt/CG1 .single_bit_orig_name system0/cg_clk_hfxt/CG1
 set_db -quiet inst:MCU/system0/cg_clk_hfxt/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_clk_hfxt/CG1/ECK .original_name system0/cg_clk_hfxt/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8248 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8248 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8248 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8248 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8255 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8255 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8255 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8255 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_clk_lfxt/CG1 .original_name system0/cg_clk_lfxt/CG1
 set_db -quiet inst:MCU/system0/cg_clk_lfxt/CG1 .single_bit_orig_name system0/cg_clk_lfxt/CG1
 set_db -quiet inst:MCU/system0/cg_clk_lfxt/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_clk_lfxt/CG1/ECK .original_name system0/cg_clk_lfxt/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8245 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8245 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8245 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8245 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8252 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8252 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8252 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8252 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_smclk/CG1 .original_name system0/cg_smclk/CG1
 set_db -quiet inst:MCU/system0/cg_smclk/CG1 .single_bit_orig_name system0/cg_smclk/CG1
 set_db -quiet inst:MCU/system0/cg_smclk/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_smclk/CG1/ECK .original_name system0/cg_smclk/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8250 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8250 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8250 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8250 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8257 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8257 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8257 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8257 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_unlock/CG1 .original_name system0/cg_unlock/CG1
 set_db -quiet inst:MCU/system0/cg_unlock/CG1 .single_bit_orig_name system0/cg_unlock/CG1
 set_db -quiet inst:MCU/system0/cg_unlock/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_unlock/CG1/ECK .original_name system0/cg_unlock/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8251 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8251 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8251 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8251 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8258 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8258 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8258 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8258 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/system0/cg_wdt_clk/CG1 .original_name system0/cg_wdt_clk/CG1
 set_db -quiet inst:MCU/system0/cg_wdt_clk/CG1 .single_bit_orig_name system0/cg_wdt_clk/CG1
 set_db -quiet inst:MCU/system0/cg_wdt_clk/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/system0/cg_wdt_clk/CG1/ECK .original_name system0/cg_wdt_clk/CG1/ECK
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2724 .hdl_user_name ClockMuxGlitchFree
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2724 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2724 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2724 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2725 .hdl_user_name ClockMuxGlitchFree
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2725 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2725 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT8_SEL_WIDTH3_CLK_DEFAULT0_2725 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].CG1} .original_name {{system0/mclk_div_mux/MuxGen[0].CG1}}
 set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].CG1} .single_bit_orig_name {system0/mclk_div_mux/MuxGen[0].CG1}
 set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].CG1} .gint_phase_inversion false
@@ -24209,10 +24203,10 @@ set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0} .or
 set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0} .single_bit_orig_name {system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0}
 set_db -quiet {inst:MCU/system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0} .gint_phase_inversion false
 set_db -quiet {pin:MCU/system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q} .original_name {system0/mclk_div_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q}
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .hdl_user_name ClockMuxGlitchFree
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2724 .hdl_user_name ClockMuxGlitchFree
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2724 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2724 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2724 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/system0/mclk_mux/MuxGen[0].CG1} .original_name {{system0/mclk_mux/MuxGen[0].CG1}}
 set_db -quiet {inst:MCU/system0/mclk_mux/MuxGen[0].CG1} .single_bit_orig_name {system0/mclk_mux/MuxGen[0].CG1}
 set_db -quiet {inst:MCU/system0/mclk_mux/MuxGen[0].CG1} .gint_phase_inversion false
@@ -26240,10 +26234,10 @@ set_db -quiet module:MCU/RC_CG_MOD_255 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_255 .boundary_opto strict_no
 set_db -quiet inst:MCU/timer0/RC_CG_HIER_INST264/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/timer0/RC_CG_HIER_INST264/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3_2723 .hdl_user_name ClockMuxGlitchFree
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3_2723 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3_2723 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3_2723 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2723 .hdl_user_name ClockMuxGlitchFree
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2723 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2723 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2723 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].CG1} .original_name {{timer0/clk_mux/MuxGen[0].CG1}}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].CG1} .single_bit_orig_name {timer0/clk_mux/MuxGen[0].CG1}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].CG1} .gint_phase_inversion false
@@ -26260,6 +26254,22 @@ set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].CG1} .original_name {{timer0/cl
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].CG1} .single_bit_orig_name {timer0/clk_mux/MuxGen[3].CG1}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[3].CG1/ECK} .original_name {timer0/clk_mux/MuxGen[3].CG1/ECK}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .original_name {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1/Q} .original_name {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1/Q}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .original_name {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1/Q} .original_name {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1/Q}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .original_name {{timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0/Q} .original_name {timer0/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0/Q}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .original_name {{timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0/Q} .original_name {timer0/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0/Q}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .original_name {{timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1}}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .single_bit_orig_name {timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .gint_phase_inversion false
@@ -26271,7 +26281,7 @@ set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF0/Q} .origin
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .original_name {{timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0}}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .gint_phase_inversion false
-set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q} .original_name {timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q}
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/QN} .original_name {timer0/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .original_name {{timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1}}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .gint_phase_inversion false
@@ -26280,22 +26290,30 @@ set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .original_
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0/Q} .original_name {timer0/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0/Q}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .original_name {{timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0/Q} .original_name {timer0/clk_mux/MuxGen[2].OtherSlice.DLYDFF0/Q}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .original_name {{timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}
+set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0/Q} .original_name {timer0/clk_mux/MuxGen[3].OtherSlice.DLYDFF0/Q}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .original_name {{timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0}}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .single_bit_orig_name {timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0}
 set_db -quiet {inst:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q} .original_name {timer0/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q}
-set_db -quiet module:MCU/ClkGate_8189 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8189 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8189 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8189 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8196 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8196 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8196 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8196 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/timer0/clock_gate_divider/CG1 .original_name timer0/clock_gate_divider/CG1
 set_db -quiet inst:MCU/timer0/clock_gate_divider/CG1 .single_bit_orig_name timer0/clock_gate_divider/CG1
 set_db -quiet inst:MCU/timer0/clock_gate_divider/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/timer0/clock_gate_divider/CG1/ECK .original_name timer0/clock_gate_divider/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8190 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8190 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8190 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8190 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8197 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8197 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8197 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8197 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/timer0/clock_gate_timer/CG1 .original_name timer0/clock_gate_timer/CG1
 set_db -quiet inst:MCU/timer0/clock_gate_timer/CG1 .single_bit_orig_name timer0/clock_gate_timer/CG1
 set_db -quiet inst:MCU/timer0/clock_gate_timer/CG1 .gint_phase_inversion false
@@ -28190,10 +28208,10 @@ set_db -quiet {inst:MCU/timer0/timer_value_reg[31]} .orig_hdl_instantiated false
 set_db -quiet {inst:MCU/timer0/timer_value_reg[31]} .single_bit_orig_name {timer0/timer_value[31]}
 set_db -quiet {inst:MCU/timer0/timer_value_reg[31]} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer0/timer_value_reg[31]/Q} .original_name {timer0/timer_value[31]/q}
-set_db -quiet module:MCU/TIMER_2726 .hdl_user_name TIMER
-set_db -quiet module:MCU/TIMER_2726 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/TIMER.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/TIMER_2726 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/TIMER_2726 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/TIMER_2727 .hdl_user_name TIMER
+set_db -quiet module:MCU/TIMER_2727 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/TIMER.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/TIMER_2727 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/TIMER_2727 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_256 .logical_hier false
 set_db -quiet module:MCU/RC_CG_MOD_256 .lp_clock_gating_min_flops 3
 set_db -quiet module:MCU/RC_CG_MOD_256 .lp_clock_gating_max_flops inf
@@ -28314,10 +28332,10 @@ set_db -quiet module:MCU/RC_CG_MOD_275 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_275 .boundary_opto strict_no
 set_db -quiet inst:MCU/timer1/RC_CG_HIER_INST284/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/timer1/RC_CG_HIER_INST284/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3 .hdl_user_name ClockMuxGlitchFree
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_3 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .hdl_user_name ClockMuxGlitchFree
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClockMuxGlitchFree_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClockMuxGlitchFree_CLK_COUNT4_SEL_WIDTH2_CLK_DEFAULT0_2722 .lp_clock_gating_max_flops inf
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].CG1} .original_name {{timer1/clk_mux/MuxGen[0].CG1}}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].CG1} .single_bit_orig_name {timer1/clk_mux/MuxGen[0].CG1}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].CG1} .gint_phase_inversion false
@@ -28334,6 +28352,22 @@ set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].CG1} .original_name {{timer1/cl
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].CG1} .single_bit_orig_name {timer1/clk_mux/MuxGen[3].CG1}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].CG1} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[3].CG1/ECK} .original_name {timer1/clk_mux/MuxGen[3].CG1/ECK}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .original_name {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1/Q} .original_name {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF1/Q}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .original_name {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1/Q} .original_name {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF1/Q}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .original_name {{timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0/Q} .original_name {timer1/clk_mux/MuxGen[3].OtherSlice.SYNCDFF0/Q}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .original_name {{timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0/Q} .original_name {timer1/clk_mux/MuxGen[2].OtherSlice.SYNCDFF0/Q}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .original_name {{timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1}}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .single_bit_orig_name {timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF1} .gint_phase_inversion false
@@ -28345,7 +28379,7 @@ set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.SYNCDFF0/Q} .origin
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .original_name {{timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0}}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0} .gint_phase_inversion false
-set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q} .original_name {timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q}
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/QN} .original_name {timer1/clk_mux/MuxGen[1].OtherSlice.DLYDFF0/Q}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .original_name {{timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1}}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .single_bit_orig_name {timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF1} .gint_phase_inversion false
@@ -28354,22 +28388,30 @@ set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .original_
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0/Q} .original_name {timer1/clk_mux/MuxGen[1].OtherSlice.SYNCDFF0/Q}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .original_name {{timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0/Q} .original_name {timer1/clk_mux/MuxGen[2].OtherSlice.DLYDFF0/Q}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .original_name {{timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0}
+set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0} .gint_phase_inversion false
+set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0/Q} .original_name {timer1/clk_mux/MuxGen[3].OtherSlice.DLYDFF0/Q}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .original_name {{timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0}}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .single_bit_orig_name {timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0}
 set_db -quiet {inst:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0} .gint_phase_inversion false
 set_db -quiet {pin:MCU/timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q} .original_name {timer1/clk_mux/MuxGen[0].DefaultSlice.DLYDFF0/Q}
-set_db -quiet module:MCU/ClkGate_8170 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8170 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8170 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8170 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8177 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8177 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8177 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8177 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/timer1/clock_gate_divider/CG1 .original_name timer1/clock_gate_divider/CG1
 set_db -quiet inst:MCU/timer1/clock_gate_divider/CG1 .single_bit_orig_name timer1/clock_gate_divider/CG1
 set_db -quiet inst:MCU/timer1/clock_gate_divider/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/timer1/clock_gate_divider/CG1/ECK .original_name timer1/clock_gate_divider/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8171 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8171 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8171 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8171 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8178 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8178 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8178 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8178 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/timer1/clock_gate_timer/CG1 .original_name timer1/clock_gate_timer/CG1
 set_db -quiet inst:MCU/timer1/clock_gate_timer/CG1 .single_bit_orig_name timer1/clock_gate_timer/CG1
 set_db -quiet inst:MCU/timer1/clock_gate_timer/CG1 .gint_phase_inversion false
@@ -30359,26 +30401,26 @@ set_db -quiet module:MCU/RC_CG_MOD_290 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_290 .boundary_opto strict_no
 set_db -quiet inst:MCU/uart0/RC_CG_HIER_INST299/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/uart0/RC_CG_HIER_INST299/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8194 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8194 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8194 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8194 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8201 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8201 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8201 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8201 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart0/cg_clk_baud/CG1 .original_name uart0/cg_clk_baud/CG1
 set_db -quiet inst:MCU/uart0/cg_clk_baud/CG1 .single_bit_orig_name uart0/cg_clk_baud/CG1
 set_db -quiet inst:MCU/uart0/cg_clk_baud/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/uart0/cg_clk_baud/CG1/ECK .original_name uart0/cg_clk_baud/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8193 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8193 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8193 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8193 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8200 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8200 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8200 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8200 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart0/cg_clk_tx/CG1 .original_name uart0/cg_clk_tx/CG1
 set_db -quiet inst:MCU/uart0/cg_clk_tx/CG1 .single_bit_orig_name uart0/cg_clk_tx/CG1
 set_db -quiet inst:MCU/uart0/cg_clk_tx/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/uart0/cg_clk_tx/CG1/ECK .original_name uart0/cg_clk_tx/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8195 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8195 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8195 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8195 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8202 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8202 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8202 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8202 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart0/cgu_baud_clk_src/CG1 .original_name uart0/cgu_baud_clk_src/CG1
 set_db -quiet inst:MCU/uart0/cgu_baud_clk_src/CG1 .single_bit_orig_name uart0/cgu_baud_clk_src/CG1
 set_db -quiet inst:MCU/uart0/cgu_baud_clk_src/CG1 .gint_phase_inversion false
@@ -31043,11 +31085,11 @@ set_db -quiet inst:MCU/uart0/USR_OVF_reg .orig_hdl_instantiated false
 set_db -quiet inst:MCU/uart0/USR_OVF_reg .single_bit_orig_name uart0/USR_OVF
 set_db -quiet inst:MCU/uart0/USR_OVF_reg .gint_phase_inversion false
 set_db -quiet pin:MCU/uart0/USR_OVF_reg/QN .original_name uart0/USR_OVF/q
-set_db -quiet module:MCU/UART_2727 .is_sop_cluster true
-set_db -quiet module:MCU/UART_2727 .hdl_user_name UART
-set_db -quiet module:MCU/UART_2727 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/UART.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/UART_2727 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/UART_2727 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/UART_2728 .is_sop_cluster true
+set_db -quiet module:MCU/UART_2728 .hdl_user_name UART
+set_db -quiet module:MCU/UART_2728 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/constants.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/MemoryMap.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}} {work -vhdl1993 {SYNTHESIS} {../hdl/MCU/periph/UART.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/UART_2728 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/UART_2728 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_291 .logical_hier false
 set_db -quiet module:MCU/RC_CG_MOD_291 .lp_clock_gating_min_flops 3
 set_db -quiet module:MCU/RC_CG_MOD_291 .lp_clock_gating_max_flops inf
@@ -31138,26 +31180,26 @@ set_db -quiet module:MCU/RC_CG_MOD_305 .lp_clock_gating_max_flops inf
 set_db -quiet module:MCU/RC_CG_MOD_305 .boundary_opto strict_no
 set_db -quiet inst:MCU/uart1/RC_CG_HIER_INST314/RC_CGIC_INST .gint_phase_inversion false
 set_db -quiet inst:MCU/uart1/RC_CG_HIER_INST314/RC_CGIC_INST .is_genus_clock_gate true
-set_db -quiet module:MCU/ClkGate_8175 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8175 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8175 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8175 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8182 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8182 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8182 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8182 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart1/cg_clk_baud/CG1 .original_name uart1/cg_clk_baud/CG1
 set_db -quiet inst:MCU/uart1/cg_clk_baud/CG1 .single_bit_orig_name uart1/cg_clk_baud/CG1
 set_db -quiet inst:MCU/uart1/cg_clk_baud/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/uart1/cg_clk_baud/CG1/ECK .original_name uart1/cg_clk_baud/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8174 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8174 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8174 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8174 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8181 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8181 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8181 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8181 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart1/cg_clk_tx/CG1 .original_name uart1/cg_clk_tx/CG1
 set_db -quiet inst:MCU/uart1/cg_clk_tx/CG1 .single_bit_orig_name uart1/cg_clk_tx/CG1
 set_db -quiet inst:MCU/uart1/cg_clk_tx/CG1 .gint_phase_inversion false
 set_db -quiet pin:MCU/uart1/cg_clk_tx/CG1/ECK .original_name uart1/cg_clk_tx/CG1/ECK
-set_db -quiet module:MCU/ClkGate_8176 .hdl_user_name ClkGate
-set_db -quiet module:MCU/ClkGate_8176 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
-set_db -quiet module:MCU/ClkGate_8176 .lp_clock_gating_min_flops 3
-set_db -quiet module:MCU/ClkGate_8176 .lp_clock_gating_max_flops inf
+set_db -quiet module:MCU/ClkGate_8183 .hdl_user_name ClkGate
+set_db -quiet module:MCU/ClkGate_8183 .hdl_filelist {{work -vhdl1993 {SYNTHESIS} {../hdl/MCU/commune/ClkGate_cmn65gp_ARM.vhd} {../hdl} {}}}
+set_db -quiet module:MCU/ClkGate_8183 .lp_clock_gating_min_flops 3
+set_db -quiet module:MCU/ClkGate_8183 .lp_clock_gating_max_flops inf
 set_db -quiet inst:MCU/uart1/cgu_baud_clk_src/CG1 .original_name uart1/cgu_baud_clk_src/CG1
 set_db -quiet inst:MCU/uart1/cgu_baud_clk_src/CG1 .single_bit_orig_name uart1/cgu_baud_clk_src/CG1
 set_db -quiet inst:MCU/uart1/cgu_baud_clk_src/CG1 .gint_phase_inversion false
@@ -31831,7 +31873,7 @@ set_db -quiet source_verbose true
 ##
 ## Written by Genus(TM) Synthesis Solution version 19.15-s090_1
 ## flowkit v19.10-s018_1
-## Written on 18:53:11 11-Nov 2025
+## Written on 16:00:15 13-Nov 2025
 #############################################################
 #####   Flow Definitions   ##################################
 
@@ -31874,7 +31916,7 @@ if {[is_attribute flow_mail_on_error -obj_type root]} {set_db flow_mail_on_error
 if {[is_attribute flow_mail_to -obj_type root]} {set_db flow_mail_to {}}
 if {[is_attribute flow_metrics_file -obj_type root]} {set_db flow_metrics_file {}}
 if {[is_attribute flow_metrics_snapshot_parent_uuid -obj_type root]} {set_db flow_metrics_snapshot_parent_uuid {}}
-if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid 2546a7de-d348-40bb-847d-4107d7fbc578}
+if {[is_attribute flow_metrics_snapshot_uuid -obj_type root]} {set_db flow_metrics_snapshot_uuid 9a4a5b81-0c69-405c-88ec-e854fbffe583}
 if {[is_attribute flow_overwrite_db -obj_type root]} {set_db flow_overwrite_db false}
 if {[is_attribute flow_report_directory -obj_type root]} {set_db flow_report_directory reports}
 if {[is_attribute flow_run_tag -obj_type root]} {set_db flow_run_tag {}}
