@@ -152,7 +152,7 @@ begin
             mab_out <= data_addr;
             mem_addr    <= data_addr(13 downto 2); 
             addr_periph <= data_addr(7 downto 2);
-            mask        <= data_addr(1 downto 0);
+            -- mask        <= data_addr(1 downto 0);
             wen_fe <= wen;
         end if;
     end process;
@@ -280,8 +280,9 @@ begin
     end process;
 
     -- Output Assignments
-    GWEN        <= '0' when (wen_fe /= "1111") else '1'; 
+    GWEN        <= '0' when (wen_fe /= "1111") else '1'; -- fe sensitive, assigned combinationally from fe signals 
     read_data   <= out_buff;
+    mask        <= data_addr(1 downto 0); -- rising edge sensitive assignment - control signal to core, not memory 
     
     
 

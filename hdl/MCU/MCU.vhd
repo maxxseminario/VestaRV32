@@ -1367,8 +1367,7 @@ begin
             mem_addr        => mem_addr, 
             addr_periph     => addr_periph(7 downto 2),
             mab_out         => mab_flash, 
-            wen_fe      => wen_fe,
-            -- wen_mem         => wen_mem,
+            wen_fe          => wen_fe,
             GWEN            => GWEN,
 
             mem_en          => mem_en,

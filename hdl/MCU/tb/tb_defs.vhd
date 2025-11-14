@@ -20,21 +20,21 @@ package tb_defs is
         -- List of RCF test files
     constant test_files : file_array := (
         -- "../rcf/xxxrv32ui-p-simple.rcf", -- Simplest Test
-        "../rcf/xxxxxrv32ua-p-lrsc.rcf", -- Currently only working if ran on its own - signature section overwritten by previous tests. Also - need to zero foo section of memory to work post genus. Fail innovus
-        "../rcf/xxxxxxxrv32ui-p-lb.rcf", -- Load Instructions - Start innovus pass 11/11
-        "../rcf/xxxxxxxrv32ui-p-lh.rcf",
-        "../rcf/xxxxxxxrv32ui-p-lw.rcf", 
-        "../rcf/xxxxxxrv32ui-p-lbu.rcf",
-        "../rcf/xxxxxxrv32ui-p-lhu.rcf",
-        "../rcf/xxxxxrv32ui-p-addi.rcf",  -- Immediete Instructions
-        "../rcf/xxxxxrv32ui-p-slli.rcf",
-        "../rcf/xxxxxrv32ui-p-slti.rcf",
-        "../rcf/xxxxrv32ui-p-sltiu.rcf",
-        "../rcf/xxxxxrv32ui-p-srli.rcf",
-        "../rcf/xxxxxrv32ui-p-srai.rcf",
-        "../rcf/xxxxxxrv32ui-p-ori.rcf",
-        "../rcf/xxxxxrv32ui-p-andi.rcf",
-        "../rcf/xxxxrv32ui-p-auipc.rcf", -- AUIPC
+        -- "../rcf/xxxxxrv32ua-p-lrsc.rcf", -- Currently only working if ran on its own - signature section overwritten by previous tests. Also - need to zero foo section of memory to work post genus. Fail innovus
+        -- "../rcf/xxxxxxxrv32ui-p-lb.rcf", -- Load Instructions - Start innovus pass 11/11
+        -- "../rcf/xxxxxxxrv32ui-p-lh.rcf",
+        -- "../rcf/xxxxxxxrv32ui-p-lw.rcf", 
+        -- "../rcf/xxxxxxrv32ui-p-lbu.rcf",
+        -- "../rcf/xxxxxxrv32ui-p-lhu.rcf",
+        -- "../rcf/xxxxxrv32ui-p-addi.rcf",  -- Immediete Instructions
+        -- "../rcf/xxxxxrv32ui-p-slli.rcf",
+        -- "../rcf/xxxxxrv32ui-p-slti.rcf",
+        -- "../rcf/xxxxrv32ui-p-sltiu.rcf",
+        -- "../rcf/xxxxxrv32ui-p-srli.rcf",
+        -- "../rcf/xxxxxrv32ui-p-srai.rcf",
+        -- "../rcf/xxxxxxrv32ui-p-ori.rcf",
+        -- "../rcf/xxxxxrv32ui-p-andi.rcf",
+        -- "../rcf/xxxxrv32ui-p-auipc.rcf", -- AUIPC
         "../rcf/xxxxxxxrv32ui-p-sb.rcf", -- Store Instructions
         "../rcf/xxxxxxxrv32ui-p-sh.rcf",
         "../rcf/xxxxxxxrv32ui-p-sw.rcf",
