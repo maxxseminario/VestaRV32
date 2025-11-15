@@ -351,7 +351,7 @@ add mapped point adddec0/flash_dout_reg[5]/q adddec0/flash_dout_reg_reg[5]/Q
 add mapped point adddec0/flash_dout_reg[6]/q adddec0/flash_dout_reg_reg[6]/Q 
 add mapped point adddec0/flash_dout_reg[7]/q adddec0/flash_dout_reg_reg[7]/Q 
 add mapped point adddec0/flash_dout_reg[8]/q adddec0/flash_dout_reg_reg[8]/QN 
-add mapped point adddec0/flash_dout_reg[9]/q adddec0/flash_dout_reg_reg[9]/Q 
+add mapped point adddec0/flash_dout_reg[9]/q adddec0/flash_dout_reg_reg[9]/QN 
 add mapped point adddec0/flash_dout_reg[10]/q adddec0/flash_dout_reg_reg[10]/QN 
 add mapped point adddec0/flash_dout_reg[11]/q adddec0/flash_dout_reg_reg[11]/QN 
 add mapped point adddec0/flash_dout_reg[12]/q adddec0/flash_dout_reg_reg[12]/Q 
@@ -2574,13 +2574,13 @@ add mapped point core/amo_write_data[31]/q core/amo_write_data_reg[31]/Q
 add mapped point core/irq_restore_ack/q core/irq_restore_ack_reg/Q 
 add mapped point core/pc_next_ret_ltch/q core/pc_next_ret_ltch_reg/Q 
 add mapped point core/reservation_addr[0]/q core/reservation_addr_reg[0]/Q 
-add mapped point core/reservation_addr[1]/q core/reservation_addr_reg[1]/Q 
-add mapped point core/reservation_addr[2]/q core/reservation_addr_reg[2]/QN 
+add mapped point core/reservation_addr[1]/q core/reservation_addr_reg[1]/QN 
+add mapped point core/reservation_addr[2]/q core/reservation_addr_reg[2]/Q 
 add mapped point core/reservation_addr[3]/q core/reservation_addr_reg[3]/QN 
 add mapped point core/reservation_addr[4]/q core/reservation_addr_reg[4]/QN 
-add mapped point core/reservation_addr[5]/q core/reservation_addr_reg[5]/QN 
+add mapped point core/reservation_addr[5]/q core/reservation_addr_reg[5]/Q 
 add mapped point core/reservation_addr[6]/q core/reservation_addr_reg[6]/QN 
-add mapped point core/reservation_addr[7]/q core/reservation_addr_reg[7]/QN 
+add mapped point core/reservation_addr[7]/q core/reservation_addr_reg[7]/Q 
 add mapped point core/reservation_addr[8]/q core/reservation_addr_reg[8]/Q 
 add mapped point core/reservation_addr[9]/q core/reservation_addr_reg[9]/QN 
 add mapped point core/reservation_addr[10]/q core/reservation_addr_reg[10]/Q 
@@ -2601,7 +2601,7 @@ add mapped point core/reservation_addr[24]/q core/reservation_addr_reg[24]/Q
 add mapped point core/reservation_addr[25]/q core/reservation_addr_reg[25]/QN 
 add mapped point core/reservation_addr[26]/q core/reservation_addr_reg[26]/Q 
 add mapped point core/reservation_addr[27]/q core/reservation_addr_reg[27]/QN 
-add mapped point core/reservation_addr[28]/q core/reservation_addr_reg[28]/Q 
+add mapped point core/reservation_addr[28]/q core/reservation_addr_reg[28]/QN 
 add mapped point core/reservation_addr[29]/q core/reservation_addr_reg[29]/QN 
 add mapped point core/reservation_addr[30]/q core/reservation_addr_reg[30]/QN 
 add mapped point core/reservation_addr[31]/q core/reservation_addr_reg[31]/QN 

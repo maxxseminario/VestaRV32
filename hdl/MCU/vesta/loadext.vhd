@@ -16,11 +16,22 @@ architecture Behavioral of loadext is
     signal byte_data   : STD_LOGIC_VECTOR(7 downto 0);
     signal half_data   : STD_LOGIC_VECTOR(15 downto 0);
     signal mask_latched: STD_LOGIC_VECTOR(1 downto 0);
+    -- signal mask_intermediate : STD_LOGIC_VECTOR(1 downto 0);
 begin
+
+    -- This is causing an error post genus - timing. Changed to falling edge
+
+    -- latch_mask_int: process(clk) 
+    -- begin
+    --     if falling_edge(clk) then 
+    --         mask_intermediate <= mask;
+    --     end if;
+    -- end process;
 
     latch_mask: process(clk) 
     begin
         if rising_edge(clk) then 
+            -- mask_latched <= mask_intermediate;
             mask_latched <= mask;
         end if;
     end process;

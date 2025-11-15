@@ -21,9 +21,6 @@ entity vesta is
         read_data  : in  std_logic_vector(31 downto 0);
         mask       : in  std_logic_vector(1 downto 0);
 
-        -- mem_instr : out std_logic; -- Rising edge when instruction has completed
-        -- mem_access : out std_logic; -- rising edge when memory access
-
         -- IRQ Interface
         irq_vector   : in  std_logic_vector(NUM_IRQS-1 downto 0);
         irq_priority : in  std_logic_vector(NUM_IRQS-1 downto 0);
@@ -381,6 +378,7 @@ architecture struct of vesta is
             reservation_valid <= '0';
             reservation_addr <= (others => '0');
             amo_read_data <= (others => '0');
+            amo_write_data <= (others => '0');
         elsif rising_edge(clk_cpu) then
             -- Set reservation on LR
             if current_state = LR_READ then
@@ -564,10 +562,8 @@ architecture struct of vesta is
                     "000";  -- Normal operation
 
 
-    
-
     -- ==========================================
-    -- FSM Next State Logic (Combinational)
+    -- FSM Next State Logic 
     -- ==========================================
     next_state_logic: process(resetn, current_state, pc, instr, quadrant_upper, quadrant_lower, 
                              repeat_if, instr_upper_half, instr_lower_half, instr_decomp, 

@@ -14,12 +14,6 @@
 RVTEST_RV64U
 RVTEST_CODE_BEGIN
 
-# manual_rst:
-#   li   t0, 0x83d0
-#   sw   zero, 0(t0)
-#   mv   t0, zero
-
-
 # get a unique core id
 la a0, coreid
 li a1, 1
@@ -52,6 +46,8 @@ TEST_CASE( 2, a4, 1, \
 # This is in order to not cause issues post genus / innovus where memory
 # contents may be non-zero.
 la t0, foo
+sw zero, 0(t0)
+la t0, barrier
 sw zero, 0(t0)
 
 # make sure the failing sc did not commit into memory
@@ -90,6 +86,7 @@ bnez a1, 1b
 # wait for all cores to finish
 la a0, barrier
 li a1, 1
+
 amoadd.w x0, a1, (a0)
 1: lw a1, (a0)
 blt a1, a3, 1b
