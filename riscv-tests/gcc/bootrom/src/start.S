@@ -252,8 +252,9 @@ executeProgram:
     sw a6, SPI_TX(a0) // Write to SPI Flash Transmit Register
     jal ra, spi0_wait_until_tx_complete // Wait until SPI transfer is complete
 
-    //Set GPIO0 to not alternative function mode 
-    sw zero, GPIO_PxSEL(a1) // Set GPIO Select Register to not alternative function mode
+    //Set GPIO0 to not alternative function mode (save TRAP pin)
+    li a2, GPIO0_TRAP_MASK  // Load GPIO0 TRAP and CS Flash mask
+    sw a2, GPIO_PxSEL(a1) // Set GPIO Select Register to not alternative function mode
     
     //Deassert CS
     li a2, GPIO0_CS_MASK // Load CS Flash mask
