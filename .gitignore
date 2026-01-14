@@ -16,3 +16,4 @@ libManager.log
 *.gz
 *.temp
 innovus/dbs/
+*.sdf
