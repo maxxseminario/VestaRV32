@@ -11,3 +11,4 @@ libManager.log
 *.gds
 *.gds2
 *ARM*
+*.log
