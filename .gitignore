@@ -10,3 +10,4 @@ cdspaths.sh
 libManager.log
 *.gds
 *.gds2
+*ARM*
