@@ -58,7 +58,7 @@ Typical applications include:
 - `hdl/` — VestaRV core and MCU HDL sources
 - `genus/` — Logic Synthesis
 - `innovus/` — Physical Implementation
-- `riscv-tests/` — Instruction-level, peripheral, and boot validation tests
+- `riscv-tests/` — Instruction-level, peripheral, and boot validation tests. Adapted from: https://github.com/riscv-software-src/riscv-tests
 
 
 ---
