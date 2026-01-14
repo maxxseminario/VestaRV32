@@ -1,3 +1,0 @@
-FORMATVERSION 1
-ADDINST ANTENNA2A10TH core/datapath_inst/mainalu/DIODE_1 1 addPortAsNeeded
-INSTTERM A core/CTS_1 -

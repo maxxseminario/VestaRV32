@@ -19,3 +19,4 @@ innovus/dbs/
 *.sdf
 *.lef
 *.old
+innovus/rpt/*.txt*
