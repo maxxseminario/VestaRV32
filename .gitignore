@@ -12,3 +12,4 @@ libManager.log
 *.gds2
 *ARM*
 *.log
+*.tstamp
