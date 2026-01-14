@@ -1,6 +1,0 @@
-setvar mergedTimingModel = TRUE
-ilmModelUnknown  
-sdc	MCU	hold_analysis_view	MCU_postRoute_hold_analysis_view.core.sdc.gz
-sdc	MCU	setup_analysis_view	MCU_postRoute_setup_analysis_view.core.sdc.gz
-spef	MCU	worst_rc_corner	MCU_postRoute_worst_rc_corner.spef.gz
-spef	MCU	best_rc_corner	MCU_postRoute_best_rc_corner.spef.gz
