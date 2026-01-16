@@ -1,4 +1,4 @@
-<img src="assets/vesta_logo.png" alt="VestaRV32 logo" height="48" align="left" hspace="12" vspace="6cm" />
+<img src="assets/vesta_logo.png" alt="VestaRV32 logo" height="38" align="left" />
 
 # VestaRV32 - A Custom RISC-V Core & SoC
 
